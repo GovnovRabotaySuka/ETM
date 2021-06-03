@@ -1,0 +1,8 @@
+state={
+	id=1176
+	name="STATE_1176"
+	provinces={
+		3142 3176 3280 
+	}
+
+}

@@ -1,0 +1,7 @@
+
+
+graphical_culture = asian_gfx
+graphical_culture_2d = asian_2d	
+	 
+color = hex { 0xbd5c02 } 
+color_ui = hex { 0xbd5c02 }

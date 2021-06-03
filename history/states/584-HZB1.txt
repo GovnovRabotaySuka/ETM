@@ -1,0 +1,27 @@
+
+state={
+	id=584
+	name="STATE_584"
+	resources={
+		steel=28.000
+	}
+
+	history={
+		owner = VAL
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = VAL
+
+	}
+
+	provinces={
+		11611 11707 11745 11835 11943 11982 12000 12110 12200 
+	}
+	manpower=1517500
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,30 @@
+
+
+state={
+	id=1043
+	name="STATE_1043"
+	manpower = 251555
+	
+	state_category = rural
+
+	history={
+		owner = KEB
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 2
+
+                        7862 = {
+				naval_base = 4
+			}
+
+		}
+
+		add_core_of = KEB
+	}
+
+	provinces={
+		7743 7795 7828 7839 7849 7862 7882 7899 7924 7943 7972 8026 
+	}
+}

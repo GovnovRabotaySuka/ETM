@@ -1,0 +1,26 @@
+state={
+	id=576
+	name="STATE_576"
+	provinces={
+		12694 12781 12933 13135 13155 13202 13425 13426 
+	}
+
+	state_category = large_city
+
+	history={
+		owner = SAU
+		victory_points = {
+			 12694 10
+		}
+	    buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+	}
+
+	manpower = 3798235
+	buildings_max_level_factor=1.000
+}

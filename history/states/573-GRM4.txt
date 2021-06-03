@@ -1,0 +1,32 @@
+
+state={
+	id=573
+	name="STATE_573"
+	resources={
+		aluminium=6.000
+	}
+
+	history={
+		owner = SAU
+		victory_points = {
+			12222 10 
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 5
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		11944 11945 12023 12111 12112 12202 12222 12289 12336 12402 12478 12550 
+	}
+	manpower=5086854
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

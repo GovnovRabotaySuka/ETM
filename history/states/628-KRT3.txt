@@ -1,0 +1,22 @@
+state={
+	id=628
+	name="STATE_628"
+	provinces={
+		14293 14394 14415 14446 14447 14545 14615 14630 14653 14679 14680 14764 14785 14856 14882 15076 
+	}
+
+	state_category = city
+
+	history={
+		owner = POD
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 8
+		}	
+		add_core_of = POD
+	}
+	
+	manpower = 1163163
+	buildings_max_level_factor=1.000
+}

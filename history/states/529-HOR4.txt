@@ -1,0 +1,23 @@
+state={
+	id=529
+	name="STATE_529"
+	provinces={
+		10499 10575 10625 10672 10700 10701 10716 10793 10822 10823 10862 10957 11008 
+	}
+
+	state_category = city
+
+	history={
+		owner = HOR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+		add_core_of = HOR
+	}
+
+	manpower = 2735385
+	buildings_max_level_factor=1.000
+}

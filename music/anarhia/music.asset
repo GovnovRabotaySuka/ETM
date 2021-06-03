@@ -1,0 +1,150 @@
+music = {
+	name = "ps-tachanka"
+	file = "ps-tachanka.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ps-chastushki"
+	file = "ps-chastushki.ogg"
+	volume = 0.65
+}
+music = {
+	name = "ps-svobodailismert"
+	file = "ps-svobodailismert.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-haos"
+	file = "mh-haos.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-anarhbatal"
+	file = "mh-anarhbatal.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-bolnoysanitar"
+	file = "mh-bolnoysanitar.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-chapaiev"
+	file = "mh-chapaiev.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-chetyrpuli"
+	file = "mh-chetyrpuli.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-ehalikazaki"
+	file = "mh-ehalikazaki.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-finskiynoz"
+	file = "mh-finskiynoz.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-granata"
+	file = "mh-granata.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-gulyaypole"
+	file = "mh-gulyaypole.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-kazachiy"
+	file = "mh-kazachiy.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-lohadka"
+	file = "mh-lohadka.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-lubobratsi"
+	file = "mh-lubobratsi.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-mamaanarhia"
+	file = "mh-mamaanarhia.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-mezhlichnostnykonflict"
+	file = "mh-mezhlichnostnykonflict.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-nemoyazabota"
+	file = "mh-nemoyazabota.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-paravozanarhi"
+	file = "mh-paravozanarhi.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-pesnychernogoanarh"
+	file = "mh-pesnychernogoanarh.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-polkizeleni"
+	file = "mh-polkizeleni.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-rasstrel"
+	file = "mh-rasstrel.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-sempatron"
+	file = "mh-sempatron.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-svoboda"
+	file = "mh-svoboda.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-trus"
+	file = "mh-trus.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-tryntrava"
+	file = "mh-tryntrava.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-vinipuh"
+	file = "mh-vinipuh.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-vintik"
+	file = "mh-vintik.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-zabor"
+	file = "mh-zabor.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mh-zaplatiisvoboden"
+	file = "mh-zaplatiisvoboden.ogg"
+	volume = 0.65
+}

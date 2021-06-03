@@ -1,0 +1,42 @@
+
+state={
+	id=600
+	name="STATE_600"
+	manpower = 3836571
+	
+	state_category = city
+
+	history={
+		owner = MAR
+		victory_points = {
+			 8025 50
+		}
+		victory_points = {
+			 8199 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 3
+                        air_base = 5
+		
+			8199 = {
+				naval_base = 2
+			}
+			8101 = {
+				naval_base = 5
+			}
+			8200 = {
+				naval_base = 8
+			}
+			8220 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MAR
+	}
+
+	provinces={
+		8024 8025 8093 8101 8151 8179 8180 8199 8200 8220  
+	}
+}

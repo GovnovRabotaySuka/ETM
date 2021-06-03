@@ -1,0 +1,19 @@
+scripted_gui = {
+	
+	## Holy War ##
+	
+	ETM_custom_super_event_holy_war = {
+		context_type = player_context
+		window_name = "ETM_custom_super_event_holy_war"
+
+		visible = {
+			has_global_flag = etm_super_event_flag_holy_war
+		}
+		
+		effects = {
+			Option_click = {
+				clr_global_flag = etm_super_event_flag_holy_war
+			}
+		}
+	}
+}

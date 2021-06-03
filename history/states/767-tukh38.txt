@@ -1,0 +1,21 @@
+state={
+	id=767
+	name="STATE_767"
+	provinces={
+		12585 12586 12630 12631 12652 12722 12723 12790 12842 12871 12918 12944 12987 12988 13116 13117 13239 13240 
+	}
+
+	state_category = town
+
+	history={
+		owner = SHY
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+		}	
+		add_core_of = SHY
+	}
+	
+	manpower=385345
+	buildings_max_level_factor=1.000
+}

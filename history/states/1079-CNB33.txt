@@ -1,0 +1,35 @@
+
+state={
+	id=1079
+	name="STATE_1079"
+	manpower = 218500
+	
+	state_category = rural
+
+        resources={
+		steel= 15 
+		tungsten = 15 
+	}
+
+	history={
+		owner = CNB
+
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			4121 = {
+				naval_base = 3
+			}
+			3888 = {
+				naval_base = 3
+			}
+			
+		}
+
+		add_core_of = CNB
+	}
+
+	provinces={
+		3334 3419 3420 3603 3684 3888 3927 3656 3732 4004 4018 4121 4265 4316 4341 
+	}
+}

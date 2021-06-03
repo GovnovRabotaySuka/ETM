@@ -1,0 +1,29 @@
+state={
+	id=749
+	name="STATE_749"
+	provinces={
+		19620 19634 19748 19803 
+	}
+
+	state_category = town
+
+	history={
+		owner = GUL
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 5
+			dockyard = 2
+
+			19803 = {
+				naval_base = 3
+			}
+
+		}	
+		add_core_of = GUL
+	}
+	
+	manpower=278420
+	buildings_max_level_factor=1.000
+}

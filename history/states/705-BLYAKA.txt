@@ -1,0 +1,31 @@
+
+state={
+	id=705
+	name="STATE_705"
+	manpower = 20001250
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			10142 10
+		}
+		victory_points = {
+			10110 15
+		}
+		owner = CRM
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+		add_core_of = CRM
+	}
+
+	provinces={
+		9970 10050 10051 10095 10096 10110 10142 10196 10258 10309 10360 
+	}
+}

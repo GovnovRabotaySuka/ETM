@@ -1,0 +1,23 @@
+
+bitmapfonts = {
+	
+	bitmapfont = {
+		name = "Superivent"
+		path = "gfx/fonts/Superivent"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "interface"
+		path = "gfx/fonts/interface"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+}

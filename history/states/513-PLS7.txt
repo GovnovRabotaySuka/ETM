@@ -1,0 +1,21 @@
+state={
+	id=513
+	name="STATE_513"
+	provinces={
+		14037 14116 14117 14198 14310 14327 14489 14596 
+	}
+
+	state_category = city
+
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+		}
+		add_core_of = POL
+	}
+
+	manpower=1040985
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,35 @@
+state={
+	id=695
+	name="STATE_695"
+
+	manpower = 2903371
+
+	state_category = city
+	resources={
+		tungsten=20 
+		oil=15 
+	}
+
+	history={
+		victory_points = {
+			10799 10
+		}
+		victory_points = {
+			10690 10
+		}
+	
+		owner = CSS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 5
+		}
+		add_core_of = CSS
+	}
+
+	provinces={
+		10362 10395 10396 10475 10506 10507 10556 10557 10560 10598 10628 10642 10643 10657 10690 10722 10723 10724 10725 10799 10800 10826 10901 10932 10982 
+	}
+	buildings_max_level_factor=1.000
+}

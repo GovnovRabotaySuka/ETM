@@ -1,0 +1,29 @@
+
+state={
+	id=580
+	name="STATE_580"
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			14527 = {
+				naval_base = 6
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		13642 13695 13757 13869 13870 14013 14070 14115 14179 14309 14325 14441 14527 14707 
+	}
+	manpower=836353
+	buildings_max_level_factor=1.000
+	state_category=town
+}

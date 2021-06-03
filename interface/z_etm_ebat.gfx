@@ -1,0 +1,69 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_dog"
+		texturefile = "gfx/interface/thisisdog_animated.dds"
+		noOfFrames = 60
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+
+    frameAnimatedSpriteType = {
+		name = "GFX_diskleymer" 
+		texturefile = "gfx/interface/diskleymer.dds"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes 
+		play_on_show = yes 
+		pause_on_loop = 0.0
+	}
+	
+	spriteType = {
+		name = "GFX_version"
+		texturefile = "gfx/interface/version.dds"
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_1"
+	texturefile = "gfx/interface/ideas/idea_LET_1.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_2"
+	texturefile = "gfx/interface/ideas/idea_LET_2.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_3"
+	texturefile = "gfx/interface/ideas/idea_LET_3.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_4"
+	texturefile = "gfx/interface/ideas/idea_LET_4.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_5"
+	texturefile = "gfx/interface/ideas/idea_LET_5.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_LET_6"
+	texturefile = "gfx/interface/ideas/idea_LET_6.dds"			
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_rootcrop"
+		texturefile = "gfx/leaders/CRO/rootcrop.dds"
+		noOfFrames = 60
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "PDX_ricardo"
+		texturefile = "gfx/leaders/RIC/ricardo.dds"
+		noOfFrames = 60
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+}
+
+#gfx/interface/deskleymer.dds

@@ -1,0 +1,23 @@
+state={
+	id=801
+	name="STATE_801"
+	provinces={
+		17932 17943 17973 18024 18058 18092 18093 18163 18164 18195 
+	}
+
+	state_category = city
+
+	history={
+		owner = ZMR
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 5
+		}		
+		add_core_of = ZMR
+	}
+	
+	manpower=1450500
+	buildings_max_level_factor=1.000
+}

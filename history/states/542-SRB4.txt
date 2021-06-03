@@ -1,0 +1,23 @@
+
+state={
+	id=542
+	name="STATE_542"
+
+	history={
+		owner = SRB
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = SRB
+
+	}
+
+	provinces={
+		10031 10064 10091 10092 10127 10140 10174 10236 10269 10270 10306 10343 10448 10500 10533 
+	}
+	manpower=2521245
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

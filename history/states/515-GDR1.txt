@@ -1,0 +1,27 @@
+
+state={
+	id=515
+	name="STATE_515"
+	resources={
+		steel=19.000
+		aluminium=6.000
+	}
+
+	history={
+		owner = DDR
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = DDR
+		add_core_of = SAU
+
+	}
+
+	provinces={
+		13204 13233 13398 13452 
+	}
+	manpower=1777564
+	buildings_max_level_factor=1.000
+	state_category=city
+}

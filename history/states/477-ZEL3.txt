@@ -1,0 +1,34 @@
+state={
+	id=477
+	name="STATE_477"
+	provinces={
+		11279 11372 11373 11501 11524 11525 11616 11685 11731 11862 11882 12029 12086 
+	}
+
+	state_category = large_town
+
+	history={
+		owner = KIV	
+		
+
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+		}
+
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+		add_core_of = DNB
+		add_core_of = UKE
+	
+	
+    }
+
+	
+	
+    
+	manpower = 1893391
+	buildings_max_level_factor=1.000
+}

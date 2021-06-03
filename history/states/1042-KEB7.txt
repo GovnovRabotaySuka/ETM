@@ -1,0 +1,41 @@
+
+
+state={
+	id=1042
+	name="STATE_1042"
+	manpower = 7240500
+	
+	state_category = town
+
+        resources={
+		chromium=15
+		steel = 30
+	}
+
+	history={
+		owner = KEB
+
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 3
+
+                        7950 = {
+				naval_base = 3
+			}
+
+                        7637 = {
+				naval_base = 3
+			}
+
+
+		}
+
+		add_core_of = KEB
+	}
+
+	provinces={
+	  7577 7637 7688 7714 7727 7755 7861 7869 7870 7923 7936 7950 7960 8005 8031 8085 	
+	}
+}

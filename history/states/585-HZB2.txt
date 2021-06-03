@@ -1,0 +1,33 @@
+state={
+	id=585
+	name="STATE_585"
+	provinces={
+		11706 11763 11879 11900 11901 12082 12083 12153 12171 
+	}
+	
+	state_category = city
+
+	resources={
+		aluminium=11 # was: 18
+	}
+
+	history={
+		owner = VAL
+		victory_points = {
+			 11901 50
+		}
+	    buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			air_base = 2
+
+			11900 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = VAL
+	}
+
+	manpower = 1370800
+	buildings_max_level_factor=1.000
+}

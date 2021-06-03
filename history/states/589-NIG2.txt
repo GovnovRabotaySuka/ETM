@@ -1,0 +1,25 @@
+
+state={
+	id=589
+	name="STATE_589"
+
+	history={
+		owner = NIG
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+
+		}
+		add_core_of = NIG
+
+	}
+
+	provinces={
+		13057 13134 13230 13303 13304 13377 13422 13597 
+	}
+	manpower=3381300
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

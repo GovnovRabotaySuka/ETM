@@ -1,0 +1,27 @@
+state={
+	id=519
+	name="STATE_519"
+	provinces={
+		13599 13643 13780 13800 
+	}
+
+	state_category = megalopolis
+
+	history={
+		owner = DDR
+		victory_points = {
+			 13800 50
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = DDR
+		add_core_of = SAU
+	}
+
+	manpower = 2265029
+	buildings_max_level_factor=1.000
+}

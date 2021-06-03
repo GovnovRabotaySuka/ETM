@@ -1,0 +1,27 @@
+
+state={
+	id=603
+	name="STATE_603"
+	manpower = 263947
+	
+	state_category = town
+
+	history={
+		owner = TSA
+		victory_points = {
+			 8908 50
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		    dockyard = 4
+		    arms_factory = 2
+		}
+
+		add_core_of = TSA
+	}
+
+	provinces={
+		8726 8810 8838 8881 
+	}
+}

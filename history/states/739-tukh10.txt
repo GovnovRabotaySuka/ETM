@@ -1,0 +1,25 @@
+state={
+	id=739
+	name="STATE_739"
+	provinces={
+		18598 18666 18727 18826 18835 
+	}
+
+	state_category = town
+
+	history={
+		owner = TUC
+	    buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+			18835 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = TUC
+	}
+	
+	manpower=1050883
+	buildings_max_level_factor=1.000
+}

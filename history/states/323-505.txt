@@ -1,0 +1,24 @@
+
+state={
+	id=323
+	name="STATE_323"
+
+	history={
+		owner = LET
+		victory_points = { 15965 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+                        synthetic_refinery = 2
+		}
+		add_core_of = LET
+                add_core_of = PLA
+	}
+
+	provinces={
+		15965 16304 16323 
+	}
+	manpower=1033500
+	buildings_max_level_factor=1.000
+	state_category=city 
+}

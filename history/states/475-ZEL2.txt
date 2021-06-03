@@ -1,0 +1,36 @@
+state={
+	id=475
+	name="STATE_475"
+	provinces={
+		11927 11986 12113 12114 12244 12266 12267 12408 12434 12455 12481 12625 
+	}
+
+	state_category = city
+
+	resources={
+		oil=8 # was: 14
+		aluminium=7 # was: 12
+	}
+
+	history={
+		owner = KIV
+
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			fuel_silo = 1
+			air_base = 8
+		}
+		
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+		add_core_of = DNB
+		add_core_of = UKE
+	
+	}
+	manpower = 2495352
+	buildings_max_level_factor=1.000
+}

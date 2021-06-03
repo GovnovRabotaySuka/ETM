@@ -1,0 +1,25 @@
+state={
+	id=512
+	name="STATE_512"
+	provinces={
+		13802 13803 13849 13895 13961 13987 14072 14118 14119 
+	}
+
+	state_category = large_city
+	
+
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 2
+			anti_air_building = 2
+			air_base = 5
+		}
+		add_core_of = POL
+	}
+
+	manpower = 3089000
+	buildings_max_level_factor=1.000
+}

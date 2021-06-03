@@ -1,0 +1,20 @@
+state={
+	id=794
+	name="STATE_794"
+	provinces={
+		17803 17928 17955 17985 18023 18104 18148 
+	}
+	state_category = rural
+	history={
+		owner = NAP
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			air_base = 4
+			}		
+		add_core_of = NAP
+	}
+	
+	manpower=100500
+	buildings_max_level_factor=1.000
+}

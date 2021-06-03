@@ -1,0 +1,280 @@
+﻿division_template = {
+	name = "Советская Гвардия"
+	division_names_group = LET_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Народное Ополчение"
+
+	division_names_group = LET_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+        }
+	priority = 0
+}
+
+division_template = {
+	name = "Боевая Бригада"
+
+	division_names_group = LET_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+        }
+	priority = 1
+}
+
+division_template = {
+	name = "Рабочий Полк"
+
+	division_names_group = LET_GAR_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        }
+	priority = 0
+}
+
+division_template = {
+	name = "Рейдеры Омска"
+
+	division_names_group = LET_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		bicycle_battalion = { x = 2 y = 0 }
+		bicycle_battalion = { x = 2 y = 1 }
+		bicycle_battalion = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+                		maintenance = { x = 0 y = 1 }
+                		logistics = { x = 0 y = 3 } 
+        }
+	priority = 1
+}
+
+division_template = {
+	name = "Дивизия Освободителей"
+
+	division_names_group = LET_MEC_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 0 }		
+		light_armor = { x = 1 y = 1 }		
+		light_armor = { x = 1 y = 2 }	
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+                		maintenance = { x = 0 y = 1 }
+                		logistics = { x = 0 y = 2 } 
+        }
+	priority = 1
+}
+
+units = {	
+	
+	division= {	#"Anarkhicheskaya Gvardiya im. Egora Letova"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Анархическая Гвардия им. Егора Летова"		
+		location = 15710
+		division_template = "Советская Гвардия"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+		}
+
+	division= {	#"Natsional-Borshevistskaya Gvardiya"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Национал-Борщевитская Гвардия"		
+		location = 15396
+		division_template = "Советская Гвардия"
+		start_experience_factor = 1
+		start_equipment_factor = 0.8
+		}
+	
+	division= {	#"Militsiya goroda Omsk"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Омск"	
+		location = 15459
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.25
+		}
+	
+	division= {	#"Militsiya goroda Luybinskiy"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Любинский"	
+		location = 15965
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.25
+		}
+
+	division= {	#"Militsiya goroda Tavricheskoye"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Таврическое"	
+		location = 15313
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25
+		}
+
+	division= {	#"Militsiya goroda Azovo"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Азово"	
+		location = 15563
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25
+		}
+	
+	division= {	#"Boyevoye Krilo NKD "RP""
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Боевое Крыло НКД "РП""	
+		location = 15690
+		division_template = "Боевая Бригада"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.45
+		}
+
+	division= {	#"Zavodskiye Rabochiye"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Рабочие Омского Завода Плавленных Сырков"		
+		location = 15690
+		division_template = "Рабочий Полк"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+        		}
+
+	division= {	#"Zavodskiye Rabochiye"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Рабочие Сибзавод'а"	
+		location = 16012
+		division_template = "Рабочий Полк"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+       		}
+
+	division= {	#"Panki"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Панки"	
+		location = 15459
+		division_template = "Рейдеры Омска"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+        		}
+
+	division= {	#"Omskaya Narodnaya Tankovaya Brigada"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Омская Народная Танковая Бригада"		
+		location = 15710
+		division_template = "Дивизия Освободителей"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.85
+		}
+}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LET" 
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "LET" 
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "LET" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
+	}
+}

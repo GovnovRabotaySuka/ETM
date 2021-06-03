@@ -1,0 +1,33 @@
+
+state={
+	id=1109
+	name="STATE_1109"
+        resources={
+		aluminium=8
+	}
+
+	history={
+		owner = VKN
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 1
+                        air_base = 2
+                        dockyard = 6
+
+                        900 = {
+				naval_base = 5
+			}
+
+		}
+		add_core_of = VKN
+
+	}
+
+	provinces={
+		542 565 593 627 676 699 709 710 725 753 761 771 803 804 839 856 865 874 886 893 900 936 941 942 943 975 992 1004 1011 1032 1051 1059 1081 1092 1102 1103 1109 1167 1184 
+	}
+	manpower=2003003
+	buildings_max_level_factor=1.000
+	state_category=city
+}

@@ -1,0 +1,29 @@
+state={
+	id=607
+	name="STATE_607"
+	provinces={
+		9014 9028 9044 9095 9108 9152 9175 9198 9319 9320 
+	}
+
+	resources={
+		aluminium = 4
+	}
+
+	state_category = city
+
+	history={
+		owner = BUL
+		victory_points = {
+			 9152 15
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 6
+			air_base = 3
+		}
+		add_core_of = BUL
+	}
+
+	manpower = 1685989
+	buildings_max_level_factor=1.000
+}

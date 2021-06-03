@@ -1,0 +1,11 @@
+
+music_station = "oborona"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=1067
+	name="STATE_1067"
+
+	history={
+		owner = CNB
+		buildings = {
+			infrastructure = 3
+
+                        3822 = {
+				naval_base = 1
+			}
+
+
+		}
+		add_core_of = CNB
+
+	}
+
+	provinces={
+		3604 3657 3741 3822 3965 4020 4042 4149 4277 4295 4365 3613 3622 3694 3782 3984 4169 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category = enclave
+}

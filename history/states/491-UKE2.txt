@@ -1,0 +1,28 @@
+
+state={
+	id=491
+	name="STATE_491"
+	manpower = 1373637
+	
+	state_category = city
+
+	history={
+		owner = UKE
+
+	    buildings = {
+			infrastructure = 5
+			air_base = 8
+		}
+
+		add_core_of = UKE
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+		add_core_of = DNB
+	}
+
+	provinces={
+		12526 12674 12760 12786 12866 12982 13010 13159 13259 13310 
+	}
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=574
+	name="STATE_574"
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		11450 11468 11612 11634 11813 11880 11983 12201 12238 12401 
+	}
+	manpower=808678
+	buildings_max_level_factor=1.000
+	state_category=town
+}

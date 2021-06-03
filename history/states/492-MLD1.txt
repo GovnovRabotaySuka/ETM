@@ -1,0 +1,24 @@
+state={
+	id=492
+	name="STATE_492"
+	provinces={
+		10653 10795 10825 10917 11010 11128 11190 
+	}
+
+	state_category = town
+
+	history={
+		owner = ROA	
+		add_core_of = ROA
+		add_core_of = TRA
+
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+	}
+	
+    }
+	manpower = 2296800
+	buildings_max_level_factor=1.000
+}

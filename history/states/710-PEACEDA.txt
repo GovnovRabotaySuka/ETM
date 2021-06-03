@@ -1,0 +1,28 @@
+
+state={
+	id=710
+	name="STATE_710"
+	manpower = 10566805
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			9031 10
+		}
+		owner = SIN
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+		add_core_of = SIN
+	}
+
+	provinces={
+		8949 9015 9031 9057 9126 9143 9166 
+	}
+}

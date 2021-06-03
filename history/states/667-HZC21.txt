@@ -1,0 +1,23 @@
+
+state={
+	id=667
+	name="STATE_667"
+
+	manpower = 427050
+
+	state_category = town
+
+	history={
+		owner = NJS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = NJS
+	}
+
+	provinces={
+		13161 13312 13403 13488 13489 13534 13551 13649 13650 13675 13739 13763 13786 13854 13855 13940 13992 
+	}
+	buildings_max_level_factor=1.000
+}

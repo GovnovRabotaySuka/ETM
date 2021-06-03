@@ -1,0 +1,41 @@
+
+state={
+	id=1106
+	name="STATE_1106"
+	manpower = 1050461
+	
+	state_category = town
+
+        resources={
+		chromium=5
+		aluminium=15 
+	}
+
+	history={
+		owner = PLS
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 1
+			2361 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+			2202 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			1550 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+
+		add_core_of = PLS
+	}
+
+	provinces={
+	   1718 1827 1828 1896 1944 1959 1975 2017 2162 2192 2202 1968 1945 1955 2103 2117 2180 2212 2303 2313 2361 2421 2450 2541 2508  1303 1330 1337 1357 1367 1419 1474 1492 1506 1511 1532 1550 1614 1621 1643 1774  
+	}
+}

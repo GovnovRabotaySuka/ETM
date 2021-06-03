@@ -1,0 +1,28 @@
+
+state={
+	id=1083
+	name="STATE_1083"
+
+        resources={
+		steel= 20 
+		tungsten = 5
+	}
+
+	history={
+		owner = CNB
+		buildings = {
+			infrastructure = 2
+			
+
+		}
+		add_core_of = CNB
+
+	}
+
+	provinces={
+		5154 5166 5205 5251 5304 5316 5344 5397 5458 5474 5516 5560 5588 5619 5764 5828 5895 5924 5925 5941 5951 6089 6226 6237 6272 6301 6398 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,27 @@
+state={
+	id=687
+	name="STATE_687"
+
+    
+
+	resources={
+		chromium=20
+	}
+
+	history={
+		owner = BRK
+		buildings = {
+			infrastructure = 5
+
+		}
+		add_core_of = BRK
+	}
+
+	provinces={
+		8767 8790 8819 8849 8864 8939 8984 8985 9020 9085 9144 9202 
+	}
+
+    manpower=1463970
+	buildings_max_level_factor=1.000
+	state_category = town
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=565
+	name="STATE_565"
+
+	history={
+		owner = MUS
+		victory_points = {
+			10817 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+
+		}
+		add_core_of = MUS
+
+	}
+
+	provinces={
+		10667 10699 10713 10758 10817 10818 10860 10927 
+	}
+	manpower=1589460
+	buildings_max_level_factor=1.000
+	state_category=town
+}

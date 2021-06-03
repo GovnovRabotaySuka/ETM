@@ -1,0 +1,23 @@
+
+
+state={
+	id=305
+	name="STATE_305"
+	provinces={
+		18451 18558 18729 18925 18965 19033 19231 
+	}
+
+	state_category = wasteland
+
+	history={
+		owner = ZMR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ZMR
+	}
+
+	manpower=12400
+	buildings_max_level_factor=1.000
+}
+

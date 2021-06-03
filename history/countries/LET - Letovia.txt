@@ -1,0 +1,233 @@
+capital = 329
+
+oob = "LET_0002"
+
+set_research_slots = 3
+add_ideas = {
+	LET_Peremiriye
+	LET_Zhelezniy_Zanoves
+	LET_Nothing_To_Lose
+	LET_Sistema
+	LET_Corp
+	LET_Edinstvo_Strong
+}
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	basic_medium_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
+
+set_convoys = 150
+set_stability = 0.45
+set_war_support = 0.8
+
+
+set_politics = {
+	ruling_party = borshewism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	burjuism = 0
+	bidlo = 30
+	borshewism = 60
+	pahanism = 10
+}
+
+create_country_leader = {
+	name = "Egor Letov"
+	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
+	picture = "Portrait_Egor_Letov.dds"
+	expire = "1953.3.1"
+	ideology = jididoism
+	traits = { our_savior }
+}
+create_country_leader = {
+	name = "Egor Letov"
+	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
+	picture = "Portrait_Egor_Letov.dds"
+	expire = "1965.1.1"
+	ideology = nazbol
+	traits = { our_savior }
+}
+create_country_leader = {
+	name = "Egor Letov"
+	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
+	picture = "Portrait_Egor_Letov.dds"
+	expire = "1965.1.1"
+	ideology = despopahanism
+	traits = { our_savior }
+}
+create_country_leader = {
+	name = "Egor Letov"
+	desc = "Egor_Letov_Desc"
+	picture = "Portrait_Egor_Letov.dds"
+	expire = "1965.1.1"
+	ideology = anarhoborshevism
+	traits = { our_savior }
+}
+
+create_field_marshal = {
+	name = "Егор Летов"
+	picture = "Portrait_Egor_Letov.dds"
+	traits = { grob hero_of_siberia fast_planner organizer infantry_officer media_personality defensive_doctrine unyielding_defender urban_assault_specialist urban_assault_specialist }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 5
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Эдуард Лимонов"
+	picture = "LET_portaint_1.dds"
+	traits = { siberian_war_hero offensive_doctrine urban_assault_specialist trickster guerilla_fighter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 5
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Кузя 'УО' Рябинов"
+	picture = "LET_portaint_2.dds"
+	traits = { grob siberian_war_hero urban_assault_specialist guerilla_fighter infantry_leader }
+	skill = 4
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	stics_skill = 3
+}
+create_corps_commander = {
+	name = "Игорь Жевтун"
+	picture = "LET_portaint_3.dds"
+	traits = { ranger infantry_leader guerilla_fighter siberian_war_hero grob }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 4
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Евгений 'Махно' Пьянов"
+	picture = "LET_portaint_4.dds"
+	traits = { siberian_war_hero grob cavalry_leader trait_engineer scavenger }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 5
+	stics_skill = 2
+}
+create_corps_commander = {
+	name = "Наталья Чумакова"
+	picture = "LET_portaint_5.dds"
+	traits = { infantry_leader siberian_war_hero grob urban_assault_specialist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	stics_skill = 2
+}
+create_corps_commander = {
+	name = "Сергей Летов"
+	picture = "LET_portaint_6.dds"
+	traits = { infantry_leader ranger siberian_war_hero grob organizer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 4
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Дмитрий Язов"
+	picture = "LET_portaint_7.dds"
+	traits = { organizer urban_assault_specialist siberian_war_hero skilled_staffer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 5
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Коллективный Рабочий Совет"
+	picture = "LET_portaint_8.dds"
+	traits = { infantry_leader ranger guerilla_fighter rabochii_voennii_sovet }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 4
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Греггори Ли"
+	picture = "LET_portaint_9.dds"
+	traits = { guerilla_fighter swamp_fox trickster ambusher }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 4
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Трипутень"
+	picture = "LET_portaint_10.dds"
+	traits = { siberian_war_hero cavalry_leader hill_fighter }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	stics_skill = 1
+}
+create_corps_commander = {
+	name = "Алунья"
+	picture = "LET_portaint_11.dds"
+	traits = { urban_assault_specialist guerilla_fighter }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	stics_skill = 2
+}
+create_corps_commander = {
+	name = "Буэнавентура Дуррути"
+	picture = "LET_portaint_12.dds"
+	traits = { urban_assault_specialist infantry_leader scavenger guerilla_fighter organizer siberian_war_hero }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 2
+	stics_skill = 5
+}
+create_corps_commander = {
+	name = "Бэнес Айо"
+	picture = "LET_portaint_13.dds"
+	traits = { urban_assault_specialist infantry_leader desert_fox siberian_war_hero }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	stics_skill = 1
+}

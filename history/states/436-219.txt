@@ -1,0 +1,21 @@
+
+state={
+	id=436
+	name="STATE_436"
+	provinces={
+		18603 18884 
+	}
+
+	state_category = rural
+
+	history={
+		owner = N2N
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = N2N
+	}
+
+	manpower=23635
+	buildings_max_level_factor=1.000
+}

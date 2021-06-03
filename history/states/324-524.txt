@@ -1,0 +1,25 @@
+
+state={
+	id=324
+	name="STATE_324"
+
+	history={
+		owner = LET
+		victory_points = { 15563 1 }
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+		        industrial_complex = 1
+
+		}
+		add_core_of = LET
+                add_core_of = PLA
+	}
+
+	provinces={
+		15203 15204 15340 15374 15563 15631 15834 15913 16130 
+	}
+	manpower=599700
+	buildings_max_level_factor=1.000
+	state_category=town
+}

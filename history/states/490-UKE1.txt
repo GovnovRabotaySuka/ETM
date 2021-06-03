@@ -1,0 +1,30 @@
+
+state={
+	id=490
+	name="STATE_490"
+	manpower = 1338280
+	
+	state_category = town
+
+	history={
+		owner = UKE
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+			arms_factory = 5
+
+		}
+
+	    add_core_of = UKE
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+		add_core_of = DNB
+	}
+
+	provinces={
+		12456 12527 12626 12649 12699 12737 12809 12867 12911 13139 13140 13360 13402 
+	}
+}

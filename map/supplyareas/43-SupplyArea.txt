@@ -1,0 +1,9 @@
+
+supply_area={
+	id=43
+	name="SUPPLYAREA_43"
+	value=6
+	states={
+		721 711 712 714 719 713 716 715 717 718 
+	}
+}

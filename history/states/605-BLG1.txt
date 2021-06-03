@@ -1,0 +1,30 @@
+state={
+	id=605
+	name="STATE_605"
+	provinces={
+		8880 8923 8962 9056 9070 9078 9109 9176 9177 9220 9221 9276 9292 9332 
+	}
+
+	state_category = large_town
+
+	resources={
+		chromium = 1
+	}
+
+	history={
+		owner = BUL
+		victory_points = {
+			 9220 15
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 3
+			industrial_complex =2
+			air_base = 3
+		}
+		add_core_of = BUL
+	}
+
+	manpower=1814936
+	buildings_max_level_factor=1.000
+}

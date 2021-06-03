@@ -1,0 +1,28 @@
+
+state={
+	id=597
+	name="STATE_597"
+
+	history={
+		owner = PAS
+		victory_points = {
+			8055 25 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			
+
+		}
+		add_core_of = PAS
+                add_core_of = MUS
+
+	}
+
+	provinces={
+		8055 8259 
+	}
+	manpower=50700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

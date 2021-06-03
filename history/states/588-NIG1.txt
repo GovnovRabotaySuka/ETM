@@ -1,0 +1,43 @@
+
+state={
+	id=588
+	name="STATE_588"
+
+	resources={
+		steel=25 # was: 48
+	}
+
+	history={
+		owner = NIG
+		victory_points = {
+			13755 50
+		}
+		victory_points = {
+			 13501 25
+		}
+		victory_points = {
+			13178 10 
+		}
+		buildings = {
+			infrastructure = 9
+			arms_factory = 5
+			industrial_complex = 7
+			air_base = 3
+			13177 = {
+				naval_base = 3
+			}
+			13755 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = NIG
+
+	}
+
+	provinces={
+		13177 13178 13501 13669 13755
+	}
+	manpower = 4747700
+	buildings_max_level_factor=1.000
+	state_category = metropolis
+}

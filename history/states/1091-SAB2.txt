@@ -1,0 +1,31 @@
+
+state={
+	id=1091
+	name="STATE_1091"
+	manpower = 507830
+        resources={
+		steel=75
+	}
+	
+	state_category = town
+
+	history={
+		owner = SAB
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 3
+			2104 = {
+				naval_base = 5
+			}
+
+		}
+
+		add_core_of = SAB
+	}
+
+	provinces={
+		2074 2104 2229 2249 2273 2336 2389 2397 2444 2555 
+	}
+}

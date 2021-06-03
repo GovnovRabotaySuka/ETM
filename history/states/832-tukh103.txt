@@ -1,0 +1,21 @@
+state={
+	id=832
+	name="STATE_832"
+	provinces={
+		19685 19700 19769 19781 
+	}
+
+	state_category = rural
+
+	history={
+		owner = GUL
+		buildings = {
+			infrastructure = 2
+			dockyard = 2
+		}		
+		add_core_of = GUL
+	}
+	
+	manpower=67845
+	buildings_max_level_factor=1.000
+}

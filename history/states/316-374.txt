@@ -1,0 +1,28 @@
+
+state={
+	id=316
+	name="STATE_316"
+	provinces={
+		15812 15872 15873 16177 16522 16544 16858 17001 
+	}
+
+	state_category = wasteland
+
+
+
+	resources={
+		chromium=40 # was: 44
+		aluminium=27 # was: 30
+	}
+
+	history={
+		owner = ZMR
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ZMR
+	}
+
+	manpower=10200
+	buildings_max_level_factor=1.000
+}

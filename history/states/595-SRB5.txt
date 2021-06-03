@@ -1,0 +1,26 @@
+state={
+	id=595
+	name="STATE_595"
+	provinces={
+		9291 9383 9490 9555 9587 9600 9706 9719 9809 9865 9886 9933 
+	}
+
+	resources={
+		steel=4.000
+	}
+
+	state_category = town
+
+	history={
+		owner = SRB
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 3
+		}
+		add_core_of = SRB
+	}
+
+	manpower=707000
+	buildings_max_level_factor=1.000
+}

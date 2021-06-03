@@ -1,0 +1,27 @@
+state={
+	id=677
+	name="STATE_677"
+
+	manpower=761769
+
+	state_category = rural
+
+	history={
+		victory_points = {
+			11618 10
+		}
+		victory_points = {
+			11669 15
+		}
+		owner = PRA
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = PRA
+	}
+
+	provinces={
+		11618 11669 11711 11733 11795 11866 11885 11967 
+	}
+	buildings_max_level_factor=1.000
+}

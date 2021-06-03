@@ -1,0 +1,34 @@
+
+
+state={
+	id=1037
+	name="STATE_1037"
+	manpower = 2240500
+	
+	state_category = rural
+
+        resources={
+		chromium=35 
+	}
+
+	history={
+		owner = KEB
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+                        6884 = {
+				naval_base = 4
+			}
+			
+
+		}
+
+		add_core_of = KEB
+	}
+
+	provinces={
+		6850 6865 6884 6901 7000 7001 7064 7202 
+	}
+}

@@ -1,0 +1,8 @@
+state={
+	id=1273
+	name="STATE_1273"
+	provinces={
+		807 808 880 881 889 894 
+	}
+
+}

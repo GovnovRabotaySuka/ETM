@@ -1,0 +1,32 @@
+state={
+	id=487
+	name="STATE_487"
+	provinces={
+		10471 10576 10654 10655 10673 10703 10777 10797 10918 
+	}
+
+	state_category = town
+
+	history={
+		owner = ODE
+
+		buildings = {
+			infrastructure = 5
+			arms_factory = 2
+		}
+
+		add_core_of = ODE
+		add_core_of = ZLS
+	    add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = DNB
+		add_core_of = UKE
+		
+
+	
+	}
+	
+    
+	manpower= 630250
+	buildings_max_level_factor=1.000
+}

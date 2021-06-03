@@ -1,0 +1,32 @@
+
+state={
+	id=685
+	name="STATE_685"
+	manpower = 6900300
+	
+	state_category = megalopolis
+
+	resources={
+		chromium=15
+	}
+
+	history={
+		owner = CHE
+
+
+
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 5
+
+		}
+
+		add_core_of = CHE
+	}
+
+	provinces={
+		8820 8913 8950 8969 8970 9097 9114 9115 9249 
+	}
+}

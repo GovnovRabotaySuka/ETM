@@ -1,0 +1,21 @@
+
+state={
+	id=670
+	name="STATE_670"
+
+	history={
+		owner = RNS
+	    buildings = {
+			infrastructure = 5
+		}
+		add_core_of = RNS
+
+	}
+
+	provinces={
+		15717 15739 15846 15887 15910 15928 16000 16039 16055 16086 16109 16110 16153 16173 16174 16217 16252 16269 16283 16318 16338 16339 16367 16464 16483 
+	}
+	manpower = 2585987
+	buildings_max_level_factor=1.000
+	state_category = town
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=564
+	name="STATE_564"
+	resources={
+		aluminium=20.000
+	}
+
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 4
+
+		}
+		add_core_of = SWI
+
+	}
+
+	provinces={
+		10840 10861 10886 11033 
+	}
+	manpower=1080544
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

@@ -1,0 +1,36 @@
+
+
+state={
+	id=1070
+	name="STATE_1070"
+	manpower = 2438500
+	
+	state_category = large_city
+
+        resources={
+		steel=16 
+		chromium=16 
+	}
+
+	history={
+		owner = CNB
+
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 5
+                        dockyard = 4
+
+                        4941 ={
+				naval_base = 8
+			}
+
+		}
+
+		add_core_of = CNB
+	}
+
+	provinces={
+		4815 4941 5167 
+	}
+}

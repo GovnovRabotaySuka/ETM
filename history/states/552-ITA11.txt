@@ -1,0 +1,27 @@
+state={
+	id=552
+	name="STATE_552"
+	provinces={
+		10074 10156 10207 10285 10356 10373 10411 10445 
+	}
+
+	state_category = metropolis
+
+	history={
+		owner = MUS
+		victory_points = {
+			 10207 10
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 7
+			industrial_complex = 3
+			air_base = 10
+		}
+		add_core_of = MUS
+		add_core_of = PAS
+	}
+
+	manpower=5597704
+	buildings_max_level_factor=1.000
+}

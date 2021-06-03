@@ -1,0 +1,27 @@
+
+state={
+	id=581
+	name="STATE_581"
+
+	history={
+		owner = DDR
+		victory_points = {
+			13779 50 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 5
+
+		}
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		13696 13779 13893 
+	}
+	manpower=4265029
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

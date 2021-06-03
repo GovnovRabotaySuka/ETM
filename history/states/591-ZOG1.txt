@@ -1,0 +1,25 @@
+state={
+	id=591
+	name="STATE_591"
+	provinces={
+		8725 8736 8774 8781 8787 8808 8857 8858 8900 8932 
+	}
+
+	resources={
+		chromium=45 
+		steel = 10 
+	}
+
+	state_category = pastoral
+
+	history={
+		owner = HOJ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = HOJ 
+	}
+
+	manpower=1473209
+	buildings_max_level_factor=1.000
+}

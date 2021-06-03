@@ -1,0 +1,23 @@
+
+state={
+	id=524
+	name="STATE_524"
+
+	history={
+		owner = CZE
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+
+		}
+		add_core_of = CZE
+
+	}
+
+	provinces={
+		12172 12173 12174 12205 12227 12240 12241 
+	}
+	manpower=820000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

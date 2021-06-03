@@ -1,0 +1,29 @@
+
+
+state={
+	id=1108
+	name="STATE_1108"
+	manpower = 3248150
+	
+	state_category = large_city
+
+	history={
+		owner = VKN
+
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			dockyard = 6
+			air_base = 5
+			306 ={
+				naval_base = 8
+			}
+		}
+
+		add_core_of = VKN
+	}
+
+	provinces={
+	   306 307 311 322 344 360 365 366 390 416 422 423 429 430 436 463 497 504 505 
+	}
+}

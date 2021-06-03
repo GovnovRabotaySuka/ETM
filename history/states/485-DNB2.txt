@@ -1,0 +1,47 @@
+state={
+	id=485
+	name="STATE_485"
+	provinces={
+		11377 11403 11502 11570 11571 11732 11794 11865 11950 11951 12060 12157 12178 12246 12293 
+	}
+
+	state_category = city
+
+	history={
+		victory_points = {
+			11732 30
+		}
+		victory_points = {
+			11865 15
+		}
+		victory_points = {
+			11571 10
+		}
+		victory_points = {
+			11403 15
+		}
+		victory_points = {
+			12157 5
+		}
+                
+         buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 3
+
+		}
+
+		owner = DNB	
+		add_core_of = DNB
+	    add_core_of = UKE
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+
+	}
+	
+    
+	manpower = 2167411
+	buildings_max_level_factor=1.000
+}

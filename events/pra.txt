@@ -1,0 +1,36 @@
+﻿add_namespace = pra
+
+
+country_event = {
+	id = pra.1
+	title = pra.1.t
+	desc = pra.1.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRA
+		has_war = yes
+		DNB = {
+			has_civil_war = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = pra.1.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			#
+		}
+		declare_war_on = {
+   			target = DNB
+    			type = app_everything
+		}
+	}
+}

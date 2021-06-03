@@ -1,0 +1,25 @@
+
+state={
+	id=320
+	name="STATE_320"
+
+	history={
+		owner = PLA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+                        air_base = 2
+
+		}
+		add_core_of = PLA
+
+	}
+
+	provinces={
+		16382 16431 16524 16704 16705 
+	}
+	manpower=1204042
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

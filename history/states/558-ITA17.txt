@@ -1,0 +1,27 @@
+
+state={
+	id=558
+	name="STATE_558"
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		owner = MUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+
+		}
+		add_core_of = MUS
+		add_core_of = PAS
+
+	}
+
+	provinces={
+		10552 10608 10609 10651 10668 10714 10772 
+	}
+	manpower=641650
+	buildings_max_level_factor=1.000
+	state_category=town
+}

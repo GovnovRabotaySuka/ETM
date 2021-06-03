@@ -1,0 +1,27 @@
+
+state={
+	id=1345
+	name="STATE_1345"
+
+	history={
+		owner = VKN
+		buildings = {
+			infrastructure = 2
+                        air_base = 2
+
+                        1148 = {
+				naval_base = 5
+			}
+
+		}
+		add_core_of = VKN
+
+	}
+
+	provinces={
+		1148 
+	}
+	manpower=20
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

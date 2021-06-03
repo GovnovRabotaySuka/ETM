@@ -1,0 +1,29 @@
+
+state={
+	id=522
+	name="STATE_522"
+	resources={
+		steel=5.000
+	}
+
+	history={
+		owner = CZE
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 1
+			anti_air_building = 5
+			air_base = 5
+
+		}
+		add_core_of = CZE
+
+	}
+
+	provinces={
+		11836 12024 12025 12055 12204 12226 12313 12314 12360 12430 12520 12552 12582 12645 12735 12754 
+	}
+	manpower=4492600
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

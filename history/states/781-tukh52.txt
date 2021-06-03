@@ -1,0 +1,26 @@
+state={
+	id=781
+	name="STATE_781"
+	provinces={
+		15509 15532 15558 15582 15708 15741 15742 15767 15848 15870 15960 16002 16058 
+	}
+
+	state_category = large_town
+
+	resources={
+		chromium=18 #
+	}
+
+	history={
+		owner = UMO
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 2
+		}	
+		add_core_of = UMO
+	}
+	
+	manpower = 1324935
+	buildings_max_level_factor=1.000
+}

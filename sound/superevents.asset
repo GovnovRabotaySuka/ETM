@@ -1,0 +1,8 @@
+soundeffect =
+{
+	name = "superev_holy_war"
+	sounds = {
+		sound = "super_holy_war"
+	}
+	volume = 0.65
+}

@@ -1,0 +1,28 @@
+
+
+state={
+	id=243
+	name="STATE_243"
+	provinces={
+		8690 8768 8791 
+	}
+
+	resources={
+		oil=50
+	}
+
+	state_category = large_town
+
+	history={
+		owner = ANT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			fuel_silo = 1
+		}
+		add_core_of = ANT
+	}
+
+	manpower=1880050
+	buildings_max_level_factor=1.000
+}

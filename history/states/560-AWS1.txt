@@ -1,0 +1,27 @@
+
+state={
+	id=560
+	name="STATE_560"
+	resources={
+		steel=6.000
+		aluminium=3.000
+	}
+
+	history={
+		owner = HIT
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 3
+
+		}
+		add_core_of = HIT
+
+	}
+
+	provinces={
+		10773 11006 11055 11091 11221 11245 11276 11451 
+	}
+	manpower=2275377
+	buildings_max_level_factor=1.000
+	state_category=city
+}

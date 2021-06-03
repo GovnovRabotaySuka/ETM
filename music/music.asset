@@ -1,0 +1,180 @@
+
+music = {
+	name = "rt_America"
+	file = "rt_America.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Auslander"
+	file = "rt_Auslander.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_BackinUSSR"
+	file = "rt_BackinUSSR.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Bismarck"
+	file = "rt_Bismarck.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_ChopSuey"
+	file = "rt_ChopSuey.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Deutschland"
+	file = "rt_Deutschland.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_DuHast"
+	file = "rt_DuHast.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Fantom"
+	file = "rt_Fantom.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_FeuerFrei"
+	file = "rt_FeuerFrei.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_GayBar"
+	file = "rt_GayBar.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_HighwaytoHell"
+	file = "rt_HighwaytoHell.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Ichwill"
+	file = "rt_Ichwill.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_kursk"
+	file = "rt_kursk.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Links"
+	file = "rt_Links.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_LonelyDay"
+	file = "rt_LonelyDay.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_MeinHerzBrennt"
+	file = "rt_MeinHerzBrennt.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Mutter"
+	file = "rt_Mutter.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_NightWitch"
+	file = "rt_NightWitch.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_PersonalJesus"
+	file = "rt_PersonalJesus.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_PrimoVictoria"
+	file = "rt_PrimoVictoria.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_proydet"
+	file = "rt_proydet.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Radio"
+	file = "rt_Radio.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_SevenNationArmy"
+	file = "rt_SevenNationArmy.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Shutyourmouth"
+	file = "rt_Shutyourmouth.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_SmellsLikeTeenSpirit"
+	file = "rt_SmellsLikeTeenSpirit.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_Sonne"
+	file = "rt_Sonne.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_SovietMarch"
+	file = "rt_SovietMarch.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_SweetDreams"
+	file = "rt_SweetDreams.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_TheAttackoftheDeadMen"
+	file = "rt_TheAttackoftheDeadMen.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "rt_throuhellandback"
+	file = "rt_throuhellandback.ogg"
+	volume = 0.65
+}

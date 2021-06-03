@@ -1,0 +1,37 @@
+state={
+	id=517
+	name="STATE_517"
+	provinces={
+		14014 14144 14180 14196 14222 14265 14326 14442 14443 14468 14469 
+	}
+
+	state_category = town
+
+	resources={
+		steel=23 # was: 36
+		aluminium=8 # was: 12
+	}
+
+	history={
+		owner = DDR
+		victory_points = {
+			 14468 10
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 3
+
+			14468 = {
+				naval_base = 4
+
+			}
+		}
+		add_core_of = DDR
+		add_core_of = SAU
+	}
+
+	manpower = 1124417
+	buildings_max_level_factor=1.000
+}

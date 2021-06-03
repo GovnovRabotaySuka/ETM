@@ -1,0 +1,25 @@
+
+state={
+	id=245
+	name="STATE_245"
+	provinces={
+		8926 8942 9032 9048 9060 9169 9180 9204 9355 9515 
+	}
+
+	state_category = rural
+
+	resources={
+		oil=20
+	}
+
+	history={
+		owner = ANT
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = ANT
+	}
+
+	manpower = 1658292
+	buildings_max_level_factor=1.000
+}

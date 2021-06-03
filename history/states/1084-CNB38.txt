@@ -1,0 +1,24 @@
+
+state={
+	id=1084
+	name="STATE_1084"
+
+	history={
+		owner = CNB
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 5
+
+		}
+		add_core_of = CNB
+
+	}
+
+	provinces={
+		3898 4005 4122 4222 4248 4266 4452 4519 4534 4535 4550 4551 4661 4726 4823 5102 
+	}
+	manpower=149750
+	buildings_max_level_factor=1.000
+	state_category=city
+}

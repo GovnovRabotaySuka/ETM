@@ -1,0 +1,66 @@
+﻿capital = 543
+
+oob = "KEB_0002"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = pahanism 
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	burjuism = 25
+	bidlo = 15
+	borshewism = 5
+	pahanism = 55
+}
+create_country_leader = {
+	name = "Kebab"
+	desc = ""
+	picture = "gfx/leaders/KEB/Kebab.dds"
+	expire = "1965.1.1"
+	ideology = flexism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Kebab"
+	desc = ""
+	picture = "gfx/leaders/KEB/Kebab.dds"
+	expire = "1965.1.1"
+	ideology = conserva
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Kebab"
+	desc = ""
+	picture = "gfx/leaders/KEB/Kebab.dds"
+	expire = "1965.1.1"
+	ideology = nazi
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Kebab"
+	desc = ""
+	picture = "gfx/leaders/KEB/Kebab.dds"
+	expire = "1965.1.1"
+	ideology = naziborshewism
+	traits = {
+		
+	}
+}
+

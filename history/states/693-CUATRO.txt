@@ -1,0 +1,23 @@
+state={
+	id=693
+	name="STATE_693"
+
+	manpower=1455145
+
+	state_category = city
+
+	history={
+		owner = CSS
+		buildings = {
+			infrastructure = 5
+			air_base = 5
+
+		}
+		add_core_of = CSS
+	}
+
+	provinces={
+		9433 9513 9560 9602 9623 9721 
+	}
+	buildings_max_level_factor=1.000
+}

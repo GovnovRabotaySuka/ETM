@@ -1,0 +1,34 @@
+state={
+	id=539
+	name="STATE_539"
+	provinces={
+		9140 9187 9261 9289 9331 9415 9427 9586 
+	}
+
+	resources={
+		chromium=25.000
+		aluminium=60.000
+	}
+
+	state_category = rural
+
+	history={
+		owner = SRB
+		victory_points = {
+			 9415 10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			9261 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = SRB
+	}
+
+	manpower=1045654
+	buildings_max_level_factor=1.000
+}

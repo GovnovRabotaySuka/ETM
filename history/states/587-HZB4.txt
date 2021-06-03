@@ -1,0 +1,27 @@
+
+state={
+	id=587
+	name="STATE_587"
+	resources={
+		steel=20.000
+		aluminium=4.000
+	}
+
+	history={
+		owner = VAL
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 1
+
+		}
+		add_core_of = VAL
+
+	}
+
+	provinces={
+		12286 12287 12359 12501 12548 12549 12778 12779 12780 12891 13031 13114 
+	}
+	manpower=1580000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

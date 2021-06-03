@@ -1,0 +1,37 @@
+
+state={
+	id=716
+	name="STATE_716"
+	manpower = 14881488
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			8968 10
+		}
+		victory_points = {
+			9073 5
+		}
+		victory_points = {
+			9168 15
+		}
+		victory_points = {
+			9338 5
+		}
+		owner = PTC
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+		add_core_of = PTC
+	}
+
+	provinces={
+		8937 8968 8993 9018 9059 9073 9083 9112 9157 9168 9226 9265 9266 9338 
+	}
+}

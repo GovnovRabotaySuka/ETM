@@ -1,0 +1,273 @@
+ideas = {
+    country = {
+		LET_Zhelezniy_Zanoves = {
+			picture = idea_LET_3
+			allowed = {
+				original_tag = LET
+			}
+			removal_cost = -1	
+			modifier = {
+				send_volunteer_factor = -2
+				stability_factor = -0.1
+				drift_defence_factor = 2
+				guarantee_cost = 15
+				lend_lease_tension = 15 
+				opinion_gain_monthly = -10
+				agency_upgrade_time = -0.5
+				civilian_intel_to_others = -100
+				army_intel_to_others = -100
+				decryption = 5
+				encryption = 5
+				enemy_operative_capture_chance_factor = 2
+				enemy_operative_detection_chance = 200
+				operation_outcome = 0.5
+				crypto_strength = 10
+				operative_slot = 2
+				ai_focus_defense_factor = 0.25
+				army_morale_factor = 0.25
+				trade_opinion_factor = -100
+				join_faction_tension = 1000
+            }
+        }
+		LET_Sistema = {
+			picture = idea_LET_1
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			removal_cost = -1	
+			modifier = {
+                planning_speed = -0.15
+                local_factories = -0.1 
+                conscription = -0.025
+                mobilization_speed = -0.1
+                research_speed_factor = -0.05
+                stability_weekly = -0.01
+                production_factory_efficiency_gain_factor = -0.05
+                consumer_goods_factor = 0.1
+
+            }
+        }
+		LET_Peremiriye = {
+			picture = idea_LET_6
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+			removal_cost = -1	
+			modifier = {
+                army_attack_factor = -0.05
+                consumer_goods_factor = 0.1
+                political_power_gain = -0.25
+                stability_factor = -0.1
+            }
+        }
+		LET_Edinstvo_Strong = {
+			picture = idea_LET_2
+            allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+            }
+            removal_cost = -1	
+			modifier = {
+                army_attack_factor = 0.10
+                army_defence_factor = 0.10
+                consumer_goods_factor = -0.10
+                political_power_gain = 0.15
+                stability_factor = 0.15
+                war_support_factor = 0.15
+                surrender_limit = 0.15
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.15
+                research_speed_factor = 0.05
+                industrial_capacity_factory = 0.15
+                recruitable_population_factor = 0.05
+            }
+        }
+
+		LET_Nothing_To_Lose = {
+			picture = idea_LET_4
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+            }
+            removal_cost = -1	
+			modifier = {
+                army_attack_factor = 0.05
+                army_attack_defence = 0.05
+                consumer_goods_factor = -0.15
+                resistance_damage_to_garrison_on_our_occupied_states = 1
+                resistance_growth_on_our_occupied_states = 1
+                resistance_target_on_our_occupied_states = 1
+                equipment_capture_factor = 0.25
+                weekly_manpower = 25
+                conscription = 0.05
+                out_of_supply_factor = -0.15
+            }
+        }
+		LET_Corp = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = 0.1
+                political_power_gain = -0.05
+                political_power_factor = 0.1
+                stability_factor = 0.05
+                equipment_conversion_speed = 0.1
+                production_factory_efficiency_gain_factor = -0.1
+                production_factory_max_efficiency_factor = 0.1
+                industry_free_repair_factor = -0.1
+            }
+        }
+		LET_Tekhnika = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+                production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+            }
+        }
+		LET_Ptitsa_Stroyka = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+                production_speed_buildings_factor = 0.2
+				stability_factor = -0.1
+				weekly_manpower = -100
+            }
+        }
+		LET_Ptitsa_Politka = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+                political_power_factor = 0.45
+				stability_factor = -0.1
+				weekly_manpower = -100
+            }
+        }
+		LET_Ptitsa_Armiya = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+                war_support_factor = 0.25
+				experience_gain_army = 1.5
+				stability_factor = -0.1
+				weekly_manpower = -100
+            }
+        }
+		LET_Ptitsa_Spidy = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+                research_speed_factor = 0.2
+				army_speed_factor = 0.3
+				stability_factor = -0.1
+				weekly_manpower = -100
+            }
+        }
+		LET_Ptitsa_RASPLATA = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				weekly_manpower = -200
+            }
+        }
+		LET_Ptitsa_Proklyatie = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+				stability_weekly_factor = -0.01
+				war_support_weekly_factor = -0.01
+				political_power_gain = -0.25
+				research_speed_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_factor  = 0.1			
+				defence = -0.2
+				offence = -0.2
+				army_org_factor = -0.05
+				training_time_factor = 0.10
+				conscription = -0.025
+            }
+        }
+		LET_Ptitsa_Armiya_2 = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				weekly_manpower = -200
+				defence = 0.15
+				offence = 0.15
+				army_org_factor = 0.15
+				training_time_factor = -0.2
+				army_speed_factor = 0.05
+				conscription = 0.025
+            }
+        }
+		LET_Ptitsa_Psihodeliki = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+            removal_cost = -1
+			modifier = {
+				stability_factor = -0.4
+				weekly_manpower = -500
+				defence = -0.15
+				offence = 0.65
+				army_org_factor = -0.25
+				army_speed_factor = 0.15
+				conscription = 0.05
+            }
+        }
+	}
+}

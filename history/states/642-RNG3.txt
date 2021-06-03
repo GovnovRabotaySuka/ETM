@@ -1,0 +1,28 @@
+state={
+	id=642
+	name="STATE_642"
+	provinces={
+		16917 16958 16959 17012 17058 17128 17192 17193 17251 17314 17338 17356 17372 17422 17488 17508 17590 
+	}
+
+	state_category = metropolis
+
+	history={
+		owner = BLO
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 1
+			dockyard = 3
+			air_base = 10
+			17251 ={
+				naval_base = 10
+				coastal_bunker = 5
+			}
+		}	
+		add_core_of = BLO
+	}
+	
+	manpower = 3750158
+	buildings_max_level_factor=1.000
+}

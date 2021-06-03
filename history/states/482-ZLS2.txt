@@ -1,0 +1,35 @@
+
+state={
+	id=482
+	name="STATE_482"
+	provinces={
+		10473 10487 10503 10538 10539 10596 10597 10640 10656 10688 10736 10737 10778 10897 10898 10931 
+	}
+
+	state_category = rural
+
+	resources={
+		chromium=15 # was: 22
+	}
+
+
+		history={
+
+		owner = ZLS
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+		}
+		add_core_of = ZLS
+	    add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = DNB
+		add_core_of = UKE
+
+	}
+	
+
+	manpower = 728363
+	buildings_max_level_factor=1.000
+}

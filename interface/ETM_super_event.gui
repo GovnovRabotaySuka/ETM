@@ -1,0 +1,81 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ETM_custom_super_event_holy_war"
+		size =  { width = 520 height = 460 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		moveable = yes
+		show_sound = super_event_great_war_se
+		
+		background = {
+				name = "Background"
+				quadTextureSprite = "GFX_monitor"
+				alwaystransparent = no
+			}
+
+		containerWindowType = {
+			name = "Content"
+			size = { width = 520 height = 460 }
+			position = { x=0 y=0 }
+			Orientation = center
+			Origo = center
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_monitor"
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name ="Image"
+				spriteType = "GFX_super_event_custom_holy_war"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			instantTextBoxType = {
+				name = "Description"
+				position = {  x= 70 y = -225 }
+				font = "Superivent"
+				text = "SE_HOLY_WAR_D"
+				maxWidth = 400
+				maxHeight = 100
+				fixedsize = yes
+				format = right
+				Orientation = lower_left
+			}
+
+			instantTextBoxType = {
+				name = "Title"
+				position = { x = 0 y = 45 }
+				font = "Superivent"
+				borderSize = {x = 0 y = 0}
+				text = "SE_HOLY_WAR_T"
+				maxWidth = 540
+				maxHeight = 100
+				format = center
+			}
+
+			iconType = {
+				name ="Giff"
+				spriteType = "GFX_pomehi"
+				position = { x = -218 y = -191 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+		}	
+	
+		buttonType = {
+			name = "Option"
+			shortcut = "ESCAPE"
+			position = { x = 119 y = 119 }
+			quadTextureSprite ="GFX_sknopka"
+			buttonFont = "Bomb_24"
+			Orientation = center
+		}
+	}
+}

@@ -1,0 +1,9 @@
+
+supply_area={
+	id=64
+	name="SUPPLYAREA_64"
+	value=20
+	states={
+		640 641 643 644 642 645 659 
+	}
+}

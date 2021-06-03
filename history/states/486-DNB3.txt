@@ -1,0 +1,29 @@
+state={
+	id=486
+	name="STATE_486"
+	provinces={
+		11687 11793 11819 11864 11929 11966 12009 12058 12059 12087 12209 12269 12292 12317 12457 
+	}
+
+	state_category = town
+
+	history={
+		owner = DNB
+
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			air_base = 5
+		}
+
+		add_core_of = DNB
+	    add_core_of = UKE
+		add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = ODE
+		add_core_of = ZLS
+
+	}
+	manpower=3767336
+	buildings_max_level_factor=1.000
+}

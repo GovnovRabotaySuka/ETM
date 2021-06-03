@@ -1,0 +1,80 @@
+bookmarks = {
+
+
+	###################################################################
+	##### DON'T DELETE THIS, ALSO EDIT IN the_gathering_storm.txt #####
+	##### DON'T DELETE THIS, ALSO EDIT IN the_gathering_storm.txt #####
+	###################################################################
+
+	bookmark = {
+	        name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 0002.1.1.1
+		picture = "GFX_select_date_1939"
+		default_country = "LET"
+		default = yes
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+		#### MAJORS ####
+			"LET" = {
+				history = "LET_GATHERING_STORM_DESC"
+				ideology = borshewism
+				ideas={
+					#
+				}
+				focuses = {
+					#
+				}
+			}
+
+			
+		"RIC" = {
+			history = "RIC_GATHERING_STORM_DESC"
+			ideology = burjuism
+			ideas={
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+
+		"RNS" = {
+			history = "RNS_GATHERING_STORM_DESC"
+			ideology = bidlo
+			ideas={
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+
+		"SAU" = {
+			history = "SAU_GATHERING_STORM_DESC"
+			ideology = bidlo
+			ideas={
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+
+		"PLA" = {
+			history = "PLA_GATHERING_STORM_DESC"
+			ideology = putinism
+			ideas={
+				#
+			}
+			focuses = {
+				#
+			}
+		}	
+
+	}
+}

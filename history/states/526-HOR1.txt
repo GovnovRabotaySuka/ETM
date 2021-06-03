@@ -1,0 +1,23 @@
+
+state={
+	id=526
+	name="STATE_526"
+
+	history={
+		owner = HOR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+
+		}
+		add_core_of = HOR
+
+	}
+
+	provinces={
+		11453 11454 11486 11567 11614 11638 11639 11666 11667 11709 11764 11765 11788 11839 
+	}
+	manpower=1680914
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

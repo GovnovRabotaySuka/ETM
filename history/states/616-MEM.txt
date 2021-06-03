@@ -1,0 +1,27 @@
+
+
+state={
+	id=616
+	name="STATE_616"
+	manpower = 150000
+	
+	state_category = rural
+
+	history={
+		owner = MEE
+
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			15135 = {
+				naval_base = 1
+			}
+		}
+
+		add_core_of = MEE
+	}
+
+	provinces={
+		15074 15075 15135 15263 
+	}
+}

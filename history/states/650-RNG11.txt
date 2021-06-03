@@ -1,0 +1,22 @@
+
+state={
+	id=650
+	name="STATE_650"
+	manpower = 1364537
+	
+	state_category = town
+
+	history={
+		owner = CCT
+
+		buildings = {
+			infrastructure = 5
+		}
+
+		add_core_of = CCT
+	}
+
+	provinces={
+		12458 12459 12556 12627 12650 12675 12810 12811 12912 12913 13040 13094 
+	}
+}

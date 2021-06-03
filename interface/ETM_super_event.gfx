@@ -1,0 +1,59 @@
+spriteTypes = {
+		
+	#################
+	#	Interface	#
+	#################
+		
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_bigevent_border"
+		size= { x=192 y=243 }
+		textureFile = "gfx//interface//tiles//tiled_window_bigevent_border.dds"
+		borderSize = { x=64 y=71 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_superevent_text_underlay"
+		textureFile = "gfx//interface//superevent_text_underlay.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_monitor"
+		size= { x=520 y=460 }
+		textureFile = "gfx/interface/tiles/monitor.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_pomehi"
+		texturefile = "gfx/interface/pomehi.dds"
+		noOfFrames = 27
+		animation_rate_fps = 27
+		looping = yes 
+		play_on_show = yes 
+		pause_on_loop = 0.0
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_sknopka" 
+		texturefile = "gfx/interface/sknopka.dds"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes 
+		play_on_show = yes 
+		pause_on_loop = 0.0
+	}
+
+		
+	#############################
+	#	Super Events Pictures	#
+	#############################
+	
+	#Holy War
+	spriteType = {
+		name = "GFX_super_event_custom_holy_war"
+		textureFile = "gfx//superevent_pictures//etm_super_event_holy_war.tga"
+	}
+}

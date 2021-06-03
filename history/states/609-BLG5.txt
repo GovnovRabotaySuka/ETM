@@ -1,0 +1,29 @@
+state={
+	id=609
+	name="STATE_609"
+	provinces={
+		9508 9509 9601 9615 9671 9738 9769 9785 9887 9901 9914 10000 
+	}
+
+	resources={
+		oil=45
+	}
+
+	state_category = city
+
+	history={
+		owner = BUL
+			buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 1
+			air_base = 3
+		}
+		add_core_of = BUL
+		add_core_of = ROA
+		add_core_of = TRA
+	}
+
+	manpower=4461400
+	buildings_max_level_factor=1.000
+}

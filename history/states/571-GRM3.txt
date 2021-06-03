@@ -1,0 +1,23 @@
+
+state={
+	id=571
+	name="STATE_571"
+
+	history={
+		owner = DDR
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+
+		}
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		13005 13033 13156 13203 13256 13356 13427 13451 13620 13671 13778 13871 
+	}
+	manpower=3508159
+	buildings_max_level_factor=1.000
+	state_category=city
+}

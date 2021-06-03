@@ -1,0 +1,23 @@
+
+state={
+	id=504
+	name="STATE_504"
+
+	history={
+		owner = CCA
+		add_core_of = CCA
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+
+		}
+
+	}
+
+	provinces={
+		12522 12757 12893 12909 12936 13157 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=town
+}

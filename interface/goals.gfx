@@ -1,0 +1,102 @@
+spriteTypes = {
+
+	SpriteType = {
+	name = "GFX_Chitay_Pushkina_dolboeb"
+	texturefile = "gfx/interface/goals/Chitay_Pushkina_dolboeb.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_Blyat_u_nas_ekonomika_v_zhope"
+	texturefile = "gfx/interface/goals/Ekonomika_v_zhope.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_Dochinit_dorogi"
+	texturefile = "gfx/interface/goals/Dochinit_dorogi.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Fabrika_po_proizvodstvu_sukharikov"
+	texturefile = "gfx/interface/goals/Fabrika_po_proizvodstvu_sukharikov.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Industrializatsia_i_spaivanie"
+	texturefile = "gfx/interface/goals/Industrializatsia_i_spaivanie.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Na_rabotu_gryaznye_chervi"
+	texturefile = "gfx/interface/goals/Na_rabotu_gryaznye_chervi.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Nikhuya_esche_yacheyochka"
+	texturefile = "gfx/interface/goals/Nikhuya_esche_yacheyochka.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Otkryt_sex_shopy"
+	texturefile = "gfx/interface/goals/Otkryt_sex_shopy.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Proizvodstvo_strelyayuschikh_dildo"
+	texturefile = "gfx/interface/goals/Proizvodstvo_strelyayuschikh_dildo.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Ryt_glubokie_shakhty"
+	texturefile = "gfx/interface/goals/Ryt_glubokie_shakhty.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Sozdanie_termoyadernogo_snyusa"
+	texturefile = "gfx/interface/goals/Sozdanie_termoyadernogo_snyusa.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Stavka_na_gumanitarov"
+	texturefile = "gfx/interface/goals/Stavka_na_gumanitarov.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Stavka_na_tekhnarey"
+	texturefile = "gfx/interface/goals/Stavka_na_tekhnarey.dds"			
+	}	
+
+	SpriteType = {
+	name = "GFX_Vvesti_EGE"
+	texturefile = "gfx/interface/goals/Vvesti_EGE.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_Yacheyochka"
+	texturefile = "gfx/interface/goals/Yacheyochka.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_Zagnat_lyudey_v_ebanye_shkily"
+	texturefile = "gfx/interface/goals/Zagnat_lyudey_v_ebanye_shkily.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_Zakupit_kompyutery_dlya_ucheby"
+	texturefile = "gfx/interface/goals/Zakupit_kompyutery_dlya_ucheby.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_Zalatat_yamy_v_dorogakh"
+	texturefile = "gfx/interface/goals/Zalatat_yamy_v_dorogakh.dds"			
+	}		
+
+	SpriteType = {
+	name = "GFX_Zavod_kostyumov_dlya_sexualnykh_igrisch"
+	texturefile = "gfx/interface/goals/Zavod_kostyumov_dlya_sexualnykh_igrisch.dds"			
+	}	
+		
+	SpriteType = {
+	name = "GFX_openvodka"
+	texturefile = "gfx/interface/goals/openvodka.dds"			
+	}		
+}

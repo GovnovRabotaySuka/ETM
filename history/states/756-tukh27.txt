@@ -1,0 +1,26 @@
+state={
+	id=756
+	name="STATE_756"
+	provinces={
+		18205 18258 18272 18289 18346 18375 18376 18460 18470 18519 
+	}
+
+	state_category = town
+
+	history={
+		owner = ZMR
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			industrial_complex = 2
+
+			18519 = {
+				naval_base = 2
+			}
+		}		
+		add_core_of = ZMR
+	}
+	
+	manpower=420700
+	buildings_max_level_factor=1.000
+}

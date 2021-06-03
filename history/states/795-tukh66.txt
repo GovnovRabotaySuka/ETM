@@ -1,0 +1,19 @@
+state={
+	id=795
+	name="STATE_795"
+	provinces={
+		18073 18160 18204 18286 18287 18298 18360 18396 18424 
+	}
+
+	state_category = rural
+	
+	history={
+		owner = NAP
+		buildings = {
+			infrastructure = 4	
+		add_core_of = NAP
+	}
+	
+	manpower=178456
+	buildings_max_level_factor=1.000
+}

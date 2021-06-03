@@ -1,0 +1,21 @@
+state={
+	id=654
+	name="STATE_654"
+	provinces={
+		13704 13725 13762 13877 13898 13911 14124 14202 
+	}
+
+
+	state_category = town
+
+	history={
+		owner = RNS
+	    buildings = {
+			infrastructure = 5
+		}
+		add_core_of = RNS
+	}
+	
+	manpower = 1282096
+	buildings_max_level_factor=1.000
+}

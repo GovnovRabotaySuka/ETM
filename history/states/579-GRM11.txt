@@ -1,0 +1,31 @@
+
+state={
+	id=579
+	name="STATE_579"
+
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			dockyard = 2
+			fuel_silo = 1
+			13959 = {
+				naval_base = 8
+
+			}
+			air_base = 3
+
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		13756 13846 14143 14164 
+	}
+	manpower=2058467
+	buildings_max_level_factor=1.000
+	state_category=city
+}

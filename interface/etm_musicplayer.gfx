@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	
+	spriteType = {
+		name = "GFX_oborona_album_art"
+		textureFile = "//gfx//interface//topbar//musicplayer//oborona_album_art.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_anarhia_album_art"
+		textureFile = "//gfx//interface//topbar//musicplayer//anarhia_album_art.dds"
+		noOfFrames = 2
+	}
+}

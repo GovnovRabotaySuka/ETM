@@ -1,0 +1,28 @@
+state={
+	id=839
+	name="STATE_839"
+	provinces={
+		20501 20517 20518 20521 20538 20539 20552 20571 20577 20586 20598 20603 20613 20632 20640 20646 
+	}
+
+	state_category = rural
+
+	resources={
+		oil=7 # was: 8
+	}
+
+	history={
+		owner = GUL
+		buildings = {
+			infrastructure = 1
+
+			20538 = {
+				naval_base = 1
+			}
+		}	
+		add_core_of = GUL
+	}
+	
+	manpower = 2000
+	buildings_max_level_factor=1.000
+}

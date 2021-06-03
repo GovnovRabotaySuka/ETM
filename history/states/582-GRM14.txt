@@ -1,0 +1,23 @@
+
+state={
+	id=582
+	name="STATE_582"
+
+	history={
+		owner = DDR
+		buildings = {
+			infrastructure = 6
+			fuel_silo = 1
+
+		}
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		13960 14071 14165 14195 14349 14370 14392 14573 
+	}
+	manpower=1006221
+	buildings_max_level_factor=1.000
+	state_category=town
+}

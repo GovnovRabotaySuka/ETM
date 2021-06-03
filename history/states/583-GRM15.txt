@@ -1,0 +1,34 @@
+
+state={
+	id=583
+	name="STATE_583"
+
+	history={
+		owner = SAU
+		victory_points = {
+			 14649 10
+		}
+		victory_points = {
+			 14507 25
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			dockyard = 6
+			air_base = 5
+			14881 ={
+				naval_base = 8
+			}
+		}
+		add_core_of = SAU
+		add_core_of = DDR
+
+	}
+
+	provinces={
+		14369 14440 14507 14594 14628 14649 14784 14815 14881 
+	}
+	manpower = 3248150 
+	buildings_max_level_factor=1.000
+	state_category = large_city
+}

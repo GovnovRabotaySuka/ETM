@@ -1,0 +1,23 @@
+state={
+	id=502
+	name="STATE_502"
+	provinces={
+		12671 12807 12864 12910 12963 13006 13036 13063 13064 13182 
+	}
+
+	state_category = rural
+
+	 history={
+		owner = CCA	
+		add_core_of = CCA
+
+		  buildings = {
+			infrastructure = 5 
+
+		}
+	}
+	
+    }
+	manpower=520200
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,23 @@
+
+state={
+	id=657
+	name="STATE_657"
+
+	history={
+		owner = RNS
+        buildings = {
+			infrastructure = 5
+			arms_factory = 2
+			air_base = 1
+		}
+		add_core_of = RNS
+
+	}
+
+	provinces={
+		14331 14332 14470 14491 14512 14575 14576 14711 14786 
+	}
+	manpower = 1635549
+	buildings_max_level_factor=1.000
+	state_category = town
+}

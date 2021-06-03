@@ -1,0 +1,24 @@
+state={
+	id=824
+	name="STATE_824"
+	provinces={
+		18846 18916 18939 
+	}
+
+	state_category = rural
+
+	resources={
+		steel=15
+	}
+
+	history={
+		owner = GUL
+		buildings = {
+			infrastructure = 2
+		}	
+		add_core_of = GUL
+	}
+	
+	manpower=10200
+	buildings_max_level_factor=1.000
+}

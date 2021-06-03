@@ -1,0 +1,24 @@
+
+state={
+	id=784
+	name="STATE_784"
+	manpower = 10200
+	
+	state_category = rural
+
+	history={
+		owner = TAR
+
+		buildings = {
+			infrastructure = 4
+			
+
+		}
+
+		add_core_of = TAR
+	}
+
+	provinces={
+		14807 14865 14985 15039 15080 15136 15137 15138 15310 15311 15427 
+	}
+}

@@ -1,0 +1,35 @@
+state={
+	id=489
+	name="STATE_489"
+
+	state_category = city
+	
+	provinces={
+		10863 10895 10980 11011 11073 11074 11191 11192 11251 11280 
+	}
+
+	history={
+		owner = ODE
+		victory_points = {
+			11670 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 6
+		}
+
+		add_core_of = ODE
+		add_core_of = ZLS
+	    add_core_of = KIV
+		add_core_of = ZPU
+		add_core_of = DNB
+		add_core_of = UKE
+
+	
+	}
+	
+  
+	manpower = 1469986
+	buildings_max_level_factor=1.000
+}

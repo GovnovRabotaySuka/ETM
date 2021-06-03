@@ -1,0 +1,29 @@
+
+state={
+	id=23
+	name="STATE_23"
+	provinces={
+		8428 8498 8513 8527 8533 8559 8582 8626 
+	}
+
+	state_category=town
+
+	history={
+		owner = MOU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 3
+			8533 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = MOU
+	}
+
+	manpower=2949413
+	buildings_max_level_factor=1.000
+}

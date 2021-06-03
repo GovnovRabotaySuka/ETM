@@ -1,0 +1,43 @@
+
+state={
+	id=329
+	name="STATE_329"
+
+	history={
+		owner = LET
+		victory_points = {
+			15690 100
+		}
+		victory_points = {
+			15710 100
+		}
+		victory_points = {
+			15459 100
+		}
+		victory_points = {
+			15396 100
+		}
+		victory_points = {
+			16012 100
+		}
+		buildings = {
+			infrastructure = 5
+                        air_base = 3
+                        radar_station = 5
+			industrial_complex = 5
+                        arms_factory = 6
+                        synthetic_refinery = 1
+
+
+		}
+		add_core_of = LET
+		add_core_of = PLA
+	}
+
+	provinces={
+		15396 15459 15690 15710 16012 
+	}
+	manpower=8610312
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

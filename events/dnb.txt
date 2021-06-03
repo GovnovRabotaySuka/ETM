@@ -1,0 +1,69 @@
+﻿add_namespace = dnb
+country_event = {
+	id = dnb.1
+	title = dnb.1.t
+	desc = dnb.1.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DNB
+		has_war = yes
+		date > 0002.2.2
+		date < 0002.3.3
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = dnb.1.a
+		ai_chance = { factor = 1 }
+		start_civil_war = {
+			ideology = borshewism 
+			size = 0.2
+			capital = 486
+			states = { 486 }
+		}
+		random_other_country = {
+			limit = {
+				original_tag = DNB
+				has_government = borshewism 
+			}
+			declare_war_on = {
+				target = PRA
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = dnb.1.b
+		play_song = "mh-haos"
+		PRA = {
+			country_event = pra.1
+		}
+		if = {
+			set_capital = 486
+			limit = {
+				has_government = bidlo
+			}
+			start_civil_war = {
+				ruling_party = borshewism
+				ideology = bidlo
+				size = 0.9
+				capital = 485
+				states = { 485 484 }
+			}
+			set_popularities = {
+				borshewism = 70
+				bidlo = 5
+				pahanism = 15
+				burjuism = 10
+			}
+		}
+		declare_war_on = {
+			target = PRA
+			type = annex_everything
+		}
+	}
+}

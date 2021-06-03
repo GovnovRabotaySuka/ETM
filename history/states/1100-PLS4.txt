@@ -1,0 +1,37 @@
+
+state={
+	id=1100
+	name="STATE_1100"
+	manpower = 1488181
+	
+	state_category = city
+
+        resources={
+		steel=27 
+		aluminium=6 
+	}
+
+
+	history={
+		owner = PLS
+
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 3
+			dockyard = 3
+			air_base = 6
+			1436 = {
+				naval_base = 5
+				coastal_bunker = 3
+			}
+
+		}
+
+		add_core_of = PLS
+	}
+
+	provinces={
+	    1436 1456 1488 1593 1632 1647 1658 1712 1750 1790 
+	}
+}
