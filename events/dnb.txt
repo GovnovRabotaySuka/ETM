@@ -86,6 +86,7 @@ country_event = {
 	trigger = {
 		tag = DNB
 		date > 0002.1.10
+		date < 0002.2.1
 	}
 	mean_time_to_happen = {
 		days = 1
