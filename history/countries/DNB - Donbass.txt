@@ -8,6 +8,7 @@ oob = "DNB_0002"
 set_research_slots = 3
 
 add_ideas = {
+	dolgaya_war
 }
 
 set_technology = {
@@ -51,13 +52,13 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Захарченко"
+	name = "Александр Захарченко"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Zahar.dds"
+	picture = "Zaharchenko.dds"
 	expire = "1965.1.1"
 	ideology = nazi
 	traits = {
-		
+		#
 	}
 }
 
@@ -93,3 +94,35 @@ create_country_leader = {
 	}
  }
 
+create_corps_commander = {
+	name = "Александр Захарченко"
+	picture = "Zaharchenko.dds"
+	traits = { war_hero politically_connected brilliant_strategist }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	stics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Жопа"
+	picture = "Zhopa.dds"
+	traits = { infantry_leader }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	stics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Рэмбочок, откусит твой бочок"
+	picture = "svin.dds"
+	traits = { infantry_leader trait_reckless infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	stics_skill = 2
+}

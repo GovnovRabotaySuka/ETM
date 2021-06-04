@@ -1787,9 +1787,38 @@
  BKH_pahanism_ADJ:0 "Бутырск."
  BKH_borshewism_ADJ:0 "Бутырскы."
  
+ MAH_putinism:0 ""
+ MAH_putinism_DEF:0 ""
+ MAH_bidlo:0 ""
+ MAH_bidlo_DEF:0 ""
+ MAH_burjuism:0 ""
+ MAH_burjuism_DEF:0 ""
+ MAH_pahanism:0 "Революционное Повстанческое Движение имени Нестора Махно"
+ MAH_pahanism_DEF:0 "РПДи.НМ"
+ MAH_borshewism:0 ""
+ MAH_borshewism_DEF:0 ""
+ MAH_putinism_ADJ:0 ""
+ MAH_bidlo_ADJ:0 "."
+ MAH_burjuism_ADJ:0 "."
+ MAH_pahanism_ADJ:0 "Махновск."
+ MAH_borshewism_ADJ:0 "."
  
  
- 
+ MAH_VOL_putinism:0 ""
+ MAH_VOL_putinism_DEF:0 ""
+ MAH_VOL_bidlo:0 ""
+ MAH_VOL_bidlo_DEF:0 ""
+ MAH_VOL_burjuism:0 ""
+ MAH_VOL_burjuism_DEF:0 ""
+ MAH_VOL_pahanism:0 "Вільна Територія"
+ MAH_VOL_pahanism_DEF:0 "Вільщина"
+ MAH_VOL_borshewism:0 ""
+ MAH_VOL_borshewism_DEF:0 ""
+ MAH_VOL_putinism_ADJ:0 "."
+ MAH_VOL_bidlo_ADJ:0 "."
+ MAH_VOL_burjuism_ADJ:0 "."
+ MAH_VOL_pahanism_ADJ:0 "Вільн."
+ MAH_VOL_borshewism_ADJ:0 "."
  
  
  

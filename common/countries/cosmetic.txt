@@ -3,8 +3,18 @@ SKY_IPR = {
     color = hex { 0xdc143c } 
     color_ui = hex { 0xdc143c } 
 }
-
 GVN_IPR = {
     color = hex { 0xdc143c } 
     color_ui = hex { 0xdc143c } 
 }
+DNB_IMPER_GER = {
+    color = rgb { 28  28  28 }
+    color_ui = rgb { 28  28  28 }
+}
+DNB_IMPER_RUS = {
+    color = rgb { 28  28  28 }
+    color_ui = rgb { 28  28  28 }
+}
+MAH_VOL = {
+    color = hex { 0x5a0d0d } 
+    color_ui = hex { 0x5a0d0d } 

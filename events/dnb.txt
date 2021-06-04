@@ -10,60 +10,132 @@ country_event = {
 	trigger = {
 		tag = DNB
 		has_war = yes
-		date > 0002.2.2
-		date < 0002.3.3
+		date > 0002.5.1
 	}
 	mean_time_to_happen = {
-		days = 2
+		days = 1
 	}
-	option = {
+	option = {			#мы легетимное правительство
 		name = dnb.1.a
 		ai_chance = { factor = 1 }
-		start_civil_war = {
-			ideology = borshewism 
-			size = 0.2
-			capital = 486
-			states = { 486 }
-		}
-		random_other_country = {
-			limit = {
-				original_tag = DNB
-				has_government = borshewism 
+		hidden_effect = {
+		DNB = {
+			load_oob = "DNB_MAH"
+			set_popularities = {
+				burjuism = 10
+				bidlo = 70
+				borshewism = 15
+				pahanism = 5
 			}
+		}
+		MAH = { 
+			add_state_core = 486
+			set_capital = 486
+			set_state_owner = 486
+			set_state_controller = 486
+			load_oob = "MAH_0002"
 			declare_war_on = {
 				target = PRA
 				type = annex_everything
+				}
+			declare_war_on = {
+				target = DNB
+				type = annex_everything
+				}
 			}
 		}
 	}
 	option = {
-		name = dnb.1.b
+		name = dnb.1.b			#анархия мать порядка
+		MAH = { change_tag_from = ROOT }
+		hidden_effect = {
 		play_song = "mh-haos"
-		PRA = {
-			country_event = pra.1
-		}
-		if = {
-			set_capital = 486
-			limit = {
-				has_government = bidlo
-			}
-			start_civil_war = {
-				ruling_party = borshewism
-				ideology = bidlo
-				size = 0.9
-				capital = 485
-				states = { 485 484 }
-			}
+		DNB = {
+			load_oob = "DNB_MAH"
 			set_popularities = {
-				borshewism = 70
-				bidlo = 5
-				pahanism = 15
 				burjuism = 10
+				bidlo = 70
+				borshewism = 15
+				pahanism = 5
 			}
 		}
-		declare_war_on = {
-			target = PRA
-			type = annex_everything
+		MAH = { 
+			add_state_core = 486
+			set_capital = 486
+			set_state_owner = 486
+			set_state_controller = 486
+			load_oob = "MAH_0002"
+			declare_war_on = {
+				target = PRA
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = DNB
+				type = annex_everything
+				}
+			}
 		}
 	}
+}
+country_event = {
+    id = dnb.999
+    title = dnb.999.t
+    desc = dnb.999.d
+    picture = GFX_report_event_soviet_purge_speech
+	
+	trigger = {
+		tag = DNB
+		date > 0002.1.10
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = dnb.999.a
+        set_cosmetic_tag = DNB_IMPER_GER
+        country_event = dnb.9991
+    }
+    option = {
+        name = dnb.999.b
+        set_cosmetic_tag = DNB_IMPER_RUS
+        country_event = dnb.9992
+    }
+    option = {
+        name = dnb.999.c
+    }
+}
+country_event = {
+    id = dnb.9991
+    title = dnb.9991.t
+    desc = dnb.9991.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9991.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_IMPER_GER
+    }
+    option = {
+        name = dnb.9991.b
+    }
+}
+country_event = {
+    id = dnb.9992
+    title = dnb.9992.t
+    desc = dnb.9992.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9992.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_IMPER_RUS
+    }
+    option = {
+        name = dnb.9992.b
+    }
 }

@@ -8,6 +8,15 @@ state={
 	state_category = town
 
 	history={
+		victory_points = {
+			12009 30
+		}
+		victory_points = {
+			11819 10
+		}
+		victory_points = {
+			11966 10
+		}
 		owner = DNB
 
 		buildings = {
@@ -17,7 +26,7 @@ state={
 		}
 
 		add_core_of = DNB
-	    add_core_of = UKE
+	        add_core_of = UKE
 		add_core_of = KIV
 		add_core_of = ZPU
 		add_core_of = ODE

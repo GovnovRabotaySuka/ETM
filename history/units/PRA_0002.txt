@@ -1,0 +1,112 @@
+﻿
+division_template = {
+	name = "Народное Ополчение"
+
+	division_names_group = PRA_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 1
+}
+
+units = {	
+	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №1"	
+		location = 11866
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №2"	
+		location = 11711
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №3"	
+		location = 11618
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №4"	
+		location = 11490
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №5"	
+		location = 11357
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №6"	
+		location = 11194
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №7"	
+		location = 11193
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "Ополчение №8"	
+		location = 11064
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+
+instant_effect = {
+	
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "PRA" 
+		}
+		requested_factories = 4
+		progress = 0.1
+		efficiency = 50
+	}
+}

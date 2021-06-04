@@ -1,0 +1,17 @@
+ideas = {
+    country = {
+		dolgaya_war = {
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+            removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				army_defence_factor = 0.05
+            }
+        }
+	}
+}

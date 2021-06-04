@@ -1,0 +1,67 @@
+﻿
+division_template = {
+	name = "Революционно-повстанческая армия Украины"
+
+	division_names_group = MAH_GAR_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+units = {	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "1-й Повстанческий полк имени батьки Махно"	
+		location = 12009
+		division_template = "Революционно-повстанческая армия Украины"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "2-й Повстанческий полк имени батьки Махно"	
+		location = 12009
+		division_template = "Революционно-повстанческая армия Украины"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "3-й Повстанческий полк имени батьки Махно"	
+		location = 12009
+		division_template = "Революционно-повстанческая армия Украины"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "4-й Повстанческий полк имени батьки Махно"	
+		location = 12009
+		division_template = "Революционно-повстанческая армия Украины"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "5-й Повстанческий полк имени батьки Махно"	
+		location = 12009
+		division_template = "Революционно-повстанческая армия Украины"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.5
+	}
+}
