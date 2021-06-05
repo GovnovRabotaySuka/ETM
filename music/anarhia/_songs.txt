@@ -138,7 +138,7 @@ music = {
 	}
 }
 music = {
-	song = "mh-mezhlichnostnykonflict"
+	song = "mh-rozovyeushki"
 	chance = {
 		modifier = {
 			factor = 0.5

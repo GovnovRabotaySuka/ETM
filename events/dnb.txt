@@ -49,7 +49,7 @@ country_event = {
 		name = dnb.1.b			#анархия мать порядка
 		MAH = { change_tag_from = ROOT }
 		hidden_effect = {
-		play_song = "mh-haos"
+		play_song = "mh-rozovyeushki"
 		DNB = {
 			load_oob = "DNB_MAH"
 			set_popularities = {

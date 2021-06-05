@@ -3,8 +3,23 @@
 state={
 	id=1085
 	name="STATE_1085"
-	
-	provinces={
-		
+
+	history={
+		owner = MRK
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = MRK
+
 	}
+
+   	state_category = rural
+	manpower=156508
+
+	provinces={
+		2279 
+	}
+	buildings_max_level_factor=1.000
 }

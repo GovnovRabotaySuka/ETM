@@ -2,10 +2,24 @@
 state={
 	id=136
 	name="STATE_136"
+	manpower = 154005
+	
+	state_category = town
+
+	history={
+		owner = TAR
+
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+			arms_factory = 3
+
+		}
+
+		add_core_of = TAR
+	}
 
 	provinces={
-		
+		15426 15508 15671 15706 15888 15929 16056 
 	}
-	manpower=124151
-	buildings_max_level_factor=1.000
 }

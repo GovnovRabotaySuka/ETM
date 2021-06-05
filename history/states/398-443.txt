@@ -2,10 +2,22 @@
 state={
 	id=398
 	name="STATE_398"
+    	state_category = rural
 
-	provinces={
-		
+
+	manpower=999999
+	history={
+		owner = LUN
+		buildings = {
+			infrastructure = 6
+			arms_factory = 4
+			industrial_complex = 4
+			air_base = 4
+		}
+		add_core_of = LUN
 	}
-	manpower=78451
+	provinces={
+		17210 17349 17431 17731 
+	}
 	buildings_max_level_factor=1.000
 }

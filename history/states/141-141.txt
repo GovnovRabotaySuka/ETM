@@ -2,16 +2,21 @@
 state={
 	id=141
 	name="STATE_141"
-    
-	
+	history={
+		owner = PRD
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
 
-	provinces={
-		
+		}
+		add_core_of = PRD
+
 	}
-
-
-
-	manpower=65784
+	provinces={
+		6172 
+	}
+	state_category = rural
+	manpower=1000
 	buildings_max_level_factor=1.000
 }
 

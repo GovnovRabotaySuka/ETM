@@ -25,6 +25,7 @@ units = {
 		location = 11951
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -34,6 +35,7 @@ units = {
 		location = 11794
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -43,6 +45,7 @@ units = {
 		location = 11571
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -52,6 +55,7 @@ units = {
 		location = 11403
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -61,6 +65,7 @@ units = {
 		location = 11377
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -70,6 +75,7 @@ units = {
 		location = 11254
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -79,6 +85,7 @@ units = {
 		location = 10981
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
 	}
 
 instant_effect = {

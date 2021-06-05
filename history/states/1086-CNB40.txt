@@ -4,7 +4,22 @@ state={
 	id=1086
 	name="STATE_1086"
 
-	provinces={
-		
+	history={
+		owner = MRK
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = MRK
+
 	}
+	
+     	state_category = rural
+	manpower=176508
+
+	provinces={
+		2426 2438 2439 
+	}
+	buildings_max_level_factor=1.000
 }

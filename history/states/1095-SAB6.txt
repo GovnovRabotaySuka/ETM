@@ -2,9 +2,10 @@
 state={
 	id=1095
 	name="STATE_1095"
-
 	provinces={
-		
+		2005 2101 2138 
 	}
-
+	state_category = rural
+	manpower=0
+	buildings_max_level_factor=1.000
 }
