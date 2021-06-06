@@ -1,7 +1,7 @@
 ideas = {
     country = {
 		dolgaya_war = {
-			picture = generic_political_advisor_europe_2
+			picture = idea_DNB_1
 			allowed = {
 				always = yes
 				original_tag = DNB

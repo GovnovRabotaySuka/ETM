@@ -28,23 +28,27 @@ spriteTypes = {
 	}
 	SpriteType = {
 	name = "GFX_idea_idea_LET_2"
-	texturefile = "gfx/interface/ideas/idea_LET_2.dds"			
+	texturefile = "gfx/interface/ideas/idea_LET_2.dds"		
 	}
 	SpriteType = {
 	name = "GFX_idea_idea_LET_3"
-	texturefile = "gfx/interface/ideas/idea_LET_3.dds"			
+	texturefile = "gfx/interface/ideas/idea_LET_3.dds"		
 	}
 	SpriteType = {
 	name = "GFX_idea_idea_LET_4"
-	texturefile = "gfx/interface/ideas/idea_LET_4.dds"			
+	texturefile = "gfx/interface/ideas/idea_LET_4.dds"		
 	}
 	SpriteType = {
 	name = "GFX_idea_idea_LET_5"
-	texturefile = "gfx/interface/ideas/idea_LET_5.dds"			
+	texturefile = "gfx/interface/ideas/idea_LET_5.dds"		
 	}
 	SpriteType = {
 	name = "GFX_idea_idea_LET_6"
-	texturefile = "gfx/interface/ideas/idea_LET_6.dds"			
+	texturefile = "gfx/interface/ideas/idea_LET_6.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_idea_DNB_1"
+	texturefile = "gfx/interface/ideas/idea_DNB_1.dds"		
 	}
 
 	frameAnimatedSpriteType = {

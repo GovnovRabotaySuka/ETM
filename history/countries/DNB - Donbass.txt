@@ -25,7 +25,6 @@ set_technology = {
 }
 
 if = {
-
 	declare_war_on = {
 		target = PRA
 		type = annex_everything
@@ -34,7 +33,7 @@ if = {
 
 set_convoys = 15
 
-set_stability = 0.6
+set_stability = 0.3
 
 set_politics = {
 	ruling_party = bidlo
