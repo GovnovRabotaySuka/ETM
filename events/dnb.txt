@@ -19,6 +19,7 @@ country_event = {
 		name = dnb.1.a
 		ai_chance = { factor = 1 }
 		hidden_effect = {
+		add_threat = 30
 		DNB = {
 			load_oob = "DNB_MAH"
 			set_popularities = {
@@ -49,6 +50,7 @@ country_event = {
 		name = dnb.1.b			#анархия мать порядка
 		MAH = { change_tag_from = ROOT }
 		hidden_effect = {
+		add_threat = 30
 		play_song = "mh-rozovyeushki"
 		DNB = {
 			load_oob = "DNB_MAH"

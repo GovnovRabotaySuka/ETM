@@ -23,7 +23,12 @@ bookmarks = {
 				history = "LET_GATHERING_STORM_DESC"
 				ideology = borshewism
 				ideas={
-					#
+					LET_Peremiriye
+					LET_Zhelezniy_Zanoves
+					LET_Nothing_To_Lose
+					LET_Sistema
+					LET_Corp
+					LET_Edinstvo_Strong
 				}
 				focuses = {
 					#
@@ -69,6 +74,17 @@ bookmarks = {
 			ideology = putinism
 			ideas={
 				#
+			}
+			focuses = {
+				#
+			}
+		}
+		
+		"DNB" = {
+			history = "DNB_GATHERING_STORM_DESC"
+			ideology = bidlo
+			ideas={
+				dolgaya_war
 			}
 			focuses = {
 				#
