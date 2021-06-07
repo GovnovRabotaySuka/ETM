@@ -1,4 +1,4 @@
-﻿capital = 11167
+﻿capital = 482
 
 oob = "ZLS_0002"
 

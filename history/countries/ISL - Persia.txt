@@ -1,4 +1,4 @@
-﻿capital = 8042
+﻿capital = 25
 
 oob = "ISL_0002"
 

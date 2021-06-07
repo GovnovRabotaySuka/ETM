@@ -1,4 +1,4 @@
-capital = 652
+capital = 651
 
 oob = "KOL_0002"
 

@@ -1,4 +1,4 @@
-capital = 874
+capital = 847
 
 oob = "RIC_0002"
 

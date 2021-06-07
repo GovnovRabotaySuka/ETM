@@ -1,4 +1,4 @@
-capital = 670
+capital = 643
 
 oob = "RNS_0002"
 

@@ -1,4 +1,4 @@
-﻿capital = 11903
+﻿capital = 469
 
 oob = "ZPU_0002"
 

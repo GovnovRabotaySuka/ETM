@@ -1,4 +1,4 @@
-capital = 511
+capital = 512
 
 oob = "POL_0002"
 

@@ -1,4 +1,4 @@
-﻿capital = 10471
+﻿capital = 487
 oob = "ODE_0002"
 set_stability = 1
 set_war_support = 1

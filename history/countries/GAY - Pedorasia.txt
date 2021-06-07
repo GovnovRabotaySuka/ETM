@@ -1,4 +1,4 @@
-﻿capital = 543
+﻿capital = 1034
 
 oob = "GAY_0002"
 

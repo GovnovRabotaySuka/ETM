@@ -1,6 +1,6 @@
 
 
-capital = 692
+capital = 678
 
 
 oob = "PRA_0002"

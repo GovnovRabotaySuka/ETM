@@ -1,6 +1,6 @@
 capital = 958
 
-oob = "WAD_0002"
+oob = "1NA_0002"
 
 set_research_slots = 3
 set_convoys = 75

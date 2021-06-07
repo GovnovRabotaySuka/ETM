@@ -1,4 +1,4 @@
-capital = 568
+capital = 567
 
 oob = "SWI_0002"
 

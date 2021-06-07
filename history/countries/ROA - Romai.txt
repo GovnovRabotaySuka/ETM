@@ -1,4 +1,4 @@
-﻿capital = 10470
+﻿capital = 492
 
 oob = "ROA_0002"
 

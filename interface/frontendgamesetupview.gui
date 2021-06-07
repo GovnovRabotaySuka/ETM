@@ -15,7 +15,7 @@ guiTypes = {
 		fade_time = 500000
 		fade_type = linear
 
-
+		
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_select_date_1936"
@@ -503,7 +503,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-
+		
 
 		background = {
 			name = "single_player_date_bg"

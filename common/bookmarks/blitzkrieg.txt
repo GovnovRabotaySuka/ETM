@@ -7,7 +7,7 @@ bookmarks = {
 	###################################################################
 
 	bookmark = {
-	        name = "GATHERING_STORM_NAME"
+	    name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
 		date = 0002.1.1.1
 		picture = "GFX_select_date_1939"
@@ -91,6 +91,5 @@ bookmarks = {
 				#
 			}
 		}	
-
 	}
 }

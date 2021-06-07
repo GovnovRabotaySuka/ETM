@@ -1,6 +1,6 @@
 ﻿
 
-capital = 11732
+capital = 485
 
 
 oob = "DNB_0002"
@@ -51,7 +51,7 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Александр Захарченко"
+	name = "Alexsandr Zaharchenko"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Zaharchenko.dds"
 	expire = "1965.1.1"
@@ -60,38 +60,6 @@ create_country_leader = {
 		#
 	}
 }
-
-create_country_leader = {
-	name = "Консерва"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Konserva.dds"
-	expire = "1965.1.1"
-	ideology = conserva
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Деспот"
-	desc = "POLITICS_BORIS_III_DESC"
-	picture = "DonbasSlava.dds"
-	expire = "1965.1.1"
-	ideology = despopahanism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Слава Донбасс"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "SlavaKpss.dds"
-	expire = "1965.1.1"
-	ideology = naziborshewism
-	traits = {
-	
-	}
- }
 
 create_corps_commander = {
 	name = "Александр Захарченко"

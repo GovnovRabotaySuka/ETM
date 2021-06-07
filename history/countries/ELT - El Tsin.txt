@@ -1,4 +1,4 @@
-capital = 13316
+capital = 232
 
 oob = "ELT_0002"
 

@@ -1,4 +1,4 @@
-capital = 682
+capital = 680
 
 oob = "RAP_0002"
 
@@ -37,7 +37,7 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Нехайповыч"
+	name = "Власть Царицина"
 	desc = ""
 	picture = "Nonhype.dds"
 	expire = "1965.1.1"

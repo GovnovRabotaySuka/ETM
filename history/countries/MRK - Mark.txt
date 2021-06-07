@@ -1,4 +1,4 @@
-capital = 1314
+capital = 1085
 
 oob = "MRK_0002"
 
