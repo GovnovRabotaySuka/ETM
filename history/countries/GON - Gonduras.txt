@@ -44,7 +44,7 @@ create_country_leader = {
 	desc = ""
 	picture = "agronom.dds"
 	expire = "1965.1.1"
-	ideology = centpahanism
+	ideology = despopahanism  
 }
 
 create_country_leader = {
@@ -52,7 +52,7 @@ create_country_leader = {
 	desc = ""
 	picture = ".dds"
 	expire = "1965.1.1"
-	ideology = koksxism
+	ideology = gribonism
 	traits = {
 		#
 	}

@@ -23,5 +23,5 @@ set_popularities = {
 create_country_leader = {
 	name = "Nadsilo Llearen"
 	picture = "redoran.dds"
-	ideology = koksxism
+	ideology = gribonism
 }

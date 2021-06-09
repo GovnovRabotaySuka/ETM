@@ -1013,23 +1013,7 @@
  ANT_burjuism_ADJ:0 "."
  ANT_pahanism_ADJ:0 "."
  ANT_borshewism_ADJ:0 "."
-
- _putinism:0 ""
- _putinism_DEF:0 ""
- _bidlo:0 ""
- _bidlo_DEF:0 ""
- _burjuism:0 ""
- _burjuism_DEF:0 ""
- _pahanism:0 ""
- _pahanism_DEF:0 ""
- _borshewism:0 ""
- _borshewism_DEF:0 ""
- _putinism_ADJ:0 "."
- _bidlo_ADJ:0 "."
- _burjuism_ADJ:0 "."
- _pahanism_ADJ:0 "."
- _borshewism_ADJ:0 "."
-
+ 
  CSS_putinism:0 ""
  CSS_putinism_DEF:0 ""
  CSS_bidlo:0 ""
@@ -1045,19 +1029,6 @@
  CSS_burjuism_ADJ:0 "."
  CSS_pahanism_ADJ:0 "Краснодарск."
  CSS_borshewism_ADJ:0 "."
- 
- PAS_bidlo:0 "Макаронный Рейх"
- PAS_bidlo_DEF:0 "Макаронный Рейх"
- PAS_burjuism:0 "Макаронная Республика"
- PAS_burjuism_DEF:0 "Макаронная Республика"
- PAS_pahanism:0 "Макарония"
- PAS_pahanism_DEF:0 "Макарония"
- PAS_borshewism:0 "Макаронная Социалистическая Республика"
- PAS_borshewism_DEF:0 "Макаронная Социалистическая Республика"
- PAS_bidlo_ADJ:0 "Макаронн."
- PAS_burjuism_ADJ:0 "Макаронн."
- PAS_pahanism_ADJ:0 "Макарон."
- PAS_borshewism_ADJ:0 "Макаронн."
  
  MUS_bidlo:0 "Безумный Рейх"
  MUS_bidlo_DEF:0 "Безумный Рейх"
@@ -1803,7 +1774,6 @@
  MAH_pahanism_ADJ:0 "Махновск."
  MAH_borshewism_ADJ:0 "."
  
- 
  MAH_VOL_putinism:0 ""
  MAH_VOL_putinism_DEF:0 ""
  MAH_VOL_bidlo:0 ""
@@ -1819,6 +1789,19 @@
  MAH_VOL_burjuism_ADJ:0 "."
  MAH_VOL_pahanism_ADJ:0 "Вільн."
  MAH_VOL_borshewism_ADJ:0 "."
+ 
+ PRA_bidlo:0 ""
+ PRA_bidlo_DEF:0 ""
+ PRA_burjuism:0 ""
+ PRA_burjuism_DEF:0 ""
+ PRA_pahanism:0 "Область Ростовского Дона"
+ PRA_pahanism_DEF:0 "ОРД"
+ PRA_borshewism:0 "" 
+ PRA_borshewism_DEF:0 ""
+ PRA_bidlo_ADJ:0 ""
+ PRA_burjuism_ADJ:0 ""
+ PRA_pahanism_ADJ:0 "Донск."
+ PRA_borshewism_ADJ:0 ""
  
  
  

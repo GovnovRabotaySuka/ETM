@@ -21,7 +21,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "Portrait_Italy_Benito_Mussolini.dds"
 	expire = "1965.1.1"
-	ideology = bidlo_ideology
+	ideology = fashiki 
 	traits = {
 		
 	}
@@ -43,7 +43,7 @@ create_country_leader = {
 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
 	picture = "GFX_portrait_ita_palmiro_togliatti"
 	expire = "1965.1.1"
-	ideology = koksxism
+	ideology = gribonism
 	traits = {
 		
 	}
@@ -76,7 +76,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
-	ideology = koksxism
+	ideology = gribonism
 	traits = {
 		
 	}

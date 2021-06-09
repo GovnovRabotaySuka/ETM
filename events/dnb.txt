@@ -101,6 +101,7 @@ country_event = {
     }
     option = {
         name = dnb.999.b
+	ai_chance = { factor = 100}
         set_cosmetic_tag = DNB_IMPER_RUS
         country_event = dnb.9992
     }
@@ -139,6 +140,7 @@ country_event = {
         drop_cosmetic_tag = DNB_IMPER_RUS
     }
     option = {
+	ai_chance = { factor = 100}
         name = dnb.9992.b
     }
 }

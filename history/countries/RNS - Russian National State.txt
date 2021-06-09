@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Kolya.dds"
 	expire = "1965.1.1"
-	ideology = centpahanism 
+	ideology = despopahanism  
 }
 
 create_country_leader = {

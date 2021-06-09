@@ -557,32 +557,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SAU_32
 		}
-		x = 19
+		x = 20
 		y = 3
 		completion_reward = {
-			declare_war_on = {
-   				target = NIG
-   				type = annex_everything
-				}
-			declare_war_on = {
-   				target = VAL
-   				type = annex_everything
-				}
+		create_wargoal = {
+			type = annex_everything
+			target = VAL
 		}
-
-	}
-	focus = {
-		id = SAU_32
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = SAU_30
+		create_wargoal = {
+			type = annex_everything
+			target = NIG
 		}
-		mutually_exclusive = {
-			focus = SAU_31
 		}
-		x = 21
-		y = 3
 
 	}
 	focus = {
@@ -590,23 +576,33 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SAU_32
 			focus = SAU_31
 		}
 		x = 20
 		y = 4
+		completion_reward = {
+		hidden_effect = {
+		HIT = {
+		country_event = hit.1
+				}
+			}
+		}
 
 	}
 	focus = {
 		id = SAU_34
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 0.2
 		prerequisite = {
 			focus = SAU_33
 		}
 		x = 20
 		y = 5
-
+		completion_reward = {
+		hidden_effect = {
+		country_event = sau.2
+			}
+		}
 	}
 	focus = {
 		id = SAU_36
@@ -615,12 +611,20 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_34
 		}
+		available = {
+			PAS = {
+				OR = {
+					exists = no
+					is_puppet = yes
+				}
+			}
+			has_war = no
+		}
 		mutually_exclusive = {
 			focus = SAU_35
 		}
 		x = 21
 		y = 6
-
 	}
 	focus = {
 		id = SAU_55
@@ -903,29 +907,25 @@ focus_tree = {
 		}
 		x = 19
 		y = 6
-
-	}
-	focus = {
-		id = SAU_37
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = SAU_35
+		completion_reward = {
+		add_political_power = 120
 		}
-		x = 17
-		y = 7
-
 	}
 	focus = {
 		id = SAU_38
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SAU_37
+			focus = SAU_35
 		}
-		x = 17
-		y = 8
-
+		x = 16
+		y = 7
+		completion_reward = {
+		create_wargoal = {
+   			type = annex_everything
+    			target = SWI
+			}
+		}
 	}
 	focus = {
 		id = SAU_39
@@ -934,7 +934,10 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_35
 		}
-		x = 19
+		mutually_exclusive = {
+			focus = SAU_41
+		}
+		x = 18
 		y = 7
 
 	}
@@ -945,20 +948,52 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_39
 		}
-		x = 19
+		x = 18
 		y = 8
-
+		completion_reward = {
+		declare_war_on = {
+   			target = CCA
+   			type = annex_everything
+			}
+		}
 	}
 	focus = {
 		id = SAU_41
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
+			focus = SAU_35
+		}
+		mutually_exclusive = {
 			focus = SAU_39
 		}
-		x = 21
-		y = 8
-
+		x = 20
+		y = 7
+		completion_reward = {
+		521 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+		520 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+		522 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CZE
+			expire = 0
+			}
+		}
 	}
 	focus = {
 		id = SAU_42
@@ -968,7 +1003,7 @@ focus_tree = {
 			focus = SAU_41
 			focus = SAU_40
 		}
-		x = 20
+		x = 19
 		y = 9
 		completion_reward = {
 			create_wargoal = {
@@ -985,9 +1020,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_42
 		}
-		x = 20
+		x = 19
 		y = 10
-
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+			expire = 0
+			}
+		}
 	}
 	focus = {
 		id = SAU_51

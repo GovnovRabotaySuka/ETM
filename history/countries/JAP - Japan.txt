@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = koksxism
+	ideology = gribonism
 	traits = {
 	}
 }
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
-	ideology = koksxism
+	ideology = gribonism
 	traits = {
 		
 	}

@@ -10,7 +10,7 @@ country_event = {
 	trigger = {
 		tag = MAH
 		NOT = { 485 = { is_controlled_by = DNB } }
-		NOT =  { 484 = { is_controlled_by = DNB } }
+		NOT = { 484 = { is_controlled_by = DNB } }
 	}
 		mean_time_to_happen = {
 			days = 1
@@ -55,6 +55,7 @@ country_event = {
 				add_state_core = 678
 				add_state_core = 676
 				add_state_core = 679
+				add_state_core = 1307
 				}
 			}
 		}

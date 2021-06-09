@@ -25,5 +25,5 @@ set_popularities = {
 create_country_leader = {
 	name = "Istlod"
 	picture = "Istlod.dds"
-	ideology = centpahanism
+	ideology = despopahanism  
 }

@@ -1,0 +1,26 @@
+
+state={
+	id=1307
+	name="STATE_1307"
+
+	history={
+		victory_points = {
+			11427 15 
+		}
+		owner = PRA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+
+		}
+		add_core_of = PRA
+
+	}
+
+	provinces={
+		11169 11282 11335 11427 11457 11503 11594 
+	}
+	manpower=101076
+	buildings_max_level_factor=1.000
+	state_category=city
+}

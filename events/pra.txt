@@ -11,10 +11,8 @@ country_event = {
 
 	trigger = {
 		tag = PRA
-		has_war = yes
-		DNB = {
-			has_civil_war = yes
-		}
+		NOT = { 1307 = { is_controlled_by = PRA } }
+		date < 0003.1.1
 	}
 
 	mean_time_to_happen = {
@@ -24,13 +22,14 @@ country_event = {
 
 	option = {
 		name = pra.1.a
-		ai_chance = { factor = 1 }
-		trigger = {
-			#
-		}
-		declare_war_on = {
-   			target = DNB
-    			type = app_everything
+		hidden_effect = {
+		kill_country_leader = yes
+		set_popularities = {
+				burjuism = 10
+				bidlo = 50
+				borshewism = 10
+				pahanism = 30
+			}
 		}
 	}
 }

@@ -19,7 +19,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
@@ -38,7 +38,7 @@ create_country_leader = {
     desc = ""
     picture = "TEM_N.dds"
     expire = "1965.1.1"
-    ideology = centpahanism 
+    ideology = despopahanism  
     traits = {
         #
     }
