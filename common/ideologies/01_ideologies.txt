@@ -44,10 +44,10 @@ ideologies = {
 		
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.70
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
+			generate_wargoal_tension = 1
+			join_faction_tension = 0.7
+			lend_lease_tension = 0.5
+			send_volunteers_tension = 0.5
 			guarantee_tension = 0.25
 			take_states_cost_factor = 0.25
 			annex_cost_factor = 0.5
@@ -118,7 +118,7 @@ ideologies = {
 
 		modifiers = {
 			generate_wargoal_tension = 0.25
-			join_faction_tension = 0.4
+			join_faction_tension = 0.6
 			lend_lease_tension = 0.3
 			send_volunteers_tension = 0.25
 			guarantee_tension = 0.2
@@ -186,7 +186,7 @@ ideologies = {
 
 		modifiers = {
 			generate_wargoal_tension = 0.3
-			join_faction_tension = 0.25
+			join_faction_tension = 0.5
 			lend_lease_tension = 0.1
 			send_volunteers_tension = 0.1
 			guarantee_tension = 0.5
@@ -254,7 +254,7 @@ ideologies = {
 
 		modifiers = {
 			generate_wargoal_tension = 0.5
-			join_faction_tension = 0.4
+			join_faction_tension = 1
 			lend_lease_tension = 0.4
 			send_volunteers_tension = 0.35
 			guarantee_tension = 0.5

@@ -48,6 +48,7 @@ guiTypes = {
 			position = { x= 97 y = 100 }
 		}
 		
+		
 		iconType = {
 			name ="diskleymer"
 			spriteType = "GFX_diskleymer"
