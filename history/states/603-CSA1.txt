@@ -2,15 +2,12 @@
 state={
 	id=603
 	name="STATE_603"
-	manpower = 263947
+	manpower = 863947
 	
 	state_category = town
 
 	history={
 		owner = TSA
-		victory_points = {
-			 8908 50
-		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

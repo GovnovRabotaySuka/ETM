@@ -34,5 +34,25 @@ units = {
 		division_template = "Конная дивизия"
 		start_experience_factor = 0.7
 		start_equipment_factor = 0.3
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "3-я северодонецкая антимахновская конная добровольческая дивизия"	
+		location = 11865
+		division_template = "Конная дивизия"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.3
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "4-я северодонецкая антимахновская конная добровольческая дивизия"	
+		location = 11865
+		division_template = "Конная дивизия"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.3
 	}
 }

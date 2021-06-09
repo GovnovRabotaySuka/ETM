@@ -37,16 +37,16 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 1
-	bidlo = 99
+	burjuism = 6
+	bidlo = 94
 }
 
 create_country_leader = {
-    	name = "Pastaduce" 
-    	desc = ""
-    	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    	expire = "1965.1.1"
-   	ideology = nazi
+    name = "Pastaduce" 
+    desc = ""
+    picture = "Makaroni.dds"
+    expire = "1965.1.1"
+   	ideology = fashiki
 	traits = {
 		#
 	}

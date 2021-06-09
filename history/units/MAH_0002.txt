@@ -90,14 +90,4 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.6
 	}
-	division= {	
-		division_name = {
-			is_name_ordered = no
-			}
-		name = "4-й Добровольческий корпус"	
-		location = 12009
-		division_template = "Добровольческий корпус"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.8
-	}
 }

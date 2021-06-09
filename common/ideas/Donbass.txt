@@ -6,6 +6,9 @@ ideas = {
 				always = yes
 				original_tag = DNB
 			}
+			available = {
+				has_war = yes
+			}
             removal_cost = -1
 			modifier = {
 				stability_factor = -0.2

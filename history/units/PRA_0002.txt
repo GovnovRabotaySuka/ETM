@@ -1,9 +1,21 @@
 ﻿
 division_template = {
+	name = "Конная дивизия"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
 	name = "Народное Ополчение"
-
-	division_names_group = PRA_GAR_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,7 +28,37 @@ division_template = {
 }
 
 units = {	
-	
+		
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "1-я новочеркасская атаманская конная дивизия"	
+		location = 11427
+		division_template = "Конная дивизия"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "2-я новочеркасская атаманская конная дивизия"	
+		location = 11427
+		division_template = "Конная дивизия"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+	}	
+	division= {	
+		division_name = {
+			is_name_ordered = no
+			}
+		name = "3-я новочеркасская атаманская конная дивизия"	
+		location = 11427
+		division_template = "Конная дивизия"
+		start_experience_factor = 0.7
+		start_equipment_factor = 0.4
+	}
 	division= {	
 		division_name = {
 			is_name_ordered = no
@@ -25,7 +67,7 @@ units = {
 		location = 11866
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
@@ -35,7 +77,7 @@ units = {
 		location = 11711
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -45,7 +87,7 @@ units = {
 		location = 11618
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
@@ -55,7 +97,7 @@ units = {
 		location = 11490
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 	division= {	
 		division_name = {
@@ -65,7 +107,7 @@ units = {
 		location = 11357
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.5
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
@@ -75,7 +117,7 @@ units = {
 		location = 11194
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.4
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.8
 	}
 	division= {	
 		division_name = {
@@ -85,7 +127,7 @@ units = {
 		location = 11193
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.9
 	}
 	division= {	
 		division_name = {
@@ -95,7 +137,7 @@ units = {
 		location = 11064
 		division_template = "Народное Ополчение"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
+		start_equipment_factor = 0.7
 	}
 
 instant_effect = {

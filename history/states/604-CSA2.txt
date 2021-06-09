@@ -2,20 +2,21 @@
 state={
 	id=604
 	name="STATE_604"
-	manpower = 600400
+	manpower = 6004000
 	
-	state_category = town
+	state_category = metropolis
 
 	history={
 		owner = TSA
-
+		victory_points = {
+			8908 50
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
 			arms_factory = 3
 
 		}
-
 		add_core_of = TSA
 	}
 
