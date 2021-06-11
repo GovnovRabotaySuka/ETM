@@ -1,0 +1,570 @@
+############################################################################################################
+#	Expert AI mod - generic
+############################################################################################################
+
+### area priorities
+
+EAI_default_area_priority = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = { type = area_priority id = europe value = 100 }
+	ai_strategy = { type = area_priority id = north_america value = 100 }
+	ai_strategy = { type = area_priority id = south_america value = 100 }
+	ai_strategy = { type = area_priority id = asia value = 100 }
+	ai_strategy = { type = area_priority id = middle_east value = 100 }
+	ai_strategy = { type = area_priority id = pacific value = 100 }
+	ai_strategy = { type = area_priority id = oceania value = 100 }
+	ai_strategy = { type = area_priority id = africa value = 50 }
+	ai_strategy = { type = area_priority id = suez value = 100 }
+	ai_strategy = { type = area_priority id = scandinavia value = 50 }
+}
+
+### USA
+
+EAI_USA_area_priority = {
+	allowed = { tag = USA }
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = { type = area_priority id = asia value = 200 }
+}
+
+### ENG
+
+EAI_ENG_area_priority = {
+	allowed = { tag = ENG }
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = { type = area_priority id = suez value = 200 }
+}
+
+### ITA
+
+EAI_ITA_area_priority = {
+	allowed = { tag = ITA }
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = { type = area_priority id = suez value = 200 }
+}
+
+############################################
+
+EAI_defend_core = {
+	enable = { 
+		has_country_flag = EAI_defend_core
+	} 
+	
+	abort_when_not_enabled = yes 
+	
+	ai_strategy = { type = dont_defend_ally_borders id = "Q00" value = 500 } #MTS
+	ai_strategy = { type = dont_defend_ally_borders id = "Q01" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q02" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q03" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q04" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q05" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q06" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q07" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q08" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q09" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q0Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q10" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q11" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q12" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q13" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q14" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q15" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q16" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q17" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q18" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q19" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q1Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q20" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q21" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q22" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q23" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q24" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q25" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q26" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q27" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q28" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q29" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q2Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q30" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q31" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q32" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q33" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q34" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q35" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q36" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q37" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q38" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q39" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q3Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q40" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q41" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q42" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q43" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q44" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q45" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q46" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q47" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q48" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q49" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q4Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q50" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q51" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q52" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q53" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q54" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q55" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q56" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q57" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q58" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q59" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q5Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q60" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q61" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q62" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q63" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q64" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q65" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q66" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q67" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q68" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q69" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q6Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q70" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q71" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q72" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q73" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q74" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q75" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q76" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q77" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q78" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q79" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7B" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7C" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7D" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7E" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7F" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7G" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7H" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7I" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7J" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7K" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7L" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7M" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7N" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7O" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7P" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7Q" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7R" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7S" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7T" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7U" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7V" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7W" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7X" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7Y" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q7Z" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q80" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q81" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q82" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q83" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q84" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q85" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q86" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q87" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q88" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q89" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q8A" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "Q8B" value = 500 }
+
+	ai_strategy = { type = dont_defend_ally_borders id = "D01" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D02" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D03" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D04" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D05" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D06" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D07" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D08" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D09" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D10" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D11" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D12" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D13" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D14" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D15" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D16" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D17" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D18" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D19" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D20" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D21" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D22" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D23" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D24" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D25" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D26" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D27" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D28" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D29" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D30" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D31" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D32" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D33" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D34" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D35" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D36" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D37" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D38" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D39" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D40" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D41" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D42" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D43" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D44" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D45" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D46" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D47" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D48" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D49" value = 500 }
+	ai_strategy = { type = dont_defend_ally_borders id = "D50" value = 500 }
+}
+
+############################################
+
+EAI_border_garrison = {
+	allowed = {
+		OR = { 
+			tag = ENG
+			tag = USA
+		}
+	}
+	enable = {
+		is_historical_focus_on = yes
+
+		has_war = yes
+
+		has_government = democratic
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+
+		country_trigger = {
+
+			is_neighbor_of = FROM
+
+			NOT = { 
+				has_war_with = FROM
+
+				is_justifying_wargoal_against = FROM
+				FROM = { is_justifying_wargoal_against = PREV }
+
+				has_wargoal_against = FROM
+				FROM = { has_wargoal_against = PREV }
+
+				FROM = { EAI_justifying_wargoal_via_focus_vs_PREV = yes }
+			}
+
+			if = { limit = { is_major = yes }
+
+				NOT = { AND = { has_government = democratic FROM = { has_government = democratic } } }
+			}
+
+			has_focus_tree = generic_focus
+
+			OR = {
+				has_non_aggression_pact_with = FROM
+
+				has_focus_tree = generic_focus
+
+				AND = { # generic countries cant declare wars through focuses
+					strength_ratio = { tag = FROM ratio < 0.25 } 
+					is_in_faction = no 
+					is_subject = no
+				}
+				
+				is_guaranteed_by = FROM
+
+				AND = { has_government = democratic PREV = { has_government = democratic } }
+			}
+		}
+
+		value = -200
+	}
+}
+
+### VIC
+
+EAI_axis_vichy_border_garrison = {
+	enable = {
+		is_in_faction_with = GER
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+
+		country_trigger = {
+
+			original_tag = FRA
+			NOT = { has_war_with = FROM }
+			has_government = fascism
+		}
+
+		value = -200
+	}
+}
+
+### AST
+
+EAI_AST_garrison_home = {
+	allowed = { tag = AST }
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	### england
+
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.50
+		states = { 
+			520
+			521
+			522
+			517
+			285
+		}
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+}
+
+### SOUTH AMERICA
+
+EAI_SA_garrison = {
+	enable = {
+		has_war_with = GER
+		OR = { original_tag = MEX capital_scope = { is_on_continent = south_america } }
+		is_in_faction_with = USA
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = { type = garrison value = 500 }
+}
+
+############################################
+
+EAI_garrison_state_suez = {      enable = { has_country_flag = EAI_enable_garrison_state_strategies OR = { controls_state = 447 controls_state = 446 } } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 447 446 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_gibraltar = { enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 118 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 118 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_malta = {     enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 116 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 116 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_cyprus = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 183 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 183 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+
+EAI_garrison_state_panama = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 685 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 685 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+
+EAI_garrison_state_singapore = { enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 336 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 336 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_hawaii = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 629 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 629 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_midway = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 631 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 631 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_johnston = {  enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 630 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 630 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_line = {      enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 727 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 727 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_phoenix = {   enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 642 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 642 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_wake = {      enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 632 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 632 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_marshal = {   enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 633 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 633 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_gilbert = {   enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 639 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 639 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_caroline = {  enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 684 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 684 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_marcus = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 648 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 648 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_iwo = {       enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 645 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 645 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_saipan = {    enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 646 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 646 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_guam = {      enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 638 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 638 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }
+EAI_garrison_state_palau = {     enable = { has_country_flag = EAI_enable_garrison_state_strategies controls_state = 647 } abort_when_not_enabled = yes ai_strategy = { type = put_unit_buffers ratio = 0.1 order_id = 999 states = { 647 } subtract_invasions_from_need = no subtract_fronts_from_need = no } }

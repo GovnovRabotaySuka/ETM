@@ -48,9 +48,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Jaroslav Krejčí"
+	name = "Josef Mengele"
 	desc = "POLITICS_JAROSLAV_KREJCI_DESC"
-	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
+	picture = "Mengele.dds"
 	expire = "1965.1.1"
 	ideology = nazi
 	traits = {

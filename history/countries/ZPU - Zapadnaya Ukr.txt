@@ -41,9 +41,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Степан Бандера"
+	name = "Dmitry Anatolyevich Yarosh"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Bandera.dds"
+	picture = "Sector.dds"
 	expire = "1965.1.1"
 	ideology = nazi
 	traits = {

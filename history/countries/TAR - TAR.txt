@@ -10,16 +10,28 @@ set_technology = {
 set_convoys = 5
 
 
-set_politics = {
-	ruling_party = pahanism 
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+set_popularities = { 
+	burjuism = 0
+	borshewism = 0
+	pahanism = 50
+	putinism = 50
+	bidlo = 0
 }
 
-set_popularities = {
-	burjuism = 25
-	bidlo = 15
-	borshewism = 5
-	pahanism = 55
+set_politics = {
+	ruling_party = putinism
+	last_election = ""
+	election_frequency = 0
+	elections_allowed = no
+}
+	
+create_country_leader = {
+    name = "Kremleshtern"
+    desc = ""
+    picture = "Kremlin.dds"
+    expire = "1965.1.1"
+    ideology = putinism
+    traits = {
+        #
+    }
 }
