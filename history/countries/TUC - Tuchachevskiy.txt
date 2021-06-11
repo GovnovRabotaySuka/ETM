@@ -1,12 +1,12 @@
-capital = 625
+capital = 608
 
-oob = "BAL_0002"
+oob = "BUL_0002"
 
 set_research_slots = 3
-set_convoys = 10
-set_stability = 0.54
-set_war_support = 0.63
-add_political_power = 25
+set_convoys = 57
+set_stability = 0.64
+set_war_support = 0.4
+add_political_power = 65
 
 set_technology = {
 	infantry_weapons = 1 
@@ -29,23 +29,25 @@ set_technology = {
 	fleet_in_being = 1
 }
 
+
 set_politics = {
-	ruling_party = borshewism 
+	ruling_party = borshewism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
 }
 
 set_popularities = {
-	burjuism = 17
-	borshewism = 73
+	burjuism = 10
 	bidlo = 10
+	borshewism = 1
+	pahanism = 79
 }
 
 create_country_leader = {
-    name = "Vanomas" 
-    desc = ""
-    picture = "Vano.dds"
-    expire = "1965.1.1"
-    ideology = gribonism
+	name = "Mikhail Tukhachevsky"
+	desc = ""
+	picture = "ROD.dds"
+	expire = "1965.1.1"
+	ideology = naziborshewism  
 }

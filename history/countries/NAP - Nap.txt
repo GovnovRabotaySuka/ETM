@@ -40,3 +40,13 @@ set_popularities = {
 	pahanism = 25
 	bidlo = 75
 }
+create_country_leader = {
+	name = "Vladislav Pozdnyakov"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "MG.dds"
+	expire = "1965.1.1"
+	ideology = gopnik
+	traits = {
+		#
+	}
+}
