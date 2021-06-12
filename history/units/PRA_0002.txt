@@ -114,31 +114,32 @@ units = {
 			is_name_ordered = no
 			}
 		name = "Ополчение №6"	
-		location = 11194
+		location = 11357
 		division_template = "Народное Ополчение"
-		start_experience_factor = 0.4
-		start_equipment_factor = 0.8
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
 			is_name_ordered = no
 			}
 		name = "Ополчение №7"	
-		location = 11193
+		location = 11357
 		division_template = "Народное Ополчение"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 	}
 	division= {	
 		division_name = {
 			is_name_ordered = no
 			}
 		name = "Ополчение №8"	
-		location = 11064
+		location = 11357
 		division_template = "Народное Ополчение"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.6
 	}
+}
 
 instant_effect = {
 	

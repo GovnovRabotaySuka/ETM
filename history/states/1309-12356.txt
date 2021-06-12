@@ -1,7 +1,9 @@
-
 state={
-	id=520
-	name="STATE_520"
+	id=1309
+	name="STATE_1309"
+	provinces={
+		12313 12360 12520 12552 12582 12645 12735 12754 
+	}
 	resources={
 		steel=8.000
 	}
@@ -18,9 +20,7 @@ state={
 
 	}
 
-	provinces={
-		12644 12668 12783 12805 12806 12835 12934 12978 12979 12980 13060 13061 13090 13136 
-	}
+	
 	manpower=1484214
 	buildings_max_level_factor=1.000
 	state_category=town
