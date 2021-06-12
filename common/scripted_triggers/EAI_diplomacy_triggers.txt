@@ -203,10 +203,10 @@ EAI_nonaligned_focus = {
 }
 
 EAI_PREV_has_same_ideology_with_THIS = {
-	if = { limit = { PREV = { has_government = neutrality } } has_government = neutrality }
-	else_if = { limit = { PREV = { has_government = democratic } } has_government = democratic }
-	else_if = { limit = { PREV = { has_government = fascism } } has_government = fascism }
-	else_if = { limit = { PREV = { has_government = communism } } has_government = communism }
+	if = { limit = { PREV = { has_government = pahanism } } has_government = pahanism }
+	else_if = { limit = { PREV = { has_government = burjuism } } has_government = burjuism }
+	else_if = { limit = { PREV = { has_government = bidlo } } has_government = bidlo }
+	else_if = { limit = { PREV = { has_government = borshewism } } has_government = borshewism }
 }
 
 EAI_PREV_on_same_side_with_THIS = {

@@ -17,7 +17,9 @@ country_event = {
 		}
 	option = {			
 		name = mah.1.a
+		MAH = {
 		play_song = "mh-anarhbatal"
+		}
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			load_oob = "MAH_DNB"
@@ -45,7 +47,9 @@ country_event = {
 		}
 	option = {			
 		name = mah.2.a
+		MAH = {
 		play_song = "mh-gulyaypole"
+		}
 		hidden_effect = {
 			set_cosmetic_tag = MAH_VOL
 			MAH = {

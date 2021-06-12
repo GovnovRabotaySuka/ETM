@@ -29,11 +29,11 @@ if = {
 	}
 	set_autonomy = {
 		target = SKY
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_pah_kommissariat
 	}
 	set_autonomy = {
 		target = GVN
-		autonomous_state = autonomy_dominion
+		autonomous_state = autonomy_pah_protectorate
 	}
 	else = {
 		puppet = SKY

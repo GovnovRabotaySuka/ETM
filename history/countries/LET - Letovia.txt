@@ -119,7 +119,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 3
-	stics_skill = 3
+	logistics_skill = 3
 }
 create_corps_commander = {
 	name = "Игорь Жевтун"
@@ -129,7 +129,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 1
 	planning_skill = 4
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Евгений 'Махно' Пьянов"
@@ -139,7 +139,7 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 1
 	planning_skill = 5
-	stics_skill = 2
+	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Наталья Чумакова"
@@ -149,7 +149,7 @@ create_corps_commander = {
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 4
-	stics_skill = 2
+	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Сергей Летов"
@@ -159,7 +159,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 4
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Дмитрий Язов"
@@ -169,7 +169,7 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 5
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Коллективный Рабочий Совет"
@@ -179,7 +179,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 4
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Греггори Ли"
@@ -189,7 +189,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 1
 	planning_skill = 4
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Трипутень"
@@ -199,7 +199,7 @@ create_corps_commander = {
 	attack_skill = 5
 	defense_skill = 2
 	planning_skill = 1
-	stics_skill = 1
+	logistics_skill = 1
 }
 create_corps_commander = {
 	name = "Алунья"
@@ -209,7 +209,7 @@ create_corps_commander = {
 	attack_skill = 1
 	defense_skill = 3
 	planning_skill = 2
-	stics_skill = 2
+	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Буэнавентура Дуррути"
@@ -219,7 +219,7 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 5
 	planning_skill = 2
-	stics_skill = 5
+	logistics_skill = 5
 }
 create_corps_commander = {
 	name = "Бэнес Айо"
@@ -229,5 +229,5 @@ create_corps_commander = {
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 1
-	stics_skill = 1
+	logistics_skill = 1
 }

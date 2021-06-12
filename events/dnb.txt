@@ -17,7 +17,7 @@ country_event = {
 	}
 	option = {			#мы легетимное правительство
 		name = dnb.1.a
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 100 }
 		hidden_effect = {
 		add_threat = 30
 		DNB = {
@@ -51,7 +51,9 @@ country_event = {
 		MAH = { change_tag_from = ROOT }
 		hidden_effect = {
 		add_threat = 30
+		MAH = {
 		play_song = "mh-rozovyeushki"
+		}
 		DNB = {
 			load_oob = "DNB_MAH"
 			set_popularities = {
