@@ -200,8 +200,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			
-			modifier = { factor = 2 original_tag = SOV }
 		}
 
 		set_variable = { EAI_FOCUS/LAND/land_doctrine = global.EAI_MA_DOCTRINE }
@@ -676,7 +674,6 @@ country_event = {
 			modifier = { factor = 1.5 EAI_Armor_Research_Focus_PRESET = yes }
 			modifier = { factor = 2 chromium > 30 NOT = { EAI_major_country = yes } } # minors with a lot of chromium prefer heavy armor
 			modifier = { factor = 0.1 NOT = { chromium > 15 } NOT = { EAI_major_country = yes } } # if a minor doesn't have chromium, prefer medium armor
-			modifier = { factor = 5 tag = FRA }
 			modifier = { # countries with an armor advisor
 				factor = 2
 				OR = {
@@ -758,7 +755,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = { factor = 10 OR = { tag = SOV tag = GER } }
 		}
 
 		set_variable = { EAI_FOCUS/LAND/armor_design = global.EAI_A_ARM_DESIGN }
@@ -777,7 +773,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = { factor = 10 OR = { tag = SOV tag = GER } }
 		}
 
 		set_variable = { EAI_FOCUS/LAND/armor_design = global.EAI_B_ARM_DESIGN }
@@ -931,8 +926,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = { factor = 5 tag = FRA } # france prefers early AT
+			factor = 1 # france prefers early AT
 			modifier = { # countries with a motorized advisor
 				factor = 2
 				OR = {
@@ -961,8 +955,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 1
-			modifier = { factor = 5 tag = FRA } # france prefers early AT
+			factor = 1 # france prefers early AT
 			modifier = {
 				factor = 2
 				NOT = { EAI_major_country = yes }
@@ -1079,7 +1072,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 5
-			modifier = { factor = 20 tag = GER }
 		}
 
 		set_variable = { EAI_FOCUS/LAND/motorized_design = global.EAI_A_MOT_DESIGN }
@@ -1091,7 +1083,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = { factor = 20 tag = SOV }
 		}
 
 		set_variable = { EAI_FOCUS/LAND/motorized_design = global.EAI_B_MOT_DESIGN }
@@ -1283,7 +1274,6 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = { factor = 1.5 NOT = { EAI_major_country = yes } } # minors prefer cas
-			modifier = { factor = 1.5 OR = { tag = GER tag = SOV } } # ger/sov prefer cas
 		}
 
 		set_variable = { EAI_FOCUS/AIR/ground_bomber = global.EAI_CAS_AIR }
@@ -1352,7 +1342,6 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
-			modifier = { factor = 4 OR = { tag = ENG tag = USA } } # eng/usa prefer str
 		}
 
 		set_variable = { EAI_FOCUS/AIR/strategic_bomber = global.EAI_ON }
@@ -2823,8 +2812,6 @@ country_event = { # on
 		num_of_naval_factories > 50
 
 		amount_research_slots > 4
-
-		if = { limit = { original_tag = GER is_historical_focus_on = yes } NOT = { SOV = { EAI_is_threat = yes } } }
 	}
 
 	immediate = {
@@ -2866,9 +2853,6 @@ country_event = {
 				check_variable = { EAI_FOCUS/NAVY/carrier = global.EAI_OFF }
 			}
 		}
-
-		if = { limit = { original_tag = GER is_historical_focus_on = yes } NOT = { SOV = { EAI_is_threat = yes } } }
-		if = { limit = { original_tag = SOV is_historical_focus_on = yes } NOT = { GER = { EAI_is_threat = yes } } }
 	}
 
 	immediate = {
