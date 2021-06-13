@@ -6,12 +6,30 @@ state={
 	history={
 		owner = SWI
 		victory_points = {
-			11634 25 
+			11274 25 
 		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-
+			anti_air_building = 5
+			10976 = {
+				bunker = 9
+			}
+			11032 = {
+				bunker = 9
+			}
+			11125 = {
+				bunker = 9
+			}
+			11161 = {
+				bunker = 9
+			}
+			11275 = {
+				bunker = 9
+			}
+			11418 = {
+				bunker = 9
+			}
 		}
 		add_core_of = SWI
 

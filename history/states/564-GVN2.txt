@@ -12,15 +12,27 @@ state={
 			infrastructure = 6
 			arms_factory = 4
 			industrial_complex = 4
+			anti_air_building = 5
 			air_base = 4
-
+			10840 = {
+				bunker = 9
+			}
+			10861 = {
+				bunker = 9
+			}
+			10886 = {
+				bunker = 9
+			}
+			11033 = {
+				bunker = 9
+			}
 		}
 		add_core_of = SWI
 
 	}
 
 	provinces={
-		10840 10861 10886 11033 
+		10840 10861 10886 11033
 	}
 	manpower=1080544
 	buildings_max_level_factor=1.000
