@@ -1,11 +1,11 @@
-capital = 954
+capital = 944
 
 oob = "PTL_0002"
 
 set_research_slots = 3
 set_convoys = 75
-set_stability = 0.3
-set_war_support = 0.6
+set_stability = 0.34
+set_war_support = 0.61
 add_political_power = 10
 
 set_technology = {
@@ -28,17 +28,84 @@ set_technology = {
 	mass_assault = 1
 	fleet_in_being = 1
 }
-
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
 }
-
-
 set_popularities = {
-	burjuism = 5
-	borshewism = 89
+	burjuism = 15
+	pahanism = 79
 	bidlo = 6
+}
+create_country_leader = {
+	name = "Potolot"
+	desc = ""
+	picture = "Potolot.dds"
+	expire = "1965.1.1"
+	ideology = despopahanism
+	traits = {
+	
+	}
+}
+create_field_marshal = {
+	name = "Potolot"
+	picture = "Potolot.dds"
+	traits = { media_personality }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Andrei"
+	picture = "Andrei.dds"
+	traits = { war_hero infantry_officer }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Cheburechnaya"
+	picture = "Cheburek.dds"
+	traits = { trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Tai Tai"
+	picture = "Tai_tai.dds"
+	traits = { inflexible_strategist }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Funtai"
+	picture = "Funtai.dds"
+	traits = { trait_engineer naval_invader }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Taifun"
+	picture = "Taifun.dds"
+	traits = { panzer_expert ranger }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
