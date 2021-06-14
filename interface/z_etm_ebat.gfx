@@ -7,6 +7,15 @@ spriteTypes = {
 		looping = yes
 		play_on_show = yes
 	}
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_parent"
+		texturefile = "gfx/interface/parent.dds"
+		noOfFrames = 60
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
 
     frameAnimatedSpriteType = {
 		name = "GFX_diskleymer" 

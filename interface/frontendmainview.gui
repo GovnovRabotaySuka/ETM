@@ -48,6 +48,11 @@ guiTypes = {
 			position = { x= 97 y = 100 }
 		}
 		
+		iconType = {
+			name ="parent"
+			spriteType = "GFX_parent"
+			position = { x = 115 y = 730 }
+		}
 		
 		iconType = {
 			name ="diskleymer"
