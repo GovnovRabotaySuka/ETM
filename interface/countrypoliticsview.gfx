@@ -497,23 +497,28 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_neutrality_group"
-		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+		name = "GFX_ideology_bidlo_group"
+		texturefile = "gfx/interface/ideologies/bidlo_group.dds"
 	}	
 	
 	spriteType = {
-		name = "GFX_ideology_communism_group"
-		texturefile = "gfx/interface/ideologies/communism_group.dds"
+		name = "GFX_ideology_borshewism_group"
+		texturefile = "gfx/interface/ideologies/borshewism_group.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_fascism_group"
-		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+		name = "GFX_ideology_burjuism_group"
+		texturefile = "gfx/interface/ideologies/burjuism_group.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_ideology_democratic_group"
-		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+		name = "GFX_ideology_pahanism_group"
+		texturefile = "gfx/interface/ideologies/pahanism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_putinism_group"
+		texturefile = "gfx/interface/ideologies/putinism_group.dds"
 	}
 
 	spriteType = {
