@@ -31,16 +31,16 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 0
+	burjuism = 7
 	bidlo = 0
-	borshewism = 20
-	pahanism = 80
+	borshewism = 10
+	pahanism = 83
 }
 
 create_country_leader = {
-	name = "Нихуя"
+	name = "Yuri Khoy"
 	desc = ""
-	picture = "Хуяни.dds"
+	picture = "Hoi.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism  
+	ideology = radicalcentrism
 }

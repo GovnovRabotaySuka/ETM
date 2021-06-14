@@ -32,34 +32,43 @@ guiTypes = {
 		animation_type = decelerated
 		animation_time = 1000
 		size = { width = 256 height = 768}
+		Orientation = CENTER_LEFT
+		Origo = center	
 
 		
 		iconType =
 		{
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x= 20 y = 142 }
+			position = { x= 150 y = 0 }
+			Orientation = CENTER_LEFT
+			Origo = center	
 		}
 		
 		iconType =
 		{
 			name ="version"
 			spriteType = "GFX_version"
-			position = { x= 97 y = 100 }
+			position = { x= 220 y = -50 }
+			Orientation = CENTER_LEFT
+			Origo = center	
 		}
 		
 		iconType = {
 			name ="parent"
 			spriteType = "GFX_parent"
-			position = { x = 115 y = 730 }
+			position = { x = 240 y = 590 }
+			Orientation = CENTER_LEFT
+			Origo = center	
 		}
 		
 		iconType = {
 			name ="diskleymer"
 			spriteType = "GFX_diskleymer"
-			position = { x = 900 y = -400 } #1220*50
+			position = { x = 1300 y = 250 } #1220*50
 			scale = 0.6		
-			orientation = LOWER_RIGHT
+			Orientation = CENTER_LEFT
+			Origo = center	
 		}
 		
 		

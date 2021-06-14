@@ -32,6 +32,13 @@ set_politics = {
 set_popularities = {
 	burjuism = 0
 	bidlo = 75
-	borshewism = 0
-	pahanism = 25
+	borshewism = 13
+	pahanism = 12
+}
+create_country_leader = {
+	name = "Evgeny Fedorov"
+	desc = ""
+	picture = "NOD.dds"
+	expire = "1965.1.1"
+	ideology = fashiki
 }
