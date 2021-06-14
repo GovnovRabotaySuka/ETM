@@ -40,27 +40,9 @@ set_popularities = {
 	pahanism = 79
 }
 create_country_leader = {
-	name = "Nigger"
-	picture = "gfx/leaders/NIG/nigga.dds"
-	expire = "1965.1.1"
-	ideology = gachism
-}
-create_country_leader = {
-	name = "Nigger"
-	picture = "gfx/leaders/NIG/nigga.dds"
-	expire = "1965.1.1"
-	ideology = naziborshewism
-}
-create_country_leader = {
-	name = "Nigger"
+	name = "Пьер Нарцисс"
 	picture = "gfx/leaders/NIG/nigga.dds"
 	expire = "1965.1.1"
 	ideology = conserva
-}
-create_country_leader = {
-	name = "Nigger"
-	picture = "gfx/leaders/NIG/nigga.dds"
-	expire = "1965.1.1"
-	ideology = nazi
 }
 

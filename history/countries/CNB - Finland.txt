@@ -34,7 +34,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Carl Gustav Emil Mannernigger"
+	name = "Карл Густав Эмиль Маннегрейм"
 	desc = ""
 	picture = "mannernigger.dds"
 	expire = "1965.1.1"
