@@ -15,6 +15,10 @@ DNB_IMPER_RUS = {
     color = rgb { 28  28  28 }
     color_ui = rgb { 28  28  28 }
 }
+DNB_Reich = {
+    color = rgb { 28  28  28 }
+    color_ui = rgb { 28  28  28 }
+}
 MAH_VOL = {
     color = hex { 0x5a0d0d } 
     color_ui = hex { 0x5a0d0d } 

@@ -107,6 +107,11 @@ country_event = {
         set_cosmetic_tag = DNB_IMPER_RUS
         country_event = dnb.9992
     }
+	option = {
+        name = dnb.999.e
+        set_cosmetic_tag = DNB_Reich
+        country_event = dnb.9993
+    }
     option = {
         name = dnb.999.c
     }
@@ -144,5 +149,22 @@ country_event = {
     option = {
 	ai_chance = { factor = 100}
         name = dnb.9992.b
+    }
+}
+country_event = {
+    id = dnb.9993
+    title = dnb.9993.t
+    desc = dnb.9993.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9993.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_Reich
+    }
+    option = {
+        name = dnb.9993.b
     }
 }

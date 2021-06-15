@@ -1,0 +1,18 @@
+opinion_modifiers = {
+
+	MUS_6 = {
+		value = 100
+	}
+	
+	MUS_4 = {
+		value = -50
+	}
+	
+	MUS_9 = {
+		value = 50
+	}
+	
+	MUS_5 = {
+		value = 50
+	}
+}

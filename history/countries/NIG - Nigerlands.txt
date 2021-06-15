@@ -41,8 +41,8 @@ set_popularities = {
 }
 create_country_leader = {
 	name = "Пьер Нарцисс"
-	picture = "gfx/leaders/NIG/nigga.dds"
+	picture = "nigga.dds"
 	expire = "1965.1.1"
-	ideology = conserva
+	ideology = flexism
 }
 

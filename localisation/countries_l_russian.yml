@@ -1037,8 +1037,8 @@
  MUS_bidlo_DEF:0 "Безумный Рейх"
  MUS_burjuism:0 "Безумный"
  MUS_burjuism_DEF:0 "Безумный"
- MUS_pahanism:0 "Беззубый"
- MUS_pahanism_DEF:0 "Беззубый"
+ MUS_pahanism:0 "Безумный Эмират"
+ MUS_pahanism_DEF:0 "Безумный Эмират"
  MUS_borshewism:0 "Безумные Кастрюли"
  MUS_borshewism_DEF:0 "Безумные Кастрюли"
  MUS_bidlo_ADJ:0 "Безумн."
@@ -1808,13 +1808,4 @@
  PRA_burjuism_ADJ:0 ""
  PRA_pahanism_ADJ:0 "Донск."
  PRA_borshewism_ADJ:0 ""
- 
- 
- 
- 
- 
- 
- 
- 
- 
  

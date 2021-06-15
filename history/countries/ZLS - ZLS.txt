@@ -93,7 +93,6 @@ create_corps_commander = {
 	picture = "Polkovnik.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 1
-	id = 3
 	attack_skill = 2
 	defense_skill = 2
 	planning_skill = 2

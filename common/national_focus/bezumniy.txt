@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = { x = 50 y = 1400 }
 	focus = {
 		id = MUS_1
 		icon = GFX_focus_ger_assassinate_mussolini
@@ -18,12 +19,14 @@ focus_tree = {
 					factor = 30
 				}
 			completion_reward = {
+					add_ideas = mus_idea_1
 					add_political_power = 150
 					add_stability = 0.15
 					add_war_support = 0.05
 					set_popularities = {
 							bidlo = 60
-							borshewism = 40
+							borshewism = 15
+							pahanism = 25
 						}
 				}
 
@@ -31,7 +34,7 @@ focus_tree = {
 	focus = {
 		id = MUS_10
 		icon = GFX_goal_unknown
-		cost = 2,00
+		cost = 2
 		x = 29
 		y = 0
 			ai_will_do = {
@@ -45,24 +48,43 @@ focus_tree = {
 	focus = {
 		id = MUS_16
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1
 		mutually_exclusive = {
 			focus = MUS_17
 		}
 		x = 3
 		y = 0
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+					has_government = bidlo
+				}
 
 	}
 	focus = {
 		id = MUS_17
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1
 		mutually_exclusive = {
 			focus = MUS_16
 		}
 		x = 5
 		y = 0
-
+			ai_will_do = {
+					factor = 20
+				}
+			available = {
+					has_government = bidlo
+				}
+			completion_reward = {
+				set_popularities = {
+					bidlo = 40
+					borshewism = 15
+					pahanism = 45
+				}
+				add_stability = -0.05
+			}
 	}
 	focus = {
 		id = MUS_industrial_effort
@@ -394,6 +416,8 @@ focus_tree = {
 				}
 
 	}
+
+
 	focus = {
 		id = MUS_industrial_effort_2
 		text = industrial_effort_2
@@ -783,18 +807,23 @@ focus_tree = {
 		y = 1
 			available = {
 					has_government = bidlo
-				}
+			}
+			bypass = {
+					NOT = {
+						country_exists = PAS
+					}
+			}
 			ai_will_do = {
 					factor = 20
-				}
+			}
 			completion_reward = {
+					add_popularity = {
+							ideology = bidlo
+							popularity = 0.1
+						}
 					add_war_support = 0.1
 					army_experience = 10
-					add_timed_idea = {
-							idea = mus_1
-							days = 70
-						}
-				}
+			}
 
 	}
 	focus = {
@@ -809,6 +838,35 @@ focus_tree = {
 		}
 		x = 1
 		y = 2
+			ai_will_do = {
+					factor = 20
+				}
+			available = {
+					has_government = bidlo
+					PAS = {
+						OR = {
+							exists = no
+							is_puppet = yes
+						}
+					}
+				}
+			bypass = {
+				NOT = {
+					country_exists = POP
+				}
+			}
+			completion_reward = {
+					add_opinion_modifier = {
+							target = POP
+							modifier = MUS_6
+						}
+					reverse_add_opinion_modifier = {
+							target = POP
+							modifier = MUS_6
+						}
+					add_political_power = 50
+					add_stability = 0.05
+				}
 
 	}
 	focus = {
@@ -854,7 +912,28 @@ focus_tree = {
 		}
 		x = 5
 		y = 1
-
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_government = bidlo
+		}
+		completion_reward = {
+			
+			set_politics = {
+				ruling_party = pahanism
+    	   		elections_allowed = no
+     	  		last_election = "1965.1.1"
+     	  		election_frequency = 48
+			}
+			set_popularities = {
+				bidlo = 25
+				borshewism = 5
+				pahanism = 70
+			}
+			add_political_power = -50
+			add_stability = -0.20
+		}
 	}
 	focus = {
 		id = MUS_3
@@ -867,20 +946,24 @@ focus_tree = {
 		x = 3
 		y = 2
 			ai_will_do = {
-					factor = 20
+					factor = 30
 				}
 			available = {
-
-}
+				has_defensive_war_with = SAU
+			}
 			completion_reward = {
-
-}
-
+				add_war_support = 0.1
+				add_stability = -0.1
+				add_timed_idea = {
+					idea = idea_mus_3
+					days = 70
+				}
+			}
 	}
 	focus = {
 		id = MUS_8
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = MUS_6
 		}
@@ -889,7 +972,23 @@ focus_tree = {
 		}
 		x = 1
 		y = 3
-
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			count_triggers = {
+				amount = 2
+				has_defensive_war_with = SAU
+				has_defensive_war_with = PAS
+				has_defensive_war_with = HOR
+			}
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = Anti_sosiska
+		}
 	}
 	focus = {
 		id = MUS_4
@@ -903,7 +1002,32 @@ focus_tree = {
 		}
 		x = 0
 		y = 4
-
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_defensive_war_with = CZE
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				AND = {
+							target = CZE
+							target = SAU
+				}
+							modifier = MUS_4
+			}
+				swap_ideas = {
+					remove_idea = mus_idea_1
+					add_idea = mus_idea_2
+				}
+					add_political_power = -25
+					add_stability = -0.05
+					add_popularity = {
+						ideology = bidlo
+						popularity = -0.05
+					}
+					
+		}
 	}
 	focus = {
 		id = MUS_9
@@ -917,18 +1041,46 @@ focus_tree = {
 		}
 		x = 2
 		y = 4
-
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_war_together_with = CZE
+		}
+		completion_reward = {
+			MUS = {
+				add_to_faction = CZE
+			}
+			add_political_power = -25
+			add_stability = 0.05
+			add_ideas = mus_idea_9
+			CZE = {
+				country_event = { id = cze_event_mus_9 }
+			}
+			reverse_add_opinion_modifier = {
+				target = CZE
+				modifier = MUS_9
+			}
+		}
 	}
 	focus = {
 		id = MUS_15
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = MUS_9
 		}
 		x = 4
 		y = 5
-
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+			has_offensive_war_with = DDR
+		}
+		completion_reward = {
+			
+		}
 	}
 	focus = {
 		id = MUS_31
@@ -939,7 +1091,21 @@ focus_tree = {
 		}
 		x = 4
 		y = 6
-
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 600
+		}
+		completion_reward = {
+			600 = {
+				add_manpower = -5000
+			}
+			add_popularity = {
+				ideology = pahanism
+				popularity = -0.1
+			}
+		}
 	}
 	focus = {
 		id = MUS_22
@@ -950,7 +1116,19 @@ focus_tree = {
 		}
 		x = 5
 		y = 2
-
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = Islam_konf
+			MUS = {
+				add_to_faction = KEB
+			}
+			add_stability = 0.1
+		}
 	}
 	focus = {
 		id = MUS_23
@@ -961,7 +1139,39 @@ focus_tree = {
 		}
 		x = 5
 		y = 3
-
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_state_core = 546
+			if = {
+				limit = {
+					POP = {
+						has_full_control_of_state = 546
+					}	
+				}
+				declare_war_on = {
+					target = POP
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					546 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_23 }
+				}
+			}
+			add_political_power = -25
+			add_stability = 0.05
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.02
+			}
+		}
 	}
 	focus = {
 		id = MUS_25
@@ -972,18 +1182,79 @@ focus_tree = {
 		}
 		x = 5
 		y = 4
-
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_state_core = 601
+			add_state_core = 602
+			if = {
+				limit = {
+					MAR = {
+						has_full_control_of_state = 601
+					}	
+				}
+				declare_war_on = {
+					target = MAR
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					601 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_25_1 }
+				}
+			}
+			if = {
+				limit = {
+					BNP = {
+						has_full_control_of_state = 602
+					}	
+				}
+				declare_war_on = {
+					target = BNP
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					602 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_25_2 }
+				}
+			}
+			add_political_power = -50
+			add_stability = 0.05
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.03
+			}
+		}
 	}
 	focus = {
 		id = MUS_36
 		icon = GFX_goal_unknown
-		cost = 10
+		cost = 1
 		prerequisite = {
 			focus = MUS_20
 		}
 		x = 7
 		y = 2
-
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
 	}
 	focus = {
 		id = MUS_24
@@ -994,7 +1265,10 @@ focus_tree = {
 		}
 		x = 7
 		y = 3
-
+		ai_will_do = {
+			factor = 15
+		}
+		
 	}
 	focus = {
 		id = MUS_40
@@ -1060,7 +1334,41 @@ focus_tree = {
 		}
 		x = 9
 		y = 2
-
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			SIC = {
+				add_state_core = 600
+			}
+			if = {
+				limit = {
+					MAR = {
+						has_full_control_of_state = 600
+					}	
+				}
+				declare_war_on = {
+					target = MAR
+					type = take_state_focus
+				}
+			}
+			else_if = {
+				limit = {
+					600 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_21 }
+				}
+			}
+			add_political_power = -50
+			add_stability = 0.1
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.05
+			}
+		}
 	}
 	focus = {
 		id = MUS_37
@@ -1190,20 +1498,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = MUS_33
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = MUS_29
-		}
-		prerequisite = {
-			focus = MUS_30
-		}
-		x = 30
-		y = 7
-
-	}
-	focus = {
 		id = MUS_34
 		icon = GFX_goal_unknown
 		cost = 10
@@ -1213,7 +1507,21 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_29
 		}
-		x = 32
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = MUS_33
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_29
+		}
+		prerequisite = {
+			focus = MUS_30
+		}
+		x = 28
 		y = 7
 
 	}
@@ -1227,7 +1535,35 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_30
 		}
-		x = 28
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = MUS_47
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_30
+		}
+		prerequisite = {
+			focus = MUS_29
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = MUS_48
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_30
+		}
+		prerequisite = {
+			focus = MUS_29
+		}
+		x = 34
 		y = 7
 
 	}
@@ -1244,7 +1580,24 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_32
 		}
+		prerequisite = {
+			focus = MUS_47
+		}
+		prerequisite = {
+			focus = MUS_48
+		}
 		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = MUS_49
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_47
+		}
+		x = 32
 		y = 8
 
 	}
@@ -1258,7 +1611,24 @@ focus_tree = {
 		}
 		x = 2
 		y = 5
-
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_war_together_with = POL
+		}
+		completion_reward = {
+			MUS = {
+				add_to_faction = POL
+			}
+			add_political_power = -25
+			add_war_support = 0.1
+			add_ideas = MUS_5
+			add_opinion_modifier = {
+				target = POL
+				modifier = MUS_5
+			}
+		}
 	}
 	focus = {
 		id = MUS_13
@@ -1270,7 +1640,14 @@ focus_tree = {
 		}
 		x = 0
 		y = 5
-
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_state_core = 600
+			add_state_core = 601
+			add_state_core = 602
+		}
 	}
 	focus = {
 		id = MUS_19
@@ -1292,7 +1669,18 @@ focus_tree = {
 		}
 		x = 0
 		y = 6
-
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			country_exists = HOJ
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HOJ
+			}
+		}
 	}
 	focus = {
 		id = MUS_44
@@ -1851,6 +2239,17 @@ focus_tree = {
 							category = submarine_doctrine
 						}
 				}
+
+	}
+	focus = {
+		id = MUS_50
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_48
+		}
+		x = 34
+		y = 8
 
 	}
 }

@@ -1,4 +1,4 @@
-capital = 559
+﻿capital = 559
 
 oob = "MUS_0002"
 
@@ -37,36 +37,37 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 17
-	borshewism = 7
-	bidlo = 76
+	burjuism = 2
+	borshewism = 28
+	bidlo = 40
+	pahanism = 30
 }
 
 create_country_leader = {
     name = "Benito Mussolini" 
     desc = ""
-    picture = "gfx/leaders/MUS/Portrait_Italy_Benito_Mussolini.dds"
+    picture = "gfx/leaders/MUS/Mussolini.dds"
     expire = "1965.1.1"
     ideology = gopnik
 }
 create_country_leader = {
-    name = "Benito Mussolini" 
+    name = "Menito Bussolini" 
     desc = ""
-    picture = "gfx/leaders/MUS/Portrait_Italy_Benito_Mussolini.dds"
-    expire = "1965.1.1"
-    ideology = despopahanism
-}
-create_country_leader = {
-    name = "Benito Mussolini" 
-    desc = ""
-    picture = "gfx/leaders/MUS/Portrait_Italy_Benito_Mussolini.dds"
+    picture = "gfx/leaders/MUS/Mussolini.dds"
     expire = "1965.1.1"
     ideology = conserva
 }
 create_country_leader = {
-    name = "Benito Mussolini" 
+    name = "Duce al-mu'minin Abu-l-Bruno Benito Andru Amilcare Mussolini ibn Iskander Emilia-Romagni"
     desc = ""
-    picture = "gfx/leaders/MUS/Portrait_Italy_Benito_Mussolini.dds"
+    picture = "gfx/leaders/MUS/Mussolini_Islam.dds"
     expire = "1965.1.1"
-    ideology = naziborshewism
+    ideology = despopahanism
+}
+create_country_leader = {
+    name = "Kastrulya Mussolini" 
+    desc = ""
+    picture = "gfx/leaders/MUS/Kastrulya.dds"
+    expire = "1965.1.1"
+    ideology = sralinism
 }

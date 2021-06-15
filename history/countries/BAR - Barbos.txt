@@ -87,7 +87,6 @@ create_corps_commander = {
 	picture = "Ded_Barboskin.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 3
-	id = 3
 	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
@@ -109,7 +108,7 @@ create_field_marshal = {
 
 create_navy_leader = {
 	name = "Ded Barboskin"
-		picture = "Ded_Barboskin.dds"
+	picture = "Ded_Barboskin.dds"
 	traits = { ground_pounder ironside }
 	skill = 2
 	attack_skill = 3
