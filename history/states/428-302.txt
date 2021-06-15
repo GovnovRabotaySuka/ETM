@@ -15,6 +15,6 @@ state={
 		}
 		add_core_of = FCK
 	}
-	manpower=6372656174672665746766969
+	manpower=63726
 	buildings_max_level_factor=1.000
 }
