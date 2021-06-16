@@ -48,7 +48,7 @@ create_country_leader = {
     desc = ""
     picture = "gfx/leaders/MUS/Mussolini.dds"
     expire = "1965.1.1"
-    ideology = gopnik
+    ideology = fashiki
 }
 create_country_leader = {
     name = "Menito Bussolini" 
