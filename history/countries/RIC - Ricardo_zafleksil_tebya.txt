@@ -30,7 +30,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
@@ -39,7 +39,7 @@ set_politics = {
 set_popularities = {
 	burjuism = 5
 	borshewism = 17
-	bidlo = 78
+	pahanism = 78
 }
 
 create_country_leader = {
@@ -47,5 +47,5 @@ create_country_leader = {
     desc = ""
     picture = "PDX_ricardo"
     expire = "1965.1.1"
-    ideology = conserva
+    ideology = flexism
 }

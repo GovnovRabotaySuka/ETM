@@ -37,8 +37,7 @@ set_politics = {
 
 
 set_popularities = {
-	burjuism = 3
-	pahanism = 92
-	bidlo = 5
+	burjuism = 57
+	bidlo = 43
 }
 

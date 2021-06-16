@@ -30,14 +30,13 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
 }
 
 set_popularities = {
-	burjuism = 5
-	borshewism = 89
-	bidlo = 6
+	burjuism = 1
+	pahanism = 99
 }
