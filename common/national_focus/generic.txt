@@ -1128,8 +1128,11 @@ focus_tree = {
 	}
 	focus = {
 		id = visit_public
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_visit_public
 		cost = 10
+		available = {
+			is_ai = no
+		}
 		x = 33
 		y = 1
 		completion_reward = {
@@ -1139,7 +1142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = politsrach
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_politsrach
 		cost = 10
 		prerequisite = {
 			focus = visit_public
@@ -1152,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = stado_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_stado_wins
 		cost = 10
 		prerequisite = {
 			focus = politsrach
@@ -1175,7 +1178,7 @@ focus_tree = {
 	}
 	focus = {
 		id = young_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_young_wins
 		cost = 10
 		prerequisite = {
 			focus = politsrach

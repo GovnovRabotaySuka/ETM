@@ -2,3 +2,16 @@
  infantry_folder_tab:0 "ПЕХОТА"
  support_folder_tab:0 "РОТЫ ОБЕСПЕЧЕНИЯ"
  armour_folder_tab:0 "БРОНЕТЕХНИКА"
+ artillery_folder_tab:0 "АРТИЛЕРИЯ"
+ land_doctrine_folder_tab:0 "СУХОПУТНАЯ ДОКТРИНА"
+ naval_folder_tab:0 "ФЛОТ"
+ naval_doctrine_folder_tab:0 "МОРСКАЯ ДОКТРИНА"
+ air_folder_tab:0 "АВИАЦИЯ"
+ air_doctrine_folder_tab:0 "ВОЗДУШНАЯ ДОКТРИНА"
+ electronics_folder_tab:0 "МАШИНОСТРОЕНИЕ"
+ industry_folder_tab:0 "ПРОМЫШЛЕННОСТЬ"
+ 
+ 
+ 
+ 
+ 

@@ -98,5 +98,25 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_openvodka"
 	texturefile = "gfx/interface/goals/openvodka.dds"			
-	}		
+	}
+	
+	SpriteType = {
+	name = "GFX_visit_public"
+	texturefile = "gfx/interface/goals/visit_public.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_young_wins"
+	texturefile = "gfx/interface/goals/young_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_stado_wins"
+	texturefile = "gfx/interface/goals/stado_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_politsrach"
+	texturefile = "gfx/interface/goals/politsrach.dds"			
+	}	
 }

@@ -2842,8 +2842,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "naval_doctrine_folder"
-			position = { x=0 y=47 }
-			size = { width = 100%% height = 100%% }
+			position = { x=20 y=47 }
+			size = { width = 99%% height = 99%% }
 			margin = { top = 13 left = 13 bottom = 24 right = 25}
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
@@ -3555,7 +3555,7 @@ guiTypes = {
 	
 			buttonType = {
 				name = "infantry_folder_tab"
-				position = { x = 30 y = 15 }
+				position = { x = 24 y = 15 }
 				quadTextureSprite = "GFX_infantry_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3563,17 +3563,9 @@ guiTypes = {
                 				buttonFont = "interface"
 			}
 
-			iconType = {
-				name = "highlight_infantry_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=22 y=-5}
-				hide = yes
-				alwaystransparent = yes
-			}
-
 			buttonType = {
 				name = "support_folder_tab"
-				position = { x = 103 y = 15 }
+				position = { x = 97 y = 15 }
 				quadTextureSprite = "GFX_support_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3582,7 +3574,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "armour_folder_tab"
-				position = { x = 288 y = 15 }
+				position = { x = 276 y = 15 }
 				quadTextureSprite = "GFX_armour_folder_tab"
 				frame = 1
 				clicksound = click_default
@@ -3592,101 +3584,92 @@ guiTypes = {
 
 			buttonType = {
 				name = "artillery_folder_tab"
-				position = { x = 450 y = 0 }
+				position = { x = 413 y = 15 }
 				quadTextureSprite = "GFX_artillery_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "artillery_folder_tab"
+                				buttonFont = "interface"
 			}
 
 			buttonType = {
 				name = "land_doctrine_folder_tab"
-				position = { x = 550 y = 0 }
+				position = { x = 530 y = 15 }
 				quadTextureSprite = "GFX_land_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
-			}
-
-			iconType = {
-				name = "highlight_land_doctrine_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x = 650 y = 0}
-				hide = yes
-				alwaystransparent = yes
+              				buttonText = "land_doctrine_folder_tab"
+                				buttonFont = "interface"
 			}
 
 			buttonType = {
 				name = "naval_folder_tab"
-				position = { x = 750 y = 0 }
+				position = { x = 736 y = 15 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "naval_folder_tab"
+                				buttonFont = "interface"
 			}
 			
 			buttonType = {
 				name = "mtgnavalfolder_tab"
-				position = { x = 750 y = 0 }
+				position = { x = 736 y = 15 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "naval_folder_tab"
+                				buttonFont = "interface"
 			}
 
 			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 850 y = 0 }
+				position = { x = 794 y = 15 }
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "naval_doctrine_folder_tab"
+                				buttonFont = "interface"
 			}
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 950 y = 0 }
+				position = { x = 974 y = 15 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "air_folder_tab"
+                				buttonFont = "interface"
 			}
 
 			buttonType = {
 				name = "air_doctrine_folder_tab"
-				position = { x = 1050 y = 0 }
+				position = { x = 1058 y = 15 }
 				quadTextureSprite = "GFX_air_doctrine_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "air_doctrine_folder_tab"
+                				buttonFont = "interface"
 			}
 
 			buttonType = {
-				position = { x = 1150 y = 0 }
+				position = { x = 1262 y = 15 }
 				name = "electronics_folder_tab"
 				quadTextureSprite = "GFX_techtree_engineering_tab"
 				frame = 1
 				clicksound = click_default
-			}
-
-			iconType = {
-				name = "highlight_engineering_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=913 y=0}
-				hide = yes
-				alwaystransparent = yes
-			}			
+              				buttonText = "electronics_folder_tab"
+                				buttonFont = "interface"
+			}		
 				
 			buttonType = {
-				position = { x = 1250 y = 0 }
+				position = { x = 1432 y = 15 }
 				name = "industry_folder_tab"
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
 				clicksound = click_default
+              				buttonText = "industry_folder_tab"
+                				buttonFont = "interface"
 			}
-
-			iconType = {
-				name = "highlight_industry_folder"
-				spriteType = "GFX_tutorial_research_folder_icon_glow"
-				position = { x=1002 y=0}
-				hide = yes
-				alwaystransparent = yes
-			}
-
-			
-
 		}
 
 		buttonType = {
