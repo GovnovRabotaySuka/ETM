@@ -13,8 +13,8 @@ set_convoys = 5
 set_popularities = { 
 	burjuism = 0
 	borshewism = 0
-	pahanism = 50
-	putinism = 50
+	burjuism = 54
+	putinism = 46
 	bidlo = 0
 }
 
@@ -31,6 +31,16 @@ create_country_leader = {
     picture = "Kremlin.dds"
     expire = "1965.1.1"
     ideology = putinism
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "MorGaySlave"
+    desc = ""
+    picture = "MorGaySlave.dds"
+    expire = "1965.1.1"
+    ideology = pedophilia
     traits = {
         #
     }
