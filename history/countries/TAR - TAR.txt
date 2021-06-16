@@ -11,11 +11,8 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 0
 	burjuism = 54
 	putinism = 46
-	bidlo = 0
 }
 
 set_politics = {
