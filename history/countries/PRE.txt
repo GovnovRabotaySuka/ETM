@@ -11,11 +11,9 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
-	bidlo = 0
+	burjuism = 22
+	borshewism = 18
+	pahanism = 60
 }
 
 set_politics = {
@@ -26,9 +24,9 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Nikolai Tarasov"
     desc = ""
-    picture = ""
+    picture = "Taiga.dds"
     expire = "1965.1.1"
     ideology = modepahanism
     traits = {

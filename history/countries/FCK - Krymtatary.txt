@@ -32,8 +32,16 @@ set_politics = {
 }
 
 set_popularities = {
-	pahanism = 1
-	borshewism = 33
+	pahanism = 67
 	bidlo = 33
-	burjuism = 33
+}
+create_country_leader = {
+    name = "Hideo Kojima"
+    desc = ""
+    picture = "GayNiy2.dds"
+    expire = "1965.1.1"
+    ideology = radicalcentrism
+    traits = {
+        #
+    }
 }

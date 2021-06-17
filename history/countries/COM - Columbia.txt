@@ -29,7 +29,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
@@ -37,15 +37,14 @@ set_politics = {
 
 
 set_popularities = {
-	burjuism = 5
-	bidlo = 89
-	borshewism = 6
+	burjuism = 11
+	pahanism = 89
 }
 
 create_country_leader = {
-    name = "LOH" 
+    name = "Pablo Escobar" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "Cocain.dds"
     expire = "1965.1.1"
-    ideology = bidlo_ideology
+    ideology = despopahanism
 }

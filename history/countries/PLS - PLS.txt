@@ -43,9 +43,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Shabanis" 
+    name = "Sosiska Killer" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "Sosiska_Killer.dds"
     expire = "1965.1.1"
     ideology = gribonism
 }

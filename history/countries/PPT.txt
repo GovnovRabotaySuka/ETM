@@ -11,26 +11,23 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
-	bidlo = 0
+	pahanism = 5
+	borshewism = 95
 }
 
 set_politics = {
-	ruling_party = pahanism
+	ruling_party = borshewism
 	last_election = "21.10.2010"
 	election_frequency = 0
 	elections_allowed = no
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Pol Pot"
     desc = ""
-    picture = ""
+    picture = "Ris.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = sralinism
     traits = {
         #
     }

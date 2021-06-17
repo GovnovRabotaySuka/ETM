@@ -11,11 +11,9 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
-	bidlo = 0
+	burjuism = 10
+	borshewism = 25
+	pahanism = 65
 }
 
 set_politics = {
@@ -26,11 +24,11 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Nikita Dzhigurda"
     desc = ""
-    picture = ""
+    picture = "Gachi_Dzhiga.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = gachism
     traits = {
         #
     }

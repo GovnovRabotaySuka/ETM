@@ -10,16 +10,25 @@ set_technology = {
 set_convoys = 5
 
 set_politics = {
-	ruling_party = pahanism 
+	ruling_party = putinism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	burjuism = 25
+	burjuism = 19
 	bidlo = 15
-	borshewism = 5
-	pahanism = 55
+	putinism = 66
+}
+create_country_leader = {
+    name = "Ramzan Kadyrov"
+    desc = ""
+    picture = "Izvenis.dds"
+    expire = "1965.1.1"
+    ideology = putinism
+    traits = {
+        #
+    }
 }
 

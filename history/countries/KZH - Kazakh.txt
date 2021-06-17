@@ -29,9 +29,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Nursultan Nazarbaev"
+	name = "Nursultan Nazarbayev"
 	desc = ""
-	picture = "nursultan_nazarbaev.dds"
+	picture = "Nazar_Baev.dds"
 	expire = "1965.1.1"
 	ideology = despopahanism
 }

@@ -11,26 +11,63 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
-	bidlo = 0
+	pahanism = 21
+	burjuism = 79
 }
 
 set_politics = {
-	ruling_party = pahanism
+	ruling_party = burjuism
 	last_election = "21.10.2010"
 	election_frequency = 0
 	elections_allowed = no
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Alexander Gabyshev"
     desc = ""
-    picture = ""
+    picture = "Shaman.dds"
+    expire = "1965.1.1"
+    ideology = liberaha
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Alexander Gabyshev"
+    desc = ""
+    picture = "Shaman_p.dds"
+    expire = "1965.1.1"
+    ideology = putinism
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Alexander Gabyshev"
+    desc = ""
+    picture = "Shaman_pa.dds"
     expire = "1965.1.1"
     ideology = modepahanism
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Alexander Gabyshev"
+    desc = ""
+    picture = "Shaman_bi.dds"
+    expire = "1965.1.1"
+    ideology = fashiki
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Alexander Gabyshev"
+    desc = ""
+    picture = "Shaman_b.dds"
+    expire = "1965.1.1"
+    ideology = anarhoborshevism
     traits = {
         #
     }
