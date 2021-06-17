@@ -1,0 +1,144 @@
+add_namespace = sau
+
+# Австрия согласилась
+country_event = {
+	id = sau.1
+	title = sau.1.t
+	desc = sau.1.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SAU
+	}
+
+	option = {
+		name = sau.1.a
+		hidden_effect = {
+		560 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+		561 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+		562 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+		HIT = {
+			every_unit_leader = {
+				set_nationality = SAU
+			}
+		}
+	}
+		annex_country = { target = HIT transfer_troops = yes }
+		add_political_power = 75
+		}
+}
+	# Помощь южным друзьям
+country_event = {
+	id = sau.2
+	title = sau.2.t 
+	desc = sau.2.d 
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.2.a 
+		ai_chance = { factor = 80 }
+		country_event = { days = 1 id = pas.2 }
+	}
+	option = {
+		name = sau.2.b
+		ai_chance = { factor = 20 }
+		country_event = { days = 1 id = pas.3 }
+	}
+}
+
+	# ПР согласен
+country_event = {
+	id = sau.3
+	title = sau.3.t 
+	desc = sau.3.d 
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = sau.3.a 
+	}
+}	
+	#ПР отказался
+country_event = {
+	id = sau.4
+	title = sau.4.t 
+	desc = sau.4.d 
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = sau.4.a 
+	}
+}
+	#Судеты наши
+country_event = {
+	id = sau.7
+	title = sau.7.t 
+	desc = sau.7.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = sau.7.a 
+	}
+}
+	#В Судетах отказано
+country_event = {
+	id = sau.8
+	title = sau.8.t 
+	desc = sau.8.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = sau.8.a 
+	}
+}
+country_event = {
+	id = sau.6
+	title = sau.6.t 
+	desc = sau.6.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = sau.6.a 
+	}
+}

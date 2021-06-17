@@ -554,9 +554,6 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_30
 		}
-		mutually_exclusive = {
-			focus = SAU_32
-		}
 		x = 20
 		y = 3
 		completion_reward = {
@@ -581,13 +578,10 @@ focus_tree = {
 		x = 20
 		y = 4
 		completion_reward = {
-		hidden_effect = {
 		HIT = {
 		country_event = hit.1
-				}
 			}
 		}
-
 	}
 	focus = {
 		id = SAU_34
@@ -599,9 +593,7 @@ focus_tree = {
 		x = 20
 		y = 5
 		completion_reward = {
-		hidden_effect = {
 		country_event = sau.2
-			}
 		}
 	}
 	focus = {
@@ -625,6 +617,11 @@ focus_tree = {
 		}
 		x = 21
 		y = 6
+		completion_reward = {
+		add_stability = -0.1
+		add_political_power = -80
+		add_war_support = -0.1
+		}
 	}
 	focus = {
 		id = SAU_55
@@ -646,7 +643,12 @@ focus_tree = {
 		}
 		x = 23
 		y = 6
-
+		completion_reward = {
+			create_faction = "central_powers"
+			HOR = {
+			country_event = hun.1
+			}
+		}
 	}
 	focus = {
 		id = SAU_45
@@ -657,7 +659,12 @@ focus_tree = {
 		}
 		x = 25
 		y = 6
-
+		completion_reward = {
+		create_wargoal = {
+   			type = annex_everything
+    			target = SWI
+			}
+		}
 	}
 	focus = {
 		id = SAU_46
@@ -671,7 +678,12 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
-
+		completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+				target = MUS
+			}
+		}
 	}
 	focus = {
 		id = SAU_48
@@ -682,7 +694,12 @@ focus_tree = {
 		}
 		x = 24
 		y = 8
-
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+				target = NEK
+			}
+		}
 	}
 	focus = {
 		id = SAU_56
@@ -744,7 +761,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
-		
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+				target = NEK
+			}
+		}		
 
 	}
 	focus = {
@@ -756,19 +778,12 @@ focus_tree = {
 		}
 		x = 26
 		y = 8
-
-	}
-	focus = {
-		id = SAU_50
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = SAU_49
-			focus = SAU_48
+		completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+				target = MUS
+			}
 		}
-		x = 25
-		y = 9
-
 	}
 	focus = {
 		id = SAU_57
@@ -939,7 +954,11 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
-
+		completion_reward = {
+			CZE = {
+			country_event = pivo.1
+			}
+		}
 	}
 	focus = {
 		id = SAU_40
@@ -948,13 +967,43 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_39
 		}
-		x = 18
+		available = {
+		CZE = {
+			is_in_faction_with = SAU
+			}
+		}
+		mutually_exclusive = {
+		focus = SAU_32
+		}
+		x = 16
 		y = 8
 		completion_reward = {
 		declare_war_on = {
    			target = CCA
    			type = annex_everything
 			}
+		}
+	}
+	focus = {
+		id = SAU_32
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = SAU_39
+		}
+		mutually_exclusive = {
+		focus = SAU_40
+		}
+		available = {
+		CZE = {
+			NOT = { is_in_faction_with = SAU }
+			}
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+		add_political_power = -100
+		add_war_support = -0.05
 		}
 	}
 	focus = {
@@ -1002,6 +1051,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SAU_41
 			focus = SAU_40
+			focus = SAU_32
 		}
 		x = 19
 		y = 9
@@ -1035,11 +1085,16 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = SAU_50
+			focus = SAU_48
+			focus = SAU_49
 		}
 		x = 25
-		y = 10
-
+		y = 9
+		completion_reward = {
+		CZE = {
+			country_event = pivo.2
+			}
+		}
 	}
 	focus = {
 		id = SAU_52
@@ -1049,8 +1104,13 @@ focus_tree = {
 			focus = SAU_51
 		}
 		x = 25
-		y = 11
-
+		y = 10
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = DDR
+			}
+		}
 	}
 	focus = {
 		id = SAU_53
@@ -1060,8 +1120,13 @@ focus_tree = {
 			focus = SAU_52
 		}
 		x = 25
-		y = 12
-
+		y = 11
+		completion_reward = {
+		create_wargoal = {
+			type = annex_everything
+			target = POL
+			}
+		}
 	}
 	focus = {
 		id = SAU_65

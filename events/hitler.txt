@@ -1,0 +1,27 @@
+add_namespace = hit
+
+# Аншлюс
+country_event = {
+	id = hit.1
+	title = hit.1.t
+	desc = hit.1.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = HIT
+	}
+	
+	option = {
+		name = hit.1.a
+		SAU = {
+		country_event = sau.1
+		}
+		PAS = {
+		country_event = pas.1
+		}
+	}
