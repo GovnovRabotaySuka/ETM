@@ -30,9 +30,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = ""
+	name = "Shrek"
 	desc = ""
-	picture = ".dds"
+	picture = "shrek_by.dds"
 	expire = "1953.3.1"
 	ideology = conserva
 }
