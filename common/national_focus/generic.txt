@@ -1258,7 +1258,7 @@ focus_tree = {
 	}
 	focus = {
 		id = cooperate_with_mafia
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_cooperate_with_mafia
 		cost = 10
 		prerequisite = {
 			focus = football_forever
@@ -1380,7 +1380,7 @@ focus_tree = {
 	}
 	focus = {
 		id = skins_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_skins_wins
 		cost = 10
 		prerequisite = {
 			focus = young_wins

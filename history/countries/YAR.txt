@@ -12,7 +12,7 @@ set_convoys = 5
 
 set_popularities = { 
 	burjuism = 78
-	pahanism = 12
+	pahanism = 22
 }
 
 set_politics = {

@@ -26,7 +26,7 @@ set_stability = 0.5
 
 
 set_politics = {
-	ruling_party = pahanism 
+	ruling_party = pahanism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -53,8 +53,15 @@ create_country_leader = {
 	desc = ""
 	picture = "GUL_C.dds"
 	expire = "1965.1.1"
-	ideology = gribonism 
+	ideology = sralinism
 	traits = {
 		#
 	}
+}
+create_country_leader = {
+	name = "Pokayan Besprufovich Nepolzhitsyn"
+	desc = ""
+	picture = "GUL_bi.dds"
+	expire = "1965.1.1"
+	ideology = nazi 
 }

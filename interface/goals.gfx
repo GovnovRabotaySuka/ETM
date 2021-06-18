@@ -92,7 +92,7 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_Zavod_kostyumov_dlya_sexualnykh_igrisch"
-	texturefile = "gfx/interface/goals/Zavod_kostyumov_dlya_sexualnykh_igrisch.dds"			
+	texturefile = "gfx/interface/goals/Zavod_kostyumov_dlya_sexualnykh_igrisch.dds"	
 	}	
 		
 	SpriteType = {
@@ -118,5 +118,15 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_politsrach"
 	texturefile = "gfx/interface/goals/politsrach.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_cooperate_with_mafia"
+	texturefile = "gfx/interface/goals/cooperate_with_mafia.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_skins_wins"
+	texturefile = "gfx/interface/goals/skins_wins.dds"			
 	}	
 }

@@ -38,8 +38,7 @@ set_politics = {
 
 set_popularities = {
 	burjuism = 20
-	bidlo = 10
-	borshewism = 80
+	borshewism = 65
 	pahanism = 15
 }
 
@@ -90,7 +89,7 @@ create_country_leader = {
 
 create_corps_commander = {
 	name = "Полковник"
-	picture = "Polkovnik.dds"
+	picture = "DonbasSlava.dds"
 	traits = { trait_cautious armor_officer }
 	skill = 1
 	attack_skill = 2
