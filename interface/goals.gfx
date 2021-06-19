@@ -128,5 +128,80 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_skins_wins"
 	texturefile = "gfx/interface/goals/skins_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_politcorrect_zombies"
+	texturefile = "gfx/interface/goals/politcorrect_zombies.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_shoot_pederastians"
+	texturefile = "gfx/interface/goals/shoot_pederastians.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_kolkhozniks"
+	texturefile = "gfx/interface/goals/kolkhozniks.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_lenin_books"
+	texturefile = "gfx/interface/goals/lenin_books.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_leftist_wins"
+	texturefile = "gfx/interface/goals/leftist_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_give_stick_to_degenerates"
+	texturefile = "gfx/interface/goals/give_stick_to_degenerates.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_autism_in_alliance"
+	texturefile = "gfx/interface/goals/autism_in_alliance.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_death_to_ships"
+	texturefile = "gfx/interface/goals/death_to_ships.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_cas_planes"
+	texturefile = "gfx/interface/goals/cas_planes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_paper_planes"
+	texturefile = "gfx/interface/goals/paper_planes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_fat_planes"
+	texturefile = "gfx/interface/goals/fat_planes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_fast_planes"
+	texturefile = "gfx/interface/goals/fast_planes.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_stole_rockets_blueprints"
+	texturefile = "gfx/interface/goals/stole_rockets_blueprints.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_gypsy_money"
+	texturefile = "gfx/interface/goals/gypsy_money.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_pogrom_books"
+	texturefile = "gfx/interface/goals/pogrom_books.dds"			
 	}	
 }

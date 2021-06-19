@@ -10,7 +10,7 @@ focus_tree = {
 
 	focus = {
 		id = give_stick_to_degenerates
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_give_stick_to_degenerates
 		x = 14
 		y = 1
 		cost = 10
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id = paper_planes
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_paper_planes
 		cost = 10
 		prerequisite = {
 			focus = army_colleges
@@ -444,7 +444,7 @@ focus_tree = {
 	}
 	focus = {
 		id = fast_planes
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_fast_planes
 		cost = 10
 		prerequisite = {
 			focus = paper_planes
@@ -464,7 +464,7 @@ focus_tree = {
 	}
 	focus = {
 		id = fat_planes
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_fat_planes
 		cost = 10
 		prerequisite = {
 			focus = paper_planes
@@ -489,7 +489,7 @@ focus_tree = {
 	}
 	focus = {
 		id = cas_planes
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_cas_planes
 		cost = 10
 		prerequisite = {
 			focus = fast_planes
@@ -507,7 +507,7 @@ focus_tree = {
 	}
 	focus = {
 		id = death_to_ships
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_death_to_ships
 		cost = 10
 		prerequisite = {
 			focus = fast_planes
@@ -525,7 +525,7 @@ focus_tree = {
 	}
 	focus = {
 		id = stole_rockets_blueprints
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_stole_rockets_blueprints
 		cost = 10
 		prerequisite = {
 			focus = death_to_ships
@@ -1223,7 +1223,7 @@ focus_tree = {
 	}
 	focus = {
 		id = leftist_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_leftist_wins
 		cost = 10
 		prerequisite = {
 			focus = stado_wins
@@ -1305,7 +1305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = lenin_books
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_lenin_books
 		cost = 10
 		prerequisite = {
 			focus = leftist_wins
@@ -1318,7 +1318,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kolkhozniks
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_kolkhozniks
 		cost = 10
 		prerequisite = {
 			focus = lenin_books
@@ -1331,7 +1331,7 @@ focus_tree = {
 	}
 	focus = {
 		id = shoot_pederastians
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_shoot_pederastians
 		cost = 10
 		prerequisite = {
 			focus = kolkhozniks
@@ -1345,7 +1345,7 @@ focus_tree = {
 	}
 	focus = {
 		id = politcorrect_zombies
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_gpolitcorrect_zombies
 		cost = 10
 		prerequisite = {
 			focus = shoot_pederastians
@@ -1459,7 +1459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = pogrom_books
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_pogrom_books
 		cost = 10
 		prerequisite = {
 			focus = skins_wins
@@ -1472,7 +1472,7 @@ focus_tree = {
 	}
 	focus = {
 		id = gypsy_money
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_gypsy_money
 		cost = 10
 		prerequisite = {
 			focus = pogrom_books
@@ -1530,7 +1530,7 @@ focus_tree = {
 	}
 	focus = {
 		id = autism_in_alliance
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_autism_in_alliance
 		cost = 10
 		prerequisite = {
 			focus = f_r_i_e_n_d_s
