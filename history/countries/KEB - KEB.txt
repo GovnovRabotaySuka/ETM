@@ -18,17 +18,16 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 25
+	burjuism = 26
 	bidlo = 15
-	borshewism = 5
-	pahanism = 55
+	pahanism = 59
 }
 create_country_leader = {
 	name = "Kebab"
 	desc = ""
-	picture = "gfx/leaders/KEB/Kebab.dds"
+	picture = "Kebab.dds"
 	expire = "1965.1.1"
-	ideology = flexism
+	ideology = despopahanism
 	traits = {
 		
 	}
@@ -36,7 +35,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kebab"
 	desc = ""
-	picture = "gfx/leaders/KEB/Kebab.dds"
+	picture = "Kebab.dds"
 	expire = "1965.1.1"
 	ideology = conserva
 	traits = {
@@ -46,7 +45,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kebab"
 	desc = ""
-	picture = "gfx/leaders/KEB/Kebab.dds"
+	picture = "Kebab.dds"
 	expire = "1965.1.1"
 	ideology = nazi
 	traits = {
@@ -56,7 +55,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Kebab"
 	desc = ""
-	picture = "gfx/leaders/KEB/Kebab.dds"
+	picture = "Kebab.dds"
 	expire = "1965.1.1"
 	ideology = naziborshewism
 	traits = {

@@ -11,10 +11,9 @@ set_convoys = 5
 
 
 set_popularities = { 
-	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
+	burjuism = 10
+	borshewism = 6
+	pahanism = 84
 	bidlo = 0
 }
 
@@ -26,12 +25,22 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Peter Kropotkin"
     desc = ""
-    picture = ""
+    picture = "Kropotkin.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = despopahanism
     traits = {
         #
     }
+}
+create_corps_commander = {
+	name = "Muravey"
+	picture = "Muravey.dds.dds"
+	traits = { }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
