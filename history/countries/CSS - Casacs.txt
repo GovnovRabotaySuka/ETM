@@ -22,24 +22,37 @@ set_technology = {
 set_stability = 0.5
 
 set_politics = {
-	ruling_party = pahanism 
+	ruling_party = pahanism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	burjuism = 0
-	bidlo = 0
-	borshewism = 20
-	pahanism = 80
+	borshewism = 23
+	putinism = 37
+	pahanism = 40
 }
 
 
 create_country_leader = {
-	name = "Казачок"
+	name = "Misha Octane"
 	desc = ""
-	picture = "Casac.dds"
+	picture = "Octane.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism  
+	ideology = putinism 
+}
+create_country_leader = {
+	name = "Evdokia Bershanskaya"
+	desc = ""
+	picture = "Evdokia.dds"
+	expire = "1965.1.1"
+	ideology = anarhoborshevism
+}
+create_country_leader = {
+	name = "Vasily Boldyrev"
+	desc = ""
+	picture = "Vasily.dds"
+	expire = "1965.1.1"
+	ideology = despopahanism
 }
