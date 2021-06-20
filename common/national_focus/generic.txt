@@ -284,7 +284,7 @@ focus_tree = {
 	}
 	focus = {
 		id = which_ships
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_which_ships
 		cost = 10
 		prerequisite = {
 			focus = army_colleges
@@ -302,7 +302,7 @@ focus_tree = {
 	}
 	focus = {
 		id = big_ships
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_big_ships
 		cost = 10
 		prerequisite = {
 			focus = which_ships
@@ -328,7 +328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = small_ships
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_small_ships
 		cost = 10
 		prerequisite = {
 			focus = which_ships
@@ -1201,7 +1201,7 @@ focus_tree = {
 	}
 	focus = {
 		id = apolit_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_apolit_wins
 		cost = 10
 		prerequisite = {
 			focus = stado_wins
@@ -1245,7 +1245,7 @@ focus_tree = {
 	}
 	focus = {
 		id = football_forever
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_football_forever
 		cost = 10
 		prerequisite = {
 			focus = apolit_wins

@@ -218,5 +218,30 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_bidloism"
 	texturefile = "gfx/interface/goals/bidloism.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_big_ships"
+	texturefile = "gfx/interface/goals/big_ships.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_which_ships"
+	texturefile = "gfx/interface/goals/which_ships.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_apolit_wins"
+	texturefile = "gfx/interface/goals/apolit_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_small_ships"
+	texturefile = "gfx/interface/goals/small_ships.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_football_forever"
+	texturefile = "gfx/interface/goals/football_forever.dds"			
 	}	
 }
