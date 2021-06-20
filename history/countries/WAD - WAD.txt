@@ -40,3 +40,13 @@ set_popularities = {
 	burjuism = 1
 	pahanism = 99
 }
+create_country_leader = {
+	name = "Haffaz Aladeen"
+	desc = ""
+	picture = "Dick.dds"
+	expire = "1965.1.1"
+	ideology = despopahanism
+	traits = {
+		dictator
+	}
+}
