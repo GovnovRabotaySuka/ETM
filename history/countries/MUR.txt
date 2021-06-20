@@ -12,14 +12,14 @@ set_convoys = 5
 
 set_popularities = { 
 	burjuism = 10
-	borshewism = 6
-	pahanism = 84
+	borshewism = 84
+	pahanism = 6
 	bidlo = 0
 }
 
 set_politics = {
-	ruling_party = pahanism
-	last_election = "21.10.2010"
+	ruling_party = borshewism
+	last_election = "21.10.1"
 	election_frequency = 0
 	elections_allowed = no
 }
@@ -29,7 +29,7 @@ create_country_leader = {
     desc = ""
     picture = "Kropotkin.dds"
     expire = "1965.1.1"
-    ideology = despopahanism
+    ideology = anarhoborshevism
     traits = {
         #
     }

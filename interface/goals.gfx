@@ -203,5 +203,20 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_pogrom_books"
 	texturefile = "gfx/interface/goals/pogrom_books.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_politics_not_for_young_minds"
+	texturefile = "gfx/interface/goals/politics_not_for_young_minds.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_army_colleges"
+	texturefile = "gfx/interface/goals/army_colleges.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_bidloism"
+	texturefile = "gfx/interface/goals/bidloism.dds"			
 	}	
 }

@@ -21,7 +21,7 @@ focus_tree = {
 	
 	focus = {
 		id = army_colleges
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_army_colleges
 		cost = 10
 		prerequisite = {
 			focus = give_stick_to_degenerates
@@ -1276,7 +1276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = politics_not_for_young_minds
-		icon = GFX_goal_generic_small_arms
+		icon = politics_not_for_young_minds
 		cost = 10
 		prerequisite = {
 			focus = cooperate_with_mafia
@@ -1486,7 +1486,7 @@ focus_tree = {
 	}
 	focus = {
 		id = bidloism
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_bidloism
 		cost = 10
 		prerequisite = {
 			focus = gypsy_money

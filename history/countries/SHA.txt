@@ -26,9 +26,9 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Great Monk XI"
     desc = ""
-    picture = ""
+    picture = "SHA.dds"
     expire = "1965.1.1"
     ideology = modepahanism
     traits = {

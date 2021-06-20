@@ -8,9 +8,8 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 }
-set_country_flag = monroe_doctrine
 set_war_support = 0.1
-set_convoys = 5
+set_convoys = 200
 
 
 
@@ -22,18 +21,18 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 0
-	bidlo = 100
-	borshewism = 0
+	burjuism = 5
+	bidlo = 93
+	borshewism = 2
 	pahanism = 0
 }
 
 create_country_leader = {
-	name = "Federico Páez"
+	name = "Emperor Waka"
 	desc = "POLITICS_FEDERICO_PAEZ_DESC"
-	picture = "GFX_Portrait_ecuador_federico_paez"
+	picture = "NAU.dds"
 	expire = "1965.1.1"
-	ideology = jididoism
+	ideology = fashiki
 	traits = {
 		#
 	}
