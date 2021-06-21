@@ -41,9 +41,37 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Adam Dressler" 
+    name = "Paul von Hindenburg" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "Hinden.dds"
+    expire = "1965.1.1"
+    ideology = conserva
+}
+create_country_leader = {
+    name = "Peter Kahn" 
+    desc = ""
+    picture = "Kahn.dds"
+    expire = "1965.1.1"
+    ideology = despopahanism
+}
+create_country_leader = {
+    name = "Zoya Kosmodemyanskaya" 
+    desc = ""
+    picture = "Zoya.dds"
+    expire = "1965.1.1"
+    ideology = naziborshewism
+}
+create_country_leader = {
+    name = "Adam Drissler" 
+    desc = ""
+    picture = "Adam.dds"
     expire = "1965.1.1"
     ideology = nazi
+}
+create_country_leader = {
+    name = "Gerd Muller" 
+    desc = ""
+    picture = "Gerd.dds"
+    expire = "1965.1.1"
+    ideology = oligarhiya
 }

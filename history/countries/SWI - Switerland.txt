@@ -41,9 +41,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Federal Council" 
+    name = "Swiss Cheese" 
     desc = ""
-    picture = "gfx/leaders/SWI/Portrait_Switzerland_Federal_council.dds"
+    picture = "Cheese.dds"
     expire = "1965.1.1"
-    ideology = gachism
+    ideology = radicalcentrism
 }

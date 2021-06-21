@@ -253,5 +253,35 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_kuzia_project"
 	texturefile = "gfx/interface/goals/kuzia_project.dds"			
-	}	
+	}
+	
+	SpriteType = {
+	name = "GFX_ships_defenders"
+	texturefile = "gfx/interface/goals/ships_defenders.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_f_r_i_e_n_d_s"
+	texturefile = "gfx/interface/goals/f_r_i_e_n_d_s.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_radical_centrism"
+	texturefile = "gfx/interface/goals/radical_centrism.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_u_boats_yeee"
+	texturefile = "gfx/interface/goals/u_boats_yeee.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_workers_in_McDonalds"
+	texturefile = "gfx/interface/goals/workers_in_McDonalds.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_free_market"
+	texturefile = "gfx/interface/goals/free_market.dds"			
+	}
 }

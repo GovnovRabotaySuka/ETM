@@ -390,7 +390,7 @@ focus_tree = {
 	}
 	focus = {
 		id = u_boats_yeee
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_u_boats_yeee
 		cost = 10
 		prerequisite = {
 			focus = small_ships
@@ -408,7 +408,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ships_defenders
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_ships_defenders
 		cost = 10
 		prerequisite = {
 			focus = u_boats_yeee
@@ -1292,7 +1292,7 @@ focus_tree = {
 	}
 	focus = {
 		id = radical_centrism
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_radical_centrism
 		cost = 10
 		prerequisite = {
 			focus = politics_not_for_young_minds
@@ -1415,7 +1415,7 @@ focus_tree = {
 	}
 	focus = {
 		id = workers_in_McDonalds
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_workers_in_McDonalds
 		cost = 10
 		prerequisite = {
 			focus = privatization
@@ -1441,7 +1441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = free_market
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_free_market
 		cost = 10
 		prerequisite = {
 			focus = CHVK_dream
@@ -1512,7 +1512,7 @@ focus_tree = {
 	}
 	focus = {
 		id = f_r_i_e_n_d_s
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_f_r_i_e_n_d_s
 		cost = 10
 		prerequisite = {
 			focus = radical_centrism
