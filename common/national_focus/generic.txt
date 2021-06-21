@@ -354,7 +354,7 @@ focus_tree = {
 	}
 	focus = {
 		id = premium_cruisers
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_premium_cruisers
 		cost = 10
 		prerequisite = {
 			focus = big_ships
@@ -372,7 +372,7 @@ focus_tree = {
 	}
 	focus = {
 		id = kuzia_project
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_kuzia_project
 		cost = 10
 		prerequisite = {
 			focus = premium_cruisers

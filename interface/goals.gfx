@@ -243,5 +243,15 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_football_forever"
 	texturefile = "gfx/interface/goals/football_forever.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_premium_cruisers"
+	texturefile = "gfx/interface/goals/premium_cruisers.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_kuzia_project"
+	texturefile = "gfx/interface/goals/kuzia_project.dds"			
 	}	
 }
