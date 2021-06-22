@@ -44,6 +44,44 @@ country_event = {
 		add_political_power = 75
 		}
 }
+
+country_event = {
+	id = sau.1111
+	title = sau.1111.t
+	desc = sau.1111.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = SAU
+	}
+
+	option = {
+		name = sau.1111.a
+		hidden_effect = {
+		560 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+		561 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+		562 = {
+			if = {
+				limit = { is_owned_by = HIT }
+				add_core_of = SAU
+			}
+		}
+	}
+	add_political_power = -50
+	}
+}
 	# Помощь южным друзьям
 country_event = {
 	id = sau.2
