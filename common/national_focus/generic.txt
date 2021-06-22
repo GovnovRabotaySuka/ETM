@@ -39,7 +39,7 @@ focus_tree = {
 	}
 	focus = {
 		id = potatoes
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_potatoes
 		cost = 10
 		prerequisite = {
 			focus = army_colleges
@@ -1358,7 +1358,7 @@ focus_tree = {
 	}
 	focus = {
 		id = atlants_wins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_atlants_wins
 		cost = 10
 		prerequisite = {
 			focus = young_wins
@@ -1402,7 +1402,7 @@ focus_tree = {
 	}
 	focus = {
 		id = privatization
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_privatization
 		cost = 10
 		prerequisite = {
 			focus = atlants_wins
@@ -1428,7 +1428,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHVK_dream
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_CHVK_dream
 		cost = 10
 		prerequisite = {
 			focus = workers_in_McDonalds
@@ -1499,7 +1499,7 @@ focus_tree = {
 	}
 	focus = {
 		id = army_of_skins
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_army_of_skins
 		cost = 10
 		prerequisite = {
 			focus = bidloism

@@ -284,4 +284,29 @@ spriteTypes = {
 	name = "GFX_free_market"
 	texturefile = "gfx/interface/goals/free_market.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_atlants_wins"
+	texturefile = "gfx/interface/goals/atlants_wins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_CHVK_dream"
+	texturefile = "gfx/interface/goals/CHVK_dream.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_privatization"
+	texturefile = "gfx/interface/goals/privatization.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_army_of_skins"
+	texturefile = "gfx/interface/goals/army_of_skins.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_potatoes"
+	texturefile = "gfx/interface/goals/potatoes.dds"			
+	}
 }
