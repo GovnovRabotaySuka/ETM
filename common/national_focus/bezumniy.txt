@@ -1,0 +1,2260 @@
+focus_tree = {
+	id = bezumniy
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MUS
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1400 }
+	focus = {
+		id = MUS_1
+		icon = GFX_focus_ger_assassinate_mussolini
+		cost = 10
+		x = 1
+		y = 0
+			ai_will_do = {
+					factor = 30
+				}
+			completion_reward = {
+					add_ideas = idea_mus_1
+					add_political_power = 3900
+					add_stability = 0.15
+					add_war_support = 0.05
+					set_popularities = {
+							bidlo = 60
+							borshewism = 15
+							pahanism = 25
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_10
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 29
+		y = 0
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+					has_government = borshewism
+				}
+
+	}
+	focus = {
+		id = MUS_16
+		icon = GFX_goal_unknown
+		cost = 1
+		mutually_exclusive = {
+			focus = MUS_17
+		}
+		x = 3
+		y = 0
+			ai_will_do = {
+					factor = 25
+				}
+			available = {
+					has_government = bidlo
+				}
+
+	}
+	focus = {
+		id = MUS_17
+		icon = GFX_goal_unknown
+		cost = 1
+		mutually_exclusive = {
+			focus = MUS_16
+		}
+		x = 5
+		y = 0
+			ai_will_do = {
+					factor = 25
+				}
+			available = {
+					has_government = bidlo
+				}
+			completion_reward = {
+				set_popularities = {
+					bidlo = 40
+					borshewism = 15
+					pahanism = 45
+				}
+				add_stability = -0.05
+			}
+	}
+	focus = {
+		id = MUS_industrial_effort
+		text = industrial_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		x = 12
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = construction_effort_tt
+							NOT = {
+									any_owned_state = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = industrial_complex
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									is_on_continent = europe
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									is_on_continent = europe
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = industrial_complex
+															size > 1
+															include_locked = yes
+														}
+													is_on_continent = europe
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = industrial_complex
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = industrial_complex
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_army_primacy
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10
+		x = 16
+		y = 0
+			ai_will_do = {
+					factor = 0.25
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					army_experience = 5
+					random_owned_controlled_state = {
+							limit = {
+									arms_factory > 0
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									arms_factory > 0
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													arms_factory > 0
+													free_building_slots = {
+															building = arms_factory
+															size > 0
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = arms_factory
+													size > 0
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 1
+									add_building_construction = {
+											type = arms_factory
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_mare_nostrum
+		icon = GFX_goal_generic_build_navy
+		cost = 10
+		x = 18
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_INDUSTRY  FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					navy_experience = 50
+					random_owned_controlled_state = {
+							limit = {
+									dockyard > 0
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									dockyard > 0
+									free_building_slots = {
+											building = dockyard
+											size > 1
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 0
+															include_locked = yes
+														}
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = dockyard
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					add_tech_bonus = {
+							name = naval_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = naval_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_light_ship_effort
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10
+		x = 23
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = dd_bonus
+							bonus = 1.0
+							uses = 1
+							category = dd_tech
+						}
+					add_tech_bonus = {
+							name = con_def_bonus
+							bonus = 1.0
+							uses = 1
+							category = convoy_defense_tree
+						}
+				}
+
+	}
+
+
+	focus = {
+		id = MUS_industrial_effort_2
+		text = industrial_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = MUS_industrial_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_industrial_effort
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							NOT = {
+									any_owned_state = {
+											is_controlled_by = ROOT
+											free_building_slots = {
+													building = arms_factory
+													size > 2
+													include_locked = yes
+												}
+										}
+								}
+						}
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									arms_factory > 0
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									is_on_continent = europe
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									arms_factory > 0
+									free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+									is_on_continent = europe
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													arms_factory > 0
+													free_building_slots = {
+															building = arms_factory
+															size > 1
+															include_locked = yes
+														}
+													is_on_continent = europe
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											arms_factory > 0
+											free_building_slots = {
+													building = arms_factory
+													size > 1
+													include_locked = yes
+												}
+											is_on_continent = europe
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = arms_factory
+											level = 2
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											arms_factory > 0
+											free_building_slots = {
+													building = arms_factory
+													size > 1
+													include_locked = yes
+												}
+											is_on_continent = europe
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = arms_factory
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													free_building_slots = {
+															building = arms_factory
+															size > 1
+															include_locked = yes
+														}
+													is_on_continent = europe
+												}
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = arms_factory
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = arms_factory
+											level = 2
+											instant_build = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											free_building_slots = {
+													building = arms_factory
+													size > 1
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = arms_factory
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_extra_tech_slot
+		text = extra_tech_slot
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = MUS_industrial_effort_2
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_industrial_effort_2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_research_slot = 1
+				}
+
+	}
+	focus = {
+		id = MUS_italian_highways
+		text = MUS_italian_highways
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10
+		prerequisite = {
+			focus = MUS_extra_tech_slot
+		}
+		x = 0
+		y = 2
+		relative_position_id = MUS_extra_tech_slot
+			ai_will_do = {
+					factor = 1
+				}
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			completion_reward = {
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_air_innovation
+		text = air_innovation
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = MUS_army_primacy
+			focus = MUS_mare_nostrum
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_army_primacy
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					air_experience = 25
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 1
+							category = light_fighter
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		cost = 10
+		prerequisite = {
+			focus = MUS_army_primacy
+		}
+		prerequisite = {
+			focus = MUS_air_innovation
+		}
+		x = 0
+		y = 3
+		relative_position_id = MUS_army_primacy
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = MUS_bomber_effort
+							bonus = 1.0
+							uses = 1
+							category = tactical_bomber
+						}
+					add_tech_bonus = {
+							name = MUS_bomber_effort
+							bonus = 1.0
+							uses = 1
+							category = cas_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_2
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_1
+		}
+		x = 1
+		y = 1
+			available = {
+					has_government = bidlo
+			}
+			bypass = {
+					NOT = {
+						country_exists = PAS
+					}
+			}
+			ai_will_do = {
+					factor = 20
+			}
+			completion_reward = {
+					add_popularity = {
+							ideology = bidlo
+							popularity = 0.1
+						}
+					add_war_support = 0.1
+					army_experience = 10
+			}
+
+	}
+	focus = {
+		id = MUS_6
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_16
+		}
+		prerequisite = {
+			focus = MUS_2
+		}
+		x = 1
+		y = 2
+			ai_will_do = {
+					factor = 20
+				}
+			available = {
+					has_government = bidlo
+					PAS = {
+						OR = {
+							exists = no
+							is_puppet = yes
+						}
+					}
+				}
+			bypass = {
+				NOT = {
+					country_exists = POP
+				}
+			}
+			completion_reward = {
+					add_opinion_modifier = {
+							target = POP
+							modifier = MUS_6
+						}
+					reverse_add_opinion_modifier = {
+							target = POP
+							modifier = MUS_6
+						}
+					add_political_power = 1300
+					add_stability = 0.05
+				}
+
+	}
+	focus = {
+		id = MUS_capital_ships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10
+		prerequisite = {
+			focus = MUS_mare_nostrum
+		}
+		x = 3
+		y = 1
+		relative_position_id = MUS_mare_nostrum
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = bb_bonus
+							bonus = 1.0
+							uses = 2
+							category = bb_tech
+							category = bc_tech
+						}
+					add_tech_bonus = {
+							name = cr_bonus
+							bonus = 1.0
+							uses = 2
+							category = cl_tech
+							category = ca_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_20
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_17
+		}
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+			has_government = bidlo
+		}
+		completion_reward = {
+			
+			set_politics = {
+				ruling_party = pahanism
+    	   		elections_allowed = no
+     	  		last_election = "1965.1.1"
+     	  		election_frequency = 48
+			}
+			set_popularities = {
+				bidlo = 25
+				borshewism = 5
+				pahanism = 70
+			}
+			add_political_power = -1300
+			add_stability = -0.20
+		}
+	}
+	focus = {
+		id = MUS_3
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_20
+			focus = MUS_2
+		}
+		x = 3
+		y = 2
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+				has_defensive_war_with = SAU
+			}
+			completion_reward = {
+				add_war_support = 0.1
+				add_stability = -0.15
+				add_timed_idea = {
+					idea = idea_mus_3
+					days = 60
+				}
+			}
+	}
+	focus = {
+		id = MUS_8
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_6
+		}
+		prerequisite = {
+			focus = MUS_3
+		}
+		x = 1
+		y = 3
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			count_triggers = {
+				amount = 2
+				has_defensive_war_with = SAU
+				has_defensive_war_with = PAS
+				has_defensive_war_with = HOR
+			}
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = Anti_sosiska
+			add_timed_idea = {
+				idea = idea_mus_8
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = MUS_4
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_8
+		}
+		mutually_exclusive = {
+			focus = MUS_9
+		}
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_defensive_war_with = CZE
+		}
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = CZE
+				modifier = MUS_4
+			}
+			reverse_add_opinion_modifier = {
+				target = SAU
+				modifier = MUS_4
+			}
+			add_ideas = idea_mus_4
+			add_political_power = -650
+			add_stability = -0.05
+			add_popularity = {
+				ideology = bidlo
+				popularity = -0.05
+			}
+					
+		}
+	}
+	focus = {
+		id = MUS_9
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_8
+		}
+		mutually_exclusive = {
+			focus = MUS_4
+		}
+		x = 2
+		y = 4
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_war_together_with = CZE
+		}
+		completion_reward = {
+			MUS = {
+				add_to_faction = CZE
+			}
+			add_political_power = -650
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = idea_mus_9
+				days = 60
+			}
+			CZE = {
+				country_event = { id = cze_event_mus_9 }
+			}
+			reverse_add_opinion_modifier = {
+				target = CZE
+				modifier = MUS_9
+			}
+		}
+	}
+	focus = {
+		id = MUS_15
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = MUS_9
+		}
+		x = 4
+		y = 5
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+			has_offensive_war_with = DDR
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = MUS_31
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_15
+		}
+		x = 4
+		y = 6
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 600
+		}
+		completion_reward = {
+			600 = {
+				add_manpower = -5000
+			}
+			add_popularity = {
+				ideology = pahanism
+				popularity = -0.1
+			}
+		}
+	}
+	focus = {
+		id = MUS_22
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_20
+		}
+		x = 5
+		y = 2
+		ai_will_do = {
+			factor = 25
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = Islam_konf
+			MUS = {
+				add_to_faction = KEB
+			}
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = MUS_23
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_22
+		}
+		x = 5
+		y = 3
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_state_core = 546
+			if = {
+				limit = {
+					POP = {
+						has_full_control_of_state = 546
+					}	
+				}
+				declare_war_on = {
+					target = POP
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					546 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_23 }
+				}
+			}
+			add_political_power = -650
+			add_stability = 0.05
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = MUS_25
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_23
+		}
+		x = 5
+		y = 4
+		ai_will_do = {
+			factor = 20
+		}
+		completion_reward = {
+			add_state_core = 601
+			add_state_core = 602
+			if = {
+				limit = {
+					MAR = {
+						has_full_control_of_state = 601
+					}	
+				}
+				declare_war_on = {
+					target = MAR
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					601 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_25_1 }
+				}
+			}
+			if = {
+				limit = {
+					BNP = {
+						has_full_control_of_state = 602
+					}	
+				}
+				declare_war_on = {
+					target = BNP
+					type = take_core_state
+				}
+			}
+			else_if = {
+				limit = {
+					602 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_25_2 }
+				}
+			}
+			add_political_power = -1300
+			add_stability = 0.05
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.03
+			}
+		}
+	}
+	focus = {
+		id = MUS_36
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = MUS_20
+		}
+		x = 7
+		y = 2
+		ai_will_do = {
+			factor = 30
+		}
+		completion_reward = {
+			add_political_power = 1300
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = MUS_24
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_22
+		}
+		x = 7
+		y = 3
+		ai_will_do = {
+			factor = 15
+		}
+		
+	}
+	focus = {
+		id = MUS_40
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_24
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = MUS_38
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_40
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = MUS_39
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_38
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = MUS_42
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_39
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = MUS_43
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_39
+		}
+		x = 6
+		y = 7
+
+	}
+	focus = {
+		id = MUS_21
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_20
+		}
+		x = 9
+		y = 2
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+			SIC = {
+				add_state_core = 600
+			}
+			if = {
+				limit = {
+					MAR = {
+						has_full_control_of_state = 600
+					}	
+				}
+				declare_war_on = {
+					target = MAR
+					type = take_state_focus
+				}
+			}
+			else_if = {
+				limit = {
+					600 = {
+						is_fully_controlled_by = ROOT
+					}
+				}
+				ROOT = {
+					country_event = { id = event_mus_21 }
+				}
+			}
+			add_political_power = -1300
+			add_stability = 0.1
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = MUS_37
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_21
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = MUS_41
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_39
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = MUS_11
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_10
+		}
+		x = 29
+		y = 1
+
+	}
+	focus = {
+		id = MUS_12
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_11
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = MUS_14
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_12
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = MUS_18
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_14
+		}
+		mutually_exclusive = {
+			focus = MUS_27
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = MUS_26
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_18
+		}
+		x = 26
+		y = 5
+
+	}
+	focus = {
+		id = MUS_27
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_14
+		}
+		mutually_exclusive = {
+			focus = MUS_18
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = MUS_28
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_27
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = MUS_29
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_28
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = MUS_30
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_28
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = MUS_34
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_30
+		}
+		prerequisite = {
+			focus = MUS_29
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = MUS_33
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_29
+		}
+		prerequisite = {
+			focus = MUS_30
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = MUS_32
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_29
+		}
+		prerequisite = {
+			focus = MUS_30
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = MUS_47
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_30
+		}
+		prerequisite = {
+			focus = MUS_29
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = MUS_48
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_30
+		}
+		prerequisite = {
+			focus = MUS_29
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = MUS_35
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_33
+		}
+		prerequisite = {
+			focus = MUS_34
+		}
+		prerequisite = {
+			focus = MUS_32
+		}
+		prerequisite = {
+			focus = MUS_47
+		}
+		prerequisite = {
+			focus = MUS_48
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = MUS_49
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_47
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = MUS_5
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_4
+			focus = MUS_9
+		}
+		x = 2
+		y = 5
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			has_war_together_with = POL
+		}
+		completion_reward = {
+			MUS = {
+				add_to_faction = POL
+			}
+			add_political_power = -650
+			add_war_support = 0.1
+			add_ideas = idea_mus_5
+			add_opinion_modifier = {
+				target = POL
+				modifier = MUS_5
+			}
+		}
+	}
+	focus = {
+		id = MUS_13
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_4
+			focus = MUS_9
+		}
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 5
+		}
+		completion_reward = {
+			add_state_core = 600
+			add_state_core = 601
+			add_state_core = 602
+		}
+	}
+	focus = {
+		id = MUS_19
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_18
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = MUS_7
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_13
+		}
+		x = 0
+		y = 6
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			country_exists = HOJ
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = HOJ
+			}
+		}
+	}
+	focus = {
+		id = MUS_44
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_42
+		}
+		x = 4
+		y = 8
+
+	}
+	focus = {
+		id = MUS_45
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = MUS_43
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = MUS_46
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_44
+		}
+		prerequisite = {
+			focus = MUS_45
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = MUS_prospect_for_oil
+		text = MUS_prospect_for_oil
+		icon = GFX_goal_generic_production
+		cost = 10
+		prerequisite = {
+			focus = MUS_italian_highways
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_italian_highways
+			available = {
+					MUS = {
+							controls_state = random_owned_controlled_state
+						}
+				}
+			bypass = {
+					random_owned_controlled_state = {
+							has_state_flag = sirte_oil_developed
+						}
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 8
+							state = random_owned_controlled_state
+						}
+					random_owned_controlled_state = {
+							set_state_flag = sirte_oil_developed
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_libyan_refineries
+		text = MUS_libyan_refineries
+		icon = GFX_goal_generic_oil_refinery
+		cost = 10
+		prerequisite = {
+			focus = MUS_prospect_for_oil
+		}
+		x = -1
+		y = 1
+		relative_position_id = MUS_prospect_for_oil
+			available = {
+					MUS = {
+							controls_state = random_owned_controlled_state
+						}
+					random_owned_controlled_state = {
+							NOT = {
+									has_state_flag = benghazi_oil_developed
+								}
+						}
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 4
+							state = random_owned_controlled_state
+						}
+					random_owned_controlled_state = {
+							set_state_flag = benghazi_oil_developed
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_libyan_infrastructure
+		text = MUS_libyan_infrastructure
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10
+		prerequisite = {
+			focus = MUS_prospect_for_oil
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_prospect_for_oil
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_INDUSTRY }
+			completion_reward = {
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 3
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+					random_owned_controlled_state = {
+							if = {
+									limit = {
+											is_controlled_by = ROOT
+										}
+									add_building_construction = {
+											type = infrastructure
+											level = 1
+											instant_build = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_modernized_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = MUS_army_primacy
+		}
+		x = -1
+		y = 1
+		relative_position_id = MUS_army_primacy
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = arty_bonus
+							bonus = 1.0
+							uses = 2
+							category = artillery
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_modernized_army
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = MUS_modernized_artillery
+		}
+		prerequisite = {
+			focus = MUS_industrial_effort
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_modernized_artillery
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = special_bonus
+							bonus = 1.0
+							uses = 1
+							category = recon_tech
+						}
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_special_forces
+		text = special_forces
+		icon = GFX_goal_generic_special_forces
+		cost = 10
+		prerequisite = {
+			focus = MUS_modernized_army
+		}
+		x = 0
+		y = 2
+		relative_position_id = MUS_modernized_army
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = special_bonus
+							bonus = 1.0
+							uses = 1
+							category = para_tech
+						}
+					add_tech_bonus = {
+							name = special_bonus
+							ahead_reduction = 2
+							uses = 1
+							category = mountaineers_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_armored_effort
+		icon = GFX_goal_generic_army_tanks
+		cost = 10
+		prerequisite = {
+			focus = MUS_special_forces
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_special_forces
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = armor_bonus
+							bonus = 1.0
+							uses = 2
+							category = armor
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_carrier_effort
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		prerequisite = {
+			focus = MUS_mare_nostrum
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_mare_nostrum
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = cv_bonus
+							bonus = 1.0
+							uses = 2
+							category = cv_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_naval_air_effort
+		text = naval_air_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 10
+		prerequisite = {
+			focus = MUS_air_innovation
+		}
+		prerequisite = {
+			focus = MUS_carrier_effort
+		}
+		x = 1
+		y = 2
+		relative_position_id = MUS_air_innovation
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					air_experience = 25
+					add_tech_bonus = {
+							name = naval_air_effort
+							bonus = 1.0
+							uses = 1
+							category = naval_bomber
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_atlantic_fleet
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10
+		prerequisite = {
+			focus = MUS_carrier_effort
+		}
+		prerequisite = {
+			focus = MUS_capital_ships
+		}
+		x = 1
+		y = 2
+		relative_position_id = MUS_carrier_effort
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					navy_experience = 25
+					add_tech_bonus = {
+							name = MUS_atlantic_fleet
+							bonus = 1.0
+							uses = 1
+							category = cv_tech
+						}
+					add_tech_bonus = {
+							name = MUS_atlantic_fleet
+							bonus = 1.0
+							uses = 1
+							category = bb_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_marines_and_landing_craft
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10
+		prerequisite = {
+			focus = MUS_atlantic_fleet
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_atlantic_fleet
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = MUS_marines_and_landing_craft
+							bonus = 1.0
+							uses = 1
+							category = marine_tech
+						}
+					add_tech_bonus = {
+							name = MUS_marines_and_landing_craft
+							bonus = 1.0
+							uses = 1
+							category = tp_tech
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_air_innovation_2
+		text = air_innovation_2
+		icon = GFX_goal_generic_build_airforce
+		cost = 10
+		prerequisite = {
+			focus = MUS_bomber_effort
+			focus = MUS_naval_air_effort
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_bomber_effort
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = fighter_bonus
+							bonus = 1.0
+							uses = 1
+							category = light_fighter
+						}
+					add_tech_bonus = {
+							name = air_doc_bonus
+							bonus = 1.0
+							uses = 2
+							category = air_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_jet_engine_effort
+		icon = GFX_focus_rocketry
+		cost = 10
+		prerequisite = {
+			focus = MUS_air_innovation_2
+		}
+		x = 0
+		y = 1
+		relative_position_id = MUS_air_innovation_2
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = MUS_jet_engine_effort
+							bonus = 1.0
+							uses = 1
+							category = jet_technology
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_escort_effort
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 10
+		prerequisite = {
+			focus = MUS_light_ship_effort
+		}
+		x = 1
+		y = 1
+		relative_position_id = MUS_light_ship_effort
+			ai_will_do = {
+					factor = 1
+				}
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = MUS_escort_effort
+							bonus = 1.0
+							uses = 1
+							category = dd_tech
+						}
+					add_tech_bonus = {
+							name = MUS_escort_effort
+							bonus = 1.0
+							uses = 2
+							category = convoy_defense_tree
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_submarine_effort
+		text = submarine_effort
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10
+		prerequisite = {
+			focus = MUS_light_ship_effort
+		}
+		x = -1
+		y = 2
+		relative_position_id = MUS_light_ship_effort
+			ai_will_do = {
+					factor = 1
+				}
+			available_if_capitulated = yes
+			search_filters = { FOCUS_FILTER_RESEARCH }
+			completion_reward = {
+					add_tech_bonus = {
+							name = ss_bonus
+							bonus = 1.0
+							uses = 1
+							category = ss_tech
+						}
+					add_tech_bonus = {
+							name = sub_op_bonus
+							bonus = 1.0
+							uses = 2
+							category = submarine_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = MUS_50
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_48
+		}
+		x = 34
+		y = 8
+
+	}
+}
