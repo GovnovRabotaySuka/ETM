@@ -59,6 +59,10 @@ spriteTypes = {
 	name = "GFX_idea_idea_DNB_1"
 	texturefile = "gfx/interface/ideas/idea_DNB_1.dds"		
 	}
+	SpriteType = {
+	name = "GFX_idea_idea_italy"
+	texturefile = "gfx/interface/ideas/idea_italy.dds"		
+	}
 
 	frameAnimatedSpriteType = {
 		name = "GFX_rootcrop"

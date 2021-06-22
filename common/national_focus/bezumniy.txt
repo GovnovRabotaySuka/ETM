@@ -12,15 +12,15 @@ focus_tree = {
 	focus = {
 		id = MUS_1
 		icon = GFX_focus_ger_assassinate_mussolini
-		cost = 5
+		cost = 10
 		x = 1
 		y = 0
 			ai_will_do = {
 					factor = 30
 				}
 			completion_reward = {
-					add_ideas = mus_idea_1
-					add_political_power = 150
+					add_ideas = idea_mus_1
+					add_political_power = 3900
 					add_stability = 0.15
 					add_war_support = 0.05
 					set_popularities = {
@@ -55,7 +55,7 @@ focus_tree = {
 		x = 3
 		y = 0
 			ai_will_do = {
-					factor = 30
+					factor = 25
 				}
 			available = {
 					has_government = bidlo
@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MUS_17
-		icon = GFX_MUS_17
+		icon = GFX_goal_unknown
 		cost = 1
 		mutually_exclusive = {
 			focus = MUS_16
@@ -72,7 +72,7 @@ focus_tree = {
 		x = 5
 		y = 0
 			ai_will_do = {
-					factor = 20
+					factor = 25
 				}
 			available = {
 					has_government = bidlo
@@ -864,7 +864,7 @@ focus_tree = {
 							target = POP
 							modifier = MUS_6
 						}
-					add_political_power = 50
+					add_political_power = 1300
 					add_stability = 0.05
 				}
 
@@ -931,7 +931,7 @@ focus_tree = {
 				borshewism = 5
 				pahanism = 70
 			}
-			add_political_power = -50
+			add_political_power = -1300
 			add_stability = -0.20
 		}
 	}
@@ -953,17 +953,17 @@ focus_tree = {
 			}
 			completion_reward = {
 				add_war_support = 0.1
-				add_stability = -0.1
+				add_stability = -0.15
 				add_timed_idea = {
 					idea = idea_mus_3
-					days = 70
+					days = 60
 				}
 			}
 	}
 	focus = {
 		id = MUS_8
 		icon = GFX_goal_unknown
-		cost = 5
+		cost = 10
 		prerequisite = {
 			focus = MUS_6
 		}
@@ -988,6 +988,10 @@ focus_tree = {
 				can_create_factions = yes
 			}
 			create_faction = Anti_sosiska
+			add_timed_idea = {
+				idea = idea_mus_8
+				days = 30
+			}
 		}
 	}
 	focus = {
@@ -1010,22 +1014,20 @@ focus_tree = {
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier = {
-				AND = {
-							target = CZE
-							target = SAU
-				}
-							modifier = MUS_4
+				target = CZE
+				modifier = MUS_4
 			}
-				swap_ideas = {
-					remove_idea = mus_idea_1
-					add_idea = mus_idea_2
-				}
-					add_political_power = -25
-					add_stability = -0.05
-					add_popularity = {
-						ideology = bidlo
-						popularity = -0.05
-					}
+			reverse_add_opinion_modifier = {
+				target = SAU
+				modifier = MUS_4
+			}
+			add_ideas = idea_mus_4
+			add_political_power = -650
+			add_stability = -0.05
+			add_popularity = {
+				ideology = bidlo
+				popularity = -0.05
+			}
 					
 		}
 	}
@@ -1051,9 +1053,12 @@ focus_tree = {
 			MUS = {
 				add_to_faction = CZE
 			}
-			add_political_power = -25
+			add_political_power = -650
 			add_stability = 0.05
-			add_ideas = mus_idea_9
+			add_timed_idea = {
+				idea = idea_mus_9
+				days = 60
+			}
 			CZE = {
 				country_event = { id = cze_event_mus_9 }
 			}
@@ -1165,7 +1170,7 @@ focus_tree = {
 					country_event = { id = event_mus_23 }
 				}
 			}
-			add_political_power = -25
+			add_political_power = -650
 			add_stability = 0.05
 			add_popularity = {
 				ideology = pahanism
@@ -1230,7 +1235,7 @@ focus_tree = {
 					country_event = { id = event_mus_25_2 }
 				}
 			}
-			add_political_power = -50
+			add_political_power = -1300
 			add_stability = 0.05
 			add_popularity = {
 				ideology = pahanism
@@ -1251,7 +1256,7 @@ focus_tree = {
 			factor = 30
 		}
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 1300
 			add_stability = 0.1
 			add_war_support = 0.05
 		}
@@ -1362,7 +1367,7 @@ focus_tree = {
 					country_event = { id = event_mus_21 }
 				}
 			}
-			add_political_power = -50
+			add_political_power = -1300
 			add_stability = 0.1
 			add_popularity = {
 				ideology = pahanism
@@ -1621,9 +1626,9 @@ focus_tree = {
 			MUS = {
 				add_to_faction = POL
 			}
-			add_political_power = -25
+			add_political_power = -650
 			add_war_support = 0.1
-			add_ideas = MUS_5
+			add_ideas = idea_mus_5
 			add_opinion_modifier = {
 				target = POL
 				modifier = MUS_5

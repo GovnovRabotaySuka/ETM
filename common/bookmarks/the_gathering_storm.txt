@@ -95,7 +95,7 @@ bookmarks = {
 			history = "MUS_GATHERING_STORM_DESC"
 			ideology = bidlo
 			ideas={
-				#
+				razdelennaya_italy
 			}
 			focuses = {
 				#
