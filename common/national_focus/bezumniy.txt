@@ -64,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = MUS_17
-		icon = GFX_goal_unknown
+		icon = GFX_MUS_17
 		cost = 1
 		mutually_exclusive = {
 			focus = MUS_16

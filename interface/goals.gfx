@@ -309,4 +309,14 @@ spriteTypes = {
 	name = "GFX_potatoes"
 	texturefile = "gfx/interface/goals/potatoes.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_MUS_17"
+	texturefile = "gfx/interface/goals/MUS_17.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_improve_equip"
+	texturefile = "gfx/interface/goals/improve_equip.dds"			
+	}
 }

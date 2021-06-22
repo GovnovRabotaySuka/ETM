@@ -82,7 +82,7 @@ focus_tree = {
 	}
 	focus = {
 		id = improve_equip
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_improve_equip
 		cost = 10
 		prerequisite = {
 			focus = power_superior_officer
