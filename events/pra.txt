@@ -1,0 +1,34 @@
+﻿add_namespace = pra
+
+
+country_event = {
+	id = pra.1
+	title = pra.1.t
+	desc = pra.1.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRA
+		NOT = { 1307 = { is_controlled_by = PRA } }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = pra.1.a
+		hidden_effect = {
+		kill_country_leader = yes
+		set_popularities = {
+				burjuism = 10
+				bidlo = 50
+				borshewism = 10
+				pahanism = 30
+			}
+		}
+	}
+}

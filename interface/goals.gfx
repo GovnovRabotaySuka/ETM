@@ -319,4 +319,24 @@ spriteTypes = {
 	name = "GFX_improve_equip"
 	texturefile = "gfx/interface/goals/improve_equip.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_superior_firepower"
+	texturefile = "gfx/interface/goals/superior_firepower.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_improve_mortars"
+	texturefile = "gfx/interface/goals/improve_mortars.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_cannon_fodder_doctrine"
+	texturefile = "gfx/interface/goals/cannon_fodder_doctrine.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_make_mortars"
+	texturefile = "gfx/interface/goals/make_mortars.dds"			
+	}
 }

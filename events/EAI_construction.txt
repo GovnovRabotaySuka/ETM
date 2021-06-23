@@ -1,0 +1,500 @@
+﻿add_namespace = EAI_C
+
+############################################################################################################
+# Expert AI mod - scriptable construction logic for the AI
+############################################################################################################
+
+# EAI_queue_AIR
+# EAI_queue_INF: queue INF anywhere possible
+# EAI_queue_INF_2: see if there is a good place for infrastructure, else queue factories
+# EAI_queue_INF_resource: for building INF to increase resource extraction
+# EAI_queue_INF_supply: for building INF to increase supply
+# EAI_queue_RADAR: queue radar with location priorities
+# EAI_queue_RADAR_random: queue radar in a good random location
+# EAI_queue_AA: build AA on synth factories if facing strategic bombers
+# EAI_queue_CIC: queue CIC in higher INF states, else queue INF
+# EAI_queue_CIC_2: queue CIC in any state
+# EAI_queue_MIC: queue MIC in higher INF states, else queue INF
+# EAI_queue_MIC_2: queue MIC in any state
+# EAI_queue_NIC: queue NIC if possible, else queue MIC
+# EAI_queue_REF: build REF only in home area, else queue MIC
+# EAI_queue_SILO
+# EAI_queue_FORT_CITIES
+# EAI_queue_FORT_BORDER
+# EAI_queue_CFORT_BASES
+# EAI_queue_CFORT_COAST
+
+############################################################################################################
+
+# Constructions inserted to the AI's queue at the beginning
+country_event = {
+	id = EAI_C.0
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		
+		set_variable = { EAI_available_CIC_ratio = num_of_civilian_factories_available_for_projects }
+		divide_variable = { EAI_available_CIC_ratio = num_of_factories }
+	
+		
+		####################################################################################################################################################
+
+		EAI_clear_construction_scores = yes
+	}
+	option = {}
+}
+
+# Constructions inserted periodically to the AI's queue
+country_event = {
+	id = EAI_C.10
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		### approximate construction time
+
+		set_temp_variable = { EAI_construction_time = 1 }
+		subtract_from_temp_variable = { EAI_construction_time = modifier@production_speed_arms_factory_factor }
+		multiply_temp_variable = { EAI_construction_time = 3800 }
+		divide_temp_variable = { EAI_construction_time = num_of_civilian_factories_available_for_projects }
+		clamp_temp_variable = { var = EAI_construction_time min = 75 max = 1000 }
+		meta_effect = {
+			text = { set_country_flag = { flag = EAI_construction_timer days = [x] value = 1 } }
+			x = "[?EAI_construction_time|.0]"
+		}
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | CONSTRUCTION: event delay: [?EAI_construction_time]" } 
+
+		####################################################################################################################################################
+		#	COMMON
+		####################################################################################################################################################
+		
+		# Air fields
+		if = {
+			limit = { 
+				has_deployed_air_force_size = { size > 1000 } 
+				num_of_civilian_factories_available_for_projects > 15 
+			}
+			
+			set_temp_variable = { temp = num_of_civilian_factories_available_for_projects }
+			while_loop_effect = { limit = { check_variable = { temp > 0 } }
+				EAI_queue_AIR = yes
+				subtract_from_temp_variable = { temp = 15 }
+			}
+		}
+
+		# Forts
+		if = { limit = { threat > 0.5 NOT = { any_of_scopes = { array = controlled_states EAI_available_SHARED = yes } } } 
+			random_list = {
+				1 = { EAI_queue_CFORT_BASES = yes }
+				1 = { EAI_queue_FORT_CITIES = yes }
+				1 = { EAI_queue_FORT_BORDER = yes }
+			}
+		}
+
+		# Silos
+		if = { limit = { check_variable = { EAI_max_fuel_consumption_estimate > 5000 } }
+
+			set_temp_variable = { EAI_num_silos_needed = num_of_military_factories }
+			subtract_from_temp_variable = { EAI_num_silos_needed = resource_produced@oil }
+			divide_temp_variable = { EAI_num_silos_needed = 6 }
+
+			if = {
+				limit = {
+					meta_trigger = {
+						text = { fuel_silo < [x] }
+						x = "[?EAI_num_silos_needed|.0]"
+					}
+				}
+
+				EAI_queue_SILO = yes
+			}
+		}
+
+		# resources needed
+		if = {
+			limit = {
+				num_of_civilian_factories_available_for_projects > 15
+
+				any_of_scopes = { array = controlled_states
+
+					EAI_available_INF = yes
+
+					OR = {
+						AND = { has_resources_amount = { resource = oil amount > 40 } 			ROOT = { has_war = yes fuel_ratio < 0.5 } }
+						AND = { has_resources_amount = { resource = aluminium amount > 40 } 	check_variable = { ROOT.EAI_needs_aluminium = 3 } }
+						AND = { has_resources_amount = { resource = rubber amount > 40 } 		check_variable = { ROOT.EAI_needs_rubber = 3 } }
+						AND = { has_resources_amount = { resource = tungsten amount > 40 } 		check_variable = { ROOT.EAI_needs_tungsten = 3 } }
+						AND = { has_resources_amount = { resource = steel amount > 40 } 		check_variable = { ROOT.EAI_needs_steel = 3 } }
+						AND = { has_resources_amount = { resource = chromium amount > 40 } 		check_variable = { ROOT.EAI_needs_chromium = 3 } }
+					}
+				}
+			}
+
+			EAI_priority_queue_INF_resource = yes
+		}
+
+		#########
+		
+		set_variable = { EAI_available_CIC_ratio = num_of_civilian_factories_available_for_projects }
+		divide_variable = { EAI_available_CIC_ratio = num_of_factories }
+		
+		####################################################################################################################################################
+		#	GENERIC
+		####################################################################################################################################################
+
+		else = {
+
+			# CONSTRUCTION SCRIPT
+			EAI_queue_INF_supply = yes
+
+			if = { limit = { OR = { oil > 80 rubber > 80 steel > 80 tungsten > 80 chromium > 80 aluminium > 80 } }
+				EAI_queue_INF_resource = yes
+				EAI_queue_INF_resource = yes
+			}
+
+			if = { 
+				limit = { 
+					check_variable = { resource_consumed@rubber > 8 }
+					OR = { check_variable = { resource@rubber < 8 } check_variable = { resource_imported@rubber > 8 } }
+					has_tech = synth_oil_experiments 
+				}
+
+				EAI_queue_REF = yes
+			}
+			else_if = { limit = { fuel_ratio < 0.25 }
+
+				EAI_queue_REF = yes
+			}
+		}
+	}
+	option = {}
+}
+
+# Add random constructions if the AI has free CIC
+country_event = {
+	id = EAI_C.100
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	trigger = {
+		is_ai = yes
+
+		num_of_available_civilian_factories > 1
+	}
+
+	immediate = {
+		if = { 
+			limit = { 
+				any_of_scopes = { array = controlled_states
+					free_building_slots = { building = infrastructure size > 0 include_locked = no } 
+				}
+			}
+			EAI_queue_INF = yes
+		}
+		
+		else_if = { limit = { threat > 0.5 NOT = { any_of_scopes = { array = controlled_states EAI_available_SHARED = yes } } } 
+			random_list = {
+				1 = { EAI_queue_CFORT_BASES = yes }
+				1 = { EAI_queue_FORT_CITIES = yes }
+				1 = { EAI_queue_FORT_BORDER = yes }
+			}
+		}
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | CONSTRUCTION: queuing INF with free factories" } 
+	}
+	option = {}
+}
+
+country_event = { 
+	id = EAI_C.101
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	trigger = {
+		always = no
+	}
+
+	immediate = { }
+	option = {}
+}
+
+############################################################################################################
+
+### Fort construction scripts
+
+
+
+country_event = { # GENERIC
+	id = EAI_C.1005
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	
+	trigger = {
+		is_ai = yes
+
+		num_of_civilian_factories_available_for_projects > 10
+
+		enemies_strength_ratio > 0.75
+		
+		OR = {
+			surrender_progress > 0.05
+			has_defensive_war = yes
+		}
+
+		any_neighbor_country = {
+			has_war_with = ROOT
+		}
+		
+		any_of_scopes = { array = controlled_states
+			OR = {
+				AND = {
+					is_in_home_area = yes
+					any_neighbor_state = {
+						OR = {
+							CONTROLLER = { has_war_with = ROOT }
+							any_neighbor_state = { CONTROLLER = { has_war_with = ROOT } }
+						}
+					}
+					NOT = { has_state_flag = EAI_generic_fort_construction_state_triggered_@ROOT }
+				}
+				
+				AND = {
+					is_capital = yes
+					NOT = { has_state_flag = EAI_generic_fort_construction_state_triggered_@ROOT }
+				}
+			}
+		}
+	}
+
+	immediate = {
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | CONSTRUCTION: fort construction (dynamic)" } 
+
+		for_each_scope_loop = { array = controlled_states # build forts on victory points near enemy borders
+
+			if = {
+				limit = {
+					is_in_home_area = yes
+					any_neighbor_state = {
+						OR = {
+							CONTROLLER = { has_war_with = ROOT }
+							any_neighbor_state = { CONTROLLER = { has_war_with = ROOT } }
+						}
+					}
+					NOT = { has_state_flag = EAI_generic_fort_construction_state_triggered_@ROOT }
+				}
+				
+				set_state_flag = { flag = EAI_generic_fort_construction_state_triggered_@ROOT value = 1 days = 1000 }
+				
+				EAI_add_FORT_CITY = yes
+			}
+		}
+		
+		capital_scope = { # build forts on capital
+			if = {
+				limit = { NOT = { has_state_flag = EAI_generic_fort_construction_state_triggered_@ROOT } }
+			
+				set_state_flag = { flag = EAI_generic_fort_construction_state_triggered_@ROOT value = 1 days = 1000 }
+		
+				EAI_add_FORT_CITY = yes
+				EAI_add_FORT_CITY = yes
+			}
+		}
+	}
+	option = {}
+}
+
+
+############################################################################################################
+
+### Misc
+
+
+# Deletes military factories for the AI as it can't handle the resource needs
+country_event = { 
+	id = EAI_C.10001
+	hidden = yes
+	
+	mean_time_to_happen = { days = 2 }
+	
+	trigger  = {
+		is_ai = yes
+		num_of_military_factories > 450
+	}
+
+	immediate = {
+
+		set_temp_variable = { t1 = num_of_military_factories }
+		subtract_from_temp_variable = { t1 = 450 }
+
+		if = {
+			limit = {
+				any_of_scopes = { array = controlled_states
+					NOT = { is_core_of = ROOT }
+					arms_factory > 0
+				}
+			}
+
+			for_each_scope_loop = { array = controlled_states
+
+				if = {
+					limit = {
+						NOT = { is_core_of = ROOT }
+						arms_factory > 0
+					}
+
+					set_temp_variable = { t2 = building_level@arms_factory }
+					clamp_temp_variable = { var = t2 min = 0 max = t1 }
+					remove_building = { type = arms_factory level = t2 }
+					subtract_from_temp_variable = { t1 = t2 }
+				}
+
+				if = { limit = { NOT = { check_variable = { t1 > 0 } } }
+
+					set_temp_variable = { break = 1 }
+				}
+			}
+		}
+		else = {
+
+			for_each_scope_loop = { array = controlled_states
+
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+
+					set_temp_variable = { t2 = building_level@arms_factory }
+					clamp_temp_variable = { var = t2 min = 0 max = t1 }
+					remove_building = { type = arms_factory level = t2 }
+					subtract_from_temp_variable = { t1 = t2 }
+				}
+
+				if = { limit = { NOT = { check_variable = { t1 > 0 } } }
+
+					set_temp_variable = { break = 1 }
+				}
+			}
+		}
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | deleting factories" } 
+	}
+
+	option = {}
+}
+
+# set resource variables (done here due to script issues)
+country_event = { 
+	id = EAI_C.10002
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_state = { EAI_set_resource_variables = yes }
+	}
+
+	option = {}
+}
+
+############################################################################################################
+
+add_namespace = EAI_GER_build_queue
+
+country_event = { 
+	id = EAI_GER_build_queue.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+
+		set_country_flag = { flag = EAI_construction_timer days = 350 value = 1 }
+		
+		51 = {
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+		}
+
+		42 = {
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+		}
+
+		55 = {
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+		}
+
+		66 = {
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+			EAI_add_CIC = yes
+		}
+	}
+	option = {}
+}
+
+############################################################################################################
+
+add_namespace = EAI_PC_event
+
+country_event = { 
+	id = EAI_PC_event.10
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+		subtract_from_variable = { EAI_PC_active_projects = 1 } 
+		set_variable = { EAI_PC_project_array^0 = 0 }
+	}
+	option = {}
+}
+country_event = { 
+	id = EAI_PC_event.11
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+		subtract_from_variable = { EAI_PC_active_projects = 1 } 
+		set_variable = { EAI_PC_project_array^1 = 0 }
+	}
+	option = {}
+}
+country_event = { 
+	id = EAI_PC_event.12
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+		subtract_from_variable = { EAI_PC_active_projects = 1 } 
+		set_variable = { EAI_PC_project_array^2 = 0 }
+	}
+	option = {}
+}
+country_event = { 
+	id = EAI_PC_event.13
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+		subtract_from_variable = { EAI_PC_active_projects = 1 } 
+		set_variable = { EAI_PC_project_array^3 = 0 }
+	}
+	option = {}
+}
+country_event = { 
+	id = EAI_PC_event.14
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { 
+		subtract_from_variable = { EAI_PC_active_projects = 1 } 
+		set_variable = { EAI_PC_project_array^4 = 0 }
+	}
+	option = {}
+}

@@ -1,0 +1,150 @@
+﻿add_namespace = EAI_DM
+
+############################################################################################################
+# Expert AI mod - diplomacy events
+############################################################################################################
+
+#######################################################
+# random generic nation ideology setting
+#######################################################
+
+# makes the AI choose an ideology to focus on
+country_event = {
+	id = EAI_DM.1230
+	hidden = yes
+
+	mean_time_to_happen = { days = 2 }
+
+	trigger = {
+		is_ai = yes
+		has_global_flag = EAI_random_ideology
+		has_focus_tree = generic_focus
+		NOT = {
+			has_country_flag = EAI_democratic_focus
+			has_country_flag = EAI_communist_focus
+			has_country_flag = EAI_fascist_focus
+			has_country_flag = EAI_neutral_focus
+		}
+	}
+
+	option = { name = "democratic"
+		trigger = { 
+			OR = {
+				has_available_idea_with_traits = { idea = democratic_reformer limit = 1 } 
+				has_idea_with_trait = democratic_reformer
+			}
+		}
+
+		ai_chance = {
+			base = 1
+
+			modifier = { add = 1 EAI_democratic_nation = yes }
+			modifier = { add = 1 check_variable = { party_popularity@democratic > 0.8 } }
+			modifier = { add = 1 check_variable = { party_popularity@democratic > 0.6 } }
+			modifier = { add = 1 check_variable = { party_popularity@democratic > 0.4 } }
+			modifier = { add = 1 check_variable = { party_popularity@democratic > 0.2 } }
+		}
+
+		set_country_flag = EAI_democratic_focus
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | IDEOLOGY FOCUS: democratic" } 
+	}
+
+	option = { name = "communist"
+		trigger = { 
+			OR = {
+				has_available_idea_with_traits = { idea = communist_revolutionary limit = 1 } 
+				has_idea_with_trait = communist_revolutionary
+			}
+		}
+
+		ai_chance = {
+			base = 1
+
+			modifier = { add = 1 EAI_communist_nation = yes }
+			modifier = { add = 1 check_variable = { party_popularity@communism > 0.8 } }
+			modifier = { add = 1 check_variable = { party_popularity@communism > 0.6 } }
+			modifier = { add = 1 check_variable = { party_popularity@communism > 0.4 } }
+			modifier = { add = 1 check_variable = { party_popularity@communism > 0.2 } }
+		}
+
+		set_country_flag = EAI_communist_focus
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | IDEOLOGY FOCUS: communist" } 
+	}
+
+	option = { name = "fascist"
+		trigger = { 
+			OR = {
+				has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 } 
+				has_idea_with_trait = fascist_demagogue
+			}
+		}
+
+		ai_chance = {
+			base = 1
+
+			modifier = { add = 1 EAI_fascist_nation = yes }
+			modifier = { add = 1 check_variable = { party_popularity@fascism > 0.8 } }
+			modifier = { add = 1 check_variable = { party_popularity@fascism > 0.6 } }
+			modifier = { add = 1 check_variable = { party_popularity@fascism > 0.4 } }
+			modifier = { add = 1 check_variable = { party_popularity@fascism > 0.2 } }
+		}
+
+		set_country_flag = EAI_fascist_focus
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | IDEOLOGY FOCUS: fascist" } 
+	}
+
+	option = { name = "neutral"
+		ai_chance = {
+			base = 1
+
+			modifier = { add = 3 EAI_nonaligned_nation = yes }
+		}
+
+		set_country_flag = EAI_neutral_focus
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | IDEOLOGY FOCUS: neutral" } 
+	}
+}
+
+# allows a neutral country to pick up an ideology
+country_event = {
+	id = EAI_DM.1231
+	hidden = yes
+
+	mean_time_to_happen = { days = 365 }
+
+	trigger = {
+		is_ai = yes
+		has_global_flag = EAI_random_ideology
+		has_focus_tree = generic_focus
+		has_country_flag = EAI_neutral_focus
+
+		OR = {
+			check_variable = { party_popularity@democratic > 0.5 }
+			check_variable = { party_popularity@fascism > 0.5 }
+			check_variable = { party_popularity@communism > 0.5 }
+		}
+	}
+
+	immediate = {
+		clr_country_flag = EAI_neutral_focus
+
+		if = { limit = { check_variable = { party_popularity@democratic > 0.5 } } 
+			set_country_flag = EAI_democratic_focus
+		}
+		if = { limit = { check_variable = { party_popularity@communism > 0.5 } } 
+			set_country_flag = EAI_communist_focus
+		}
+		if = { limit = { check_variable = { party_popularity@fascism > 0.5 } } 
+			set_country_flag = EAI_fascist_focus
+		}
+
+		if = { limit = { has_country_flag = EAI_logging } log = "[GetYear] [GetMonth] | AI | [Root.GetName] | IDEOLOGY FOCUS: neutral" } 
+	}
+
+	option = {}
+}
+

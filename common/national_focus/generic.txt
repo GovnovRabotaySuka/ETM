@@ -99,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = make_mortars
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_make_mortars
 		cost = 10
 		prerequisite = {
 			focus = improve_equip
@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	focus = {
 		id = improve_mortars
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_improve_mortars
 		cost = 10
 		prerequisite = {
 			focus = make_mortars
@@ -133,7 +133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = superior_firepower
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_superior_firepower
 		cost = 10
 		prerequisite = {
 			focus = make_mortars
@@ -146,7 +146,7 @@ focus_tree = {
 	}
 	focus = {
 		id = cannon_fodder_doctrine
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_cannon_fodder_doctrine
 		cost = 10
 		prerequisite = {
 			focus = superior_firepower

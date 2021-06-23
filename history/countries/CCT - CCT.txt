@@ -7,18 +7,22 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-set_convoys = 5
+set_convoys = 50
 
 set_politics = {
-	ruling_party = pahanism
+	ruling_party = borshewism
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
  }
 
 set_popularities = {
-	burjuism = 25
-	bidlo = 15
-	borshewism = 5
-                   pahanism = 55
+	burjuism = 19
+	borshewism = 81
+}
+create_country_leader = {
+	name = "Sergey 'Banana' Sokolov"
+	desc = ""
+	picture = "Banana.dds"
+	ideology = sralinism
 }

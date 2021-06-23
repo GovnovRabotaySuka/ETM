@@ -1,0 +1,73 @@
+add_namespace = etm_superevents_settings
+add_namespace = etm_superevents_settings.equus
+add_namespace = etm_superevents_settings.griffonia
+add_namespace = etm_superevents_settings.griffonia.riverlands_unification
+add_namespace = etm_superevents_settings.griffonia.herzland_unification
+
+#Start
+country_event = {
+	id = etm_superevents_settings.1
+	title = etm_superevents_settings.start.t
+	desc = eetm_superevents_settings.start.desc
+	is_triggered_only = yes
+	
+	option = {
+		name = etm_superevents_settings.start.a
+		country_event = { id = etm_superevents_settings.100 }
+	}
+	option = {
+		name = etm_superevents_settings.start.b
+		country_event = { id = etm_superevents_settings.200 }
+	}
+	option = {
+		trigger = { NOT = { has_global_flag = etm_super_event_flag_disable_all } }
+		name = eaw_superevents_settings.start.c
+		country_event = { id = eaw_superevents_settings.2 }
+	}
+	option = {
+		trigger = { has_global_flag = etm_super_event_flag_disable_all }
+		name = etm_superevents_settings.start.d
+		country_event = { id = etm_superevents_settings.3 }
+	}
+	option = {
+		name = etm_superevents_settings.start.exit
+	}
+}
+
+#Disable all
+country_event = {
+	id = etm_superevents_settings.2
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		set_global_flag = etm_super_event_flag_holy_war_off
+		
+		country_event = { id = etm_superevents_settings.4 }
+	}
+}
+
+#Enable all
+country_event = {
+	id = etm_superevents_settings.3
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		clr_global_flag = etm_super_event_flag_holy_war_off
+		
+		country_event = { id = etm_superevents_settings.4 }
+	}
+}
+
+#ETM - The Holy War
+country_event = {
+	id = etm_superevents_settings.letov.100
+	title = eaw_superevents_settings.letov.great_war.t
+	desc = eaw_superevents_settings.desc
+	is_triggered_only = yes
+	option = {
+		trigger = { NOT = { has_global_flag = etm_super_event_flag_holy_war_off } }
+		name = etm_superevents_settings.letov.great_war.1a
+		set_global_flag = etm_super_event_flag_holy_war_off
+		country_event = { id = etm_superevents_settings.100 }
+	}
+}

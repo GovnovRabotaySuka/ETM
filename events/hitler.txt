@@ -1,0 +1,49 @@
+add_namespace = hit
+
+# Аншлюс
+country_event = {
+	id = hit.1
+	title = hit.1.t
+	desc = hit.1.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = HIT
+	}
+	
+	option = {
+		name = hit.1.a
+		ai_chance = { factor = 90}
+		SAU = {
+		country_event = sau.1
+		}
+		hidden_effect = {
+		PAS = {
+		country_event = pas.1
+			}
+		}
+	}
+	option = {
+		name = hit.1.b
+		ai_chance = { factor = 10}
+		SAU = {
+			create_wargoal = {
+			type = annex_everything
+			target = HIT
+				}
+		}
+		hidden_effect = {
+		SAU = {
+			country_event = sau.1111
+			}
+		PAS = {
+		country_event = pas.1
+			}
+		}
+	}
+}

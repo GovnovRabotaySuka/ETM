@@ -1,0 +1,170 @@
+﻿add_namespace = dnb
+country_event = {
+	id = dnb.1
+	title = dnb.1.t
+	desc = dnb.1.d
+	picture = GFX_report_event_worker_protests
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DNB
+		has_war = yes
+		date > 0002.5.1
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {			#мы легетимное правительство
+		name = dnb.1.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+		add_threat = 30
+		DNB = {
+			load_oob = "DNB_MAH"
+			set_popularities = {
+				burjuism = 10
+				bidlo = 70
+				borshewism = 15
+				pahanism = 5
+			}
+		}
+		MAH = { 
+			add_state_core = 486
+			set_capital = 486
+			set_state_owner = 486
+			set_state_controller = 486
+			load_oob = "MAH_0002"
+			declare_war_on = {
+				target = PRA
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = DNB
+				type = annex_everything
+				}
+			}
+		}
+	}
+	option = {
+		name = dnb.1.b			#анархия мать порядка
+		MAH = { change_tag_from = ROOT }
+		hidden_effect = {
+		add_threat = 30
+		MAH = {
+		play_song = "mh-rozovyeushki"
+		}
+		DNB = {
+			load_oob = "DNB_MAH"
+			set_popularities = {
+				burjuism = 10
+				bidlo = 70
+				borshewism = 15
+				pahanism = 5
+			}
+		}
+		MAH = { 
+			add_state_core = 486
+			set_capital = 486
+			set_state_owner = 486
+			set_state_controller = 486
+			load_oob = "MAH_0002"
+			declare_war_on = {
+				target = PRA
+				type = annex_everything
+				}
+			declare_war_on = {
+				target = DNB
+				type = annex_everything
+				}
+			}
+		}
+	}
+}
+country_event = {
+    id = dnb.999
+    title = dnb.999.t
+    desc = dnb.999.d
+    picture = GFX_report_event_soviet_purge_speech
+	
+	trigger = {
+		tag = DNB
+		date > 0002.1.10
+		date < 0002.2.1
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = dnb.999.a
+        set_cosmetic_tag = DNB_IMPER_GER
+        country_event = dnb.9991
+    }
+    option = {
+        name = dnb.999.b
+	ai_chance = { factor = 100}
+        set_cosmetic_tag = DNB_IMPER_RUS
+        country_event = dnb.9992
+    }
+	option = {
+        name = dnb.999.e
+        set_cosmetic_tag = DNB_Reich
+        country_event = dnb.9993
+    }
+    option = {
+        name = dnb.999.c
+    }
+}
+country_event = {
+    id = dnb.9991
+    title = dnb.9991.t
+    desc = dnb.9991.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9991.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_IMPER_GER
+    }
+    option = {
+        name = dnb.9991.b
+    }
+}
+country_event = {
+    id = dnb.9992
+    title = dnb.9992.t
+    desc = dnb.9992.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9992.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_IMPER_RUS
+    }
+    option = {
+	ai_chance = { factor = 100}
+        name = dnb.9992.b
+    }
+}
+country_event = {
+    id = dnb.9993
+    title = dnb.9993.t
+    desc = dnb.9993.d
+    picture = GFX_report_event_soviet_purge_speech
+
+    is_triggered_only = yes
+
+    option = {
+        name = dnb.9993.a
+        country_event = dnb.999
+        drop_cosmetic_tag = DNB_Reich
+    }
+    option = {
+        name = dnb.9993.b
+    }
+}
