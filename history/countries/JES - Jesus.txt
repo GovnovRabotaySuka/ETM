@@ -23,9 +23,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Last Supper"
+	name = "Dark Jesus"
 	desc = ""
-	picture = "Last_Supper.dds"
+	picture = "Dark.dds"
 	ideology = liberaha
 }
 
@@ -44,8 +44,8 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ja"
+	name = "Солнцеликий Вождь Ким Чен Ын"
 	desc = ""
 	picture = "Ja.dds"
-	ideology = gribonism
+	ideology = sralinism
 }

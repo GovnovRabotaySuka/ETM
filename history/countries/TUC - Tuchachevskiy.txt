@@ -38,16 +38,15 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 10
+	burjuism = 11
 	bidlo = 10
-	borshewism = 1
-	pahanism = 79
+	borshewism = 79
 }
 
 create_country_leader = {
 	name = "Mikhail Tukhachevsky"
 	desc = ""
-	picture = "ROD.dds"
+	picture = "NEW_Tukhach.dds"
 	expire = "1965.1.1"
 	ideology = naziborshewism  
 }

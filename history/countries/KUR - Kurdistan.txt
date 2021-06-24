@@ -24,6 +24,6 @@ set_politics = {
 create_country_leader = {
 	name = "Kurdish Union"
 	desc = ""
-	picture = "kurdish_union.dds"
+	picture = "kurdi.dds"
 	ideology = gribonism
 }

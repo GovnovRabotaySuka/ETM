@@ -40,3 +40,10 @@ set_popularities = {
 	bidlo = 2
 	borshewism = 2
 }
+create_country_leader = {
+	name = "Чёрный Властелин"
+	desc = ""
+	picture = "Vlastelin.dds"
+	expire = "1965.1.1"
+	ideology = gachism
+}

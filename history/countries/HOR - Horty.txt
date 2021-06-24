@@ -48,3 +48,31 @@ create_country_leader = {
     expire = "1965.1.1"
     ideology = despopahanism
 }
+create_country_leader = {
+    name = "Semyon Timoshenko" 
+    desc = ""
+    picture = "Semyon.dds"
+    expire = "1965.1.1"
+    ideology = sralinism
+}
+create_country_leader = {
+    name = "Women с подвохом" 
+    desc = ""
+    picture = "Women.dds"
+    expire = "1965.1.1"
+    ideology = pedophilia
+}
+create_country_leader = {
+    name = "Ferenc Salashi" 
+    desc = ""
+    picture = "Ferenc.dds"
+    expire = "1965.1.1"
+    ideology = fashiki
+}
+create_country_leader = {
+    name = "Viktor Orban" 
+    desc = ""
+    picture = "Viktor.dds"
+    expire = "1965.1.1"
+    ideology = putinism
+}

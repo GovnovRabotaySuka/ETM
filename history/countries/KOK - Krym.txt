@@ -2,7 +2,7 @@ capital = 658
 
 oob = "KOK_0002"
 
-set_research_slots = 2
+set_research_slots = 3
 
 add_ideas = {
 }
@@ -19,11 +19,8 @@ set_technology = {
 	basic_light_tank = 1
 	early_fighter = 1
 }
-
-
 set_convoys = 80
 set_stability = 0.3
-
 set_politics = {
 	ruling_party = pahanism
 	last_election = "1932.10.16"
@@ -32,8 +29,12 @@ set_politics = {
 }
 
 set_popularities = {
-	pahanism = 1
-	borshewism = 33
-	bidlo = 33
-	burjuism = 33
+	pahanism = 76
+	burjuism = 24
+}
+create_country_leader = {
+    name = "Natalia Poklonskaya"
+    desc = ""
+    picture = "poklonskaya.dds"
+    ideology = despopahanism
 }
