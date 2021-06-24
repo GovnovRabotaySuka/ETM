@@ -16,6 +16,6 @@ state={
 		}
 		add_core_of = GOM
 	}
-	manpower=6675636746865747765666
+	manpower=6675636
 	buildings_max_level_factor=1.000
 }

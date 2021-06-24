@@ -15,6 +15,6 @@ state={
 		}
 		add_core_of = BL9
 	}
-	manpower=2358235823758235523523523523523523523
+	manpower=2358235
 	buildings_max_level_factor=1.000
 }

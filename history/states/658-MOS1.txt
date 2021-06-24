@@ -14,6 +14,6 @@ state={
 		}
 		add_core_of = KOK
 	}
-	manpower=48175
+	manpower=4817534
 	buildings_max_level_factor=1.000
 }

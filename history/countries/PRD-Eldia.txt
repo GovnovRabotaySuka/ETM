@@ -39,3 +39,10 @@ set_politics = {
 set_popularities = {
 	pahanism = 100
 }
+
+create_country_leader = {
+    name = "Karl Fritz"
+    desc = ""
+    picture = "Fritz.dds"
+    ideology = despopahanism 
+}

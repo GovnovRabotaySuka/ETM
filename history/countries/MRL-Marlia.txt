@@ -39,3 +39,10 @@ set_politics = {
 set_popularities = {
 	bidlo = 100
 }
+
+create_country_leader = {
+    name = "Willie Tyber"
+    desc = ""
+    picture = "Tyber.dds"
+    ideology = nazi
+}
