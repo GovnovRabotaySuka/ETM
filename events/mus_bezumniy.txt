@@ -1,0 +1,63 @@
+add_namespace = mus
+
+#Взятие Венеции сосисками
+country_event = {
+	id = mus.1
+	title = mus.1.t
+	desc = mus.1.d
+	picture = GFX_report_event_german_troops
+	
+	trigger = {
+		tag = MUS
+		559 = { is_controlled_by = SAU }
+		559 = { is_owned_by = MUS }
+		MUS = { has_war_with SAU }
+		NOT = { has_global_flag = fall_of_venice }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_venice
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	timeout_days = 6
+	
+	option = {
+		name = mus.1.a
+		add_timed_idea = {
+			idea = idea_mus_1_a
+			days = 14
+		}
+	}
+}
+
+#Выход из запоя
+country_event = {
+	id = mus.2
+	title = mus.2.t
+	desc = mus.2.d
+	picture = GFX_report_event_mussolini_hotel
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MUS
+		has_idea = idea_mus_1_a
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	timeout_days = 6
+	
+	option = {
+		name = mus.2.a
+		remove_ideas = idea_mus_1_a
+		add_timed_idea = {
+			idea = idea_mus_2_a
+			days = 14
+		}
+	}
+}

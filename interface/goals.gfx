@@ -339,4 +339,59 @@ spriteTypes = {
 	name = "GFX_make_mortars"
 	texturefile = "gfx/interface/goals/make_mortars.dds"			
 	}
+	
+	SpriteType = {
+	name = "GFX_omfg_missions"
+	texturefile = "gfx/interface/goals/omfg_missions.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_power_superior_officer"
+	texturefile = "gfx/interface/goals/power_superior_officer.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_MUS_16"
+	texturefile = "gfx/interface/goals/MUS_16.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_form_OMON"
+	texturefile = "gfx/interface/goals/form_OMON.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_craft_UAZik"
+	texturefile = "gfx/interface/goals/craft_UAZik.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_tanks_online"
+	texturefile = "gfx/interface/goals/tanks_online.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_mobile_doctrine"
+	texturefile = "gfx/interface/goals/mobile_doctrine.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_stole_abramses"
+	texturefile = "gfx/interface/goals/stole_abramses.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_PENETRATION"
+	texturefile = "gfx/interface/goals/PENETRATION.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_MUS_2"
+	texturefile = "gfx/interface/goals/MUS_2.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_MUS_20"
+	texturefile = "gfx/interface/goals/MUS_20.dds"			
+	}
 }

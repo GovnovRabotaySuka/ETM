@@ -60,8 +60,8 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/idea_DNB_1.dds"		
 	}
 	SpriteType = {
-	name = "GFX_idea_idea_italy"
-	texturefile = "gfx/interface/ideas/idea_italy.dds"		
+	name = "GFX_idea_razdelennaya_italy"
+	texturefile = "gfx/interface/ideas/razdelennaya_italy.dds"		
 	}
 
 	frameAnimatedSpriteType = {

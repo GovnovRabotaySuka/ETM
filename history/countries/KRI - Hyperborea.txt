@@ -1,0 +1,66 @@
+﻿capital = 81
+
+oob = "KRI_0002"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+set_research_slots = 4
+set_convoys = 5
+
+
+set_popularities = { 
+	burjuism = 10
+	borshewism = 25
+	pahanism = 65
+}
+
+set_politics = {
+	ruling_party = pahanism
+	last_election = "21.10.2010"
+	election_frequency = 0
+	elections_allowed = no
+}
+	
+create_country_leader = {
+    name = "Nikita Dzhigurda"
+    desc = " "
+    picture = "Gachi_Dzhiga.dds"
+    expire = "1965.1.1"
+    ideology = gachism
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Mikail Zadornov"
+    desc = ""
+    picture = "zadornov.dds"
+    ideology = nazi
+	traits = {
+        #
+    }
+}
+
+
+	create_field_marshal = {
+	name = "Nikita Dzhigurda"
+		picture = "Gachi_Dzhiga.dds"
+	traits = { trait_reckless }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+
+create_field_marshal = {
+	name = "Mikail Zadornov"
+		picture = "zadornov.dds"
+	traits = { trait_reckless }
+	skill = 1
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}

@@ -40,4 +40,15 @@ set_popularities = {
 	burjuism = 5
 	borshewism = 89
 	bidlo = 6
+} 
+
+create_country_leader = {
+    name = "Pico"
+    desc = ""
+    picture = "pico.dds"
+    expire = "1965.1.1"
+    ideology = pedophilia
+    traits = {
+        #
+    }
 }

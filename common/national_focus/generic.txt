@@ -54,7 +54,7 @@ focus_tree = {
 	}
 	focus = {
 		id = omfg_missions
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_omfg_missions
 		cost = 10
 		prerequisite = {
 			focus = potatoes
@@ -68,7 +68,7 @@ focus_tree = {
 	}
 	focus = {
 		id = power_superior_officer
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_power_superior_officer
 		cost = 10
 		prerequisite = {
 			focus = omfg_missions
@@ -174,7 +174,7 @@ focus_tree = {
 	}
 	focus = {
 		id = craft_UAZik
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_craft_UAZik
 		cost = 10
 		prerequisite = {
 			focus = power_superior_officer
@@ -191,7 +191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = tanks_online
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_tanks_online
 		cost = 10
 		prerequisite = {
 			focus = craft_UAZik
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = PENETRATION
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_PENETRATION
 		cost = 10
 		prerequisite = {
 			focus = tanks_online
@@ -221,7 +221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = stole_abramses
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_stole_abramses
 		cost = 10
 		prerequisite = {
 			focus = tanks_online
@@ -238,7 +238,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mobile_doctrine
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_mobile_doctrine
 		cost = 10
 		prerequisite = {
 			focus = PENETRATION
@@ -266,7 +266,7 @@ focus_tree = {
 	}
 	focus = {
 		id = form_OMON
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_form_OMON
 		cost = 10
 		prerequisite = {
 			focus = cannon_fodder_doctrine

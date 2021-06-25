@@ -37,20 +37,20 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Ahmad Shah Masud"
-	desc = ""
-	picture = "ahmad_shah_masud.dds"
+	name = "Osama bin Laden"
+	desc = "Почётный овцеёб"
+	picture = "ben_laden.dds"
 	ideology = despopahanism
 }
 
 
 create_field_marshal = {
-	name = "Ahmad Shah Masud"
-		picture = "ahmad_shah_masud.dds"
+	name = "Osama bin Laden"
+		picture = "ben_laden.dds"
 	traits = { trait_reckless }
-	skill = 1
+	skill = 3
 	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 4
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
 }

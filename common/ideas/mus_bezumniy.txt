@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		razdelennaya_italy = {
-			picture = idea_italy
+			picture = razdelennaya_italy
 			allowed = {
 				OR = {
 					original_tag = MUS
@@ -47,7 +47,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 13
 				stability_factor = 0.05
-				drift_defence_factor = 0.5
+				drift_defence_factor = 0.75
 				consumer_goods_factor = 0.025
 				production_speed_buildings_factor = 0.05
 			}
@@ -155,6 +155,46 @@ ideas = {
 				cavalry_attack_factor = 0.2
 				cavalry_defence_factor = 0.3
 				cavalry_speed_factor = 0.1
+			}
+		}
+		idea_mus_1_a = {
+			picture = idea_mus_1_a
+			allowed = {
+				original_tag = MUS
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -390
+				stability_factor = -0.4
+				war_support_factor = -0.35
+				drift_defence_factor = -1.5
+				disabled_ideas = 1
+				army_leader_cost_factor = 100
+				military_leader_cost_factor = 100
+				navy_leader_cost_factor = 100
+			}
+		}
+		idea_mus_2_a = {
+			picture = idea_mus_2_a
+			allowed = {
+				original_tag = MUS
+				always = yes
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 370
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				offence = 0.1
+				defence = 0.05
+				bidlo_drift = 0.15
 			}
 		}
 	}

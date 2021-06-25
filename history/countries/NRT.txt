@@ -26,9 +26,9 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
-    desc = ""
-    picture = ""
+    name = "Misha"
+    desc = "Р Е З Н Я"
+    picture = "medved.dds"
     expire = "1965.1.1"
     ideology = modepahanism
     traits = {

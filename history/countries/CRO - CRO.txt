@@ -49,3 +49,8 @@ create_country_leader = {
 	picture = "GFX_rootcrop"
 	ideology = despopahanism
 }
+create_country_leader = {
+    name = "Dobroslav"
+    desc = ""
+    picture = "Dobroslav.dds"
+    ideology = nazi

@@ -18,14 +18,15 @@ set_politics = {
 }
 
 set_popularities = {
-	bidlo = 35
-	pahanism = 75
+	burjuism = 65
+	bidlo = 5
+	pahanism = 30
 }
 
 create_country_leader = {
-	name = ""
-	desc = ""
-	picture = "dem.dds"
+	name = "Volodymyr Zelensky"
+	desc = "Слуга народа"
+	picture = "Zelenskiy.dds"
 	expire = "1953.3.1"
 	ideology = conserva
 }
