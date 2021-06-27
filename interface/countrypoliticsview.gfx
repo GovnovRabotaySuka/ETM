@@ -712,4 +712,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
 	
+	spriteType = {
+        name = "GFX_ideology_gribonism"
+        texturefile = "gfx/interface/ideologies/gribonism.dds"
+    }
+	
+	spriteType = {
+        name = "GFX_ideology_islamism"
+        texturefile = "gfx/interface/ideologies/islamism.dds"
+    }
 }
