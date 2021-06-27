@@ -22,9 +22,9 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = "Pyotor"
-    desc = "Сваливает из Рашки"
-    picture = "petor.dds"
+    name = "Maxim Katz"
+    desc = "А я ебу собак, всегда готов"
+    picture = "kac.dds"
     expire = "1965.1.1"
     ideology = modepahanism
     traits = {
