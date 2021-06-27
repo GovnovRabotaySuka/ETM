@@ -117,7 +117,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
-			generate_wargoal_tension = 0.25
+			generate_wargoal_tension = 0.05
 			join_faction_tension = 0.6
 			lend_lease_tension = 0.3
 			send_volunteers_tension = 0.25
@@ -185,7 +185,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.2
 
 		modifiers = {
-			generate_wargoal_tension = 0.3
+			generate_wargoal_tension = 0.05
 			join_faction_tension = 0.5
 			lend_lease_tension = 0.1
 			send_volunteers_tension = 0.1
@@ -221,13 +221,14 @@ ideologies = {
 			gachism  = {
 			}
 			
-			flexism = {
+			islamism = {
+				can_be_randomly_selected = no
 			}
 			
 			modepahanism = {
 			}
                         
-                        radicalcentrism = {
+            radicalcentrism = {
 			}
 		}
 
@@ -253,7 +254,7 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 
 		modifiers = {
-			generate_wargoal_tension = 0.5
+			generate_wargoal_tension = 0.1
 			join_faction_tension = 1
 			lend_lease_tension = 0.4
 			send_volunteers_tension = 0.35

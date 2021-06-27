@@ -27,7 +27,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Kebab.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism
+	ideology = islamism
 	traits = {
 		
 	}
