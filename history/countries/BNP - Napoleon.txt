@@ -31,7 +31,7 @@ set_technology = {
 
 set_politics = {
 	ruling_party = pahanism 
-	last_election = "0001.1.1" 
+	last_election = "1821.5.5" 
 	election_frequency = 48 
 	elections_allowed = no 
 }
@@ -43,9 +43,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Napoleon I Bonaparte" 
+    name = "Napoleon Volodymyrovich Zelenaparte" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    expire = "1965.1.1"
+    picture = "napoleon.dds"
+    expire = "1821.5.5"
     ideology = despopahanism
 }

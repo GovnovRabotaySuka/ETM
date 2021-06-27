@@ -39,80 +39,12 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Gena Barboskin"
+	name = "krab"
 	desc = ""
-	picture = "Gena_Barboskin.dds"
+	picture = "krab.dds"
 	expire = "1965.1.1"
 	ideology = gribonism
 	traits = {
 	
 	}
-}
-
-create_country_leader = {
-	name = "Dryghok Barboskin"
-	desc = ""
-	picture = "Dryghok_Barboskin.dds"
-	expire = "1965.1.1"
-	ideology = gopnik
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Roza Barboskina"
-	desc = ""
-	picture = "Roza_Barboskina.dds"
-	expire = "1965.1.1"
-	ideology = burjuism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Malish Barboskin"
-	desc = ""
-	picture = "Malish_Barboskin.dds"
-	expire = "1965.1.1"
-	ideology = centrapahanism
-	traits = {
-		#
-	}
-}
-
-
-create_corps_commander = {
-	name = "Ded Barboskin"
-	picture = "Ded_Barboskin.dds"
-	traits = { trait_cautious armor_officer }
-	skill = 3
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-
-create_field_marshal = {
-	name = "Ded Barboskin"
-	picture = "Ded_Barboskin.dds"
-	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
-	skill = 4 
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-
-}
-
-create_navy_leader = {
-	name = "Ded Barboskin"
-	picture = "Ded_Barboskin.dds"
-	traits = { ground_pounder ironside }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 1
 }

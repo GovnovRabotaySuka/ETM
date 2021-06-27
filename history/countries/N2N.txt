@@ -12,9 +12,8 @@ set_convoys = 5
 
 set_popularities = { 
 	burjuism = 0
-	borshewism = 15
-	pahanism = 50
-	putinism = 35
+	borshewism = 17
+	pahanism = 83
 	bidlo = 0
 }
 
@@ -26,12 +25,8 @@ set_politics = {
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Eban'ko"
     desc = ""
-    picture = ""
-    expire = "1965.1.1"
-    ideology = modepahanism
-    traits = {
-        #
-    }
+    picture = "Ebanko.dds"
+    ideology = radicalcentrism
 }
