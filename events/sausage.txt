@@ -17,22 +17,13 @@ country_event = {
 		name = sau.1.a
 		hidden_effect = {
 		560 = {
-			if = {
-				limit = { is_owned_by = HIT }
 				add_core_of = SAU
-			}
 		}
 		561 = {
-			if = {
-				limit = { is_owned_by = HIT }
 				add_core_of = SAU
-			}
 		}
 		562 = {
-			if = {
-				limit = { is_owned_by = HIT }
 				add_core_of = SAU
-			}
 		}
 		HIT = {
 			every_unit_leader = {
@@ -61,27 +52,20 @@ country_event = {
 		name = sau.1111.a
 		hidden_effect = {
 		560 = {
-			if = {
-				limit = { is_owned_by = HIT }
-				add_core_of = SAU
-			}
+			add_core_of = SAU
 		}
 		561 = {
-			if = {
-				limit = { is_owned_by = HIT }
 				add_core_of = SAU
-			}
 		}
 		562 = {
-			if = {
-				limit = { is_owned_by = HIT }
 				add_core_of = SAU
-			}
 		}
 	}
 	add_political_power = -50
 	}
 }
+
+
 	# Помощь южным друзьям
 country_event = {
 	id = sau.2
@@ -97,17 +81,29 @@ country_event = {
 	
 	option = {
 		name = sau.2.a 
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 60 }
 		country_event = { days = 1 id = pas.2 }
 	}
 	option = {
 		name = sau.2.b
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
 		country_event = { days = 1 id = pas.3 }
+	}
+	option = {
+		name = sau.2.c
+		ai_chance = { factor = 30 }
+		country_event = { days = 1 id = pas.4 }
+		SAU = {
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 2500
+			target = PAS
+			}
+		}
 	}
 }
 
-	# ПР согласен
+	# ПивоР согласен
 country_event = {
 	id = sau.3
 	title = sau.3.t 
@@ -164,7 +160,24 @@ country_event = {
 		days = 1
 	}
 	option = {
-		name = sau.8.a 
+		name = sau.8.a
+		521 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+		520 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+	create_wargoal = {
+			type = puppet_wargoal_focus
+			target = CZE
+			expire = 0
+			}
 	}
 }
 country_event = {
@@ -178,5 +191,114 @@ country_event = {
 	}
 	option = {
 		name = sau.6.a 
+	}
+}
+country_event = {
+	id = sau.9
+	title = sau.9.t
+	desc = sau.9.d
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = SAU
+		NOT = { is_in_faction_with = CZE }
+		514 = {
+			is_owned_by = SAU
+			}
+		513 = {
+			is_owned_by = SAU
+			}
+		510 = {
+			is_owned_by = SAU
+			}
+		509 = {
+			is_owned_by = SAU
+			}
+		512 = {
+			is_owned_by = SAU
+			}
+		511 = {
+			is_owned_by = SAU
+			}
+		508 = {
+			is_owned_by = SAU
+			}
+		507 = {
+			is_owned_by = SAU
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.9.a 
+		POL = {
+			set_state_owner = 512
+			set_state_owner = 509
+			set_state_owner = 508
+			set_state_owner = 507
+			set_state_owner = 511
+		}
+		SAU = {
+			set_autonomy = {
+				target = POL 
+				autonomy_state = autonomy_bid_kommissariat
+			}
+		}
+	}
+	option = {
+		name = sau.9.b 
+	}
+}
+country_event = {
+	id = sau.10
+	title = sau.10.t
+	desc = sau.10.d
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		tag = SAU
+		NOT = { is_in_faction_with = CZE }
+		525 = {
+			is_owned_by = SAU
+			}
+		523 = {
+			is_owned_by = SAU
+			}
+		524 = {
+			is_owned_by = SAU
+			}
+		1308 = {
+			is_owned_by = SAU
+			}
+		}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.10.a 
+		CZE = {
+			set_state_owner = 525
+			set_state_owner = 523
+			set_state_owner = 524
+			set_state_owner = 1308
+		}
+		SAU = {
+			set_autonomy = {
+				target = CZE 
+				autonomy_state = autonomy_bid_kommissariat
+			}
+		}
+	}
+	option = {
+		name = sau.10.b 
 	}
 }

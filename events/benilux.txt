@@ -1,0 +1,147 @@
+add_namespace = bnx
+
+country_event = {
+	id = bnx.1
+	title = bnx.1.t
+	desc = bnx.1.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = NIG
+	}
+	
+	option = {
+		name = bnx.1.a    					#soglasen 
+		ai_chance = { factor = 90}
+		SAU = {
+			set_autonomy = {
+				target = NIG 
+				autonomy_state = autonomy_bid_kommissariat
+			}
+			country_event = bnx.12
+		} 
+	}
+	option = {
+		name = bnx.1.b
+		ai_chance = { factor = 10}
+		SAU = {
+			country_event = bnx.13
+		}
+	}
+}
+country_event = {
+	id = bnx.11
+	title = bnx.11.t
+	desc = bnx.11.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = VAL
+	}
+	
+	option = {
+		name = bnx.11.a    					#soglasen 
+		ai_chance = { factor = 10}
+		SAU = {
+			set_autonomy = {
+				target = VAL 
+				autonomy_state = autonomy_bid_kommissariat
+			}
+			country_event = bnx.122
+		}
+	}
+	option = {
+		name = bnx.11.b
+		ai_chance = { factor = 90}
+		SAU = {
+			country_event = bnx.133
+		}
+	}
+}
+
+country_event = { #
+	id = bnx.12
+	title = bnx.12.t
+	desc = bnx.12.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = SAU
+	}
+	
+	option = {
+		name = bnx.12.a    				 
+	}
+}
+country_event = { #
+	id = bnx.122
+	title = bnx.122.t
+	desc = bnx.122.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = SAU
+	}
+	
+	option = {
+		name = bnx.122.a    				 
+	}
+}
+country_event = { #
+	id = bnx.13
+	title = bnx.13.t
+	desc = bnx.13.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = SAU
+	}
+	
+	option = {
+		name = bnx.13.a    				 
+	}
+}
+country_event = { #
+	id = bnx.133
+	title = bnx.133.t
+	desc = bnx.133.d
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+	tag = SAU
+	}
+	
+	option = {
+		name = bnx.133.a    				 
+	}
+}

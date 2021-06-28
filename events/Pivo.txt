@@ -57,7 +57,7 @@ country_event = {
 			add_core_of = SAU
 			SAU = {
 			set_state_controller = 520
-			}
+				}
 			}
 		}
 	521 = {

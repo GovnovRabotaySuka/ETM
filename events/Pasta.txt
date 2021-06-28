@@ -8,6 +8,10 @@ country_event = {
 	desc = pas.1.d 
 	is_triggered_only = yes
 	
+	trigger = {
+	tag = PAS
+	}
+	
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
@@ -35,6 +39,11 @@ country_event = {
 	desc = pas.2.d 
 	is_triggered_only = yes
 	
+	trigger = {
+	tag = PAS
+	}
+	
+	
 	fire_only_once = yes
 	
 	mean_time_to_happen  = {
@@ -44,7 +53,7 @@ country_event = {
 	option = {
 		name = pas.2.a 
 		SAU = {
-		create_faction = "Eda"
+		create_faction = "Lebensmittel"
 		add_to_faction = PAS
 		}
 	}
@@ -56,6 +65,11 @@ country_event = {
 	desc = pas.3.d 
 	is_triggered_only = yes
 	
+	trigger = {
+	tag = PAS
+	}
+	
+	
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -63,7 +77,30 @@ country_event = {
 	option = {
 		name = pas.3.a 
 		add_political_power = -100
-		add_stability = -1
-		add_war_support = -1
+		add_stability = -0.05
+		add_war_support = -0.03
+	}
+}
+
+country_event = {
+	id = pas.4
+	title = pas.4.t 
+	desc = pas.4.d 
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = PAS
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = pas.4.a 
+		add_political_power = -100
+		add_stability = -0.02
+		add_war_support = -0.01
 	}
 }

@@ -59,7 +59,11 @@ focus_tree = {
 					add_political_power = 100
 					add_stability = 0.1
 				}
-
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_54
@@ -531,12 +535,16 @@ focus_tree = {
 				add_war_support = 0.2
 			}
 		}
-
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_30
 		icon = GFX_goal_unknown
-		cost = 1,00
+		cost = 1
 		prerequisite = {
 			focus = SAU_29
 		}
@@ -544,8 +552,18 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			add_threat = 10
+			NIG = {
+				country_event = bnx.1
+			}
+			VAL = {
+				country_event = bnx.11
+			}
 		}
-
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_31
@@ -557,16 +575,46 @@ focus_tree = {
 		x = 20
 		y = 3
 		completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = VAL
+		if = { 
+				limit = { 
+				NIG = {
+					NOT = {
+						is_puppet_of = SAU
+					}
+				}
+			}
+				create_wargoal = {
+					type = annex_everything
+					target = NIG
+				}
 		}
-		create_wargoal = {
-			type = annex_everything
-			target = NIG
+		if = { 
+				limit = { 
+				VAL = {
+					NOT = {
+						is_puppet_of = SAU
+					}
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = VAL
+				}
+			}
 		}
+		bypass = {
+			NIG = {
+				is_puppet_of = SAU
+			}
+			VAL = {
+				is_puppet_of = SAU
+			}
 		}
-
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_33
@@ -577,9 +625,71 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
+		available = {
+		OR = {
+		
+		AND = {
+			VAL = {
+				is_puppet_of = SAU
+				}
+			NIG = {
+				is_puppet_of = SAU
+				}
+		}
+		
+		AND = {
+			NIG = {
+				is_puppet_of = SAU
+				}
+			SAU = {
+				owns_state = 587
+				owns_state = 585
+				owns_state = 584
+				owns_state = 566
+				}
+		}
+		
+		AND = {
+			SAU = {
+				owns_state = 588
+				owns_state = 589
+				owns_state = 590
+				}
+			VAL = {
+				is_puppet_of = SAU
+				}
+		}
+		
+		AND = {
+			SAU = {
+				owns_state = 587
+				owns_state = 585
+				owns_state = 584
+				owns_state = 566
+				}
+			SAU = {
+				owns_state = 588
+				owns_state = 589
+				owns_state = 590
+				}
+			}
+		}
+		}
 		completion_reward = {
 		HIT = {
 		country_event = hit.1
+			}
+		}
+		bypass = {
+			SAU = {
+				owns_state = 562
+				owns_state = 561
+				owns_state = 560
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
 			}
 		}
 	}
@@ -587,6 +697,13 @@ focus_tree = {
 		id = SAU_34
 		icon = GFX_goal_unknown
 		cost = 0.2
+		available = {
+			SAU = {
+				owns_state = 562
+				owns_state = 561
+				owns_state = 560
+			}
+		}
 		prerequisite = {
 			focus = SAU_33
 		}
@@ -914,6 +1031,20 @@ focus_tree = {
 		id = SAU_35
 		icon = GFX_goal_unknown
 		cost = 10
+		available = {
+			PAS = {
+				is_puppet = no
+				}
+			OR = { 
+					PAS = {
+					has_war_with = MUS
+					}
+				
+			OR = {
+					country_exists = PAS
+				}
+			}
+		}
 		prerequisite = {
 			focus = SAU_34
 		}
@@ -923,11 +1054,37 @@ focus_tree = {
 		x = 19
 		y = 6
 		completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					SAU = {
+						is_in_faction_with = PAS
+						}
+					}
+				}
+			SAU = {
+				create_faction = "Lebensmittel"
+				add_to_faction = PAS
+			}
+		}
 		add_political_power = 120
+		}
+		bypass = {
+			SAU = {
+				is_in_faction_with = PAS
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
 		}
 	}
 	focus = {
 		id = SAU_38
+		available = {
+			NOT = { country_exists = MUS }
+		}
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
@@ -941,11 +1098,19 @@ focus_tree = {
     			target = SWI
 			}
 		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_39
 		icon = GFX_goal_unknown
 		cost = 10
+		available = {
+			NOT = { country_exists = MUS }
+		}
 		prerequisite = {
 			focus = SAU_35
 		}
@@ -957,6 +1122,11 @@ focus_tree = {
 		completion_reward = {
 			CZE = {
 			country_event = pivo.1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
 			}
 		}
 	}
@@ -978,9 +1148,30 @@ focus_tree = {
 		x = 16
 		y = 8
 		completion_reward = {
-		declare_war_on = {
-   			target = CCA
-   			type = annex_everything
+		SAU = {
+			declare_war_on = {
+				target = CCA
+				type = annex_everything
+				}
+			}
+		CZE = {
+			declare_war_on = {
+				target = CCA
+				type = annex_everything
+				}
+			}
+		CZE = {
+			add_state_core = 506
+			add_state_core = 501
+			add_state_core = 505
+			add_state_core = 504
+			add_state_core = 502
+			add_state_core = 503
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
 			}
 		}
 	}
@@ -1010,6 +1201,9 @@ focus_tree = {
 		id = SAU_41
 		icon = GFX_goal_unknown
 		cost = 10
+		available = {
+			NOT = { country_exists = MUS }
+		}
 		prerequisite = {
 			focus = SAU_35
 		}
@@ -1019,28 +1213,8 @@ focus_tree = {
 		x = 20
 		y = 7
 		completion_reward = {
-		521 = {
-			if = {
-				limit = { is_owned_by = CZE }
-				add_core_of = SAU
-				}
-			}
-		520 = {
-			if = {
-				limit = { is_owned_by = CZE }
-				add_core_of = SAU
-				}
-			}
-		522 = {
-			if = {
-				limit = { is_owned_by = CZE }
-				add_core_of = SAU
-				}
-			}
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = CZE
-			expire = 0
+			CZE = {
+				country_event = pivo.2
 			}
 		}
 	}
@@ -1061,7 +1235,11 @@ focus_tree = {
     				target = DDR
 			}
 		}
-
+		ai_will_do = {
+			factor = 10
+			modifier = {
+			}
+		}
 	}
 	focus = {
 		id = SAU_43
@@ -1073,10 +1251,59 @@ focus_tree = {
 		x = 19
 		y = 10
 		completion_reward = {
-		create_wargoal = {
-			type = annex_everything
-			target = POL
-			expire = 0
+		if = {
+			limit = {
+				CZE = {
+					NOT = { is_in_faction_with = SAU }
+					}
+				}
+			create_wargoal = {
+				type = take_state_focus
+				target = POL
+				expire = 0
+				generator = { 514 513 510 }
+				}
+			SAU = {
+				add_state_core = 514
+				add_state_core = 513
+				add_state_core = 510
+			}
+		}
+		if = {
+			limit = {
+				CZE = {
+					is_in_faction_with = SAU 
+					}
+				}
+			SAU = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+					}
+			}
+			CZE = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+					}
+			}
+			SAU = {
+				add_state_core = 514
+				add_state_core = 513
+				add_state_core = 510
+				add_state_core = 509
+				add_state_core = 512
+				add_state_core = 511
+				add_state_core = 508
+				}
+			CZE = {
+				add_state_core = 507
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
 			}
 		}
 	}
