@@ -56,6 +56,13 @@ country_event = {
 		create_faction = "Lebensmittel"
 		add_to_faction = PAS
 		}
+		SAU = {
+		add_to_war = { 
+    			targeted_alliance = PREV 
+    			enemy = MUS
+    			hostility_reason = asked_to_join
+			}
+		}
 	}
 }
 

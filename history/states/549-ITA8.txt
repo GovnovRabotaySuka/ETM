@@ -21,6 +21,7 @@ state={
 
 		}
 		add_core_of = MUS
+                add_core_of = PAS
 	}
 
 	manpower = 3202401

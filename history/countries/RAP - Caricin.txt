@@ -37,9 +37,9 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Власть Царицина"
+	name = "German Sterligov"
 	desc = ""
-	picture = "Nonhype.dds"
+	picture = "GermanS.dds"
 	expire = "1965.1.1"
 	ideology = despopahanism  
 }

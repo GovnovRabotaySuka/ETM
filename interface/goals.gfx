@@ -389,9 +389,52 @@ spriteTypes = {
 	name = "GFX_MUS_2"
 	texturefile = "gfx/interface/goals/MUS_2.dds"			
 	}
-	
 	SpriteType = {
 	name = "GFX_MUS_20"
 	texturefile = "gfx/interface/goals/MUS_20.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_6"
+	texturefile = "gfx/interface/goals/MUS_6.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_22"
+	texturefile = "gfx/interface/goals/MUS_22.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_36"
+	texturefile = "gfx/interface/goals/MUS_36.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_23"
+	texturefile = "gfx/interface/goals/MUS_23.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_25"
+	texturefile = "gfx/interface/goals/MUS_25.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_24"
+	texturefile = "gfx/interface/goals/MUS_24.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_21"
+	texturefile = "gfx/interface/goals/MUS_21.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_37"
+	texturefile = "gfx/interface/goals/MUS_37.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_40"
+	texturefile = "gfx/interface/goals/MUS_40.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_38"
+	texturefile = "gfx/interface/goals/MUS_38.dds"			
+	}
+	SpriteType = {
+	name = "GFX_MUS_39"
+	texturefile = "gfx/interface/goals/MUS_39.dds"			
 	}
 }

@@ -30,7 +30,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = bidlo 
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
@@ -43,9 +43,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Pustina" 
+    name = "Sa'ahar" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "sahar.dds"
     expire = "1965.1.1"
-    ideology = bidlo
+    ideology = nazi
 }

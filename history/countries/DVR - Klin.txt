@@ -11,7 +11,7 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = pahanism 
+	ruling_party = conserva 
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 

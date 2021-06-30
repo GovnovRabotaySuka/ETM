@@ -581,8 +581,8 @@
 
  DVR_bidlo:0 ""
  DVR_bidlo_DEF:0 ""
- DVR_burjuism:0 ""
- DVR_burjuism_DEF:0 ""
+ DVR_burjuism:0 "Зелёный Клин"
+ DVR_burjuism_DEF:0 "Зелёный Клин"
  DVR_pahanism:0 "Зелёный Клин"
  DVR_pahanism_DEF:0 "Зелёный Клин"
  DVR_borshewism:0 ""
@@ -1168,6 +1168,8 @@
  
  CHE_bidlo:0 "Российская Исламская Федерация"
  CHE_bidlo_DEF:0 "Российская Исламская Федерация"
+ CHE_putinism:0 "Российская Исламская Федерация"
+ CHE_putinism_DEF:0 "Российская Исламская Федерация"
  CHE_burjuism:0 "Российская Исламская Федерация"
  CHE_burjuism_DEF:0 "Российская Исламская Федерация"
  CHE_pahanism:0 "Российская Исламская Федерация"

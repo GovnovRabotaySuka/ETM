@@ -721,4 +721,8 @@ spriteTypes = {
         name = "GFX_ideology_islamism"
         texturefile = "gfx/interface/ideologies/islamism.dds"
     }
+	spriteType = {
+        name = "GFX_ideology_gachism"
+        texturefile = "gfx/interface/ideologies/gachism.dds"
+    }
 }

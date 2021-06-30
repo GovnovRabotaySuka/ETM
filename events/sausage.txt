@@ -81,17 +81,17 @@ country_event = {
 	
 	option = {
 		name = sau.2.a 
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 94 }
 		country_event = { days = 1 id = pas.2 }
 	}
 	option = {
 		name = sau.2.b
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 1 }
 		country_event = { days = 1 id = pas.3 }
 	}
 	option = {
 		name = sau.2.c
-		ai_chance = { factor = 30 }
+		ai_chance = { factor = 5 }
 		country_event = { days = 1 id = pas.4 }
 		SAU = {
 		send_equipment = {
@@ -173,6 +173,18 @@ country_event = {
 				add_core_of = SAU
 				}
 			}
+		522 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
+		785 = {
+			if = {
+				limit = { is_owned_by = CZE }
+				add_core_of = SAU
+				}
+			}
 	create_wargoal = {
 			type = puppet_wargoal_focus
 			target = CZE
@@ -236,6 +248,7 @@ country_event = {
 	
 	option = {
 		name = sau.9.a 
+		ai_chance = { factor = 100 } 
 		POL = {
 			set_state_owner = 512
 			set_state_owner = 509
@@ -285,6 +298,7 @@ country_event = {
 	
 	option = {
 		name = sau.10.a 
+		ai_chance = { factor = 100 } 
 		CZE = {
 			set_state_owner = 525
 			set_state_owner = 523
@@ -300,5 +314,211 @@ country_event = {
 	}
 	option = {
 		name = sau.10.b 
+	}
+}
+country_event = {
+	id = sau.11
+	title = sau.11.t
+	desc = sau.11.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		SAU = { is_in_faction_with = PAS }
+		OR = {
+			549 = {
+				is_owned_by = SAU
+				}
+			553 = {
+				is_owned_by = SAU
+				}
+			565 = {
+				is_owned_by = SAU
+				}
+			558 = {
+				is_owned_by = SAU
+				}
+			559 = {
+				is_owned_by = SAU
+				}
+			556 = {
+				is_owned_by = SAU
+				}
+			554 = {
+				is_owned_by = SAU
+				}
+			552 = {
+				is_owned_by = SAU
+				}
+			550 = {
+				is_owned_by = SAU
+				}
+			548 = {
+				is_owned_by = SAU
+				}
+			547 = {
+				is_owned_by = SAU
+				}
+			544 = {
+				is_owned_by = SAU
+				}
+			543 = {
+				is_owned_by = SAU
+				}
+			MUS = { is_puppet_of = SAU }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.11.a
+		ai_chance = { factor = 100 } 
+		if = {
+			limit = { 
+				MUS = { is_puppet_of = SAU }
+				}
+			PAS = { annex_country = {
+							target = MUS
+							transfer_troops = yes
+						}
+				}
+		}
+		if = {
+			549 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 549
+						}
+				}
+			}
+		}
+		if = {
+			553 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 553
+						}
+				}
+			}
+		}
+		if = {
+			565 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 565
+						}
+				}
+			}
+		}
+		if = {
+			558 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 558
+						}
+				}
+			}
+		}
+		if = {
+			559 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 559
+						}
+				}
+			}
+		}
+		if = {
+			556 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 556
+						}
+				}
+			}
+		}
+		if = {
+			554 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 554
+						}
+				}
+			}
+		}
+		if = {
+			552 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 552
+						}
+				}
+			}
+		}
+		if = {
+			550 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 550
+						}
+				}
+			}
+		}
+		if = {
+			548 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 548
+						}
+				}
+			}
+		}
+		if = {
+			547 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 547
+						}
+				}
+			}
+		}
+		if = {
+			544 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 544
+						}
+				}
+			}
+		}
+		if = {
+			543 = {
+				if = {
+					limit = { is_owned_by = SAU }
+					PAS = { 
+						set_state_owner = 543
+						}
+				}
+			}
+		}
+	}
+	option = {
+		name = sau.11.b 
 	}
 }

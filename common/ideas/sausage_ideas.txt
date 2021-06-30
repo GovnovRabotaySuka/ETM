@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		four_plan = {
+			
+			picture = idea_DNB_1
+			
+			removal_cost = -1
+			
+			allowed = {
+				tag = SAU
+			}
+			
+			modifier = {
+                production_factory_efficiency_gain_factor = 0.15
+                production_factory_max_efficiency_factor = 0.15
+                industrial_capacity_factory = 0.15
+                production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		grosraumwirtschaft = {
+			allowed = {
+				original_tag = SAU
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		autarky_idea = {
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}
+}
