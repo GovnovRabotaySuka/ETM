@@ -12,6 +12,6 @@ state={
 		}
 		add_core_of = NAU
 	}
-	manpower=0
+	manpower=54785
 	buildings_max_level_factor=1.000
 }

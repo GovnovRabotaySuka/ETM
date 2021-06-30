@@ -11,9 +11,10 @@ state={
 		owner = NAP
 		buildings = {
 			infrastructure = 4	
+		}
 		add_core_of = NAP
 	}
 	
-	manpower=178456
+	manpower=878456
 	buildings_max_level_factor=1.000
 }

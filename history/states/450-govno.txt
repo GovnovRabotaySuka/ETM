@@ -7,7 +7,7 @@ state={
 	history={
 		owner = CKD
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		add_core_of = CKD
 	}
@@ -15,6 +15,6 @@ state={
 	provinces={
 		19946 19971 19972 20008 20094 20106 20134 20140 20158 20186 20205 20225 20226 20294 20307 20325 20382 20399 
 	}
-	manpower=0
+	manpower=153634
 	buildings_max_level_factor=1.000
 }

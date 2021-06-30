@@ -16,7 +16,7 @@ state={
 		add_core_of = IPR
 	}
 
-	manpower=86501
+	manpower=1286501
 	buildings_max_level_factor=1.000
 }
 

@@ -16,6 +16,6 @@ state={
 		add_core_of = DVR
 	}
 
-	manpower=0
+	manpower=1068423
 	buildings_max_level_factor=1.000
 }

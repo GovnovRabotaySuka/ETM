@@ -13,9 +13,8 @@ state={
 			infrastructure = 3
 
 		add_core_of = NAP
+		}
 	}
-	
-    }
-	manpower=18700
+	manpower=984700
 	buildings_max_level_factor=1.000
 }

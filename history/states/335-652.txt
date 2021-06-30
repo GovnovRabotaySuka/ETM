@@ -16,6 +16,6 @@ state={
 		add_core_of = PLA
 	}
 
-	manpower=0
+	manpower=2168043
 	buildings_max_level_factor=1.000
 }

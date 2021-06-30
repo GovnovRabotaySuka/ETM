@@ -23,8 +23,6 @@ state={
 			air_base = 6
 		}
 	}
-	
-    }
 	manpower = 2140234
 	buildings_max_level_factor=1.000
 }

@@ -17,6 +17,6 @@ state={
 		add_core_of = BKH
 	}
 
-	manpower=0
+	manpower=5378963
 	buildings_max_level_factor=1.000
 }
