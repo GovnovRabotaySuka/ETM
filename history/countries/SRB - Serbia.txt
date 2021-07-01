@@ -43,9 +43,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Remove Kebab" 
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    name = "Rodoljub Vulović" 
+    desc = "Remove Kebab"
+    picture = "roki.dds"
     expire = "1965.1.1"
     ideology = despopahanism
 }

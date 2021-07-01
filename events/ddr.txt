@@ -1,0 +1,32 @@
+add_namespace = ddr
+
+#Альянс с Муссолини
+country_event = {
+	id = ddr.1
+	title = ddr.1.t 
+	desc = ddr.1.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = ddr.1.a 
+		ai_chance = { factor = 70 }
+		MUS = {
+			add_to_faction = DDR
+		}
+		MUS = {
+			country_event = mus.11
+		}
+	}
+	
+	option = {
+		name = ddr.1.b
+		ai_chance = { factor = 30 }
+		MUS = {
+			country_event = mus.12
+		}
+	}
+}

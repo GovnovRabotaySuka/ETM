@@ -13,7 +13,7 @@ focus_tree = {
 		id = MUS_1
 		icon = GFX_focus_ger_assassinate_mussolini
 		cost = 10
-		x = 1
+		x = 0
 		y = 0
 			ai_will_do = {
 					factor = 30
@@ -52,7 +52,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MUS_17
 		}
-		x = 3
+		x = 2
 		y = 0
 			ai_will_do = {
 					factor = 25
@@ -426,7 +426,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_industrial_effort
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = MUS_industrial_effort
 			ai_will_do = {
@@ -609,7 +609,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_extra_tech_slot
 		}
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = MUS_extra_tech_slot
 			ai_will_do = {
@@ -803,7 +803,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_1
 		}
-		x = 1
+		x = 0
 		y = 1
 			available = {
 					has_government = bidlo
@@ -836,7 +836,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_2
 		}
-		x = 1
+		x = 0
 		y = 2
 			ai_will_do = {
 					factor = 20
@@ -846,7 +846,7 @@ focus_tree = {
 					PAS = {
 						OR = {
 							exists = no
-							is_puppet = yes
+							is_puppet_of = MUS
 						}
 					}
 				}
@@ -965,23 +965,21 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = MUS_6
-		}
-		prerequisite = {
 			focus = MUS_3
 		}
-		x = 1
+		x = 3
 		y = 3
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
-			count_triggers = {
-				amount = 2
-				has_defensive_war_with = SAU
-				has_defensive_war_with = PAS
-				has_defensive_war_with = HOR
+			SAU = {
+				OR = {
+					has_completed_focus = SAU_35
+					has_completed_focus = SAU_36
+				}
 			}
+			has_government = bidlo
 		}
 		completion_reward = {
 			set_rule = {
@@ -995,6 +993,68 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = MUS_52
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_8
+		}
+		x = 6
+		y = 4
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			OR = {
+				has_war_together_with = SWI
+				SAU = {
+						has_completed_focus = SAU_45
+				}
+				SAU = {
+						has_completed_focus = SAU_38
+				}
+			}
+		}
+		completion_reward = {
+			SWI = {
+				country_event = swi.1
+			}
+			add_timed_idea = {
+				idea = idea_mus_52
+				days = 30
+			}
+		}
+	}
+	focus = {
+		id = MUS_53
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_8
+		}
+		x = 7
+		y = 5
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			OR = {
+				has_war_together_with = NEK
+				SAU = {
+						has_completed_focus = SAU_47
+				}
+				SAU = {
+						has_completed_focus = SAU_48
+				}
+			}
+		}
+		completion_reward = {
+			NEK = {
+				country_event = nek.1
+			}
+		}
+	}
+	focus = {
 		id = MUS_4
 		icon = GFX_goal_unknown
 		cost = 10
@@ -1004,13 +1064,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MUS_9
 		}
-		x = 0
+		x = 2
 		y = 4
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
-			has_defensive_war_with = CZE
+			OR = {
+				has_defensive_war_with = CZE
+				SAU = {
+					has_completed_focus = SAU_40
+				}
+			}
 		}
 		completion_reward = {
 			reverse_add_opinion_modifier = {
@@ -1032,6 +1097,55 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = MUS_54
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_4
+		}
+		x = 1
+		y = 6
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			OR = {
+				has_war_together_with = DDR
+				SAU = {
+						has_completed_focus = SAU_42
+				}
+			}
+		}
+		completion_reward = {
+			DDR = {
+				country_event = ddr.1
+			}
+		}
+	}
+	focus = {
+		id = MUS_51
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = MUS_4
+		}
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+			SAU = {
+					has_completed_focus = SAU_40
+				}
+		}
+		completion_reward = {
+			CCA = {
+				country_event = cca.1
+			}
+		}
+	}
+	focus = {
 		id = MUS_9
 		icon = GFX_goal_unknown
 		cost = 10
@@ -1041,26 +1155,34 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = MUS_4
 		}
-		x = 2
+		x = 4
 		y = 4
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
-			has_war_together_with = CZE
+			OR = {
+				has_war_together_with = CZE
+				SAU = {
+					has_completed_focus = SAU_32
+				}
+				SAU = {
+					has_completed_focus = SAU_41
+				}
+				SAU = {
+					has_completed_focus = SAU_51
+				}
+			}
 		}
 		completion_reward = {
-			MUS = {
-				add_to_faction = CZE
+			CZE = {
+				country_event = pivo.3
 			}
 			add_political_power = -650
 			add_stability = 0.05
 			add_timed_idea = {
 				idea = idea_mus_9
 				days = 60
-			}
-			CZE = {
-				country_event = { id = cze_event_mus_9 }
 			}
 			reverse_add_opinion_modifier = {
 				target = CZE
@@ -1142,7 +1264,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_22
 		}
-		x = 5
+		x = 8
 		y = 3
 		ai_will_do = {
 			factor = 20
@@ -1185,7 +1307,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_23
 		}
-		x = 5
+		x = 8
 		y = 4
 		ai_will_do = {
 			factor = 20
@@ -1268,7 +1390,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_22
 		}
-		x = 7
+		x = 10
 		y = 3
 		ai_will_do = {
 			factor = 15
@@ -1282,7 +1404,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_24
 		}
-		x = 7
+		x = 10
 		y = 4
 
 	}
@@ -1293,7 +1415,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_40
 		}
-		x = 7
+		x = 10
 		y = 5
 
 	}
@@ -1315,7 +1437,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_39
 		}
-		x = 4
+		x = 6
 		y = 7
 
 	}
@@ -1326,7 +1448,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_39
 		}
-		x = 6
+		x = 8
 		y = 7
 
 	}
@@ -1382,7 +1504,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_21
 		}
-		x = 9
+		x = 12
 		y = 3
 
 	}
@@ -1393,7 +1515,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_39
 		}
-		x = 9
+		x = 10
 		y = 7
 
 	}
@@ -1620,11 +1742,19 @@ focus_tree = {
 			factor = 20
 		}
 		available = {
-			has_war_together_with = POL
+			OR = {
+				has_war_together_with = POL
+				SAU = {
+					has_completed_focus = SAU_43
+				}
+				SAU = {
+					has_completed_focus = SAU_53
+				}
+			}
 		}
 		completion_reward = {
-			MUS = {
-				add_to_faction = POL
+			POL = {
+				country_event = pol.1
 			}
 			add_political_power = -650
 			add_war_support = 0.1
@@ -1640,11 +1770,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10
 		prerequisite = {
-			focus = MUS_4
-			focus = MUS_9
+			focus = MUS_6
 		}
 		x = 0
-		y = 5
+		y = 3
 		ai_will_do = {
 			factor = 5
 		}
@@ -1673,7 +1802,7 @@ focus_tree = {
 			focus = MUS_13
 		}
 		x = 0
-		y = 6
+		y = 4
 		ai_will_do = {
 			factor = 5
 		}
@@ -1694,7 +1823,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_42
 		}
-		x = 4
+		x = 6
 		y = 8
 
 	}
@@ -1705,7 +1834,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_43
 		}
-		x = 6
+		x = 8
 		y = 8
 
 	}
@@ -1719,7 +1848,7 @@ focus_tree = {
 		prerequisite = {
 			focus = MUS_45
 		}
-		x = 5
+		x = 7
 		y = 9
 
 	}

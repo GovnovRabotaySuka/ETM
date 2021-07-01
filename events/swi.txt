@@ -1,0 +1,32 @@
+add_namespace = swi
+
+#Альянс с Муссолини
+country_event = {
+	id = swi.1
+	title = swi.1.t 
+	desc = swi.1.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = swi.1.a 
+		ai_chance = { factor = 80 }
+		MUS = {
+			add_to_faction = SWI
+		}
+		MUS = {
+			country_event = mus.5
+		}
+	}
+	
+	option = {
+		name = swi.1.b
+		ai_chance = { factor = 20 }
+		MUS = {
+			country_event = mus.6
+		}
+	}
+}

@@ -1,0 +1,32 @@
+add_namespace = nek
+
+#Альянс с Муссолини
+country_event = {
+	id = nek.1
+	title = nek.1.t 
+	desc = nek.1.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = nek.1.a 
+		ai_chance = { factor = 20 }
+		MUS = {
+			add_to_faction = NEK
+		}
+		MUS = {
+			country_event = mus.7
+		}
+	}
+	
+	option = {
+		name = nek.1.b
+		ai_chance = { factor = 80 }
+		MUS = {
+			country_event = mus.8
+		}
+	}
+}

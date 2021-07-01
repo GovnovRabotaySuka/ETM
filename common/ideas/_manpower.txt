@@ -1,16 +1,19 @@
 ideas = {
-
 	mobilization_laws = { 
 		law = yes
-
-		disarmed_nation = {
-						
-			cost = 150
+		disarmed_nation = {				
+			cost = 3995
 			removal_cost = -1
 			level = 7
 			
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
+				}
 			}
 
 			modifier = {
@@ -19,40 +22,30 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		
-		volunteer_only = {
-						
+		volunteer_only = {				
 			cost = 150
 			removal_cost = -1
 			level = 6
-			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
 			}
-
 			ai_will_do = {
    				factor = 1
-
    				modifier = {
 					factor = 60 # being disarmed is bad in a wargame yo
 					has_idea = disarmed_nation 
 				}
 			}
-
 			modifier = {
 				conscription = 0.015
 			}
-			
 			default = yes
-			
 			cancel_if_invalid = no
-		}
-		
+		}	
 		limited_conscription = {
-					
-			cost = 150
+			cost = 3995
 			removal_cost = -1
 			level = 5
 
@@ -61,7 +54,12 @@ ideas = {
 				has_war_support > 0.1
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
-				
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
+				}
 			}
 
 			modifier = {
@@ -80,14 +78,11 @@ ideas = {
 			
 			cancel_if_invalid = no
 		}
-		
-		extensive_conscription = {
-			
+		extensive_conscription = {		
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR = {
-					has_government = fascism
-					has_government = communism
+				has_war_support > 0.2
+				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
@@ -97,10 +92,14 @@ ideas = {
 						#		ratio > 0.5
 						#	}
 						#}
-					}					
+					}				
 				}
-				has_war_support > 0.2
-				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
+				}
 			}
 
 			ai_will_do = {
@@ -113,7 +112,7 @@ ideas = {
 				
 			}
 			
-			cost = 150
+			cost = 3995
 			removal_cost = -1
 			level = 4
 			
@@ -127,14 +126,12 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		service_by_requirement = {
-			
-			
+		service_by_requirement = {	
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = {
-					has_government = fascism
-					has_government = communism
+					has_war_support > 0.6
+					surrender_progress > 0
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.6
@@ -146,13 +143,13 @@ ideas = {
 						#}
 					}
 				}
-				OR = {
-					has_war_support > 0.6
-					surrender_progress > 0
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
 				}
-
 			}
-
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -167,11 +164,9 @@ ideas = {
 				}
 
 			}
-			
-			cost = 150
+			cost = 3995
 			removal_cost = -1
 			level = 3
-
 			modifier = {
 				conscription = 0.1
 				industrial_capacity_factory = -0.1
@@ -179,13 +174,9 @@ ideas = {
 				production_speed_buildings_factor = -0.1
 				training_time_factor = 0.2
 			}
-			
 			cancel_if_invalid = no
-		}
-		
-		all_adults_serve = {
-			
-			
+		}	
+		all_adults_serve = {		
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				has_war = yes
@@ -194,12 +185,12 @@ ideas = {
 					surrender_progress > 0
 				}
 				enemies_strength_ratio > 0.75
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 0.75
-				#	}
-				#}
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
+				}
 			}
 
 			ai_will_do = {
@@ -216,7 +207,7 @@ ideas = {
 				}
 			}
 		
-			cost = 150
+			cost = 3995
 			removal_cost = -1
 			level = 2
 			
@@ -233,8 +224,6 @@ ideas = {
 		}
 		
 		scraping_the_barrel = {
-			
-			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes
@@ -243,14 +232,13 @@ ideas = {
 					surrender_progress > 0.25
 				}
 				enemies_strength_ratio > 1
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT 
-				#		ratio > 1
-				#	}
-				#}
+				if = {
+					limit = {
+						original_tag = LET
+					}
+					NOT = { has_idea = LET_Zhelezniy_Zanoves }
+				}
 			}
-
 			ai_will_do = {
    				factor = 1
 				modifier = {
@@ -269,11 +257,9 @@ ideas = {
 					manpower_per_military_factory >  5000
 				}
 			}
-
-			cost = 150
+			cost = 3995
 			removal_cost = -1
 			level = 1
-
 			modifier = {
 				conscription = 0.25
 				industrial_capacity_factory = -0.4

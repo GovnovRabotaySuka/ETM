@@ -10,6 +10,8 @@ add_ideas = {
 	LET_Sistema
 	LET_Corp
 	LET_Edinstvo_Strong
+	closed_economy
+	tot_economic_mobilisation
 }
 
 

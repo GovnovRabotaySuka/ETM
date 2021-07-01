@@ -75,5 +75,37 @@ country_event = {
 	ai_chance = { factor = 50 }
 	SAU = {
 	country_event = sau.8
+		}
+	}
+}
+
+#Альянс с Муссолини
+country_event = {
+	id = pivo.3
+	title = pivo.3.t 
+	desc = pivo.3.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = pivo.3.a 
+		ai_chance = { factor = 80 }
+		MUS = {
+			add_to_faction = CZE
+		}
+		MUS = {
+			country_event = mus.3
+		}
+	}
+	
+	option = {
+		name = pivo.3.b
+		ai_chance = { factor = 20 }
+		MUS = {
+			country_event = mus.4
+		}
 	}
 }

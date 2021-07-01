@@ -1,0 +1,32 @@
+add_namespace = cca
+
+#Альянс с Муссолини
+country_event = {
+	id = cca.1
+	title = cca.1.t 
+	desc = cca.1.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = cca.1.a 
+		ai_chance = { factor = 80 }
+		MUS = {
+			add_to_faction = CCA
+		}
+		MUS = {
+			country_event = mus.9
+		}
+	}
+	
+	option = {
+		name = cca.1.b
+		ai_chance = { factor = 20 }
+		MUS = {
+			country_event = mus.10
+		}
+	}
+}

@@ -1,0 +1,20 @@
+add_namespace = pol
+
+#Альянс с Муссолини
+country_event = {
+	id = pol.1
+	title = pol.1.t 
+	desc = pol.1.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = pol.1.a 
+		MUS = {
+			add_to_faction = POL
+		}
+	}
+}

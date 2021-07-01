@@ -44,7 +44,7 @@ set_popularities = {
 create_country_leader = {
     name = "Vlad Drakula" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "drakula.dds"
     expire = "1965.1.1"
     ideology = despopahanism
 }

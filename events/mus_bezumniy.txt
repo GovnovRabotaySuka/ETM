@@ -61,3 +61,153 @@ country_event = {
 		}
 	}
 }
+
+#Пиво согласилось в альянс
+country_event = {
+	id = mus.3
+	title = mus.3.t 
+	desc = mus.3.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.3.a 
+	}
+}
+
+#Пиво отказало в альянс
+country_event = {
+	id = mus.4
+	title = mus.4.t 
+	desc = mus.4.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.4.a 
+	}
+}
+
+#Швейцария согласилась в альянс
+country_event = {
+	id = mus.5
+	title = mus.5.t 
+	desc = mus.5.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.5.a 
+	}
+}
+
+#Швейцария отказала в альянс
+country_event = {
+	id = mus.6
+	title = mus.6.t 
+	desc = mus.6.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.6.a 
+	}
+}
+
+#Нэкорусь согласилась в альянс
+country_event = {
+	id = mus.7
+	title = mus.7.t 
+	desc = mus.7.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.7.a 
+	}
+}
+
+#Нэкорусь отказала в альянс
+country_event = {
+	id = mus.8
+	title = mus.8.t 
+	desc = mus.8.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.8.a 
+	}
+}
+
+#Концлагерь согласился в альянс
+country_event = {
+	id = mus.9
+	title = mus.9.t 
+	desc = mus.9.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.9.a 
+	}
+}
+
+#Концлагерь отказал в альянс
+country_event = {
+	id = mus.10
+	title = mus.10.t 
+	desc = mus.10.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.10.a 
+	}
+}
+
+#ГДР согласилась в альянс
+country_event = {
+	id = mus.11
+	title = mus.11.t 
+	desc = mus.11.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.11.a 
+	}
+}
+
+#ГДР отказала в альянс
+country_event = {
+	id = mus.12
+	title = mus.12.t 
+	desc = mus.12.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+	name = mus.12.a 
+	}
+}

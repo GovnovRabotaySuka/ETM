@@ -38,15 +38,15 @@ set_politics = {
 
 
 set_popularities = {
-	burjuism = 5
+	burjuism = 50
 	borshewism = 17
-	bidlo = 78
+	bidlo = 33
 }
 
 create_country_leader = {
-    name = "Yakubovich" 
+    name = "Bohdan Sauternko" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "ukrnegr.dds"
     expire = "1965.1.1"
-    ideology = bidlo
+    ideology = conserva
 }
