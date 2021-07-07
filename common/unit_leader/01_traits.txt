@@ -1,38 +1,26 @@
 leader_traits = {
-    grob = { 
+    grob = {
         type = land
         trait_type = personality_trait
-        allowed = {
-			FROM = {
-				tag = LET
-				}
-        }
+        allowed = { FROM = { tag = LET } }
         modifier = {
             army_org_factor = 0.05
             defence = 0.05
         }
     }
-    siberian_war_hero = { 
+    siberian_war_hero = {
         type = land
         trait_type = personality_trait
-        allowed = {
-			FROM = {
-				tag = LET
-				}
-        }
+        allowed = { FROM = { tag = LET } }
         modifier = {
             defence = 0.05
             out_of_supply_factor = -0.1
             dig_in_speed_factor = 0.1
         }
     }
-    rabochii_voennii_sovet = { 
+    rabochii_voennii_sovet = {
         type = land
-        allowed = {
-			FROM = {
-				tag = LET
-				}
-        }
+        allowed = { FROM = { tag = LET } }
         trait_type = personality_trait
         modifier = {
             offence = -0.05

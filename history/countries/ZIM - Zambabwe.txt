@@ -9,18 +9,6 @@ set_technology = {
 }
 
 set_convoys = 5
-
-1939.1.1 = {
-	
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
 	
 	set_technology = {
 
@@ -43,17 +31,30 @@ set_convoys = 5
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
-}
 
 
 set_politics = {
-	ruling_party = despopahanism
+	ruling_party = pahanism
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
 }
 
 set_popularities = {
-	pahanism = 100
+	bidlo = 48
+	pahanism = 48
+	burjuism = 4
+}
+create_country_leader = {
+	name = "Siegfried Müller"
+	desc = ""
+	picture = "Kongo_Muller.dds"
+	ideology = despopahanism
 }
 
+create_country_leader = {
+    name = "Hans Hüttig"
+    desc = ""
+    picture = "Hutting.dds"
+    ideology = nazi
+}

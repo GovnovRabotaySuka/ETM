@@ -29,46 +29,58 @@ ideas = {
 		
 		war_industrialist = {
 		
-		picture = GFX_war_industrialist
+			picture = GFX_war_industrialist
 		
 			traits = { war_industrialist }
 		}
 
-		communist_revolutionary = {
+		borshewism_revolutionary = {
 		
-		picture = GFX_communist_revolutionary
+			picture = GFX_communist_revolutionary
 			
-			traits = { communist_revolutionary }
+			traits = { borshewism_revolutionary }
 
 			do_effect = {
 				NOT = {
-					has_government = communism
+					has_government = borshewism
 				}
 			}
 		}	
 			
-		democratic_reformer = {
+		burjuism_reformer = {
 		
-		picture = GFX_democratic_reformer
+			picture = GFX_democratic_reformer
 			
-			traits = { democratic_reformer }
+			traits = { burjuism_reformer }
 
 			do_effect = {
 				NOT = {
-					has_government = democratic
+					has_government = burjuism
 				}
 			}
 		}
 		
-		fascist_demagogue = {
+		bidlo_demagogue = {
 		
 		picture = GFX_fascist_demagogue
 			
-			traits = { fascist_demagogue}
+			traits = { bidlo_demagogue }
 			
 			do_effect = {
 				NOT = {
-					has_government = fascism
+					has_government = bidlo
+				}
+			}
+		}
+		pahanism_monarchist = {
+		
+			picture = GFX_idea_ast_abandon_the_westminster_system
+			
+			traits = { pahanism_monarchist }
+			
+			do_effect = {
+				NOT = {
+					has_government = pahanism
 				}
 			}
 		}

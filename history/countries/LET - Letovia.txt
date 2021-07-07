@@ -9,7 +9,7 @@ add_ideas = {
 	LET_Nothing_To_Lose
 	LET_Sistema
 	LET_Corp
-	LET_Edinstvo_Strong
+	LET_Edinstvo_8
 	closed_economy
 	tot_economic_mobilisation
 }
@@ -42,8 +42,8 @@ set_technology = {
 
 
 set_convoys = 150
-set_stability = 0.45
-set_war_support = 0.8
+set_stability = 0.5
+set_war_support = 0.85
 
 
 set_politics = {
@@ -61,15 +61,14 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Egor Letov"
-	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
-	picture = "Portrait_Egor_Letov.dds"
+	name = "ГРЯЗНЫЙ ЧИТЕР, ЭТОГО  ПУТИ НЕТ В ИГРЕ"
+	desc = ""
+	picture = ""
 	expire = "1953.3.1"
 	ideology = jididoism
-	traits = { our_savior }
 }
 create_country_leader = {
-	name = "Egor Letov"
+	name = "Егор Летов"
 	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"
@@ -77,7 +76,7 @@ create_country_leader = {
 	traits = { our_savior }
 }
 create_country_leader = {
-	name = "Egor Letov"
+	name = "Егор Летов"
 	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"
@@ -85,7 +84,7 @@ create_country_leader = {
 	traits = { our_savior }
 }
 create_country_leader = {
-	name = "Egor Letov"
+	name = "Егор Летов"
 	desc = "Egor_Letov_Desc"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"

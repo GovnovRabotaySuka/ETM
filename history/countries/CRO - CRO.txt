@@ -49,8 +49,24 @@ create_country_leader = {
 	picture = "GFX_rootcrop"
 	ideology = despopahanism
 }
+
 create_country_leader = {
     name = "Dobroslav"
     desc = ""
     picture = "Dobroslav.dds"
     ideology = nazi
+}
+
+create_country_leader = {
+    name = "Neuromonakh Feofan"
+    desc = ""
+    picture = "feofan.dds"
+    ideology = conserva
+}
+	create_country_leader = {
+    name = "Gribabas" 
+    desc = ""
+    picture = "gribabas.dds"
+    expire = "1965.1.1"
+    ideology = gribonism
+}

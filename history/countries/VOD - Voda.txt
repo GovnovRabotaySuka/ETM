@@ -37,16 +37,16 @@ set_politics = {
 }
 
 set_popularities = {
-	burjuism = 20
-	borshewism = 15
-	bidlo = 15
-        pahanism = 50
+	burjuism = 90
+	borshewism = 1
+	bidlo = 5
+    pahanism = 4
 }
 
 create_country_leader = {
-    name = "Voda" 
+    name = "George Soros" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "soros.dds"
     expire = "1965.1.1"
-    ideology = pahanism
+    ideology = conserva
 }

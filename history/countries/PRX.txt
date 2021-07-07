@@ -19,18 +19,18 @@ set_popularities = {
 }
 
 set_politics = {
-	ruling_party = pahanism
+	ruling_party = burjuism
 	last_election = "21.10.2010"
 	election_frequency = 0
 	elections_allowed = no
 }
 	
 create_country_leader = {
-    name = ""
+    name = "Martin Anward"
     desc = ""
-    picture = ""
+    picture = "martin_anward.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = conserva
     traits = {
         #
     }
