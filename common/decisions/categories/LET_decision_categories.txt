@@ -1,0 +1,44 @@
+LET_Senat = {
+	icon = generic_economy
+	allowed = {
+		original_tag = LET
+	}
+	visible = {
+	}
+}
+LET_war_on_golod = {
+	icon = hol_war_on_pacifism
+	allowed = {
+		original_tag = LET
+	}
+	visible = {
+		has_completed_focus = LET_3
+		country_exists = PLA
+	}
+}
+LET_blya_resistance = {
+	icon = hol_war_on_pacifism
+	allowed = {
+		original_tag = LET
+	}
+	visible = {
+		has_completed_focus = LET_L_1
+		country_exists = PLA
+	}
+}
+LET_weapons_buy_cat = {
+	icon = generic_economy
+	allowed = {
+		original_tag = LET
+	}
+}
+LET_ptitsa = {
+	icon = o_bird_smal
+	allowed = {
+		original_tag = LET
+	}
+	visible = {
+		has_completed_focus = LET_R_7
+		country_exists = PLA
+	}
+}

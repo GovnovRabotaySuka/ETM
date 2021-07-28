@@ -43,3 +43,10 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = despopahanism  
 }
+create_country_leader = {
+	name = "Сергей Безруков"
+	desc = ""
+	picture = "bezrukov.dds"
+	expire = "1965.1.1"
+	ideology = nazi
+}

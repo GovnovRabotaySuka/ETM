@@ -1,0 +1,60 @@
+defined_text = {
+	name = GetLET_anarchism
+	text = {
+		trigger = {
+			check_variable = { LET_anarchism > 8 }
+		}
+		localization_key = LET_anarchism_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_anarchism > 6 }
+		}
+		localization_key = LET_anarchism_high
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_anarchism > 4 }
+		}
+		localization_key = LET_anarchism_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_anarchism > 2 }
+		}
+		localization_key = LET_anarchism_low
+	}
+	text = {
+		localization_key = LET_anarchism_very_low
+	}
+}
+defined_text = {
+	name = GetLET_communar
+	text = {
+		trigger = {
+			check_variable = { LET_communar > 8 }
+		}
+		localization_key = LET_communar_very_high
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_communar > 6 }
+		}
+		localization_key = LET_communar_high
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_communar > 4 }
+		}
+		localization_key = LET_communar_medium
+	}
+	text = {
+		trigger = {
+			check_variable = { LET_communar > 2 }
+		}
+		localization_key = LET_communar_low
+	}
+	text = {
+		localization_key = LET_communar_very_low
+	}
+}

@@ -49,7 +49,7 @@ guiTypes = {
 		{
 			name ="version"
 			spriteType = "GFX_version"
-			position = { x= 220 y = -50 }
+			position = { x= 220 y = -60 }
 			Orientation = CENTER_LEFT
 			Origo = center	
 		}
@@ -63,9 +63,17 @@ guiTypes = {
 		}
 		
 		iconType = {
+			name ="patch"
+			spriteType = "GFX_patch"
+			position = { x = 510 y = 500 }
+			Orientation = CENTER_LEFT
+			Origo = center	
+		}
+		
+		iconType = {
 			name ="diskleymer"
 			spriteType = "GFX_diskleymer"
-			position = { x = 1300 y = 250 } #1220*50
+			position = { x = 1350 y = 300 } #1220*50
 			scale = 0.6		
 			Orientation = CENTER_LEFT
 			Origo = center	
@@ -320,7 +328,7 @@ guiTypes = {
 			quadTextureSprite ="twitter"
 			clicksound = internet
 			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://discordapp.com/invite/nwXvusd"
+			web_link = "https://discord.gg/hr4gxEyQjf"
 		}
 	}
 	

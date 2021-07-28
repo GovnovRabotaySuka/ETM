@@ -51,9 +51,74 @@ spriteTypes = {
 	#	Super Events Pictures	#
 	#############################
 	
-	#Holy War
 	spriteType = {
 		name = "GFX_super_event_custom_holy_war"
 		textureFile = "gfx//superevent_pictures//etm_super_event_holy_war.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_a"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_a.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_ak"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_ak.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_al"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_al.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_an"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_an.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_k"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_k.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_kl"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_kl.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_l"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_l.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_lg"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_lg.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_n"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_n.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_nk"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_nk.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_evrazia_nl"
+		textureFile = "gfx//superevent_pictures//etm_super_event_evrazia_nl.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_letov_wins"
+		textureFile = "gfx//superevent_pictures//etm_super_event_letov_wins.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_super_event_custom_putin_wins"
+		textureFile = "gfx//superevent_pictures//etm_super_event_putin_wins.tga"
+		legacy_lazy_load = no
 	}
 }

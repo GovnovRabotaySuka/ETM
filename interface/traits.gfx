@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_grob"
+		texturefile = "gfx/interface/traits/trait_grob.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_siberian_war_hero"
+		texturefile = "gfx/interface/traits/trait_siberian_war_hero.dds"
+	}	
+	spriteType = {
+		name = "GFX_trait_rabochii_voennii_sovet"
+		texturefile = "gfx/interface/traits/trait_rabochii_voennii_sovet.dds"
+	}	
+}
+

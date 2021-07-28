@@ -60,9 +60,54 @@ spriteTypes = {
 	texturefile = "gfx/interface/ideas/idea_DNB_1.dds"		
 	}
 	SpriteType = {
+	name = "GFX_idea_omsk_bird_1"
+	texturefile = "gfx/interface/ideas/omsk_bird_1.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_omsk_bird_2"
+	texturefile = "gfx/interface/ideas/omsk_bird_2.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_omsk_bird_3"
+	texturefile = "gfx/interface/ideas/omsk_bird_3.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_omsk_bird_4"
+	texturefile = "gfx/interface/ideas/omsk_bird_4.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_omsk_bird_5"
+	texturefile = "gfx/interface/ideas/omsk_bird_5.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_omsk_bird_6"
+	texturefile = "gfx/interface/ideas/omsk_bird_6.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_LET_Golod_1"
+	texturefile = "gfx/interface/ideas/LET_Golod_1.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_LET_Golod_2"
+	texturefile = "gfx/interface/ideas/LET_Golod_2.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_LET_Golod_3"
+	texturefile = "gfx/interface/ideas/LET_Golod_3.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_LET_Golod_4"
+	texturefile = "gfx/interface/ideas/LET_Golod_4.dds"		
+	}
+	SpriteType = {
+	name = "GFX_idea_LET_Golod_5"
+	texturefile = "gfx/interface/ideas/LET_Golod_5.dds"		
+	}
+	SpriteType = {
 	name = "GFX_idea_razdelennaya_italy"
 	texturefile = "gfx/interface/ideas/razdelennaya_italy.dds"		
 	}
+	
 
 	frameAnimatedSpriteType = {
 		name = "GFX_rootcrop"
@@ -80,6 +125,24 @@ spriteTypes = {
 		animation_rate_fps = 12
 		looping = yes
 		play_on_show = yes
+	}
+	
+	spriteType = {
+		name = "GFX_plus"
+		texturefile = "gfx//interface//topbar//plus.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+
+	spriteType = {
+		name = "GFX_minus"
+		texturefile = "gfx//interface//topbar//minus.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_patch"
+		texturefile = "gfx//interface//patch.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 }
 

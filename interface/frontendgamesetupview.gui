@@ -499,9 +499,10 @@ guiTypes = {
 	containerWindowType = {
 		name ="gamesetup_scenario_window"
 		size = { width = 579 height = 512 }
+		position = { x=0 y =-100}
+		Orientation = CENTER
+		Origo = center	
 		clipping = no
-		orientation = center
-		origo = center
 		moveable = yes
 		
 

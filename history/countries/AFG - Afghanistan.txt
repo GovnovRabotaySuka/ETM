@@ -1,0 +1,47 @@
+﻿capital = 106
+oob = "AFG_0002"
+set_research_slots = 2
+set_stability = 0.22
+set_war_support = 0.78
+
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+	basic_light_tank = 1
+}
+set_politics = {
+	ruling_party = bidlo
+	last_election = "1.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	borshewism = 4
+	burjuism = 6
+	bidlo = 50
+	pahanism = 40
+}
+create_country_leader = {
+	name = "Mohammed Omar"
+	desc = ""
+	picture = "mohammed_omar.dds"
+	ideology = nazbol
+}
+
+create_country_leader = {
+	name = "Osama bin Laden"
+	desc = "Почётный овцеёб"
+	picture = "ben_laden.dds"
+	ideology = gopnik
+}
+create_field_marshal = {
+	name = "Osama bin Laden"
+	picture = "ben_laden.dds"
+	traits = { trait_reckless }
+	skill = 3
+	id = 999
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 5
+}

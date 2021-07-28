@@ -6,7 +6,7 @@ state={
 	history={
 		owner = LET
 		victory_points = {
-			15690 100
+			15690 101
 		}
 		victory_points = {
 			15710 100

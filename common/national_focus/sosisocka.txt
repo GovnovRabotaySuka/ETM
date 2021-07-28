@@ -1878,6 +1878,11 @@ focus_tree = {
 								}
 						}
 				}
+		bypass = {
+			SAU = { 	
+				has_government = borshewism
+			}
+		}
 	
 	}
 	focus = {
@@ -1944,13 +1949,20 @@ focus_tree = {
 		x = 27
 		y = 2
 			available = {
-					has_war = no
+				is_subject = no
+				has_civil_war = no
+			any_country_with_original_tag = {
+				original_tag_to_check = ROOT
+				NOT = { has_government = bidlo }
 				}
+			}
 			completion_reward = {
-					add_popularity = {
-							ideology = borshewism
-							popularity = 0.1
-						}
+				add_stability = 0.1
+				add_political_power = 120
+				add_timed_idea = {
+					idea = SAU_clamp_down_on_fascism
+					days = 720
+					}
 				}
 
 	}
@@ -1963,13 +1975,20 @@ focus_tree = {
 		}
 		x = 29
 		y = 3
-			completion_reward = {
+		completion_reward = {
+			set_rule = { can_join_factions = no }
+			add_ideas = SAU_make_doctorreich
+			set_rule = { can_send_volunteers = yes }
+			add_named_threat = { threat = 5 name = SAU_make_doctorreich }
+			if = {
+				limit = { is_in_faction = yes }
+				leave_faction = yes
+			}
 					add_popularity = {
 							ideology = borshewism
 							popularity = 0.1
 						}
-				}
-
+		}
 	}
 	focus = {
 		id = SAU_62
@@ -1980,7 +1999,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
-
+		completion_reward = {
+			add_ideas = GER_collectiv
+		}
 	}
 	focus = {
 		id = SAU_64
@@ -1991,7 +2012,10 @@ focus_tree = {
 		}
 		x = 27
 		y = 5
-
+		completion_reward = {
+			add_popularity = { ideology = borshewism popularity = 0.1 }
+			add_ideas = GER_revolt_liderstvo
+		}
 	}
 	focus = {
 		id = SAU_63
@@ -2002,7 +2026,9 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-
+		completion_reward = {
+			add_ideas = GER_naz_mobil
+		}
 	}
 	focus = {
 		id = SAU_65
@@ -2016,7 +2042,27 @@ focus_tree = {
 		}
 		x = 28
 		y = 6
-
+		completion_reward = {
+			add_ideas = GER_bulwark_against_bolshevism
+			DDR = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+			HOJ = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+			POD = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+			ZLS = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+			CCT = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+			BRK = { 
+				add_opinion_modifier = { target = SAU modifier = embargo } 
+			}
+		}
 	}
 	focus = {
 		id = SAU_66
@@ -2033,18 +2079,47 @@ focus_tree = {
 							target = DDR
 						}
 				}
-
 	}
 	focus = {
 		id = SAU_67
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+				NOT = { country_exists = DDR }
+					571 = {
+							is_owned_and_controlled_by = SAU
+						}
+					518 = {
+							is_owned_and_controlled_by = SAU
+						}
+					515 = {
+							is_owned_and_controlled_by = SAU
+						}
+					516 = {
+							is_owned_and_controlled_by = SAU
+						}
+					519 = {
+							is_owned_and_controlled_by = SAU
+						}
+					517 = {
+							is_owned_and_controlled_by = SAU
+						}
+					582 = {
+							is_owned_and_controlled_by = SAU
+						}
+				
+			}
 		prerequisite = {
 			focus = SAU_66
 		}
 		x = 29
 		y = 8
-
+		completion_reward = {
+			add_political_power = 100
+			hidden_effect = { set_rule = { can_join_factions = yes } }
+			set_rule = { can_create_factions = yes }
+			create_faction = "euro_internast"
+		}
 	}
 	focus = {
 		id = SAU_68
@@ -2105,34 +2180,53 @@ focus_tree = {
 		id = SAU_59
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+			is_subject = no
+		}
 		prerequisite = {
 			focus = SAU_58
 		}
 		x = 31
 		y = 4
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = SAU_60
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+			is_subject = no
+		}
 		prerequisite = {
 			focus = SAU_59
 		}
 		x = 31
 		y = 5
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = computing_tech
+			}
+		}
 	}
 	focus = {
 		id = SAU_61
 		icon = GFX_goal_unknown
 		cost = 10,00
+		available = {
+			is_subject = no
+		}
 		prerequisite = {
 			focus = SAU_60
 		}
 		x = 31
 		y = 6
-
+		completion_reward = {
+			add_ideas = GER_the_great_nauka
+		}
 	}
 	focus = {
 		id = SAU_77

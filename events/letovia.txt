@@ -1,25 +1,690 @@
 ﻿add_namespace = let
 
-
 country_event = {
 	id = let.1
 	title = let.1.t
 	desc = let.1.d
-	picture = GFX_report_event_worker_protests
-
-	fire_only_once = yes
-	hidden_effect = { country_event = { id = etm_superevents.1 days = 1 }}
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
 	trigger = {
-		tag = LET
-		has_war_with = PLA
+	tag = LET
+	}
+	option = {
+		name = let.1.a
+		LET = {
+			country_event = let.31
+		}
+	}
+}
+country_event = {
+	id = let.2
+	title = let.2.t
+	desc = let.2.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
 	}
 
 	option = {
-		name = let.1.a
-		ai_chance = { factor = 1 }
-		country_event = { id = etm_superevents.1 days = 1 }
-		trigger = {
-			#
+		name = let.2.a
+	}
+}
+country_event = {
+	id = let.3
+	title = let.3.t
+	desc = let.3.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.3.a
+		country_event = let.4
+	}
+}
+country_event = {
+	id = let.4
+	title = let.4.t
+	desc = let.4.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.4.a
+		add_ideas = LET_Golod_1
+	}
+}
+country_event = {
+	id = let.5
+	title = let.5.t
+	desc = let.5.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.5.a
+	}
+}
+country_event = {
+	id = let.6
+	title = let.6.t
+	desc = let.6.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.6.a
+	}
+}
+country_event = {
+	id = let.7
+	title = let.7.t
+	desc = let.7.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.7.a
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = let.8
+	title = let.8.t
+	desc = let.8.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.8.a
+	}
+}
+country_event = {
+	id = let.9
+	title = let.9.t
+	desc = let.9.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.9.a
+	}
+}
+country_event = {
+	id = let.10
+	title = let.10.t
+	desc = let.10.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.10.a
+	}
+}
+country_event = {
+	id = let.11
+	title = let.11.t
+	desc = let.11.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.11.a
+	}
+}
+country_event = {
+	id = let.12
+	title = let.12.t
+	desc = let.12.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.12.a
+		country_event = {
+			id = let.29
+			days = 60
+			random = 100
+			random_days = 10
+		}
+	}
+}
+country_event = {
+	id = let.13
+	title = let.13.t
+	desc = let.13.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.13.a
+		random_list = {
+			10 = { country_event = let.23 }
+			25 = { country_event = let.24 }
+			30 = { country_event = let.25 }
+			25 = { country_event = let.26 }
+			10 = { country_event = let.27 }
+		}
+	}
+}
+country_event = {
+	id = let.14
+	title = let.14.t
+	desc = let.14.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.14.a
+		PLA = {
+			create_wargoal = {
+				type = annex_everything
+				target = LET
+			}
+		}
+	}
+}
+country_event = {
+	id = let.15
+	title = let.15.t
+	desc = let.15.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.15.a
+	}
+}
+country_event = {
+	id = let.16
+	title = let.16.t
+	desc = let.16.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.16.a
+		add_timed_idea = {
+			idea = LET_Svyataya_Voyna
+			days = 365
+		}
+	}
+}
+country_event = {
+	id = let.17
+	title = let.17.t
+	desc = let.17.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.17.a
+		remove_ideas = { LET_Svyataya_Voyna }
+	}
+}
+country_event = {
+	id = let.18
+	title = let.18.t
+	desc = let.18.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.18.a
+	}
+}
+country_event = {
+	id = let.19
+	title = let.19.t
+	desc = let.19.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.19.a
+	}
+}
+country_event = {
+	id = let.20
+	title = let.20.t
+	desc = let.20.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.20.a
+	}
+}
+country_event = {
+	id = let.21
+	title = let.21.t
+	desc = let.21.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.18.a
+	}
+}
+country_event = {
+	id = let.22
+	title = let.22.t
+	desc = let.22.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.22.a
+	}
+}
+country_event = {
+	id = let.23
+	title = let.23.t
+	desc = let.23.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.23.a
+		custom_effect_tooltip = "Единство Совета снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+			LET_Edinstvo_dincrease = yes
+		}
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_political_power = -2600
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -500 } }
+		add_manpower = -500
+		PLA = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+}
+country_event = {
+	id = let.24
+	title = let.24.t
+	desc = let.24.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.24.a
+		custom_effect_tooltip = "Единство Совета немного снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -1300
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -100 } }
+		add_manpower = -100
+		PLA = {
+			add_stability = 0.025
+			add_war_support = 0.025
+			add_political_power = 650
+		}
+	}
+}
+country_event = {
+	id = let.25
+	title = let.25.t
+	desc = let.25.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.25.a
+		add_stability = 0.025
+		add_war_support = 0.025
+		ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 50 } }
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 } }
+		add_political_power = 1300
+		PLA = {
+			add_stability = -0.025
+			add_war_support = -0.025
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -500 } }
+			ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = -50 } }
+			add_political_power = -1300
+		}
+	}
+}
+country_event = {
+	id = let.26
+	title = let.26.t
+	desc = let.26.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.26.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 50 } }
+		ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1500 } }
+		add_political_power = 2600
+		PLA = {
+			add_stability = -0.025
+			add_war_support = -0.025
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -1500 } }
+			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -500 } }
+			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -50 } }
+			add_political_power = -2600
+		}
+	}
+}
+country_event = {
+	id = let.27
+	title = let.27.t
+	desc = let.27.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.27.a
+		add_stability = 0.075
+		add_war_support = 0.075
+		ROOT = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = 500 } }
+		ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 150 } }
+		ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 } }
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 2500 } }
+		add_political_power = 3900
+		PLA = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -2500 } }
+			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -1000 } }
+			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = -150 } }
+			ROOT = { add_equipment_to_stockpile = { type = mechanized_equipment_1 amount = -500 } }
+			add_political_power = -3900
+		}
+	}
+}
+country_event = {
+	id = let.28
+	title = let.28.t
+	desc = let.28.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+
+	option = {
+		name = let.28.a
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -500 } }
+		LET = {
+			add_stability = 0.01
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 } }
+			}
+		}
+	option = {
+		name = let.28.b
+		add_manpower = -1000
+		LET = {
+			add_stability = 0.01
+			add_manpower = 1000
+		}
+	}
+	option = {
+		name = let.28.c
+		add_manpower = -1000
+		ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -500 } }
+		LET = {
+			add_stability = 0.02
+			add_manpower = 1000
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 } }
+		}
+	}
+	option = {
+		name = let.28.e
+		LET = {
+			add_stability = -0.02
+			}	
+		}
+}
+country_event = {
+	id = let.29
+	title = let.29.t
+	desc = let.29.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+	
+	option = {
+		name = let.29.a
+			division_template = {
+				name = "Забытые войска"
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					artillery_brigade = { x = 2 y = 0 }
+					}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+				326 = {
+					create_unit = {
+						division = "name = \"Таёжные добровольцы\" division_template = \"Забытые войска\" start_experience_factor = 0.7" 
+						owner = LET
+					}
+					create_unit = {
+						division = "name = \"Центральносибирские добровольцы\" division_template = \"Забытые войска\" start_experience_factor = 0.7" 
+						owner = LET
+					}
+				}
+			}
+			add_stability = 0.05
+		}
+}
+country_event = {
+	id = let.30
+	title = let.30.t
+	desc = let.30.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+	
+	option = {
+		name = let.30.a
+		random_list = {
+			90 = { addpolitical_power = -2600 }
+			10 = { add_political_power = -2600
+				PLA = {
+					delete_unit_template_and_units = { division_template = "Дивизия ЧВК Прорыв" }
+					delete_unit_template_and_units = { division_template = "Дивизия ЧВК Салют" }
+					delete_unit_template_and_units = { division_template = "Дивизия ЧВК Вангер" }
+					delete_unit_template_and_units = { division_template = "Дивизия ЧВК Звери" }
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = let.31
+	title = let.31.t
+	desc = let.31.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	tag = LET
+	}
+	
+	option = {
+		name = let.31.a
+	}
+}
+country_event = { #костыль для пластика
+	id = let.32
+	title = let.32.t
+	desc = let.32.d
+	picture = GFX_report_event_german_speech
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+	tag = PLA
+		LET = {
+			has_completed_focus = LET_5
+		}
+	}
+	
+	option = {
+		name = let.32.a
+		PLA = {
+			declare_war_on = {
+				target = LET
+				type = annex_everything
+			}
 		}
 	}
 }

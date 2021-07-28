@@ -135,6 +135,32 @@ country_event = {
 	name = sau.4.a 
 	}
 }
+country_event = {
+	id = sau.5
+	title = sau.5.t 
+	desc = sau.5.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = sau.5.a 
+	}
+}
+country_event = {
+	id = sau.6
+	title = sau.6.t 
+	desc = sau.6.d 
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = sau.6.a 
+	}
+}
 	#Судеты наши
 country_event = {
 	id = sau.7
@@ -190,19 +216,6 @@ country_event = {
 			target = CZE
 			expire = 0
 			}
-	}
-}
-country_event = {
-	id = sau.6
-	title = sau.6.t 
-	desc = sau.6.d 
-	is_triggered_only = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-		name = sau.6.a 
 	}
 }
 country_event = {
@@ -520,5 +533,866 @@ country_event = {
 	}
 	option = {
 		name = sau.11.b 
+	}
+}
+country_event = {
+	id = sau.12
+	title = sau.12.t
+	desc = sau.12.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		SAU = { is_in_faction_with = HOR }
+		OR = {
+			538 = {
+				is_owned_by = SAU
+				}
+			537 = {
+				is_owned_by = SAU
+				}
+			535 = {
+				is_owned_by = SAU
+				}
+			536 = {
+				is_owned_by = SAU
+				}
+			534 = {
+				is_owned_by = SAU
+				}
+			532 = {
+				is_owned_by = SAU
+				}
+			533 = {
+				is_owned_by = SAU
+				}
+			538 = {
+				is_owned_by = HOR
+				}
+			537 = {
+				is_owned_by = HOR
+				}
+			535 = {
+				is_owned_by = HOR
+				}
+			536 = {
+				is_owned_by = HOR
+				}
+			534 = {
+				is_owned_by = HOR
+				}
+			532 = {
+				is_owned_by = HOR
+				}
+			533 = {
+				is_owned_by = HOR
+				}
+			NEK = { is_puppet_of = SAU }
+			NEK = { is_puppet_of = HOR }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.12.a
+		ai_chance = { factor = 100 }
+		if = {
+			limit = { 
+				OR = {
+					NEK = { is_puppet_of = SAU }
+					NEK = { is_puppet_of = HOR }
+					}
+				}
+			HOR = {
+				set_state_owner = 538
+				set_state_owner = 537
+				set_state_owner = 535
+				set_state_owner = 536
+				set_state_owner = 532
+				set_state_owner = 533
+				annex_country = {
+					target = NEK
+					transfer_troops = no
+					}
+			}
+			SAU = {
+				set_state_owner = 534
+			}
+		}
+		if = {
+			534 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = NEK 
+						}
+					}
+					SAU = { 
+						set_state_owner = 534
+						}
+				}
+			}
+		}
+		if = {
+			538 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR
+							is_owned_by = NEK  
+						}
+					}
+					HOR = { 
+						set_state_owner = 538
+						}
+				}
+			}
+		}
+		if = {
+			537 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR
+							is_owned_by = NEK  
+						}
+					}
+					HOR = { 
+						set_state_owner = 537
+						}
+				}
+			}
+		}
+		if = {
+			535 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = NEK 
+						}
+					}
+					HOR = { 
+						set_state_owner = 535
+						}
+				}
+			}
+		}
+		if = {
+			536 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = NEK 
+						}
+					}
+					HOR = { 
+						set_state_owner = 536
+						}
+				}
+			}
+		}
+		if = {
+			532 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = NEK 
+						}
+					}
+					HOR = { 
+						set_state_owner = 532
+						}
+				}
+			}
+		}
+		if = {
+			533 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = NEK 
+						}
+					}
+					HOR = { 
+						set_state_owner = 533
+						}
+				}
+			}
+		}
+	}
+	option = {
+		name = sau.12.b 
+	}
+	
+}
+country_event = {
+	id = sau.13
+	title = sau.13.t
+	desc = sau.13.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		SAU = { is_in_faction_with = HOR }
+		OR = {
+			549 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			553 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			565 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			599 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			598 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			596 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			597 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			558 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			559 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			556 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			554 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			552 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			550 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			548 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			547 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			544 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			543 = {
+				OR = {
+					is_owned_by = SAU
+					is_owned_by = HOR
+					}
+				}
+			MUS = { is_puppet_of = SAU }
+			MUS = { is_puppet_of = HOR }
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.13.a
+		ai_chance = { factor = 100 } 
+		if = {
+			limit = { 
+				OR = {
+					MUS = { is_puppet_of = SAU }
+					MUS = { is_puppet_of = HOR }
+					}
+				}
+			PAS = { annex_country = {
+							target = MUS
+							transfer_troops = yes
+						}
+				}
+		}
+		if = {
+			549 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 549
+						}
+				}
+			}
+		}
+		if = {
+			553 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 553
+						}
+				}
+			}
+		}
+		if = {
+			565 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					SAU = { 
+						set_state_owner = 565
+						}
+				}
+			}
+		}
+		if = {
+			599 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 599
+						}
+				}
+			}
+		}
+		if = {
+			598 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 598
+						}
+				}
+			}
+		}
+		if = {
+			596 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 596
+						}
+				}
+			}
+		}
+		if = {
+			597 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 597
+						}
+				}
+			}
+		}
+		if = {
+			558 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					SAU = { 
+						set_state_owner = 558
+						}
+				}
+			}
+		}
+		if = {
+			559 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					SAU = { 
+						set_state_owner = 559
+						}
+				}
+			}
+		}
+		if = {
+			556 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					SAU = { 
+						set_state_owner = 556
+						}
+				}
+			}
+		}
+		if = {
+			554 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					SAU = { 
+						set_state_owner = 554
+						}
+				}
+			}
+		}
+		if = {
+			552 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 552
+						}
+				}
+			}
+		}
+		if = {
+			550 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 550
+						}
+				}
+			}
+		}
+		if = {
+			548 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 548
+						}
+				}
+			}
+		}
+		if = {
+			547 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 547
+						}
+				}
+			}
+		}
+		if = {
+			544 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 544
+						}
+				}
+			}
+		}
+		if = {
+			543 = {
+				if = {
+					limit = { 
+						OR = {
+							is_owned_by = SAU 
+							is_owned_by = HOR 
+							is_owned_by = MUS 
+							}
+						}
+					PAS = { 
+						set_state_owner = 543
+						}
+				}
+			}
+		}
+		SAU = {
+			set_autonomy = {
+				target = PAS 
+				autonomy_state = autonomy_bid_satellite
+			}
+		}
+	}
+	option = {
+		name = sau.13.b 
+	}
+}
+country_event = {
+	id = sau.14
+	title = sau.14.t
+	desc = sau.14.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SAU
+		SAU = { is_in_faction_with = PAS }
+		OR = {
+			SAU = { owns_state = 549 }
+			SAU = { owns_state = 553 }
+			SAU = { owns_state = 565 }
+			SAU = { owns_state = 558 }
+			SAU = { owns_state = 559 }
+			SAU = { owns_state = 556 }
+			SAU = { owns_state = 554 }
+			SAU = { owns_state = 552 }
+			SAU = { owns_state = 550 }
+			SAU = { owns_state = 548 }
+			SAU = { owns_state = 547 }
+			SAU = { owns_state = 544 }
+			SAU = { owns_state = 543 }
+			any_allied_country = { owns_state = 549 }
+			any_allied_country = { owns_state = 553 }
+			any_allied_country = { owns_state = 565 }
+			any_allied_country = { owns_state = 558 }
+			any_allied_country = { owns_state = 559 }
+			any_allied_country = { owns_state = 556 }
+			any_allied_country = { owns_state = 554 }
+			any_allied_country = { owns_state = 552 }
+			any_allied_country = { owns_state = 550 }
+			any_allied_country = { owns_state = 548 }
+			any_allied_country = { owns_state = 547 }
+			any_allied_country = { owns_state = 544 }
+			any_allied_country = { owns_state = 543 }
+			MUS = { is_puppet_of = SAU }
+			any_allied_country = {
+				MUS = { is_puppet_of = PREV }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = sau.14.a
+		ai_chance = { factor = 100 } 
+		if = {
+			limit = {
+				any_allied_country = {
+					MUS = { is_puppet_of = PREV }
+				}
+			}
+			PAS = { annex_country = {
+							target = MUS
+							transfer_troops = yes
+					}
+			}
+		}
+		if = {
+			limit = {
+				MUS = { is_puppet_of = SAU }
+			}
+			PAS = { annex_country = {
+						target = MUS
+						transfer_troops = yes
+					}
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 549 } }
+			PAS = { 
+				set_state_owner = 549
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 553 } }
+			PAS = { 
+				set_state_owner = 553
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 565 } }
+			PAS = { 
+				set_state_owner = 565
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 558 } }
+			PAS = { 
+				set_state_owner = 558
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 559 } }
+			PAS = { 
+				set_state_owner = 559
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 556 } }
+			PAS = { 
+				set_state_owner = 556
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 554 } }
+			PAS = { 
+				set_state_owner = 554
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 552 } }
+			PAS = { 
+				set_state_owner = 552
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 550 } }
+			PAS = { 
+				set_state_owner = 550
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 548 } }
+			PAS = { 
+				set_state_owner = 548
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 547 } }
+			PAS = { 
+				set_state_owner = 547
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 544 } }
+			PAS = { 
+				set_state_owner = 544
+			}
+		}
+		if = {
+			limit = { SAU = { owns_state = 543 } }
+			PAS = { 
+				set_state_owner = 543
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 549 } }
+			PAS = { 
+				set_state_owner = 549
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 553 } }
+			PAS = { 
+				set_state_owner = 553
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 565 } }
+			PAS = { 
+				set_state_owner = 565
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 558 } }
+			PAS = { 
+				set_state_owner = 558
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 559 } }
+			PAS = { 
+				set_state_owner = 559
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 556 } }
+			PAS = { 
+				set_state_owner = 556
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 554 } }
+			PAS = { 
+				set_state_owner = 554
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 552 } }
+			PAS = { 
+				set_state_owner = 552
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 550 } }
+			PAS = { 
+				set_state_owner = 550
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 548 } }
+			PAS = { 
+				set_state_owner = 548
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 547 } }
+			PAS = { 
+				set_state_owner = 547
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 544 } }
+			PAS = { 
+				set_state_owner = 544
+			}
+		}
+		if = {
+			limit = { any_allied_country = { owns_state = 543 } }
+			PAS = { 
+				set_state_owner = 543
+			}
+		}
+	}
+	option = {
+		name = sau.14.b 
 	}
 }

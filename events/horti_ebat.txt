@@ -10,17 +10,36 @@ country_event = {
 	
 	option = {
 	name = hun.1.a
-	ai_chance = { factor = 50 }
+	ai_chance = { factor = 90 }
 	SAU = {
 		add_to_faction = HOR
 		}
 	SAU = {
 		country_event = sau.5
 		}
+	HOR = {
+		add_popularity = {
+			ideology = bidlo 
+			popularity = 0.4
+			}
+		set_politics = {
+			ruling_party = bidlo
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			}
+		create_country_leader = {
+			name = "Miklos Horty" 
+			desc = ""
+			picture = "horty.dds"
+			expire = "1965.1.1"
+			ideology = nazi 
+			}
+		}
 	}
 	option = {
 	name = hun.1.b
-	ai_chance = { factor = 50 }
+	ai_chance = { factor = 10 }
 	SAU = {
 		country_event = sau.6
 	}

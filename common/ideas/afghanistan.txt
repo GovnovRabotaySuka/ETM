@@ -1,0 +1,383 @@
+ideas = {
+	country = {
+		kalyan_1 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.02
+				army_morale_factor = 0.02
+				war_support_factor = 0.02
+			}
+		}
+		kalyan_2 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.03
+				army_morale_factor = 0.03
+				war_support_factor = 0.03
+			}
+		}
+		kalyan_3 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.04
+				army_morale_factor = 0.04
+				war_support_factor = 0.04
+			}
+		}
+		kalyan_4 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.05
+				army_morale_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		kalyan_5 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.06
+				army_morale_factor = 0.06
+				army_org = 2
+				war_support_factor = 0.06
+			}
+		}
+		kalyan_6 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = kalyan
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				army_morale_factor = 0.1
+				army_org = 5
+				war_support_factor = 0.1
+			}
+		}
+		ambicii = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = ideas_AFG
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				surrender_limit = 0.5
+				justify_war_goal_time = -0.2
+				generate_wargoal_tension = -0.5
+				weekly_manpower = 1000
+				political_power_factor = 0.1
+				conscription = 0.015
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				non_core_manpower = 0.05
+				training_time_factor = -0.3
+				minimum_training_level = 0.1 
+			}
+		}
+		speed = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = ideas_AFG
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.15
+			}
+		}
+		lydi = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = ideas_AFG
+			removal_cost = -1
+			modifier = {
+				monthly_population = 5
+			}
+		}
+		popo = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = prc_low_popular_support3
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.005
+				pahanism_drift = 0.3
+			}
+		}
+		popo_1 = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = chi_army_corruption3
+			removal_cost = -1
+			modifier = {
+				war_support_weekly = 0.005
+			}
+		}
+	}
+	
+	political_advisor = {
+
+		AFG_haji_faiz_muhammed_zikeria = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { ideological_crusader }
+		}
+
+		AFG_mohammad_hashim_khan = {
+
+			picture = generic_political_advisor_arab_2
+				
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { smooth_talking_charmer }
+		}
+
+		AFG_muhammed_nowroz = {
+
+			picture = generic_political_advisor_arab_3
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { armaments_organizer }
+		}
+
+		AFG_mahmud_khan = {
+
+			picture = generic_political_advisor_arab_1
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { prince_of_terror }
+		}
+	}
+
+	theorist = {
+
+		AFG_muhammad_amin_bughra = {
+			ledger = army
+					
+			picture = generic_political_advisor_arab_2
+
+			allowed = {
+				original_tag = AFG
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+
+		AFG_renato_bardolucci = {
+			ledger = air
+					
+			picture = generic_army_europe_1
+				
+			allowed = {
+				original_tag = AFG
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+	}
+
+	high_command = {
+
+		AFG_mohammed_daoud_khan_1 = {
+			ledger = army
+
+			picture = mazdar_s
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { army_armored_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AFG_azam_ataullah_1 = {
+			ledger = army
+
+			picture = mik_s
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { army_infantry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AFG_aalem_daana = {
+			ledger = navy
+
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AFG_hares_muzafar = {
+			ledger = army
+
+			picture = generic_army_arab_3
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	# MILITARY
+	army_chief = {
+
+		AFG_benito = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = benito_s		
+			traits = { army_chief_offensive_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		AFG_asadullah_seraj_khan = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AFG_wazir_akbar_khan = {
+			
+			picture = generic_army_arab_3
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { army_chief_morale_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+
+		AFG_ali_muhammed_khan = {
+			
+			picture = generic_air_arab_1
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		AFG_gholam_wali_1 = {
+			
+			picture = fodi_s
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+	navy_chief = {
+		AFG_nasirullah_husain_1 = {
+			
+			picture = MRG_s
+			
+			allowed = {
+				original_tag = AFG
+			}
+			
+			traits = { navy_chief_decisive_battle_2 navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -33,13 +33,14 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countrytechnologyview"
-		position = { x=-606 y=78}
-		show_position = { x=-6 y =78 }
+		position = { x=-560 y=-1005 }	
+		show_position = { x=-4 y = -1005 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
-		animation_time = 300	
-		size = { width=550 height=100%% }
-		margin = { top = 0 bottom = -5 }
+		animation_time = 300
+		size = { width=550 height=900 }
+		Orientation = LOWER_LEFT
+		margin = { top = 0 bottom = 5 }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window

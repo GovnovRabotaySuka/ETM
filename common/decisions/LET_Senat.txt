@@ -1,0 +1,204 @@
+LET_Senat = {
+	LET_Senat_Anarch = {
+		icon = hol_war_on_pacifism
+		available = {
+			NOT = {
+				has_country_flag = LET_resheniye
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 25
+
+		days_re_enable = 25
+
+		cost = 650
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = LET_resheniye
+		}
+
+		remove_effect = {
+		clr_country_flag = LET_resheniye
+		custom_effect_tooltip = "Влияние анархистов немного возрастёт!"
+		hidden_effect = {
+			LET_anarchism_increase = yes
+		}
+		custom_effect_tooltip = "Единство Совета немного снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+	    }
+		add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+		}
+	}
+	LET_Senat_Com = {
+	    icon = hol_war_on_pacifism
+
+		available = {
+			NOT = {
+				has_country_flag = LET_resheniye
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 25
+
+		days_re_enable = 25
+
+		cost = 650
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = LET_resheniye
+		}
+
+		remove_effect = {
+		clr_country_flag = LET_resheniye
+		custom_effect_tooltip = "Влияние коммунариев немного возрастёт!"
+		hidden_effect = {
+			LET_communar_increase = yes
+		}
+		custom_effect_tooltip = "Единство Совета немного снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+	    }
+		add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+		}
+	}
+	LET_Senat_Letov = {
+	    icon = hol_war_on_pacifism
+
+		available = {
+			NOT = {
+				has_country_flag = LET_resheniye
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 25
+
+		days_re_enable = 25
+
+		cost = 650
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = LET_resheniye
+		}
+
+		remove_effect = {
+		clr_country_flag = LET_resheniye
+		custom_effect_tooltip = "Единство Совета немного снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+	    }
+		add_popularity = {
+				ideology = pahanism
+				popularity = 0.05
+			}
+		}
+	}
+	LET_Senat_Natsbol = {
+	    icon = hol_war_on_pacifism
+
+		available = {
+			NOT = {
+				has_country_flag = LET_resheniye
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 25
+
+		days_re_enable = 25
+
+		cost = 650
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = LET_resheniye
+		}
+
+		remove_effect = {
+		clr_country_flag = LET_resheniye
+		custom_effect_tooltip = "Единство Совета немного снизится!"
+		hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+	    }
+		add_popularity = {
+				ideology = bidlo
+				popularity = 0.05
+			}
+		}
+	}
+	LET_Senat_Edin = {
+		icon = hol_war_on_pacifism
+		available = {
+			NOT = {
+				has_country_flag = LET_resheniye
+			}
+		}
+
+		visible = {
+		}
+
+		days_remove = 60
+
+		days_re_enable = 60
+
+		cost = 1300
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			set_country_flag = LET_resheniye
+		}
+
+		remove_effect = {
+		add_stability = 0.05
+		clr_country_flag = LET_resheniye
+		custom_effect_tooltip = "Единство Совета немного возрастёт!"
+		hidden_effect = {
+			LET_Edinstvo_increase = yes
+	    }
+	}
+}

@@ -437,4 +437,256 @@ spriteTypes = {
 	name = "GFX_MUS_39"
 	texturefile = "gfx/interface/goals/MUS_39.dds"			
 	}
+	SpriteType = {
+	name = "GFX_LET_1"
+	texturefile = "gfx/interface/goals/sredi_zarazhennogo_logikoy_mira.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_2"
+	texturefile = "gfx/interface/goals/pod_nashimi_nogami_zemli_klochek.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_3"
+	texturefile = "gfx/interface/goals/bezzvuchtaya_voyna.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_1"
+	texturefile = "gfx/interface/goals/v_golovah.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_1"
+	texturefile = "gfx/interface/goals/v_roddomah.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_1"
+	texturefile = "gfx/interface/goals/v_domah.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_3"
+	texturefile = "gfx/interface/goals/rzhaviy_bunker.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_8"
+	texturefile = "gfx/interface/goals/neproglyadine_chashi_v2.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_10"
+	texturefile = "gfx/interface/goals/krasnoye_znamya.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_7"
+	texturefile = "gfx/interface/goals/sdelka_s_krilatim_rokom.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_11"
+	texturefile = "gfx/interface/goals/transheinie_bolezni.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_6"
+	texturefile = "gfx/interface/goals/neprobivaemine_steni.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_2"
+	texturefile = "gfx/interface/goals/mobilize_prom_okrain.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_12"
+	texturefile = "gfx/interface/goals/omskaya_ptitsa.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_5"
+	texturefile = "gfx/interface/goals/dimyat_zabitie_voyska.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_4"
+	texturefile = "gfx/interface/goals/mistia_v_omske.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_14"
+	texturefile = "gfx/interface/goals/rabochaya_gvardia.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_13"
+	texturefile = "gfx/interface/goals/black_league.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_R_15"
+	texturefile = "gfx/interface/goals/ne_mozhem_pomeret.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_6"
+	texturefile = "gfx/interface/goals/traktora_katyatsya_vpered.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_9"
+	texturefile = "gfx/interface/goals/lavia_tsvetastiyh_znamyon.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_8"
+	texturefile = "gfx/interface/goals/nikakih_nevzgod.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_4"
+	texturefile = "gfx/interface/goals/poperyok.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_9_2"
+	texturefile = "gfx/interface/goals/djza_na_nashey_storone.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_7"
+	texturefile = "gfx/interface/goals/zhrat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_5"
+	texturefile = "gfx/interface/goals/nozh_v_spinu.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_3"
+	texturefile = "gfx/interface/goals/po_povodu_podzhoga_kolhoznogo_sena.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_C_10"
+	texturefile = "gfx/interface/goals/nichego_teryat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_10"
+	texturefile = "gfx/interface/goals/v_ogon.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_5"
+	texturefile = "gfx/interface/goals/armeyskoy_myasoruble_ne_day_sebya_szhevat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_4"
+	texturefile = "gfx/interface/goals/vse_to_chto_nas_ne_ubivalo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_3"
+	texturefile = "gfx/interface/goals/ne_veysya_shesteryonkoy_v_mehanivme_gosudarstva.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_12"
+	texturefile = "gfx/interface/goals/ne_mozhem_postaret.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_8"
+	texturefile = "gfx/interface/goals/v_proigrannoi_voyne_soprotivlyaysa_do_konca.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_11"
+	texturefile = "gfx/interface/goals/v_bezlikom_okruzenii_bud_vsega_samim_soboy.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_6"
+	texturefile = "gfx/interface/goals/storonnikam_poryadka_nevredi_kak_mozhno_bolshe.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_9"
+	texturefile = "gfx/interface/goals/na_vskyakoe_nasilie_otvechai_soprotivleniem.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_4"
+	texturefile = "gfx/interface/goals/vse_ono_chuzoe_u_tebya_lish_tolko_imya_svoyo.dds"
+	}
+	SpriteType = {
+	name = "GFX_LET_5"
+	texturefile = "gfx/interface/goals/posledniy_neravniy_boi.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_L_7"
+	texturefile = "gfx/interface/goals/v_ataku.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_6"
+	texturefile = "gfx/interface/goals/svyashennaya_narodnaya_voyna.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_7"
+	texturefile = "gfx/interface/goals/LET_7.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_8"
+	texturefile = "gfx/interface/goals/LET_8.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_9"
+	texturefile = "gfx/interface/goals/LET_9.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_10"
+	texturefile = "gfx/interface/goals/LET_10.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_11"
+	texturefile = "gfx/interface/goals/LET_11.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_12"
+	texturefile = "gfx/interface/goals/LET_12.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_13"
+	texturefile = "gfx/interface/goals/LET_13.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_16"
+	texturefile = "gfx/interface/goals/LET_16.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_17"
+	texturefile = "gfx/interface/goals/LET_17.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_18"
+	texturefile = "gfx/interface/goals/pobeda.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_19"
+	texturefile = "gfx/interface/goals/LET_19.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_20"
+	texturefile = "gfx/interface/goals/LET_20.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_21"
+	texturefile = "gfx/interface/goals/LET_21.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_22"
+	texturefile = "gfx/interface/goals/LET_22.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_23"
+	texturefile = "gfx/interface/goals/LET_23.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_24"
+	texturefile = "gfx/interface/goals/LET_24.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_25"
+	texturefile = "gfx/interface/goals/LET_25.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_26"
+	texturefile = "gfx/interface/goals/LET_26.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_27"
+	texturefile = "gfx/interface/goals/solnce_vzohlo.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_14"
+	texturefile = "gfx/interface/goals/lish_tolko_nochku_prostoyat.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_15"
+	texturefile = "gfx/interface/goals/da_den_proderzhatsa.dds"			
+	}
+	SpriteType = {
+	name = "GFX_LET_24"
+	texturefile = "gfx/interface/goals/poymannaya_riba.dds"			
+	}
 }

@@ -1,0 +1,1592 @@
+focus_tree = {
+	id = afgan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = AFG
+		}
+	}
+
+	default = no
+	
+	focus = {
+		id = AFG_0
+		icon = GFX_focus_AFG
+		x = -15
+		y = 9
+		cost = 0
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = AFG_1
+		icon = GFX_focus_AFG
+		x = 0
+		y = 0
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_politics = {	
+				ruling_party = pahanism
+			}
+			country_event = afgan.1
+			add_stability = -0.1
+			add_political_power = -50
+			create_country_leader = {
+				name = "Dutka"
+				desc = "POLITICS_Dutka_DESC"
+				picture = "Dutka.dds"
+				ideology = modepahanism
+				traits = {
+				speedrunner_1
+				saund
+				}
+			}
+			create_field_marshal = {
+				name = "Dutka"
+				picture = "Dutka.dds"
+				traits = { aggressive_assaulter expert_delegator }
+				skill = 2
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 1
+			}
+			remove_unit_leader = 999
+		}
+	}
+	focus = {
+		id = AFG_1_1
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_1 }
+		x = -2
+		y = 1
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+		}
+	}
+	focus = {
+		id = AFG_1_2
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_1 }
+		x = 2
+		y = 1
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+			}
+		}
+	}
+	focus = {
+		id = AFG_2
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_1 }
+		x = -5
+		y = 1
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_completed_focus = AFG_4 }
+		completion_reward = {
+			add_political_power = -100
+			106 = {
+				add_extra_state_shared_building_slots = 20
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			97 = {
+				add_extra_state_shared_building_slots = 15
+			}
+			100 = {
+				add_extra_state_shared_building_slots = 15
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_2 }
+					remove_country_leader_trait = speedrunner_2
+					add_country_leader_trait = speedrunner_3
+				}
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_1 }
+					remove_country_leader_trait = speedrunner_1
+					add_country_leader_trait = speedrunner_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_2_2
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_2 }
+		x = -6
+		y = 2
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.01
+			106 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_2 }
+					swap_ideas = {
+					remove_idea = kalyan_2
+					add_idea = kalyan_3	
+					}
+			}
+			if = {
+				limit = { has_idea = kalyan_1 }
+					swap_ideas = {
+					remove_idea = kalyan_1
+					add_idea = kalyan_2	
+					}
+			}
+		}
+	}
+	focus = {
+		id = AFG_2_3
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_2 }
+		x = -4
+		y = 2
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.01
+			106 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			100 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			97 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_2_4
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_2_2 }
+		prerequisite = { focus = AFG_2_3 }
+		x = -5
+		y = 3
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			106 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			set_technology = {
+				infantry_weapons1 = 1
+				gw_artillery = 1
+				motorised_infantry = 1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AFG_3
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_1 }
+		x = 5
+		y = 1
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_completed_focus = AFG_4 }
+		completion_reward = {
+			add_political_power = -100
+			99 = {
+				add_extra_state_shared_building_slots = 22
+			}
+			104 = {
+				add_extra_state_shared_building_slots = 15
+			}
+			101 = {
+				add_extra_state_shared_building_slots = 15
+			}
+			98 = {
+				add_extra_state_shared_building_slots = 15
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_2 }
+					remove_country_leader_trait = speedrunner_2
+					add_country_leader_trait = speedrunner_3
+				}
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_1 }
+					remove_country_leader_trait = speedrunner_1
+					add_country_leader_trait = speedrunner_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_3_2
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_3 }
+		x = 6
+		y = 2
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.01
+			99 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_2 }
+					swap_ideas = {
+					remove_idea = kalyan_2
+					add_idea = kalyan_3	
+					}
+			}
+			if = {
+				limit = { has_idea = kalyan_1 }
+					swap_ideas = {
+					remove_idea = kalyan_1
+					add_idea = kalyan_2	
+					}
+			}
+		}
+	}
+	focus = {
+		id = AFG_3_3
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_3 }
+		x = 4
+		y = 2
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.01
+			99 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			101 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			104 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			98 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_3_4
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_3_2 }
+		prerequisite = { focus = AFG_3_3 }
+		x = 5
+		y = 3
+		cost = 2
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			99 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			set_technology = {
+				tech_support = 1
+				tech_engineers = 1
+				tech_recon = 1
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AFG_4
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_1 }
+		x = 0
+		y = 2
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = afgan.2
+		}
+	}
+	focus = {
+		id = AFG_5
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_4 }
+		prerequisite = { focus = AFG_2_3 }
+		prerequisite = { focus = AFG_3_3 }
+		x = 0
+		y = 3
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = lydi
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AFG_6
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_5 }
+		prerequisite = { focus = AFG_2_4 }
+		prerequisite = { focus = AFG_3_4 }
+		x = 0
+		y = 4
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = afgan.3
+			PNK = { country_event = { id = afgan.4 } }
+			hidden_effect = {
+				remove_country_leader_trait = speedrunner_3
+				add_country_leader_trait = speedrunner_4
+			}
+		}
+	}
+	focus = {
+		id = AFG_7
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_6 }
+		x = 1
+		y = 5
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_full_control_of_state = 95 }
+		available = { has_full_control_of_state = 102 }
+		completion_reward = {
+			add_state_core = 95
+			add_state_core = 102
+		}
+	}
+	focus = {
+		id = AFG_8
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_6 }
+		x = -1
+		y = 5
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_full_control_of_state = 95 }
+		available = { has_full_control_of_state = 102 }
+		completion_reward = {
+			army_experience = 15
+			102 = {
+				add_building_construction = {
+					type = bunker
+					province = 6827
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6918
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7003
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 7291
+					level = 1
+					instant_build = yes
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = bunker
+					province = 6412
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 6571
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_9
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_8 }
+		prerequisite = { focus = AFG_7 }
+		x = 0
+		y = 6
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_technology = {
+				early_fighter = 1
+				fighter1 = 1
+			}
+			102 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			}
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_sup_bonus
+				bonus = 1.0
+				uses = 4
+				category = battlefield_support_tree
+			}
+			hidden_effect = {
+				remove_country_leader_trait = speedrunner_4
+				add_country_leader_trait = speedrunner_5
+			}
+		}
+	}
+	focus = {
+		id = AFG_10
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_9 }
+		x = -6
+		y = 7
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			95 = {
+				add_extra_state_shared_building_slots = 22
+			}
+			102 = {
+				add_extra_state_shared_building_slots = 22
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_6 }
+					remove_country_leader_trait = speedrunner_6
+					add_country_leader_trait = speedrunner_7
+				}
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_5 }
+					remove_country_leader_trait = speedrunner_5
+					add_country_leader_trait = speedrunner_6
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_10_1
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_10 }
+		x = -6
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 100
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_4 }
+					swap_ideas = {
+					remove_idea = kalyan_4
+					add_idea = kalyan_5	
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_3 }
+					swap_ideas = {
+					remove_idea = kalyan_3
+					add_idea = kalyan_4	
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_11
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_10 }
+		x = -5
+		y = 9
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			102 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_4 }
+					swap_ideas = {
+					remove_idea = kalyan_4
+					add_idea = kalyan_5	
+				}
+			}
+			if = {
+				limit = { has_idea = kalyan_3 }
+					swap_ideas = {
+					remove_idea = kalyan_3
+					add_idea = kalyan_4	
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_12
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_10 }
+		x = -7
+		y = 9
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 4
+				category = industry
+			}
+			hidden_effect = {
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_6 }
+					remove_country_leader_trait = speedrunner_6
+					add_country_leader_trait = speedrunner_7
+				}
+				if = {
+					limit = { has_country_leader_with_trait = speedrunner_5 }
+					remove_country_leader_trait = speedrunner_5
+					add_country_leader_trait = speedrunner_6
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_13
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_9 }
+		x = 6
+		y = 7
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_technology = {
+				infantry_weapons2 = 1
+				improved_infantry_weapons = 1
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 6
+				category = land_doctrine
+			}
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = AFG_13_1
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_13 }
+		x = 6
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 5000
+			}
+		}
+	}
+	focus = {
+		id = AFG_14
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_13 }
+		x = 7
+		y = 9
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			set_technology = {
+				gwtank = 1
+				basic_light_tank = 1
+				basic_heavy_tank = 1
+			}
+			add_tech_bonus = {
+				bonus = 3.0
+				uses = 3
+				name = mech_army_bonus
+				technology = basic_medium_tank
+				technology = improved_light_tank
+				technology = improved_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_medium_tank
+				technology = mechanised_infantry
+			}
+		}
+	}
+	focus = {
+		id = AFG_15
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_13 }
+		x = 5
+		y = 9
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_completed_focus = AFG_17 }
+		completion_reward = {
+			set_technology = {
+				basic_medium_tank = 1
+			}
+			division_template = {
+				name = "Танковая сороковка"		
+				regiments = {
+					motorized = { x = 0 y = 0 }
+					motorized = { x = 0 y = 1 }
+					motorized = { x = 0 y = 2 }
+					motorized = { x = 0 y = 3 }
+					motorized = { x = 0 y = 4 }
+					motorized = { x = 1 y = 0 }
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }	
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					medium_armor = { x = 2 y = 3 }
+					medium_armor = { x = 2 y = 4 }
+					medium_armor = { x = 3 y = 0 }
+					medium_armor = { x = 3 y = 1 }
+					medium_armor = { x = 3 y = 2 }
+					medium_armor = { x = 3 y = 3 }
+					medium_armor = { x = 3 y = 4 }
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+				}
+				support = {
+					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+					artillery = { x = 0 y = 2 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+				}
+			}
+			106 = {
+				create_unit = {
+					division = "name = \"1. Tankovaya Diviziya\" division_template = \"Танковая сороковка\" start_experience_factor = 0.6" 
+					owner = AFG
+				}
+			}
+			division_template = {
+				name = "Это шаблон, таких шаблонов много, но этот мой!"
+				priority = 1
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+					artillery = { x = 0 y = 2 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+				}
+			}
+			106 = {
+				create_unit = {
+					division = "name = \"1. Strelkovaya Diviziya\" division_template = \"Это шаблон, таких шаблонов много, но этот мой!\" start_experience_factor = 0.6" 
+					owner = AFG
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_16
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_15 }
+		prerequisite = { focus = AFG_14 }
+		prerequisite = { focus = AFG_13_1 }
+		x = 6
+		y = 10
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			106 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			99 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_17
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_9 }
+		x = 0
+		y = 7
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "mazdar007"
+				picture = "MazdarG1.dds"
+				traits = { trait_engineer brilliant_strategist armor_officer panzer_leader }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = AFG_18
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = -3
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Бо"
+				picture = "BOFl1.dds"
+				traits = { inflexible_strategist infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = AFG_19
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = -1
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_navy_leader = {
+				name = "MR.G"
+				picture = "Mr.GA1.dds"
+				traits = { fleet_protector ironside }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
+				maneuvering_skill = 3
+				coordination_skill = 4
+			}
+		}
+	}
+	focus = {
+		id = AFG_20
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = 1
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Микола"
+				picture = "MikolaG1.dds"
+				traits = { career_officer substance_abuser trait_reckless trait_SPA_nationalist_sympathies ranger }
+				skill = 4
+				attack_skill = 6
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+	focus = {
+		id = AFG_21
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = 3
+		y = 8
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Политрук Бенито"
+				picture = "Benito.dds"
+				traits = { career_officer war_hero armor_officer trickster hill_fighter }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = AFG_22
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = 0
+		y = 9
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Kachanov"
+				picture = "Kacanlot.dds"
+				traits = { media_personality politically_connected }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 3
+			}
+		}
+	}
+	focus = {
+		id = AFG_23
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = 2
+		y = 9
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Fodi"
+				picture = "Fodi.dds"
+				traits = { jungle_rat }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 5
+				planning_skill = 4
+				logistics_skill = 5
+			}
+		}
+	}
+	focus = {
+		id = AFG_24
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_17 }
+		x = -2
+		y = 9
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			create_corps_commander = {
+				name = "Туркменский Наполеон"
+				picture = "NAP.dds"
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 10
+				logistics_skill = 1
+			}
+		}
+	}
+	focus = {
+		id = AFG_25
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_11 }
+		prerequisite = { focus = AFG_12 }
+		prerequisite = { focus = AFG_10_1 }
+		x = -6
+		y = 10
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			102 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_26
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_22 }
+		x = 0
+		y = 10
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = { has_completed_focus = AFG_18 }
+		available = { has_completed_focus = AFG_19 }
+		available = { has_completed_focus = AFG_20 }
+		available = { has_completed_focus = AFG_21 }
+		available = { has_completed_focus = AFG_23 }
+		available = { has_completed_focus = AFG_24 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = popo
+				days = 365
+			}
+			create_corps_commander = {
+				name = "АлександЕр"
+				picture = "Alexander.dds"
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 2
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Иван Денисыч Говнов"
+				picture = "lalka.dds"
+				traits = {  }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "sorekk"
+				picture = "sorekk.dds"
+				traits = {  }
+				skill = 4
+				attack_skill = 1
+				defense_skill = 6
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			create_corps_commander = {
+				name = "Кот в наушниках"
+				picture = "kot.dds"
+				traits = { harsh_leader }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "borsh4ec"
+				picture = "borsh4ec.dds"
+				traits = { armor_officer }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Markus395"
+				picture = "Markus395.dds"
+				traits = { media_personality }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "New school"
+				picture = "New.dds"
+				traits = { career_officer bearer_of_artillery trait_cautious }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 2
+			}
+		}
+	}
+	focus = {
+		id = AFG_27
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_25 }
+		prerequisite = { focus = AFG_26 }
+		x = -2
+		y = 11
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_timed_idea = {
+				idea = popo_1
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = AFG_27_3
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_27 }
+		x = -3
+		y = 12
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			transfer_state = 1133
+			1133 = {
+				add_compliance = 60
+			}
+		}
+	}
+	focus = {
+		id = AFG_28
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_16 }
+		prerequisite = { focus = AFG_26 }
+		x = 2
+		y = 11
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = military_youth_focus
+		}
+	}
+	focus = {
+		id = AFG_29
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_27 }
+		prerequisite = { focus = AFG_28 }
+		x = 0
+		y = 12
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			country_event = afgan.9
+			create_wargoal = {
+				type = annex_everything
+				target = ISL
+			}
+		}
+	}
+	focus = {
+		id = AFG_30
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_29 }
+		x = 0
+		y = 13
+		cost = 5
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available = {
+			OR = {
+				AND = {
+					owns_state = 25
+					owns_state = 40
+					owns_state = 41
+				}
+				ISL = { is_puppet_of = AFG }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = kalyan_5 }
+				swap_ideas = {
+					remove_idea = kalyan_5
+					add_idea = kalyan_6
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AFG_32
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_30 }
+		x = -1
+		y = 14
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			annex_country = {  target = ISL }
+			add_state_core = 31
+			add_state_core = 32
+			add_state_core = 35
+			add_state_core = 36
+			add_state_core = 37
+			add_state_core = 38
+			add_state_core = 39
+			add_state_core = 40
+			add_state_core = 41
+			add_state_core = 24
+			add_state_core = 25
+			add_state_core = 26
+			add_state_core = 27
+			add_state_core = 28
+		}
+	}
+	focus = {
+		id = AFG_33
+		icon = GFX_focus_AFG
+		prerequisite = { focus = AFG_30 }
+		x = 1
+		y = 14
+		cost = 3
+			ai_will_do = {
+			factor = 1
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			31 = { add_extra_state_shared_building_slots = 15 }
+			32 = { add_extra_state_shared_building_slots = 15 }
+			35 = { add_extra_state_shared_building_slots = 15 }
+			36 = { add_extra_state_shared_building_slots = 15 }
+			37 = { add_extra_state_shared_building_slots = 15 }
+			38 = { add_extra_state_shared_building_slots = 15 }
+			39 = { add_extra_state_shared_building_slots = 15 }
+			40 = { add_extra_state_shared_building_slots = 15 }
+			41 = { add_extra_state_shared_building_slots = 15 }
+			24 = { add_extra_state_shared_building_slots = 15 }
+			25 = { add_extra_state_shared_building_slots = 15 }
+			26 = { add_extra_state_shared_building_slots = 15 }
+			27 = { add_extra_state_shared_building_slots = 15 }
+			28 = { add_extra_state_shared_building_slots = 15 }
+		}
+	}
+}

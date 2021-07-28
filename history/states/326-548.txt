@@ -5,7 +5,11 @@ state={
 
 	history={
 		owner = LET
-		victory_points = { 15313 1 }
+		victory_points = { 14840 10 }
+		victory_points = { 15313 10 }
+		victory_points = { 15460 8 }
+		victory_points = { 15966 9 }
+		victory_points = { 15914 7 }
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2

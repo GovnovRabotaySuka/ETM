@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_category_generic"
+		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
+	}
+	
+
+	### decision icons
+
+	spriteType = {
+		name = "GFX_decision_o_bird_smal"
+		texturefile = "gfx/interface/decisions/o_bird_smal.dds"
+	}
+}

@@ -189,6 +189,28 @@ units = {
 		start_experience_factor = 0
 		start_equipment_factor = 0.25
 		}
+		
+	division= {	#"Militsiya goroda Beryozovka"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Берёзовка"	
+		location = 15913
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25
+		}
+
+	division= {	#"Militsiya goroda Lyubomorovka"
+		division_name = {
+			is_name_ordered = no
+		}
+		name = "Милиция г. Любомировка"	
+		location = 14840
+		division_template = "Народное Ополчение"
+		start_experience_factor = 0
+		start_equipment_factor = 0.25
+		}
 	
 	division= {	#"Boyevoye Krilo NKD "RP""
 		division_name = {

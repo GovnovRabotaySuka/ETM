@@ -1,0 +1,214 @@
+LET_ptitsa = {
+	LET_Ptitsa_Money = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 1000
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = LET_Ptitsa_Money
+				days = 30
+			}
+			add_stability = -0.05
+			add_manpower = -5000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Armiya = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 1950
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = LET_Ptitsa_Armiya
+				days = 30
+			}
+			add_stability = -0.1
+			add_manpower = -10000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Produktsiya = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 2600
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = LET_Ptitsa_Produktsiya
+				days = 30
+			}
+			add_stability = -0.1
+			add_manpower = -10000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Stroyka = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 2600
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = o_bird_smal
+				days = 30
+			}
+			add_stability = -0.1
+			add_manpower = -10000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Research = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 2600
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = LET_Ptitsa_Research
+				days = 30
+			}
+			add_stability = -0.1
+			add_manpower = -10000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Psihodeliki = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		visible = {
+			has_completed_focus = LET_R_12
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_12
+		}
+		cost = 3900
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = LET_Ptitsa_Psihodeliki
+				days = 30
+			}
+			add_stability = -0.15
+			add_manpower = -15000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Cult = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 1950
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 60
+		remove_effect = {
+			division_template = {
+				name = "Культисты церкви Крылатого Рока"
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					}
+				}
+				329 = {
+					create_unit = {
+						division = "name = \"Посланники Безумия\" division_template = \"Культисты церкви Крылатого Рока\" start_experience_factor = 0.2" 
+						owner = LET
+					}
+				}
+			add_stability = -0.1
+			add_manpower = -10000
+		}
+		complete_effect = {
+		}
+	}
+	LET_Ptitsa_Proklyatiye = {
+		icon = o_bird_smal
+		allowed = {
+			tag = LET
+		}
+		available = {
+			country_exists = PLA
+			has_completed_focus = LET_R_7
+		}
+		cost = 2600
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 75
+		remove_effect = {
+			PLA = {
+				add_timed_idea = {
+					idea = LET_Ptitsa_Proklyatie
+					days = 45
+				}
+			}
+		complete_effect = {
+		}
+	}
+}

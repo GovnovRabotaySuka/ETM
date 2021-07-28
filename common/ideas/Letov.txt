@@ -7,8 +7,8 @@ ideas = {
 			}
 			removal_cost = -1	
 			modifier = {
-				send_volunteer_factor = -2
-				stability_factor = -0.1
+				send_volunteer_factor = -10
+				stability_factor = -0.05
 				drift_defence_factor = 2
 				guarantee_cost = 15
 				lend_lease_tension = 15 
@@ -20,9 +20,9 @@ ideas = {
 				encryption = 5
 				enemy_operative_capture_chance_factor = 2
 				enemy_operative_detection_chance = 200
-				operation_outcome = 0.5
-				crypto_strength = 10
-				operative_slot = 2
+				operation_outcome = 0.75
+				crypto_strength = 15
+				operative_slot = 3
 				ai_focus_defense_factor = 0.25
 				army_morale_factor = 0.25
 				trade_opinion_factor = -100
@@ -45,7 +45,6 @@ ideas = {
                 stability_weekly = -0.001
                 production_factory_efficiency_gain_factor = -0.15
                 consumer_goods_factor = 0.1
-
             }
         }
 		LET_Peremiriye = {
@@ -61,8 +60,8 @@ ideas = {
 			modifier = {
                 army_attack_factor = -0.05
                 consumer_goods_factor = 0.1
-                political_power_gain = -2.5
-                stability_factor = -0.1
+                political_power_gain = -5
+                stability_factor = -0.05
             }
         }
 		LET_Edinstvo_8 = {
@@ -201,7 +200,7 @@ ideas = {
             }
             removal_cost = -1	
 			modifier = {
-                stability_factor = -0.5
+                stability_factor = -0.05
             }
         }
 		LET_Edinstvo_6 = {
@@ -215,7 +214,7 @@ ideas = {
             }
             removal_cost = -1	
 			modifier = {
-                stability_factor = 0.5
+                stability_factor = 0.05
             }
         }
 		LET_Edinstvo_7 = {
@@ -334,10 +333,11 @@ ideas = {
                 production_factory_efficiency_gain_factor = -0.1
                 production_factory_max_efficiency_factor = 0.1
                 industry_free_repair_factor = -0.1
+				industrial_capacity_factory = 0.1
             }
         }
 		LET_Golod_1 = {
-			picture = idea_LET_5
+			picture = LET_Golod_1
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -357,7 +357,7 @@ ideas = {
             }
         }
 		LET_Golod_2 = {
-			picture = idea_LET_5
+			picture = LET_Golod_1
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -377,7 +377,7 @@ ideas = {
             }
         }
 		LET_Golod_3 = {
-			picture = idea_LET_5
+			picture = LET_Golod_2
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -397,7 +397,7 @@ ideas = {
             }
         }
 		LET_Golod_4 = {
-			picture = idea_LET_5
+			picture = LET_Golod_2
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -417,7 +417,7 @@ ideas = {
             }
         }	
 		LET_Golod_5 = {
-			picture = idea_LET_5
+			picture = LET_Golod_3
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -437,7 +437,7 @@ ideas = {
             }
         }	
 		LET_Golod_6 = {
-			picture = idea_LET_5
+			picture = LET_Golod_3
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -457,7 +457,7 @@ ideas = {
             }
         }		
 		LET_Golod_7 = {
-			picture = idea_LET_5
+			picture = LET_Golod_4
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -477,7 +477,7 @@ ideas = {
             }
         }
 		LET_Golod_8 = {
-			picture = idea_LET_5
+			picture = LET_Golod_4
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -497,7 +497,7 @@ ideas = {
             }
         }
 		LET_Golod_9 = {
-			picture = idea_LET_5
+			picture = LET_Golod_5
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -517,7 +517,7 @@ ideas = {
             }
         }
 		LET_Golod_10 = {
-			picture = idea_LET_5
+			picture = LET_Golod_5
 			allowed = {
 				always = yes
 				original_tag = LET
@@ -536,5 +536,534 @@ ideas = {
 				monthly_population = -0.5
             }
         }
+		LET_Cherniy_Rinok = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = 0.025
+                political_power_factor = -0.05
+                stability_factor = -0.05
+				monthly_population = -0.05
+			}
+		}	
+		LET_Moya_Oborona = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.025
+                stability_factor = 0.05
+				surrender_limit = 0.15
+				industry_free_repair_factor = 0.075
+				army_org_factor = 0.1
+				dig_in_speed = 5
+				dig_in_speed_factor = 0.2
+				army_core_defence_factor = 0.05
+				production_speed_bunker_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}	
+		LET_Moya_Oborona_2 = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.05
+                stability_factor = 0.05
+				surrender_limit = 0.25
+				industry_free_repair_factor = 0.075
+				army_org_factor = 0.15
+				dig_in_speed = 5
+				dig_in_speed_factor = 0.25
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				production_speed_bunker_factor = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+		LET_Moya_Oborona_3 = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.075
+                stability_factor = 0.1
+				surrender_limit = 0.35
+				industry_free_repair_factor = 0.1
+				army_org_factor = 0.15
+				dig_in_speed = 5
+				dig_in_speed_factor = 0.25
+				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.15
+				production_speed_bunker_factor = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+		LET_Moya_Oborona_4 = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.1
+                stability_factor = 0.15
+				surrender_limit = 0.5
+				industry_free_repair_factor = 0.15
+				army_org_factor = 0.25
+				dig_in_speed = 5
+				dig_in_speed_factor = 0.25
+				army_core_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				industrial_capacity_factory = 0.1
+			}
+		}
+		LET_Svyataya_Voyna = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.15
+                stability_factor = -0.1
+				surrender_limit = 0.5
+				industry_free_repair_factor = 0.25
+				army_org_factor = 0.5
+				defence = 0.25
+				offence = 0.25
+				army_speed_factor = 0.1
+				army_morale_factor = 0.25
+			}
+		}
+		LET_Ptitsa_Money = {
+			picture = omsk_bird_2
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.05
+			    political_power_gain = 25
+			}
+		}
+		LET_Ptitsa_Armiya = {
+			picture = omsk_bird_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				war_support_factor = 0.25
+				production_speed_arms_factory_factor = 0.15
+				experience_gain_army_factor = 0.25
+				training_time_factor = -0.25
+			}
+		}
+		LET_Ptitsa_Produktsiya = {
+			picture = omsk_bird_3
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.3
+				production_factory_max_efficiency_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.3
+				production_factory_efficiency_gain_factor = 0.3
+				industrial_capacity_factory = 0.25
+			}
+		}
+		LET_Ptitsa_Stroyka = {
+			picture = omsk_bird_3
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+                consumer_goods_factor = -0.5
+				production_speed_buildings_factor = 0.45
+			}
+		}
+		LET_Ptitsa_Research = {
+			picture = omsk_bird_4
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				research_speed_factor = 0.5
+			}
+		}
+		LET_Ptitsa_Psihodeliki = {
+			picture = omsk_bird_6
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				war_support_weekly = 0.05
+				monthly_population = -0.25
+				offence = 0.25
+				army_org_factor = 0.25
+				defence = -0.25
+			}
+		}
+		LET_Ptitsa_Proklyatie = {
+			picture = omsk_bird_6
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				war_support_weekly = -0.025
+				stability_weekly = -0.025
+				monthly_population = -0.05
+				offence = -0.05
+				defence = -0.05
+				research_speed_factor = -0.05
+				surrender_limit = -0.25
+				consumer_goods_factor = 0.1
+				army_morale_factor = -0.5
+				industrial_capacity_factory = -0.1
+			}
+		}
+		LET_Delay_S_Nami = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				political_power_gain = -15
+				war_support_weekly = -0.025
+				stability_weekly = -0.025
+				offence = -0.1
+				defence = -0.1
+				research_speed_factor = -0.1
+				surrender_limit = -0.25
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.1
+				weekly_manpower = -125
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		LET_Centralizovannaya_Armiya = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				army_org_factor = 0.25
+				offence = 0.05
+				defence = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		LET_Partizany = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				army_org_factor = -0.10
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = 0.15
+				industry_free_repair_factor = 0.1
+				army_core_defence_factor = 0.15
+				dig_in_speed_factor = 0.25
+			}
+		}
+		LET_Rabochiye = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industry_free_repair_factor = 0.15
+				consumer_goods_factor = -0.15
+				stability_factor = 0.1
+				political_power_gain = 10
+			}
+		}
+		LET_K_Pobede = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_attack_factor = 0.1
+				industry_free_repair_factor = 0.25
+				consumer_goods_factor = -0.05
+				stability_factor = 0.25
+				war_support_factor = 0.25
+			}
+		}
+		LET_Pobeda = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				industry_free_repair_factor = 0.5
+				consumer_goods_factor = -0.15
+				stability_factor = 0.3
+				war_support_factor = 0.3
+			}
+		}
+		LET_Nochyu = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				offence = 0.075
+				defence = 0.075
+				land_night_attack = 0.15
+			}
+		}
+		LET_Voyna_Diversia = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				conscription = -0.05
+				offence = -0.1
+				defence = -0.1
+				army_org_factor = -0.1 
+			}
+		}
+		LET_Mittingi = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.15
+				conscription = -0.005
+				consumer_goods_factor = 0.025
+			}
+		}
+		LET_Stachki = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		LET_Pogromi = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.075
+				political_power_factor = -0.1
+				manpower_weekly = -5
+			}
+		}
+		LET_Reyd = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				conscription = -0.01
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+				manpower_weekly = -15
+				offence = -0.05
+				defence = -0.05
+			}
+		}
+		LET_Vosstanie = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				conscription = -0.025
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.25
+				manpower_weekly = -50
+				offence = -0.1
+				defence = -0.1
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+		LET_Ubiystvo = {
+			picture = idea_LET_5
+			allowed = {
+				always = yes
+				original_tag = LET
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+            removal_cost = -1	
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				political_power_factor = -0.25
+			}
+		}
 	}
 }

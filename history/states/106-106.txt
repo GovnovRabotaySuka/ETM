@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = AFG
+		victory_points = { 8166 20 }
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

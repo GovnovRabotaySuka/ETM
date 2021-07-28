@@ -1,0 +1,146 @@
+LET_weapons_buy_cat = {
+	buy_kalash = {
+
+		icon = generic_prepare_civil_war
+		cost = 650
+		ai_will_do = {
+			factor = 2
+		}
+		allowed = { 
+			original_tag = LET
+		}
+
+		fire_only_once = no
+		days_re_enable = 180
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 } }
+		}
+	}
+	buy_equip = {
+
+		icon = ger_military_buildup
+		cost = 650
+		allowed = { 
+			original_tag = LET
+		}
+
+		fire_only_once = no
+		days_re_enable = 90
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 } }
+		}
+	}
+	buy_arta = {
+
+		icon = ger_military_buildup
+		cost = 1300
+		allowed = { 
+			original_tag = LET
+		}
+
+		fire_only_once = no
+		days_re_enable = 90
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 } }
+		}
+	}
+	buy_ural = {
+
+		icon = hol_attract_foreign_investors
+		cost = 1300
+		allowed = { 
+			original_tag = LET
+		}
+
+		fire_only_once = no
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 250 } }
+		}
+	}
+	buy_tank = {
+		icon = generic_tank
+		cost = 1950
+		allowed = { 
+			original_tag = LET
+		}
+		fire_only_once = no
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 75 } }
+		}
+	}
+	buy_istrebu = {
+		icon = generic_air
+		cost = 1300
+		allowed = { 
+			original_tag = LET
+		}
+		fire_only_once = no
+		complete_effect = {
+			ROOT = { add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 25 } }
+		}
+	}
+	buy_manpower = {
+
+		icon = generic_political_discourse
+		cost = 390
+		allowed = { 
+			original_tag = LET
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		fire_only_once = no
+		complete_effect = {
+			add_manpower = 2500
+		}
+	}
+	buy_electric = {
+
+		icon = generic_factory
+		cost = 1950
+		allowed = { 
+			original_tag = LET
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		fire_only_once = no
+		days_re_enable = 60
+		complete_effect = {
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}
+		}
+	}
+	buy_resours = {
+
+		icon = generic_factory
+		cost = 1300
+		allowed = { 
+			original_tag = LET
+		}
+		ai_will_do = {
+			factor = 2
+		}
+
+		fire_only_once = no
+		days_re_enable = 180
+		complete_effect = {
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 329
+			}
+			add_resource = {
+				type = steel
+				amount = 2
+				state = 329
+			}
+		}
+	}
+}

@@ -1,0 +1,964 @@
+LET_war_on_golod = {
+    Golod_Rastyot = {
+
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 90
+		is_good = no
+		
+		available = {
+			NOT = { country_exists = PLA }
+			NOT = {
+				OR = {
+					has_idea = LET_Golod_1
+					has_idea = LET_Golod_2
+					has_idea = LET_Golod_3
+					has_idea = LET_Golod_4
+					has_idea = LET_Golod_5
+					has_idea = LET_Golod_6
+					has_idea = LET_Golod_7
+					has_idea = LET_Golod_8
+					has_idea = LET_Golod_9
+					has_idea = LET_Golod_10
+				}
+			}
+		}
+		
+		activation = {
+			has_completed_focus = LET_3
+		}	
+		
+		allowed = {
+			tag = LET
+			has_completed_focus = LET_3
+		}
+		
+		fire_only_once = no	
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_3
+			country_exists = PLA
+		}
+
+		timeout_effect = {
+			add_stability = -0.05
+			custom_effect_tooltip = "Голод возрастёт!"
+			hidden_effect = {
+				LET_Golod_increase = yes
+				LET_Golod_increase = yes
+			activate_mission = Golod_Rastyot
+		}
+		
+		complete_effect = {
+			remove_mission = Golod_Rastyot
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+	Nemnogo_Centra = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+			}
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+        cost = 650
+		fire_only_once = no
+		days_remove = 60
+		modifier = {
+			political_power_factor = -0.15
+			stability_factor = -0.05
+			consumer_goods_factor = 0.05
+		}
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_1
+		}
+		remove_effect = {
+			custom_effect_tooltip = "Голод немного снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета немного снизится!"
+			hidden_effect = {
+				LET_Edinstvo_dincrease = yes
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = bidlo
+				popularity = 0.025
+			}
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+	Nemnogo_Tovarov = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 650
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			political_power_factor = 0.15
+			stability_weekly_factor = -0.01
+			consumer_goods_factor = -0.1
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод немного снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.025
+			}
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+	Nemnogo_Deneg = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 650
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.05
+			stability_factor = -0.05
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод немного снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета немного снизится!"
+			hidden_effect = {
+				LET_Edinstvo_dincrease = yes
+			}
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.025
+			}			
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			ai_will_do = {
+			factor = 75
+			}
+		}
+	}
+	Nemnogo_Coop = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 650
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			political_power_factor = 0.05
+			stability_weekly_factor = -0.005
+			consumer_goods_factor = 0.1
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_1
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод немного снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.025
+			}
+		}
+		ai_will_do = {
+			factor = 75
+		}
+	}
+	Anarhisty_Fermy = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1300
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.1
+			political_power_factor = 0.1
+			war_support_weekly = -0.01
+			stability_weekly_factor = 0.01
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_3
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Влияние анархистов немного возрастёт!"
+			hidden_effect = {
+				LET_anarchism_increase = yes
+			}
+			custom_effect_tooltip = "Голод снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета немного снизится!"
+			hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+			}
+			add_stability = 0.1
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+    Anarhisty_Fermy_2 = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1950
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = 0.15
+			political_power_factor = 0.15
+			war_support_weekly = -0.02
+			stability_weekly_factor = 0.01
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_6
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Влияние анархистов немного возрастёт!"
+			hidden_effect = {
+				LET_anarchism_increase = yes
+			}
+			custom_effect_tooltip = "Голод сильно снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета снизится!"
+			hidden_effect = {
+				LET_Edinstvo_dincrease = yes
+				LET_Edinstvo_dincrease = yes
+			}
+			add_stability = 0.15
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+			add_offsite_building = {
+				type = industrial_complex 
+				level = 2
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Natsboly_Sklady = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1300
+
+		fire_only_once = no
+
+		days_remove = 75
+
+		modifier = {
+			consumer_goods_factor = -0.15
+			political_power_factor = -0.15
+			war_support_weekly = 0.01
+			stability_weekly_factor = -0.01
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_5
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета немного снизится!"
+			hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+			}
+			add_stability = -0.05
+			add_popularity = {
+				ideology = bidlo
+				popularity = 0.05
+			}
+						random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Natsboly_Sklady_2 = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1950
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = -0.15
+			political_power_factor = -0.25
+			war_support_weekly = 0.015
+			stability_weekly_factor = -0.015
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_8
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод сильно снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			custom_effect_tooltip = "Единство Совета снизится!"
+			hidden_effect = {
+			LET_Edinstvo_dincrease = yes
+			LET_Edinstvo_dincrease = yes
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = bidlo
+				popularity = 0.05
+			}
+			add_offsite_building = {
+				type = industrial_complex 
+				level = 1
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Letovtsy_Kvoty = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1300
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = -0.1
+			political_power_factor = 0.15
+			war_support_weekly = -0.01
+			stability_weekly_factor = -0.01
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_4
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			add_stability = -0.05
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.05
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Letovtsy_GOST = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1820
+
+		fire_only_once = no
+
+		days_remove = 75
+
+		modifier = {
+			consumer_goods_factor = -0.15
+			political_power_factor = 0.25
+			war_support_weekly = -0.02
+			stability_weekly_factor = -0.025
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_7
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Голод сильно снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = pahanism
+				popularity = 0.05
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Comm_Sovety = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1300
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.1
+			political_power_factor = -0.05
+			stability_weekly_factor = -0.005
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_7
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Влияние коммунариев немного возрастёт!"
+			hidden_effect = {
+				LET_communar_increase = yes
+			}
+			custom_effect_tooltip = "Голод снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			ai_will_do = {
+			factor = 100
+			}
+		}
+	}
+	Comm_Sovety_2 = {
+
+		icon = hol_war_on_pacifism
+
+		allowed = {
+			tag = LET
+		}
+
+		available = {
+			OR = {
+			has_idea = LET_Golod_1
+			has_idea = LET_Golod_2
+			has_idea = LET_Golod_3
+			has_idea = LET_Golod_4
+			has_idea = LET_Golod_5
+			has_idea = LET_Golod_6
+			has_idea = LET_Golod_7
+			has_idea = LET_Golod_8
+			has_idea = LET_Golod_9
+			has_idea = LET_Golod_10
+			} 
+		}
+		cost = 1950
+
+		fire_only_once = no
+
+		days_remove = 60
+
+		modifier = {
+			consumer_goods_factor = 0.1
+			political_power_factor = -0.05
+			stability_weekly_factor = -0.005
+		}
+
+		visible = {
+			tag = LET
+			has_completed_focus = LET_C_7
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = "Влияние коммунариев немного возрастёт!"
+			hidden_effect = {
+				LET_communar_increase = yes
+			}
+			custom_effect_tooltip = "Голод сильно снизится!"
+			hidden_effect = {
+			    LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+				LET_Golod_dincrease = yes
+			}
+			add_stability = 0.05
+			add_popularity = {
+				ideology = borshewism
+				popularity = 0.05
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+			add_building_construction = {
+				    type = infrastructure
+				    level = 2
+					instant_build = yes
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

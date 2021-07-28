@@ -205,6 +205,8 @@ ZEK = "countries/ZEK.txt"
 JEW = "countries/JEW.txt" 
 LTZ = "countries/LTZ.txt" 
 MAH = "countries/MAH.txt"
+EMO = "countries/EMO.txt"
+HIP = "countries/HIP.txt"
 
 
 

@@ -3,9 +3,12 @@ state={
 	name="STATE_344"
 
 	state_category = rural
+	
 
 	history={
 		owner = PLA
+		victory_points = { 18025 25 }
+		victory_points = { 17728 5 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

@@ -7,9 +7,20 @@ state={
 	}
 
 	state_category = rural
+	
+		
 
 	history={
 		owner = PLA
+		victory_points = {
+			13857 50
+		}
+		victory_points = {
+			14419 25
+		}
+		victory_points = {
+			14987 20
+		}
 		buildings = {
 			infrastructure = 2
 		}

@@ -30,7 +30,7 @@ guiTypes = {
 			}
 			
 			iconType = {
-				name ="Image"
+				name ="Super_Event_Image_Holy_War"
 				spriteType = "GFX_super_event_custom_holy_war"
 				position = { x = -217 y = -190 }
 				alwaystransparent = yes

@@ -2,19 +2,180 @@ add_namespace = etm_superevents
 
 country_event = {
 	id = etm_superevents.1
-	hidden = yes
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = { 
-			has_war_with = LET:PLA
-	}
+	hidden = yes
+	
 	option = {
-		trigger = { NOT = { has_global_flag = etm_super_event_flag_holy_war_off }
-				}
 		set_global_flag = etm_super_event_flag_holy_war
 		sound_effect = "superev_holy_war"
 	}
+}
+
+country_event = {
+	id = etm_superevents.2
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
 	option = {
-		trigger = { has_global_flag = etm_super_event_flag_holy_war_off }
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.3
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.4
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.5
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.6
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.7
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.8
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.9
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.10
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.11
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.12
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.13
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
+	}
+}
+
+country_event = {
+	id = etm_superevents.14
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+        set_country_flag = Super_Event_Visible
+		set_global_flag = etm_super_event_flag_holy_war
+		sound_effect = ""
 	}
 }

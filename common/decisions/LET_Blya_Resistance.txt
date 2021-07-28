@@ -1,0 +1,250 @@
+LET_blya_resistance = {
+	LET_Grabezh = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_3
+		}
+		cost = 625
+		fire_only_once = no
+		days_remove = 5
+		days_re_enable = 30
+		remove_effect = {
+			PLA = { 
+				add_political_power = -1000
+				add_stability = -0.01
+			}
+			add_political_power = 1000
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Mittingi = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_6
+		}
+		cost = 1000
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 90
+		remove_effect = {
+			PLA = { 
+				add_timed_idea = {
+					idea = LET_Mittingi
+					days = 30
+				}
+				add_stability = -0.05
+			}
+		}
+		complete_effect = {
+		}
+	}
+	LET_Stachki = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_6
+		}
+		cost = 1000
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 90
+		remove_effect = {
+			PLA = { 
+				add_timed_idea = {
+					idea = LET_Stachki
+					days = 30
+				}
+				add_stability = -0.05
+			}
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Ubiystvo = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_7
+		}
+		cost = 625
+		fire_only_once = no
+		days_remove = 15
+		days_re_enable = 60
+		remove_effect = {
+			PLA = { 
+				add_timed_idea = {
+					idea = LET_Ubiystvo
+					days = 15
+				}
+				add_stability = -0.025
+			}
+		}
+
+		complete_effect = {
+		}
+	}
+	LET_Pogromi = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_equipment = { infantry_equipment_1 > 500 }
+			has_completed_focus = LET_L_9
+		}
+		cost = 1300
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 120
+		remove_effect = {
+			PLA = {
+				add_timed_idea = {
+					idea = LET_Pogromi
+					days = 45
+				}
+				add_stability = -0.1
+				random_owned_controlled_state = {
+					limit = {
+						infrastructure > 1
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 0.4
+					}
+				}
+			}
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -500 }
+		}
+		complete_effect = {
+		}
+	}
+	LET_Terrakt = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_10
+		}
+		cost = 1950
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 60
+		remove_effect = {
+			PLA = {
+				add_manpower = -15
+				add_stability = -0.1
+				random_owned_controlled_state = {
+					limit = {
+						industrial_complex > 1
+						infrastructure > 1
+					}
+					damage_building = {
+						type = infrastructure
+						damage = 0.4
+					}
+					damage_building = {
+						type = industrial_complex
+						damage = 0.2
+					}
+				}
+			}
+		}
+		complete_effect = {
+		}
+	}
+	LET_Dizertiry = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_5
+		}
+		cost = 390
+		fire_only_once = no
+		days_remove = 10
+		days_re_enable = 20
+		remove_effect = {
+			PLA = {
+				add_stability = -0.01
+				add_manpower = -1500
+			}
+			add_manpower = 1500
+		}
+		complete_effect = {
+		}
+	}
+	LET_Reyd = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_8
+			has_equipment = { infantry_equipment_1 > 1000 }
+		}
+		cost = 1950
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		remove_effect = {
+			PLA = { 
+				add_timed_idea = {
+					idea = LET_Reyd
+					days = 30
+				}
+			}
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -1000 }
+		}
+		complete_effect = {
+		}
+	}
+	LET_Vosstanie = {
+		icon = hol_war_on_pacifism
+		allowed = {
+			tag = LET
+		}
+		available = {
+			has_war = no
+			has_completed_focus = LET_L_11
+			has_equipment = { infantry_equipment_1 > 1500 }
+		}
+		cost = 2600
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 90
+		remove_effect = {
+			PLA = { 
+				add_timed_idea = {
+					idea = LET_Vosstanie
+					days = 30
+				}
+			}
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = -1500 }
+		}
+		complete_effect = {
+		}
+	}
+}

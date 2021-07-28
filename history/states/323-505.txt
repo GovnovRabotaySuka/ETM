@@ -5,7 +5,8 @@ state={
 
 	history={
 		owner = LET
-		victory_points = { 15965 1 }
+		victory_points = { 15965 9 }
+		victory_points = { 16304 8 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 4

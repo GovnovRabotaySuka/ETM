@@ -4,5 +4,5 @@ soundeffect =
 	sounds = {
 		sound = "super_holy_war"
 	}
-	volume = 0.65
+	volume = 0.55
 }

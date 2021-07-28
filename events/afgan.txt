@@ -1,0 +1,615 @@
+add_namespace = afgan
+
+country_event = {
+	id = afgan.1
+	title = afgan.1.t
+	desc = afgan.1.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.1.a
+		add_political_power = 50
+		set_party_name = { ideology = pahanism name = AFG_party_short long_name = AFG_party_long }
+    }
+	option = { 
+		name = afgan.1.b
+		add_stability = 0.04
+    }
+}
+country_event = {
+	id = afgan.2
+	title = afgan.2.t
+	desc = afgan.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.2.a
+		add_political_power = -10
+		add_ideas = kalyan_1
+    }
+}
+country_event = {
+	id = afgan.3
+	title = afgan.3.t
+	desc = afgan.3.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.3.a
+		country_event = { id = afgan.7 days = 3 random_days = 2 }
+    }
+}
+# Event for PAK starting civil war
+country_event = {
+	id = afgan.4
+	title = afgan.4.t
+	desc = afgan.4.d
+	picture = GFX_report_event_ger_civil_war	
+	is_triggered_only = yes
+	option = {
+		name = afgan.4.a
+		EMO = {
+			add_state_core = 96
+			add_state_core = 94
+		}
+		HIP = {
+			add_state_core = 105
+			add_state_core = 107
+		}
+		release = EMO
+		release = HIP
+		hidden_effect = {
+			division_template = {
+					name = "Punks, hoi!"
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				92 = {
+					create_unit = {
+						division = "name = \"1. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"2. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"3. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"4. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"5. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				93 = {
+					create_unit = {
+						division = "name = \"6. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"7. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"8. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"9. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"10. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				103 = {
+					create_unit = {
+						division = "name = \"11. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"12. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"13. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"14. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"15. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				76 = {
+					create_unit = {
+						division = "name = \"16. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"17. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"18. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"19. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"20. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				75 = {
+					create_unit = {
+						division = "name = \"21. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"22. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"23. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				91 = {
+					create_unit = {
+						division = "name = \"24. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"25. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"26. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+				95 = {
+					create_unit = {
+						division = "name = \"27. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"28. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+					create_unit = {
+						division = "name = \"29. Punks, hoi!\" division_template = \"Punks, hoi!\" start_experience_factor = 0.5" 
+						owner = PNK
+					}
+				}
+			EMO = {
+				division_template = {
+					name = "Emo Liberation Army"
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				94 = {
+					create_unit = {
+						division = "name = \"1. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"2. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"3. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"4. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"5. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"6. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"7. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"8. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"9. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"10. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"11. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"12. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"13. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"14. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"15. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"16. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"17. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"18. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"19. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"20. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+				}
+				96 = {
+					create_unit = {
+						division = "name = \"21. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"22. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+					create_unit = {
+						division = "name = \"23. Emo Liberation Army\" division_template = \"Emo Liberation Army\" start_experience_factor = 0.5" 
+						owner = EMO
+					}
+				}
+				EMO = {
+					declare_war_on = {
+						target = PNK
+						type = annex_everything
+					}
+				}
+			}
+			HIP = {
+				division_template = {
+					name = "Hippie Liberation Army"
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+				}
+				105 = {
+					create_unit = {
+						division = "name = \"1. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"2. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"3. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"4. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"5. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"6. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"7. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"8. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"9. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"10. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"11. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"12. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"13. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"14. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"15. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"16. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"17. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"18. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"19. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"20. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+				}
+				107 = {
+					create_unit = {
+						division = "name = \"21. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"22. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+					create_unit = {
+						division = "name = \"23. Hippie Liberation Army\" division_template = \"Hippie Liberation Army\" start_experience_factor = 0.5" 
+						owner = HIP
+					}
+				}
+				HIP = {
+					declare_war_on = {
+						target = PNK
+						type = annex_everything
+					}
+				}
+			}
+			country_event = { id = afgan.5 days = 70 random_days = 5 } }
+			country_event = { id = afgan.51 days = 70 random_days = 5 } }
+		}
+	}
+}
+country_event = {
+	id = afgan.5
+	title = afgan.5.t
+	desc = afgan.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+	trigger = {
+		has_war_with = EMO
+	}
+	is_triggered_only = yes
+	# Let's make peace
+	option = {
+		name = afgan.5.a
+		white_peace = EMO
+		EMO = { country_event = { id = afgan.6 } }
+	}
+	option = {
+		name = afgan.5.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = -0.1
+	}
+}
+country_event = {
+	id = afgan.51
+	title = afgan.51.t
+	desc = afgan.51.d
+	picture = GFX_report_event_generic_sign_treaty2
+	trigger = {
+		has_war_with = HIP
+	}
+	is_triggered_only = yes
+	# Let's make peace
+	option = {
+		name = afgan.51.a
+		white_peace = HIP
+		HIP = { country_event = { id = afgan.61 } }
+	}
+	option = {
+		name = afgan.51.b
+		ai_chance = {
+			factor = 0
+		}
+		add_war_support = -0.1
+	}
+}
+# Event for BAN notifying of white peace
+country_event = {
+	id = afgan.6
+	title = afgan.6.t
+	desc = afgan.6.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = afgan.6.a
+		effect_tooltip = { EMO = { white_peace = PNK } }
+		delete_unit_template_and_units = {
+   			division_template = "Emo Liberation Army"
+		}
+	}
+}
+country_event = {
+	id = afgan.61
+	title = afgan.61.t
+	desc = afgan.61.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	option = {
+		name = afgan.61.a
+		effect_tooltip = { HIP = { white_peace = PNK } }
+		delete_unit_template_and_units = {
+   			division_template = "Hippie Liberation Army"
+		}
+	}
+}
+#Боевая готовность Переход границы
+country_event = {
+	id = afgan.7
+	title = afgan.7.t
+	desc = afgan.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.7.a
+		country_event = { id = afgan.8 days = 3 random_days = 2 }
+    }
+}
+#Захват регионов
+country_event = {
+	id = afgan.8
+	title = afgan.8.t
+	desc = afgan.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.8.a
+		transfer_state = 102
+		transfer_state = 95
+		add_political_power = 40
+		add_stability = 0.01
+		PNK = {	add_opinion_modifier = { target = AFG modifier = holds_our_claims } }
+    }
+}
+country_event = {
+	id = afgan.9
+	title = afgan.9.t
+	desc = afgan.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.9.a
+			add_ideas = ambicii
+			if = {
+				limit = { has_country_leader_with_trait = speedrunner_6 }
+				remove_country_leader_trait = speedrunner_6
+			}
+			if = {
+				limit = { has_country_leader_with_trait = speedrunner_5 }
+				remove_country_leader_trait = speedrunner_5
+			}
+			if = {
+				limit = { has_country_leader_with_trait = speedrunner_7 }
+				remove_country_leader_trait = speedrunner_7
+			}
+    }
+}
+country_event = {
+	id = afgan.10
+	title = afgan.10.t
+	desc = afgan.10.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	option = {
+		name = afgan.10.a
+		add_stability = -0.01
+    }
+	option = {
+		name = afgan.10.b
+		add_state_core = 101
+		add_political_power = -50
+		101 = {
+			add_extra_state_shared_building_slots = 15
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+    }
+}
+country_event = {
+	id = afgan.11
+	title = afgan.11.t
+	desc = afgan.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+    is_triggered_only = yes	
+	trigger = { 
+		tag = AFG 
+		has_war_with = AZR  
+		country_exists = KAZ
+		AZR = {
+		is_in_faction = no
+		}
+	}
+	immediate = {
+		KAZ = {
+			add_to_faction = AZR
+		}
+	}
+	option = {
+		name = afgan.11.a
+    }
+}

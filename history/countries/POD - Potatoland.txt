@@ -46,7 +46,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Potato Fritz"
+    name = "Картофельный Фриц"
     desc = ""
     picture = "Portrait_Kar_Fric.dds"
     expire = "1965.1.1"
@@ -57,7 +57,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Potato Lukashenko"
+    name = "Картофельный Лукашенко"
     desc = ""
     picture = "Portrait_Pod_Luk.dds"
     expire = "1965.1.1"
@@ -68,7 +68,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Potato Fries"
+    name = "Картофель Фри"
     desc = ""
     picture = "Portrait_Kar_Dem.dds"
     expire = "1965.1.1"
@@ -77,6 +77,4 @@ create_country_leader = {
         #
     }
 }
-
-
 

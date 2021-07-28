@@ -1,0 +1,104 @@
+iconType = {
+				name ="Super_Event_Image_evrazia_a"
+				spriteType = "GFX_super_event_custom_evrazia_a"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_ak"
+				spriteType = "GFX_super_event_custom_evrazia_ak"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_al"
+				spriteType = "GFX_super_event_custom_evrazia_al"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_an"
+				spriteType = "GFX_super_event_custom_evrazia_an"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_k"
+				spriteType = "GFX_super_event_custom_evrazia_k"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_kl"
+				spriteType = "GFX_super_event_custom_evrazia_kl"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_l"
+				spriteType = "GFX_super_event_custom_evrazia_l"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_lg"
+				spriteType = "GFX_super_event_custom_evrazia_lg"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_n"
+				spriteType = "GFX_super_event_custom_evrazia_n"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_nk"
+				spriteType = "GFX_super_event_custom_evrazia_nk"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_evrazia_nl"
+				spriteType = "GFX_super_event_custom_evrazia_nl"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_letov_wins"
+				spriteType = "GFX_super_event_custom_letov_wins"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+
+			iconType = {
+				name ="Super_Event_Image_putin_wins"
+				spriteType = "GFX_super_event_custom_putin_wins"
+				position = { x = -217 y = -190 }
+				alwaystransparent = yes
+				Orientation = center
+			}
+			

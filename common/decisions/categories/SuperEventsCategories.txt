@@ -1,4 +1,4 @@
-etm_se_settings_d_category = {
+eaw_se_settings_d_category = {
 	icon = mtg_naval_treaties
 	visible = {}
 }

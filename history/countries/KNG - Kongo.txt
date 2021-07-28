@@ -41,9 +41,15 @@ set_popularities = {
 	pahanism = 31
 }
 create_country_leader = {
-    name = "Andrey Chikatilo" 
+    name = "Андрей Чикатило" 
     desc = ""
     picture = "Chika.dds"
-    expire = "1965.1.1"
     ideology = nazi 
+}
+create_country_leader = {
+    name = "Кот Леопольд" 
+    desc = ""
+    picture = "Leopold.dds"
+    ideology = despopahanizm
+
 }

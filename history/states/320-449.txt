@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = PLA
+		victory_points = { 16704 10 }
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1

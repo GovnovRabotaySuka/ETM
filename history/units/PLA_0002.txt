@@ -1,6 +1,5 @@
 ﻿division_template = {
-	name = "Strelkovaya Diviziya"			# Rifle Division
-	division_names_group = SOV_INF_01
+	name = "Strelkovaya Diviziya"			
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,7 +19,167 @@
 	}
 }
 
+division_template = {
+	name = "Musor"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
 units = {			
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}				
+	division= {	
+		location = 13857
+		division_template = "Musor"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+	}			
 	division= {	
 		location = 15374
 		division_template = "Strelkovaya Diviziya"

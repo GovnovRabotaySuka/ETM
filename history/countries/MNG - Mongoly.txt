@@ -30,7 +30,7 @@ set_technology = {
 }
 
 set_politics = {
-	ruling_party = burjuism
+	ruling_party = bidlo
 	last_election = "0001.1.1" 
 	election_frequency = 48 
 	elections_allowed = no 
@@ -44,9 +44,19 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Chingizhan" 
+    name = "Чингисхан II" 
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "Ungern.dds"
     expire = "1965.1.1"
-    ideology = bidlo
+    ideology = nazi
 }
+create_field_marshal = {
+	name = "Чингисхан II"
+	picture = "Ungern.dds"
+	traits = { trait_reckless }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 5
+	logistics_skill = 1
+}	

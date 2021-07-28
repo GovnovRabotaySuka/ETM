@@ -104,7 +104,7 @@ create_field_marshal = {
 }
 create_field_marshal = {
 	name = "Эдуард Лимонов"
-	picture = "LET_portaint_1.dds"
+	picture = "LET_portrait_1.dds"
 	traits = { siberian_war_hero offensive_doctrine urban_assault_specialist trickster guerilla_fighter }
 	skill = 4
 	attack_skill = 3
@@ -114,7 +114,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
 	name = "Кузя 'УО' Рябинов"
-	picture = "LET_portaint_2.dds"
+	picture = "LET_portrait_2.dds"
 	traits = { grob siberian_war_hero urban_assault_specialist guerilla_fighter infantry_leader }
 	skill = 4
 	attack_skill = 1
@@ -124,7 +124,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Игорь Жевтун"
-	picture = "LET_portaint_3.dds"
+	picture = "LET_portrait_3.dds"
 	traits = { ranger infantry_leader guerilla_fighter siberian_war_hero grob }
 	skill = 4
 	attack_skill = 2
@@ -134,7 +134,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Евгений 'Махно' Пьянов"
-	picture = "LET_portaint_4.dds"
+	picture = "LET_portrait_4.dds"
 	traits = { siberian_war_hero grob cavalry_leader trait_engineer scavenger }
 	skill = 3
 	attack_skill = 4
@@ -144,7 +144,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Наталья Чумакова"
-	picture = "LET_portaint_5.dds"
+	picture = "LET_portrait_5.dds"
 	traits = { infantry_leader siberian_war_hero grob urban_assault_specialist }
 	skill = 3
 	attack_skill = 2
@@ -154,7 +154,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Сергей Летов"
-	picture = "LET_portaint_6.dds"
+	picture = "LET_portrait_6.dds"
 	traits = { infantry_leader ranger siberian_war_hero grob organizer }
 	skill = 3
 	attack_skill = 1
@@ -164,7 +164,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Дмитрий Язов"
-	picture = "LET_portaint_7.dds"
+	picture = "LET_portrait_7.dds"
 	traits = { organizer urban_assault_specialist siberian_war_hero skilled_staffer }
 	skill = 3
 	attack_skill = 4
@@ -214,7 +214,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Буэнавентура Дуррути"
-	picture = "LET_portaint_12.dds"
+	picture = "LET_portrait_12.dds"
 	traits = { urban_assault_specialist infantry_leader scavenger guerilla_fighter organizer siberian_war_hero }
 	skill = 5
 	attack_skill = 4
@@ -224,7 +224,7 @@ create_corps_commander = {
 }
 create_corps_commander = {
 	name = "Бэнес Айо"
-	picture = "LET_portaint_13.dds"
+	picture = "LET_portrait_13.dds"
 	traits = { urban_assault_specialist infantry_leader desert_fox siberian_war_hero }
 	skill = 4
 	attack_skill = 3

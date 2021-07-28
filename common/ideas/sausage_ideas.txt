@@ -48,5 +48,135 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
+		
+		SAU_clamp_down_on_fascism = {
+		
+			allowed = {
+				original_tag = SAU
+			}
+
+			removal_cost = -1
+
+			picture = generic_oppression
+
+			modifier = {
+				bidlo_drift = -0.05
+			}
+		}
+		
+		SAU_make_doctorreich = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = borshewism
+			}
+
+			removal_cost = -1
+
+			picture = GER_make_revoltreich
+
+			modifier = {
+				borshewism_drift = 0.25
+				drift_defence_factor = 0.5
+				join_faction_tension = 0.15
+				lend_lease_tension = 0.15
+				send_volunteers_tension = 0.15
+			}
+		}
+		
+		GER_the_great_nauka = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = borshewism
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		GER_naz_mobil = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = borshewism
+			}
+			removal_cost = -1
+			
+			picture = generic_communist_army
+
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.10
+			}
+		}
+		
+		GER_collectiv = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = borshewism
+			}
+
+			removal_cost = -1
+
+			picture = jap_the_unthinkable_option
+
+			modifier = {
+				political_power_factor = 0.25
+			}
+		}
+		
+		GER_revolt_liderstvo = {
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = borshewism
+			}
+
+			removal_cost = -1
+
+			picture = home_of_the_trozkism
+
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		
+		GER_bulwark_against_bolshevism = {
+
+			available = {
+				has_government = borshewism 
+			}
+
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			picture = ger_bulwark_against_bolshevism
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
 	}
 }

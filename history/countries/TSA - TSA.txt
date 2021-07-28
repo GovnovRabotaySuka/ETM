@@ -24,3 +24,10 @@ set_popularities = {
 	borshewism = 5
 	pahanism = 55
 }
+create_country_leader = {
+	name = "Реджеп I"
+	desc = ""
+	picture = "Erdogan.dds"
+	expire = "1965.1.1"
+	ideology = despopahanism  
+}

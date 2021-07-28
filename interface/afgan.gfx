@@ -1,0 +1,66 @@
+spriteTypes = {	
+	SpriteType = {
+	name = "GFX_focus_AFG"
+	texturefile = "gfx/icons/focus_AFG.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_ideas_AFG"
+	texturefile = "gfx/icons/ideas_AFG.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_kalyan"
+	texturefile = "gfx/icons/kalyan.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_fodi_s"
+	texturefile = "gfx/icons/fodi_s.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_mazdar_s"
+	texturefile = "gfx/icons/mazdar_s.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_mik_s"
+	texturefile = "gfx/icons/mik_s.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_MRG_s"
+	texturefile = "gfx/icons/MRG_s.dds"			
+	}
+	SpriteType = {
+	name = "GFX_idea_benito_s"
+	texturefile = "gfx/icons/benito_s.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_focus_AFG_shine"
+		texturefile = "gfx/icons/focus_AFG.dds"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/icons/focus_AFG.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 2.0 y = 1.0 } 
+		}
+
+		animation = {
+			animationmaskfile = "gfx/icons/focus_AFG.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+}

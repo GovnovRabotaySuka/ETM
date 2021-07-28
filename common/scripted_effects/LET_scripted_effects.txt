@@ -1,0 +1,287 @@
+#Важно ставить НАИБОЛЬШИЕ нац духи первыми
+#Повышение уровня
+LET_Edinstvo_increase = {
+	custom_effect_tooltip = LET_Edinstvo_increase_tt
+	hidden_effect = {
+		if = {
+			limit = { has_idea = LET_Edinstvo_9 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_9
+			add_idea = LET_Edinstvo_10
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_8 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_8
+			add_idea = LET_Edinstvo_9
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_7 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_7
+			add_idea = LET_Edinstvo_8
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_6 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_6
+			add_idea = LET_Edinstvo_7
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_5 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_5
+			add_idea = LET_Edinstvo_6
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_4 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_4
+			add_idea = LET_Edinstvo_5
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_3 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_3
+			add_idea = LET_Edinstvo_4
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_2 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_2
+			add_idea = LET_Edinstvo_3
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_1 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_1
+			add_idea = LET_Edinstvo_2
+			}
+		}
+	}
+}
+
+
+
+#Важно ставить НАИМЕНЬШИЕ нац духи первыми
+#Понижение уровня
+LET_Edinstvo_dincrease = {
+	custom_effect_tooltip = LET_Edinstvo_dincrease_tt
+	hidden_effect = {
+		if = {
+			limit = { has_idea = LET_Golod_2 }
+			swap_ideas = {
+			remove_idea = LET_Edinstvo_2
+			add_idea = LET_Edinstvo_1
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_3 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_3
+				add_idea = LET_Edinstvo_2
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_4 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_4
+				add_idea = LET_Edinstvo_3
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_5 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_5
+				add_idea = LET_Edinstvo_4
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_6 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_6
+				add_idea = LET_Edinstvo_5
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_7 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_7
+				add_idea = LET_Edinstvo_6
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_8 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_8
+				add_idea = LET_Edinstvo_7
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_9 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_9
+				add_idea = LET_Edinstvo_8
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Edinstvo_10 }
+			swap_ideas = {
+				remove_idea = LET_Edinstvo_10
+				add_idea = LET_Edinstvo_9
+			}
+		}
+	}
+}
+#Важно ставить НАИБОЛЬШИЕ нац духи первыми
+#Повышение уровня
+LET_Golod_increase = {
+	custom_effect_tooltip = LET_Golod_increase_tt
+		if = {
+			limit = { has_idea = LET_Golod_9 }
+			swap_ideas = {
+			remove_idea = LET_Golod_9
+			add_idea = LET_Golod_10
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_8 }
+			swap_ideas = {
+			remove_idea = LET_Golod_8
+			add_idea = LET_Golod_9
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_7 }
+			swap_ideas = {
+			remove_idea = LET_Golod_7
+			add_idea = LET_Golod_8
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_6 }
+			swap_ideas = {
+			remove_idea = LET_Golod_6
+			add_idea = LET_Golod_7
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_5 }
+			swap_ideas = {
+			remove_idea = LET_Golod_5
+			add_idea = LET_Golod_6
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_4 }
+			swap_ideas = {
+			remove_idea = LET_Golod_4
+			add_idea = LET_Golod_5
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_3 }
+			swap_ideas = {
+			remove_idea = LET_Golod_3
+			add_idea = LET_Golod_4
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_2 }
+			swap_ideas = {
+			remove_idea = LET_Golod_2
+			add_idea = LET_Golod_3
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_1 }
+			swap_ideas = {
+			remove_idea = LET_Golod_1
+			add_idea = LET_Golod_2
+			}
+		}
+}
+#Важно ставить НАИМЕНЬШИЕ нац духи первыми
+#Понижение уровня
+LET_Golod_dincrease = {
+	custom_effect_tooltip = LET_Golod_dincrease_tt
+		if = {
+			limit = { has_idea = LET_Golod_2 }
+			swap_ideas = {
+			remove_idea = LET_Golod_2
+			add_idea = LET_Golod_1
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_3 }
+			swap_ideas = {
+				remove_idea = LET_Golod_3
+				add_idea = LET_Golod_2
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_4 }
+			swap_ideas = {
+				remove_idea = LET_Golod_4
+				add_idea = LET_Golod_3
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_5 }
+			swap_ideas = {
+				remove_idea = LET_Golod_5
+				add_idea = LET_Golod_4
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_6 }
+			swap_ideas = {
+				remove_idea = LET_Golod_6
+				add_idea = LET_Golod_5
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_7 }
+			swap_ideas = {
+				remove_idea = LET_Golod_7
+				add_idea = LET_Golod_6
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_8 }
+			swap_ideas = {
+				remove_idea = LET_Golod_8
+				add_idea = LET_Golod_7
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_9 }
+			swap_ideas = {
+				remove_idea = LET_Golod_9
+				add_idea = LET_Golod_8
+			}
+		}
+		if = {
+			limit = { has_idea = LET_Golod_10 }
+			swap_ideas = {
+				remove_idea = LET_Golod_10
+				add_idea = LET_Golod_9
+			}
+		}
+}
+LET_communar_increase = {
+	add_to_variable = { LET_communar = 1 } 
+	add_to_variable = { LET_anarchism = -1 } 
+}
+LET_anarchism_increase = {
+	add_to_variable = { LET_anarchism = 1 } 
+	add_to_variable = { LET_communar = -1 } 
+}
