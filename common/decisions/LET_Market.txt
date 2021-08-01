@@ -11,7 +11,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 180
+		days_re_enable = 50
 		complete_effect = {
 			ROOT = { add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 } }
 		}
@@ -25,7 +25,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 90
+		days_re_enable = 50
 		complete_effect = {
 			ROOT = { add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 } }
 		}
@@ -39,7 +39,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 90
+		days_re_enable = 50
 		complete_effect = {
 			ROOT = { add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 } }
 		}
@@ -53,6 +53,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
+		days_re_enable = 50
 		complete_effect = {
 			ROOT = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 250 } }
 		}
@@ -75,6 +76,7 @@ LET_weapons_buy_cat = {
 			original_tag = LET
 		}
 		fire_only_once = no
+		days_re_enable = 50
 		complete_effect = {
 			ROOT = { add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 25 } }
 		}
@@ -91,6 +93,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
+		days_re_enable = 50
 		complete_effect = {
 			add_manpower = 2500
 		}
@@ -107,7 +110,7 @@ LET_weapons_buy_cat = {
 		}
 
 		fire_only_once = no
-		days_re_enable = 60
+		days_re_enable = 180
 		complete_effect = {
 			add_tech_bonus = {
 				name = electronics_bonus

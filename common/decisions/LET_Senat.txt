@@ -194,8 +194,8 @@ LET_Senat = {
 		}
 
 		remove_effect = {
-		add_stability = 0.05
 		clr_country_flag = LET_resheniye
+		add_stability = 0.05
 		custom_effect_tooltip = "Единство Совета немного возрастёт!"
 		hidden_effect = {
 			LET_Edinstvo_increase = yes

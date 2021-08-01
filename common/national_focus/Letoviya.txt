@@ -1247,7 +1247,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			
+			country_event = let.30
 		}
 	}
 	focus = {
@@ -1417,6 +1417,9 @@ focus_tree = {
 		id = LET_18
 		icon = GFX_focus_collectivist_ethos_focus
 		prerequisite = { focus = LET_16 focus = LET_17 }
+		available = {
+			NOT = { country_exists = PLA }
+		}
 		x = 0
 		y = 16
 		cost = 2

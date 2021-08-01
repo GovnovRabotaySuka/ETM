@@ -2,7 +2,7 @@ LET_war_on_golod = {
     Golod_Rastyot = {
 
 		icon = GFX_decision_icon_default
-		days_mission_timeout = 90
+		days_mission_timeout = 75
 		is_good = no
 		
 		available = {
@@ -75,11 +75,15 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_8
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
-			} 
+			}
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
         cost = 650
 		fire_only_once = no
-		days_remove = 60
+		days_remove = 15
+		days_re_enable = 15
 		modifier = {
 			political_power_factor = -0.15
 			stability_factor = -0.05
@@ -89,7 +93,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_1
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
+		
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод немного снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -129,12 +139,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 650
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 15
+		days_re_enable = 15
 
 		modifier = {
 			political_power_factor = 0.15
@@ -146,8 +160,17 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_1
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод немного снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -183,12 +206,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 650
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 15
+		days_re_enable = 15
 
 		modifier = {
 			consumer_goods_factor = 0.05
@@ -199,8 +226,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_1
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+		    clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод немного снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -266,12 +298,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 650
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 15
+		days_re_enable = 15
 
 		modifier = {
 			political_power_factor = 0.05
@@ -283,8 +319,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_1
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод немного снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -320,12 +361,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1300
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 30
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -338,8 +383,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_3
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Влияние анархистов немного возрастёт!"
 			hidden_effect = {
 				LET_anarchism_increase = yes
@@ -438,12 +488,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1950
 
 		fire_only_once = no
 
-		days_remove = 90
+		days_remove = 45
+		days_re_enable = 45
 
 		modifier = {
 			consumer_goods_factor = 0.15
@@ -456,8 +510,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_6
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Влияние анархистов немного возрастёт!"
 			hidden_effect = {
 				LET_anarchism_increase = yes
@@ -508,12 +567,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1300
 
 		fire_only_once = no
 
-		days_remove = 75
+		days_remove = 30
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = -0.15
@@ -526,8 +589,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_5
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -622,12 +690,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1950
 
 		fire_only_once = no
 
-		days_remove = 90
+		days_remove = 45
+		days_re_enable = 45
 
 		modifier = {
 			consumer_goods_factor = -0.15
@@ -640,8 +712,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_8
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод сильно снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -692,12 +769,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1300
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 30
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = -0.1
@@ -710,8 +791,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_4
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -748,12 +834,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1820
 
 		fire_only_once = no
 
-		days_remove = 75
+		days_remove = 45
+		days_re_enable = 45
 
 		modifier = {
 			consumer_goods_factor = -0.15
@@ -766,8 +856,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_7
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Голод сильно снизится!"
 			hidden_effect = {
 			    LET_Golod_dincrease = yes
@@ -805,12 +900,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1300
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 30
+		days_re_enable = 30
 
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -822,8 +921,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_7
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Влияние коммунариев немного возрастёт!"
 			hidden_effect = {
 				LET_communar_increase = yes
@@ -891,12 +995,16 @@ LET_war_on_golod = {
 			has_idea = LET_Golod_9
 			has_idea = LET_Golod_10
 			} 
+			NOT = {
+				has_country_flag = LET_golod
+			}
 		}
 		cost = 1950
 
 		fire_only_once = no
 
-		days_remove = 60
+		days_remove = 45
+		days_re_enable = 45
 
 		modifier = {
 			consumer_goods_factor = 0.1
@@ -908,8 +1016,13 @@ LET_war_on_golod = {
 			tag = LET
 			has_completed_focus = LET_C_7
 		}
+		
+		complete_effect = {
+			set_country_flag = LET_golod
+		}
 
 		remove_effect = {
+			clr_country_flag = LET_golod
 			custom_effect_tooltip = "Влияние коммунариев немного возрастёт!"
 			hidden_effect = {
 				LET_communar_increase = yes
