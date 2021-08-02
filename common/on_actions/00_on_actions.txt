@@ -1,23 +1,121 @@
 on_actions = {
-on_startup = {
-	effect = { 
-		every_country = {
-			division_template = {
-				name = "Это шаблон, таких шаблонов много, но этот мой!"
-				priority = 1
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
-					infantry = { x = 0 y = 4 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 1 y = 3 }
+	on_startup = {
+	
+	
+	
+		if = {
+			limit = {
+				tag = DNB
+			
+			}
+		
+		
+			#Не существует способа, как проверить месяц, поэтому будем считать его так
+			set_variable = {
+				var = what_month_it_is
+				value = 1
+			}
+		}
+		effect = { 
+			every_country = {
+			
+				division_template = {
+					name = "Это шаблон, таких шаблонов много, но этот мой!"
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
 				}
 			}
-		{
-	} 
-}
+		} 
+	}
+	on_monthly_DNB = {
+		if = {
+			limit = {
+				check_variable = {
+					var = what_month_it_is
+					value = 12
+					compare = less_than
+				}
+			
+			}
+		
+		
+			#Не существует способа, как проверить месяц, поэтому будем считать его так
+			add_to_variable = {
+				var = what_month_it_is
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = what_month_it_is
+					value = 12
+					compare = equals
+				}
+			
+			}
+		
+		
+			#Не существует способа, как проверить месяц, поэтому будем считать его так
+			set_to_variable = {
+				var = what_month_it_is
+				value = 1
+			}
+		}
+		
+		
+		
+		#Меняем трубные идеи
+		if = {
+			limit = {
+				check_variable = {
+					var = what_month_it_is
+					value = 4
+					compare = equals
+				}
+				
+				
+				has_idea = no_pipes_summer
+			
+			}
+			remove_ideas = no_pipes_summer
+			add_idea = no_pipes_frozen
+
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = what_month_it_is
+					value = 10
+					compare = equals
+				}
+				
+				
+				has_idea = no_pipes_frozen
+			
+			}
+			remove_ideas = no_pipes_frozen
+			add_idea = no_pipes_summer
+
+		}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
 }

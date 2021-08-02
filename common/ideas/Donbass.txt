@@ -11,10 +11,107 @@ ideas = {
 			}
             removal_cost = -1
 			modifier = {
-				stability_factor = -0.2
 				war_support_factor = -0.2
-				army_defence_factor = 0.05
-            }
+				
+				
+				
+				targeted_modifier = {
+					tag = PRA
+					defense_bonus_against = 0.15
+				}
+
+				#army_defence_factor = 0.05
+ 
+        	}
+		}
+
+		anarchist_bugurt = {
+			picture = idea_DNB_2
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+			#available = {
+			#	always = yes
+			#}
+            removal_cost = -1
+			modifier = {
+				stability_factor = -0.3
+				conscription_factor = -0.2
+
+           	}
+        }
+		
+		
+		no_pipes_summer = {
+			picture = idea_DNB_3
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+			#available = {
+			#	has_war = yes
+			#}
+            removal_cost = -1
+			#modifier = {
+			#	stability_factor = -0.3
+			#	conscription_factor = -0.2
+			#
+           	#}
+        }
+		
+		
+		no_pipes_frozen = {
+			picture = idea_DNB_4
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+			#available = {
+			#	has_war = yes
+			#}
+            		removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.5
+				monthly_population = -2
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.2 
+				production_speed_buildings_factor = -0.4
+			
+           	}
+        }
+		
+		
+		gop_post = {
+			picture = idea_DNB_4
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+			#available = {
+			#	has_war = yes
+			#}
+            		removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 7
+           	}
+        }
+		
+		
+		Until_the_end = {
+			picture = idea_DNB_4
+			allowed = {
+				always = yes
+				original_tag = DNB
+			}
+			#available = {
+			#	has_war = yes
+			#}
+            		removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+           	}
         }
 	}
 }

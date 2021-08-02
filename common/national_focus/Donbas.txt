@@ -1,0 +1,671 @@
+﻿focus_tree = {
+	id = italian_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DNB
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+##Pillgaing branch
+	focus = {				   
+		id = buchenvald
+		icon = GFX_buch
+		#prerequisite = { 
+		#	focus = popularity
+		#}
+		available = {
+
+		}
+		
+		bypass = {
+			NOT = {
+				OR = {
+					485 = { is_owned_and_controlled_by  = DNB }
+					484 = { is_owned_and_controlled_by  = DNB }
+				
+				}
+			
+			
+			}
+		
+		
+		}
+		mutually_exclusive = { focus = notmyfault }
+		x = 5
+		y = 1
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			#Если полностью контролируем Луганск
+			if = { 
+			
+				limit = {
+					485 = { is_fully_controlled_by = DNB }
+					
+				
+				
+				}
+				485 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11951
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11794
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11571
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11403
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11377
+				}
+				
+				}
+			
+			}
+			
+			#Если не полностью контролируем Луганск
+			if = { 
+			
+				limit = {
+				
+					AND = {
+						NOT = {
+							485 = { is_fully_controlled_by = DNB }
+						}
+						485 = { is_owned_and_controlled_by  = DNB }
+					}
+				
+				
+				}
+				
+				485 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 12571
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11950
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11732
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11570
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11502
+				}
+				
+				}
+			
+			}
+			
+			#Если полностью контролируем Донецк
+			if = { 
+			
+				limit = {
+					484 = { is_fully_controlled_by = DNB }
+					
+				
+				
+				}
+				
+				484 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11254
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 10981
+				}
+				}
+				
+			
+			}
+			#Если не полностью контролируем Донецк
+			if = { 
+			
+				limit = {
+				
+					AND = {
+						NOT = {
+							484 = { is_fully_controlled_by = DNB }
+						}
+						484 = { is_owned_and_controlled_by  = DNB }
+					}
+				
+				
+				}
+				485 = {
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11376
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11301
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 11113
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 10900
+				}
+				
+				
+				
+				
+				}
+			}
+		}
+	}
+	
+	focus = {				   
+		id = give_me_ur_lunch
+		icon = GFX_givemelunh
+		prerequisite = { 
+			focus = buchenvald
+		}
+		
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = -1#4
+		y = 1#2
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 210
+			}
+		}
+	}
+	focus = {				   
+		id = nice_car_u_hav
+		icon = GFX_nicecar
+		prerequisite = { 
+			focus = buchenvald
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 1#6
+		y = 1#2
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = gw_armored_car_equipment
+				amount = 250
+			}
+			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+			
+		}
+	}
+	focus = {				   
+		id = pipies_can_shoot_too
+		icon = GFX_pipes
+		prerequisite = { 
+			focus = give_me_ur_lunch
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = -1#4
+		y = 2#3
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 110
+			}
+		
+		
+		
+		
+			#if = {
+			#	limit = {
+			#		AND = {
+			#			check_variable = {
+			#				var = what_month_it_is
+			#				value = 3
+			#				compare = greater_than
+			#			}
+			#			check_variable = {
+			#				var = what_month_it_is
+			#				value = 10
+			#				compare = less_than
+			#			}
+			#		
+			#		
+			#		}
+			#	
+			#	
+			#	
+			#	}
+				add_ideas = no_pipes_summer
+			#
+			#
+			#}
+			#if = {
+			#	limit = {
+			#		OR = {
+			#			check_variable = {
+			#				var = what_month_it_is
+			#				value = 3
+			#				compare = less_than_or_equals
+			#			}
+			#			check_variable = {
+			#				var = what_month_it_is
+			#				value = 10
+			#				compare = greater_than_or_equals
+			#			}
+			#		
+			#		
+			#		}
+			#	
+			#	
+			#	
+			#	}
+			#	add_ideas = no_pipes_frozen
+			#
+			#
+			#}
+			
+
+		}
+		
+		
+		
+	}
+	focus = {				   
+		id = uroki_truda
+		icon = GFX_trudis
+		prerequisite = { 
+			focus = nice_car_u_hav
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 1
+		y = 2
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}
+	focus = {				   
+		id = ploti_nolog
+		icon = GFX_nologi
+		prerequisite = { 
+			focus = uroki_truda
+		}
+		prerequisite = { 
+			focus = pipies_can_shoot_too
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 0
+		y = 3
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_political_power = 4000
+		}
+	}
+	
+	focus = {				   
+		id = let_them_go
+		icon = GFX_gonna_give_you_up
+		prerequisite = { 
+			focus = ploti_nolog
+		}
+		available = {
+			has_war_with = MAH
+		}
+		mutually_exclusive = { focus = not_surennder }
+		relative_position_id = buchenvald
+		x = 0
+		y = 4
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			whitepeace = MAH
+		}
+	}
+	
+	
+	#Ветка на уговоры
+	focus = {				   
+		id = notmyfault
+		icon = GFX_its_all_them
+		#prerequisite = { 
+		#	focus = popularity
+		#}
+		available = {
+
+		}
+		mutually_exclusive = { focus = buchenvald }
+		
+		relative_position_id = buchenvald
+		x = 3
+		y = 0
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	focus = {				   
+		id = stukachi
+		icon = GFX_stuk
+		prerequisite = { 
+			focus = notmyfault
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 3
+		y = 1
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			create_intelligence_agency = {
+				name = "МГБ"
+			}
+		}
+	}
+	focus = {				   
+		id = ti_borshevik
+		icon = GFX_oblavi
+		prerequisite = { 
+			focus = stukachi
+		}
+		
+		
+		bypass = {
+			NOT = {
+				has_idea = anarchist_bugurt
+			
+			
+			}
+		
+		
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 3
+		y = 2
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+			}
+		}
+	}
+	focus = {				   
+		id = gop_stop
+		icon = GFX_mi_podoshli_iz_za_ugla
+		prerequisite = { 
+			focus = notmyfault
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 5
+		y = 1
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = gop_post
+		}
+	}
+	focus = {				   
+		id = glyanem_vidosiki
+		icon = GFX_chto_tam_u_nas
+		prerequisite = { 
+			focus = notmyfault
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 7
+		y = 1
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 200
+		}
+	}
+	focus = {				   
+		id = astra_militaris
+		icon = GFX_motorola_zhiv
+		prerequisite = { 
+			focus = glyanem_vidosiki
+		}
+		prerequisite = { 
+			focus = gop_stop
+		}
+		prerequisite = { 
+			focus = ti_borshevik
+		}
+		available = {
+
+		}
+		#mutually_exclusive = { focus = national }
+		relative_position_id = buchenvald
+		x = 5
+		y = 3
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			division_template = {
+				name = "Спецы"
+				is_locked = yes
+				priority = 1
+				template_counter = 0
+				regiments = {
+					paratrooper = { x = 0 y = 0 }
+					paratrooper = { x = 0 y = 1 }
+					paratrooper = { x = 1 y = 0 }
+					paratrooper = { x = 1 y = 1 }
+					paratrooper = { x = 2 y = 0 }
+					paratrooper = { x = 2 y = 1 }
+					paratrooper = { x = 3 y = 0 }
+					paratrooper = { x = 3 y = 1 }
+
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Банда Моторолы\" division_template = \"Спецы\" start_experience_factor = 3 start_equipment_factor = 1"
+					owner = DNB
+				}
+				
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Банда Моторолы\" division_template = \"Спецы\" start_experience_factor = 3 start_equipment_factor = 1"
+					owner = DNB
+				}
+				
+			}
+		}
+	}
+	focus = {				   
+		id = screw_this_don
+		icon = GFX_screw_this
+		prerequisite = { 
+			focus = astra_militaris
+		}
+		available = {
+			has_war_with = PRA
+		}
+		mutually_exclusive = { focus = not_surennder }
+		relative_position_id = buchenvald
+		x = 4
+		y = 4
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			whitepeace = PRA
+		}
+	}
+	focus = {				   
+		id = not_surennder
+		icon = GFX_wont_surrender
+		prerequisite = { 
+			focus = astra_militaris
+			focus = ploti_nolog
+		}
+		available = {
+
+		}
+		mutually_exclusive = { focus = screw_this_don }
+		mutually_exclusive = { focus = let_them_go }
+		relative_position_id = buchenvald
+		x = 2
+		y = 4
+		cost = 4
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		#available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = Until_the_end
+				days = 180
+			}
+		}
+	}
+	
+
+
+
+}
