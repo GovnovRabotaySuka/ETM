@@ -4,6 +4,10 @@ LET_Edinstvo_increase = {
 	custom_effect_tooltip = LET_Edinstvo_increase_tt
 	hidden_effect = {
 		if = {
+			limit = { has_idea = LET_Edinstvo_10 }
+			add_political_power = 1000
+		}
+		if = {
 			limit = { has_idea = LET_Edinstvo_9 }
 			swap_ideas = {
 			remove_idea = LET_Edinstvo_9
@@ -77,6 +81,10 @@ LET_Edinstvo_dincrease = {
 	custom_effect_tooltip = LET_Edinstvo_dincrease_tt
 	hidden_effect = {
 		if = {
+			limit = { has_idea = LET_Golod_1 }
+			add_political_power = -1000
+		}
+		if = {
 			limit = { has_idea = LET_Golod_2 }
 			swap_ideas = {
 			remove_idea = LET_Edinstvo_2
@@ -146,6 +154,9 @@ LET_Edinstvo_dincrease = {
 LET_Golod_increase = {
 	custom_effect_tooltip = LET_Golod_increase_tt
 		if = {
+			limit = { has_idea = LET_Golod_10 }
+		}
+		if = {
 			limit = { has_idea = LET_Golod_9 }
 			swap_ideas = {
 			remove_idea = LET_Golod_9
@@ -213,6 +224,9 @@ LET_Golod_increase = {
 #Понижение уровня
 LET_Golod_dincrease = {
 	custom_effect_tooltip = LET_Golod_dincrease_tt
+		if = {
+			limit = { has_idea = LET_Golod_1 }
+		}
 		if = {
 			limit = { has_idea = LET_Golod_2 }
 			swap_ideas = {
