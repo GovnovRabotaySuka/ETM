@@ -43,5 +43,5 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Plastic_Putin.dds"
 	expire = "1953.3.1"
-	ideology = putinism
+	ideology = imperial_putinism
 }

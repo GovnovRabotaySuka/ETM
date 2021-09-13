@@ -6,10 +6,15 @@ state={
 	manpower = 15000000
 	
 	state_category = rural
-
+    resources = {
+	             tungsten = 9
+	}
 	history={
 		owner = MEE
-
+		victory_points = {
+			              15263 15 }
+		victory_points = {				  
+			              15074 5 }
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1

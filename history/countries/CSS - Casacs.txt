@@ -40,19 +40,19 @@ create_country_leader = {
 	desc = ""
 	picture = "Octane.dds"
 	expire = "1965.1.1"
-	ideology = putinism 
+	ideology = imperial_putinism 
 }
 create_country_leader = {
 	name = "Evdokia Bershanskaya"
 	desc = ""
 	picture = "Evdokia.dds"
 	expire = "1965.1.1"
-	ideology = anarhoborshevism
+	ideology = socialanarchism
 }
 create_country_leader = {
 	name = "Vasily Boldyrev"
 	desc = ""
 	picture = "Vasily.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }

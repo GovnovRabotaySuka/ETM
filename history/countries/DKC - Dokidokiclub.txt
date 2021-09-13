@@ -35,7 +35,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "monikabu.dds"
 	expire = "1965.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -46,7 +46,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "monikaborshewism.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -57,7 +57,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "monikabidlo.dds"
 	expire = "1965.1.1"
-	ideology = nazbol
+	ideology = naziborshewism
 	traits = {
 		
 	}
@@ -68,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "monika.dds"
 	expire = "1965.1.1"
-	ideology = modepahanism
+	ideology = socdem
 	traits = {
 		
 	}

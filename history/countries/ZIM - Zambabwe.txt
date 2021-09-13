@@ -49,7 +49,7 @@ create_country_leader = {
 	name = "Siegfried Müller"
 	desc = ""
 	picture = "Kongo_Muller.dds"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }
 
 create_country_leader = {

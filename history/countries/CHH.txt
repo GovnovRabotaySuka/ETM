@@ -27,7 +27,7 @@ create_country_leader = {
     desc = ""
     picture = "Shaman.dds"
     expire = "1965.1.1"
-    ideology = liberaha
+    ideology = zoomerism
     traits = {
         #
     }
@@ -37,7 +37,7 @@ create_country_leader = {
     desc = ""
     picture = "Shaman_p.dds"
     expire = "1965.1.1"
-    ideology = putinism
+    ideology = imperial_putinism
     traits = {
         #
     }
@@ -47,7 +47,7 @@ create_country_leader = {
     desc = ""
     picture = "Shaman_pa.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = socdem
     traits = {
         #
     }
@@ -67,7 +67,7 @@ create_country_leader = {
     desc = ""
     picture = "Shaman_b.dds"
     expire = "1965.1.1"
-    ideology = anarhoborshevism
+    ideology = socialanarchism
     traits = {
         #
     }

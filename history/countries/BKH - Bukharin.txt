@@ -27,7 +27,7 @@ create_country_leader = {
 	name = "Nikolay Bukharin"
 	desc = ""
 	picture = "bukharin.dds"
-	ideology = gribonism
+	ideology = leninism
 }
 
 create_country_leader = {

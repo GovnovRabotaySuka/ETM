@@ -22,5 +22,5 @@ create_country_leader = {
 	name = "Хипарь"
 	desc = ""
 	picture = "hip.dds"
-	ideology = liberaha
+	ideology = zoomerism
 }

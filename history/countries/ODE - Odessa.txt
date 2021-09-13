@@ -70,7 +70,7 @@ create_country_leader = {
  desc = "ULIY_DESC"
  picture = "Zaharchenko.dds"
  expire = "1989.1.1"
- ideology = liberaha
+ ideology = zoomerism
  traits = { hero_ato }
 }
 create_country_leader = {
@@ -78,7 +78,7 @@ create_country_leader = {
  desc = "VLADIMIR_DESC"
  picture = "Victor_Yanukovich.dds"
  expire = "1989.1.1"
- ideology = despopahanism
+ ideology = typicalauthoritarism
  traits = { hero_ato }
 }
 create_country_leader = {																		

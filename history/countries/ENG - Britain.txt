@@ -7,7 +7,7 @@ create_country_leader = {
 	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
 	picture = "Portrait_Britain_Neville_Chamberlain.dds"
 	expire = "1965.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -40,7 +40,7 @@ create_country_leader = {
 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
 	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
 	expire = "1938.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -51,7 +51,7 @@ create_country_leader = {
 #	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
 #	picture = "Portrait_Britain_Neville_Chamberlain.dds"
 #	expire = "1965.1.1"
-#	ideology = liberaha
+#	ideology = zoomerism
 #	traits = {
 #		
 #	}
@@ -73,7 +73,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_POLLITT_DESC"
 	picture = "portrait_eng_harry_pollitt.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -84,7 +84,7 @@ create_country_leader = {
 #	desc = "POLITICS_PALME_DUTT_DESC"
 #	picture = "Portrait_Britain_Palme_Dutt.dds"
 #	expire = "1965.1.1"
-#	ideology = gribonism
+#	ideology = leninism
 #	traits = {
 #		
 #	}
@@ -95,7 +95,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -117,7 +117,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -128,7 +128,7 @@ create_country_leader = {
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 	traits = {
 
 	}

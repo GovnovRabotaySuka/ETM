@@ -26,7 +26,7 @@ create_country_leader = {
     desc = ""
     picture = "Izvenis.dds"
     expire = "1965.1.1"
-    ideology = putinism
+    ideology = imperial_putinism
     traits = {
         #
     }

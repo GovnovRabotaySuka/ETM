@@ -7,11 +7,17 @@ state={
 
 	state_category = city
 
+	resources={
+		rubber = 7
+	}
 	history={
 		owner = POP
 		victory_points = {
-			 9185 50
+			 9185 90
 		}
+		victory_points = {
+			 9106 5
+		}		
 		buildings = {
 			infrastructure = 8
 			air_base = 8

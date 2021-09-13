@@ -8,18 +8,24 @@ state={
 
 	history={
 		owner = SWI
+		victory_points = {
+			11109 10 
+		}
+		victory_points = {
+			10955 5 
+		}		
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 			anti_air_building = 5
 			10955 = {
-				bunker = 9
+				bunker = 1
 			}
 			11034 = {
-				bunker = 9
+				bunker = 1
 			}
 			11109 = {
-				bunker = 9
+				bunker = 1
 			}
 		}
 		add_core_of = SWI

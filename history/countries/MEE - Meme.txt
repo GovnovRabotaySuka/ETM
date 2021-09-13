@@ -53,7 +53,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Pepe_Komunistov.dds"
 	expire = "1965.1.1"
-	ideology = gribonism 
+	ideology = leninism 
 	traits = {
 		#
 	}
@@ -75,7 +75,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_Pepe_Neytralov.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism  
+	ideology = typicalauthoritarism  
 	traits = {
 		#
 	}

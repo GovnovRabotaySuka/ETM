@@ -3,19 +3,27 @@ state={
 	id=604
 	name="STATE_604"
 	manpower = 6004000
-	
+	resources={
+		tungsten = 55
+	}	
 	state_category = metropolis
 
 	history={
 		owner = TSA
 		victory_points = {
-			8908 50
+			8908 100
 		}
+		victory_points = {
+			9079 20
+		}		
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 3
 			arms_factory = 3
-
+			dockyard = 10
+			8908 ={ 
+			naval_base = 9
+		}
 		}
 		add_core_of = TSA
 	}

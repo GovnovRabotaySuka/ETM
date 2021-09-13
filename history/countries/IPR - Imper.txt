@@ -45,5 +45,5 @@ if = {
 create_country_leader = {
 	name = "Titus Mede II"
 	picture = "Titus_Mede_II.dds"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }

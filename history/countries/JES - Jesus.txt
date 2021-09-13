@@ -26,7 +26,7 @@ create_country_leader = {
 	name = "Dark Jesus"
 	desc = ""
 	picture = "Dark.dds"
-	ideology = liberaha
+	ideology = zoomerism
 }
 
 create_country_leader = {
@@ -40,7 +40,7 @@ create_country_leader = {
 	name = "Jesus"
 	desc = ""
 	picture = "Jesus.dds"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }
 
 create_country_leader = {

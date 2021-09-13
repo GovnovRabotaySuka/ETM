@@ -5,6 +5,10 @@ state={
 
 	history={
 		owner = CCA
+		victory_points = {
+			              12431 5}	
+		victory_points = {
+			              12669 5}		
 		add_core_of = CCA
 		buildings = {
 			infrastructure = 5
@@ -17,7 +21,7 @@ state={
 	provinces={
 		12315 12404 12431 12504 12521 12647 12669 12715 12736 12837 12935 13062 13093 
 	}
-	manpower=1673045
+	manpower=167304
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -28,7 +28,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 	}
 }
@@ -38,7 +38,7 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "GFX_Portrait_tetsu_katayama"
 	expire = "1989.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 	}
 }
@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_EARL_BROWDER_DESC"
 	picture = "portrait_USA_earl_browder.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_HAILE_SELASSIE_DESC"
 	picture = "Portrait_Ethiopia_Haile_Selassie.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 	traits = {
 
 	}

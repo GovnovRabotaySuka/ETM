@@ -47,5 +47,5 @@ create_country_leader = {
     desc = "Remove Kebab"
     picture = "roki.dds"
     expire = "1965.1.1"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }

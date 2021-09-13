@@ -9,10 +9,19 @@ state={
 
 	history={
 		owner = EST
+		victory_points = {
+			 16741 15
+		}
+		victory_points = {
+			 16604 1
+		}		
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 2
+			16604 = {
+				bunker = 5
+			}			
 		}
 		add_core_of = EST
 	}

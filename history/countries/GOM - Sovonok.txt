@@ -62,7 +62,7 @@ create_country_leader = {
 	desc = ""
 	picture = "neu.dds"
 	expire = "1965.1.1"
-	ideology = modepahanism 
+	ideology = socdem 
 }
 
 create_country_leader = {

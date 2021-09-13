@@ -6,13 +6,19 @@ state={
 	}
 
 	resources={
-		steel=4.000
+		steel=8.000
 	}
 
 	state_category = town
 
 	history={
 		owner = SRB
+		victory_points = {
+			 9587 10
+		}
+		victory_points = {
+			 9933 10
+		}			
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2

@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = SAU
+		victory_points = {
+			12288 10 
+		}			
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 1
@@ -12,7 +15,7 @@ state={
 
 		}
 		add_core_of = SAU
-
+        add_core_of = DDR
 	}
 
 	provinces={

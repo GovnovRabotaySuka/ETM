@@ -45,7 +45,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GUL_N.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism  
+	ideology = typicalauthoritarism  
 }
 
 create_country_leader = {

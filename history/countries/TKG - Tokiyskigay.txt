@@ -48,7 +48,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Gay.dds"
 	expire = "1965.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Gay3.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Gay2.dds"
 	expire = "1965.1.1"
-	ideology = nazbol
+	ideology = naziborshewism
 	traits = {
 		
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Gay4.dds"
 	expire = "1965.1.1"
-	ideology = modepahanism
+	ideology = socdem
 	traits = {
 		
 	}

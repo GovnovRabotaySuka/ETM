@@ -36,5 +36,5 @@ create_country_leader = {
     name = "Natalia Poklonskaya"
     desc = ""
     picture = "poklonskaya.dds"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }

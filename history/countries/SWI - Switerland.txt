@@ -45,5 +45,5 @@ create_country_leader = {
     desc = ""
     picture = "Cheese.dds"
     expire = "1965.1.1"
-    ideology = radicalcentrism
+    ideology = tsardemocrasy
 }

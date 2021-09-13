@@ -9,6 +9,10 @@ state={
 
 	history={
 		owner = CCA	
+		victory_points = {
+			              13484 5}	
+		victory_points = {
+			              13548 5}						  
 		add_core_of = CCA
 
 		buildings = {
@@ -18,7 +22,6 @@ state={
 		}
 	}
 	
-    }
-	manpower=1598900
+    manpower=14838
 	buildings_max_level_factor=1.000
 }

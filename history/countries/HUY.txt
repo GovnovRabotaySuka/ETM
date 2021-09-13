@@ -24,5 +24,5 @@ create_country_leader = {
 	name = "Lion Trotsky"
 	desc = ""
 	picture = "SerpTrotsky.dds"
-	ideology = oppriviz
+	ideology = oppurtrevis
 }

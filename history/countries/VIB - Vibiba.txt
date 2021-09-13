@@ -46,9 +46,9 @@ set_popularities = {
 create_country_leader = {
 	name = "Haruhi Suzumiya"
 	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Haruhiliberaha.dds"
+	picture = "Haruhizoomerism.dds"
 	expire = "1965.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Haruhilicum.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -70,7 +70,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Haruhilibidlo.dds"
 	expire = "1965.1.1"
-	ideology = nazbol
+	ideology = naziborshewism
 	traits = {
 		
 	}
@@ -81,7 +81,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Haruhi.dds"
 	expire = "1965.1.1"
-	ideology = modepahanism
+	ideology = socdem
 	traits = {
 		
 	}

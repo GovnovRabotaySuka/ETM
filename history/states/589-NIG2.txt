@@ -2,7 +2,10 @@
 state={
 	id=589
 	name="STATE_589"
-
+   
+    resources = {
+	             oil = 5
+	}
 	history={
 		owner = NIG
 		buildings = {
@@ -14,12 +17,18 @@ state={
 		}
 		add_core_of = NIG
 
-	}
-
+		victory_points = {
+			13422 5
+		}
+		victory_points = {
+			13134 15
+		}
+		}
 	provinces={
 		13057 13134 13230 13303 13304 13377 13422 13597 
 	}
 	manpower=3381300
 	buildings_max_level_factor=1.000
 	state_category=large_city
+
 }

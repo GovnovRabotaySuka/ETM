@@ -47,7 +47,7 @@ create_country_leader = {
 	name = "Victor root-crop"
 	desc = ""
 	picture = "GFX_rootcrop"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }
 
 create_country_leader = {
@@ -68,5 +68,5 @@ create_country_leader = {
     desc = ""
     picture = "gribabas.dds"
     expire = "1965.1.1"
-    ideology = gribonism
+    ideology = leninism
 }

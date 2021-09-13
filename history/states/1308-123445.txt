@@ -8,6 +8,12 @@ state={
 
 	history={
 		owner = CZE
+		victory_points = {
+			12024 10 
+		}
+		victory_points = {
+			12204 10
+		}		
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 2

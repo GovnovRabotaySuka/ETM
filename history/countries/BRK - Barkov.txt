@@ -59,7 +59,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "Poet.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism  
+	ideology = typicalauthoritarism  
 	traits = {
 		
 	}

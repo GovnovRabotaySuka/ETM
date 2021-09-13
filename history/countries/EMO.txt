@@ -23,7 +23,7 @@ create_country_leader = {
 	name = "Эмарь"
 	desc = ""
 	picture = "emo.dds"
-	ideology = modepahanism
+	ideology = socdem
 }
 create_field_marshal = {
 	name = "Верните мой 2007"

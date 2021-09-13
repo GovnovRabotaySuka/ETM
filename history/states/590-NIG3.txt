@@ -2,7 +2,10 @@
 state={
 	id=590
 	name="STATE_590"
-
+    
+	resources = {
+	             oil = 5
+	}
 	history={
 		owner = NIG
 		buildings = {
@@ -15,9 +18,14 @@ state={
 
 		}
 		add_core_of = NIG
-
+		victory_points = {
+			14068 10
+		}
+		victory_points = {
+			14114 15
+		}
 	}
-
+    
 	provinces={
 		13575 13617 13694 13735 13799 13822 13845 13891 13958 13959 14035 14068 14069 14114 14163 14193 14242 
 	}

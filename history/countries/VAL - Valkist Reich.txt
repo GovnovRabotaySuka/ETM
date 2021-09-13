@@ -52,7 +52,7 @@ create_country_leader = {
     desc = ""
     picture = "Kahn.dds"
     expire = "1965.1.1"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }
 create_country_leader = {
     name = "Zoya Kosmodemyanskaya" 

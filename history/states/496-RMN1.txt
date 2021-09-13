@@ -6,9 +6,15 @@ state={
 	}
 
 	state_category = rural
-
+    resources = {
+	             oil = 15
+	}
 	history={
 		owner = TRA
+		victory_points = {
+			              10824 10}
+		victory_points = {
+			              10717 10}						  
 		buildings = {
 			infrastructure = 4
 

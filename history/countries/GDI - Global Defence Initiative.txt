@@ -42,5 +42,5 @@ create_country_leader = {
 	desc = "Гендеректор ГСБ"
 	picture = "redmont.dds"
 	expire = "1953.3.1"
-	ideology = liberaha
+	ideology = zoomerism
 }

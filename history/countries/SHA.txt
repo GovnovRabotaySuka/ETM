@@ -30,7 +30,7 @@ create_country_leader = {
     desc = ""
     picture = "SHA.dds"
     expire = "1965.1.1"
-    ideology = modepahanism
+    ideology = socdem
     traits = {
         #
     }

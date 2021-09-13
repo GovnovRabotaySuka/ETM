@@ -5,6 +5,7 @@ state={
 	resources={
 		chromium=70.000
 		aluminium=16.000
+		steel = 16.000
 	}
 
 	provinces={
@@ -16,10 +17,33 @@ state={
 
 	history={
 		owner = HOJ
+		victory_points = {				  
+			              8960 1 }		
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 2
+			8788 = {
+				bunker = 1
+			}
+			8798 = {
+				bunker = 1
+			}
+			8859 = {
+				bunker = 1
+			}
+			8901 = {
+				bunker = 1
+			}
+			8960 = {
+				bunker = 10
+			}
+			9043 = {
+				bunker = 1
+			}
+			9141 = {
+				bunker = 1
+			}			
 
 		}
 		add_core_of = HOJ

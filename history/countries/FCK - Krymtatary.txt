@@ -40,7 +40,7 @@ create_country_leader = {
     desc = ""
     picture = "GayNiy2.dds"
     expire = "1965.1.1"
-    ideology = radicalcentrism
+    ideology = tsardemocrasy
     traits = {
         #
     }

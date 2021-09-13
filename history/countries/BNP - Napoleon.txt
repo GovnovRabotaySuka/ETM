@@ -47,5 +47,5 @@ create_country_leader = {
     desc = ""
     picture = "napoleon.dds"
     expire = "1821.5.5"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }

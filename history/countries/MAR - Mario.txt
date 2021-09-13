@@ -46,28 +46,28 @@ create_country_leader = {
     desc = ""
     picture = "Lenin.dds"
     expire = "1965.1.1"
-    ideology = gribonism
+    ideology = leninism
 }
 create_country_leader = {
     name = "Pahan mushrooms" 
     desc = ""
     picture = "Pahan.dds"
     expire = "1965.1.1"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }
 create_country_leader = {
     name = "Plastic mushroom" 
     desc = ""
     picture = "Plastic.dds"
     expire = "1965.1.1"
-    ideology = putinism
+    ideology = imperial_putinism
 }
 create_country_leader = {
     name = "Mushroom gay" 
     desc = ""
     picture = "gay.dds"
     expire = "1965.1.1"
-    ideology = liberaha
+    ideology = zoomerism
 }
 create_country_leader = {
     name = "Der Giftpilz" 

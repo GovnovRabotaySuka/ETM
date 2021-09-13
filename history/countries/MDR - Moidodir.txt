@@ -42,5 +42,5 @@ create_country_leader = {
 	name = "Moidodyr"
 	desc = ""
 	picture = "Moidodyr.dds"
-	ideology = modepahanism
+	ideology = socdem
 }

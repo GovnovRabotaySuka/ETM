@@ -12,10 +12,19 @@ state={
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 1
-
+			
+			12359 = {
+				     naval_base = 5
+					}
 		}
 		add_core_of = VAL
-
+		
+		victory_points = {
+			12779 40
+		}
+		victory_points = {
+			12359 5
+		}
 	}
 
 	provinces={

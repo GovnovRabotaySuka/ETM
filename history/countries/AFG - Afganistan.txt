@@ -33,14 +33,14 @@ create_country_leader = {
 	name = "Mohammed Omar"
 	desc = ""
 	picture = "mohammed_omar.dds"
-	ideology = nazbol
+	ideology = naziborshewism
 }
 
 create_country_leader = {
 	name = "Osama bin Laden"
 	desc = "Почётный овцеёб"
 	picture = "ben_laden.dds"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 }
 
 

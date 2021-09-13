@@ -46,7 +46,7 @@ create_country_leader = {
     desc = ""
     picture = "horty.dds"
     expire = "1965.1.1"
-    ideology = despopahanism
+    ideology = typicalauthoritarism
 }
 create_country_leader = {
     name = "Semyon Timoshenko" 
@@ -74,5 +74,5 @@ create_country_leader = {
     desc = ""
     picture = "Viktor.dds"
     expire = "1965.1.1"
-    ideology = putinism
+    ideology = imperial_putinism
 }

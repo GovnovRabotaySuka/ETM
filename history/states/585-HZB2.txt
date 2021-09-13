@@ -16,8 +16,12 @@ state={
 		victory_points = {
 			 11901 50
 		}
+		victory_points = {
+			 12082 10
+		}
 	    buildings = {
 			infrastructure = 7
+			arms_factory = 3
 			industrial_complex = 2
 			air_base = 2
 
@@ -26,6 +30,7 @@ state={
 			}
 		}
 		add_core_of = VAL
+		
 	}
 
 	manpower = 1370800

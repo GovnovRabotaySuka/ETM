@@ -14,8 +14,44 @@ state={
 
 	history={
 		owner = HOJ
+		victory_points = {				  
+			              8725 1 }	
+		victory_points = {				  
+			              8808 1 }							  
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 3
+			8725 = {
+				bunker = 10
+			}
+			8736 = {
+				bunker = 1
+			}
+			8774 = {
+				bunker = 1
+			}
+			8781 = {
+				bunker = 1
+			}
+			8787 = {
+				bunker = 1
+			}
+			8808 = {
+				bunker = 10
+			}
+			8857 = {
+				bunker = 1
+			}
+			8858 = {
+				bunker = 1
+			}
+			8900 = {
+				bunker = 1
+			}
+			8932 = {
+				bunker = 1
+			}			
 		}
 		add_core_of = HOJ 
 	}

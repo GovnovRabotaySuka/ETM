@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"
-	ideology = nazbol
+	ideology = naziborshewism
 	traits = { our_savior }
 }
 create_country_leader = {
@@ -80,7 +80,7 @@ create_country_leader = {
 	desc = "POLITICS_LETOV_BEFORE_WAR_DESC"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"
-	ideology = despopahanism
+	ideology = typicalauthoritarism
 	traits = { our_savior }
 }
 create_country_leader = {
@@ -88,7 +88,7 @@ create_country_leader = {
 	desc = "Egor_Letov_Desc"
 	picture = "Portrait_Egor_Letov.dds"
 	expire = "1965.1.1"
-	ideology = anarhoborshevism
+	ideology = socialanarchism
 	traits = { our_savior }
 }
 

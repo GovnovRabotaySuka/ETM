@@ -50,7 +50,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "crack.dds"
 	expire = "1965.1.1"
-	ideology = liberaha
+	ideology = zoomerism
 	traits = {
 		
 	}
@@ -61,7 +61,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "rafaello.dds"
 	expire = "1965.1.1"
-	ideology = gribonism
+	ideology = leninism
 	traits = {
 		
 	}
@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "krisa.dds"
 	expire = "1965.1.1"
-	ideology = nazbol
+	ideology = naziborshewism
 	traits = {
 		
 	}
@@ -83,7 +83,7 @@ create_country_leader = {
 	desc = "POLITICS_ADOLF_HITLER_DESC"
 	picture = "kto.dds"
 	expire = "1965.1.1"
-	ideology = modepahanism
+	ideology = socdem
 	traits = {
 		
 	}

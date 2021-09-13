@@ -8,6 +8,9 @@ state={
 		victory_points = {
 			11814 50 
 		}
+		victory_points = {
+			11419 5
+		}		
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
@@ -16,7 +19,7 @@ state={
 
 		}
 		add_core_of = SAU
-
+        add_core_of = DDR
 	}
 
 	provinces={

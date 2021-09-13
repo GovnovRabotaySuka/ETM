@@ -6,13 +6,19 @@ ideologies = {
 			
 			conserva = {
 			}
-		
-			liberaha = {
+			
+			zoomerism = {
+			}
+			
+			libpopulism = {
 			}
 		
 			jididoism = {
 			}
 
+			onlyfansism = {
+			}
+			
 			pedophilia = {
 			}
 		}
@@ -74,19 +80,40 @@ ideologies = {
 		
 		types = {
 		
+			angsoc = {
+			}
+			
+			polpotism = {
+			}
+			
+			marxengels = {
+			}
+		
 			sralinism = {
 			}
 			
-			gribonism = {
+			velikiyxi = {
+			}
+			
+			leninism = {
+			}
+			
+			tradeunionism = {
+			}
+			
+			oppurtrevis = {
+			}
+			
+			socialanarchism = {
+			}
+			
+			shizophysicalcom = {
+			}
+			
+			christianlib = {
 			}
 			
 			naziborshewism = {
-			}
-			
-			oppriviz = {
-			}
-			
-			anarhoborshevism = {
 			}
 		}
 		
@@ -145,17 +172,35 @@ ideologies = {
 	bidlo = {
 	
 		types = {
+
+			cringerism = {
+			}
 		
+			reznya = {
+			}
+		
+			toleratedictatorship = {
+			}
+		
+			lmaoburgsis = {
+			}
+			
+			absoluteorder = {
+			}
+		
+			horde = {
+			}
+			
 			nazi = {
 			}
 			
 			fashiki = {
 			}
 			
-			nazbol = {
+			gopniki = {
 			}
-			
-			gopnik = {
+
+			nazbol = {
 			}
 		}
 		
@@ -215,20 +260,44 @@ ideologies = {
 	
 		types = {
 		
-			despopahanism  = {
+			typicalauthoritarism = {
+			}
+		
+			dvacherism = {
+			}
+		
+			tsardemocrasy = {
 			}
 			
-			gachism  = {
+			aue = {
+			}
+			
+			individualism = {
+			}
+			
+			anarchopunk = {
+			}
+			
+			primitivism = {
+			}
+			
+			gachism = {
+			}
+			
+			postironism = {
 			}
 			
 			islamism = {
 				can_be_randomly_selected = no
 			}
 			
-			modepahanism = {
+			socdem = {
 			}
                         
-            		radicalcentrism = {
+            radicalcentrism = {
+			}
+			
+			shueppsh = {
 			}
 		}
 
@@ -284,10 +353,22 @@ ideologies = {
 		
 		types = {
 
-			putinism = {
+			imperial_putinism = {
 			} 
+			
+			colonial_putinism = {
+			}
+			
+			plastic_putinism = {
+			}
+			
+			morgenshterism = {
+			}
+			
+			western_putinism = {
+			}
 
-                        oligarhiya = {
+            oligarhiya = {
 			}
 		}
 

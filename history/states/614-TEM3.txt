@@ -4,11 +4,16 @@ state={
 	provinces={
 		14751 14816 14834 14901 14946 14983 
 	}
-	
+	    resources = {
+	             steel = 20}
 	state_category = city
 
 	history={
 		owner = TEM	
+		victory_points = {
+			              14751 80}
+		victory_points = {				  
+			              14983 10}		
 		add_core_of = TEM
 
 		buildings = {
